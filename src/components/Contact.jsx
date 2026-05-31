@@ -165,7 +165,7 @@ export default function Contact() {
                     <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Phone Number</label>
                     <input
                       type="tel"
-                      placeholder="e.g. 8792273625"
+                      placeholder="e.g. 8248710285"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className={`w-full bg-brand-charcoal text-white rounded-xl py-3 px-4 text-sm font-semibold border ${errors.phone ? 'border-red-500' : 'border-white/5'} focus:border-brand-yellow focus:outline-none transition-colors`}
@@ -393,7 +393,7 @@ export default function Contact() {
           <div className="flex flex-col space-y-3">
             {/* Call */}
             <a
-              href="tel:+918792273625"
+              href="tel:+918248710285"
               className="glass-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
             >
               <div className="p-3 rounded-xl bg-brand-yellow/5 border border-brand-yellow/10 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
@@ -401,13 +401,13 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Call Desk</span>
-                <span className="text-lg font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 87922 73625</span>
+                <span className="text-lg font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 82487 10285</span>
               </div>
             </a>
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/918792273625?text=Hello! I need to book a cab in Hosur."
+              href="https://wa.me/918248710285?text=Hello! I need to book a cab in Hosur."
               target="_blank"
               rel="noopener noreferrer"
               className="glass-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
@@ -417,7 +417,7 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Dispatcher</span>
-                <span className="text-lg font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 87922 73625</span>
+                <span className="text-lg font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 82487 10285</span>
               </div>
             </a>
           </div>

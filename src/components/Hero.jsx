@@ -200,11 +200,11 @@ export default function Hero() {
 
         {/* Overlay Phone Badge to match Mockup */}
         <a 
-          href="tel:+918792273625"
+          href="tel:+918248710285"
           className="absolute bottom-3 right-3 z-30 inline-flex items-center space-x-1.5 px-3.5 py-1.5 bg-[#00bfa5] hover:bg-[#00c853] text-white rounded-full font-black text-[11px] shadow-[0_4px_12px_rgba(0,191,165,0.35)] transition-all cursor-pointer pointer-events-auto hover:scale-105 active:scale-95"
         >
           <Phone className="w-3.5 h-3.5 fill-white text-white" />
-          <span>+91 87922 73625</span>
+          <span>+91 82487 10285</span>
         </a>
 
         {/* Indicator dots */}
@@ -291,16 +291,16 @@ export default function Hero() {
 
             {/* Call Now */}
             <a
-              href="tel:+918792273625"
+              href="tel:+918248710285"
               className="flex items-center justify-center space-x-2 px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
             >
               <Phone className="w-5 h-5 text-brand-yellow" />
-              <span>Call: +91 87922 73625</span>
+              <span>Call: +91 82487 10285</span>
             </a>
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/918792273625?text=Hi! I want to book a taxi in Hosur."
+              href="https://wa.me/918248710285?text=Hi! I want to book a taxi in Hosur."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(16,185,129,0.25)] hover:shadow-[0_4px_20px_rgba(16,185,129,0.45)] hover:scale-105 transition-all duration-300 cursor-pointer"

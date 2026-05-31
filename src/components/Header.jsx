@@ -88,7 +88,7 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
 
             {/* Glowing Call Button */}
             <motion.a
-              href="tel:+918792273625"
+              href="tel:+918248710285"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center space-x-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-bold text-sm tracking-tight shadow-[0_0_20px_rgba(255,212,59,0.3)] hover:shadow-[0_0_30px_rgba(255,212,59,0.5)] transition-all duration-300"
@@ -149,12 +149,12 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
             ))}
             <div className="pt-4 border-t border-white/5 flex flex-col space-y-4">
               <a
-                href="tel:+918792273625"
+                href="tel:+918248710285"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-brand-yellow text-brand-black font-bold shadow-[0_0_15px_rgba(255,212,59,0.2)] animate-pulse-glow"
               >
                 <Phone className="w-5 h-5" />
-                <span>Call +91 87922 73625</span>
+                <span>Call +91 82487 10285</span>
               </a>
             </div>
           </motion.div>

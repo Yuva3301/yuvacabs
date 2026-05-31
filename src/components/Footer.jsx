@@ -106,8 +106,8 @@ export default function Footer({ onAdminToggle }) {
             
             <li className="flex items-center space-x-2.5">
               <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-              <a href="tel:+918792273625" className="hover:text-brand-yellow transition-colors font-bold">
-                +91 87922 73625
+              <a href="tel:+918248710285" className="hover:text-brand-yellow transition-colors font-bold">
+                +91 82487 10285
               </a>
             </li>
 

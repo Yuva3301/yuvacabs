@@ -10,7 +10,7 @@ export default function SEO() {
         "name": "YUVA CABS Hosur",
         "image": "https://yuvacabs.in/og-image.jpg",
         "description": "Book premium and affordable taxi services in Hosur. Safe, professional drivers, airport transfers, local and outstation cab booking available 24/7.",
-        "telephone": "+91 87922 73625",
+        "telephone": "+91 82487 10285",
         "url": "https://yuvacabs.in",
         "address": {
           "@type": "PostalAddress",

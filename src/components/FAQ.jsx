@@ -24,7 +24,7 @@ export default function FAQ() {
     },
     {
       question: 'How can I book a taxi with YUVA CABS?',
-      answer: 'You can book a taxi instantly by calling our hotline (+91 87922 73625), clicking our WhatsApp button to chat directly, or by filling out the online booking request form located in the Contact section. We will confirm your car within minutes.'
+      answer: 'You can book a taxi instantly by calling our hotline (+91 82487 10285), clicking our WhatsApp button to chat directly, or by filling out the online booking request form located in the Contact section. We will confirm your car within minutes.'
     }
   ];
 

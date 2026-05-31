@@ -25,7 +25,7 @@ export default function FloatingCTA() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
             transition={{ duration: 0.3 }}
-            href="https://wa.me/918792273625?text=Hi! I need to book a taxi in Hosur."
+            href="https://wa.me/918248710285?text=Hi! I need to book a taxi in Hosur."
             target="_blank"
             rel="noopener noreferrer"
             title="Chat on WhatsApp"
@@ -45,7 +45,7 @@ export default function FloatingCTA() {
         <div className="flex space-x-3 w-full max-w-lg mx-auto">
           {/* Call Now Button */}
           <a
-            href="tel:+918792273625"
+            href="tel:+918248710285"
             className="flex-1 flex items-center justify-center space-x-2 py-3.5 rounded-full bg-brand-black hover:bg-brand-charcoal text-white font-extrabold text-sm tracking-wide shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/10 active:scale-95 transition-all cursor-pointer mobile-tel-btn"
           >
             <Phone className="w-4 h-4 fill-white text-white" />
@@ -54,7 +54,7 @@ export default function FloatingCTA() {
 
           {/* WhatsApp Button - Vibrant Green */}
           <a
-            href="https://wa.me/918792273625?text=Hi! I want to book a taxi in Hosur."
+            href="https://wa.me/918248710285?text=Hi! I want to book a taxi in Hosur."
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center space-x-2 py-3.5 rounded-full bg-[#3bb352] hover:bg-green-600 text-white font-extrabold text-sm tracking-wide shadow-[0_4px_12px_rgba(59,179,82,0.2)] active:scale-95 transition-all cursor-pointer"
