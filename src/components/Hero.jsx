@@ -10,7 +10,7 @@ import tempoTravellerImg from '../assets/tempo_traveller.png';
 export default function Hero() {
   const [selectedVehicle, setSelectedVehicle] = useState('sedan');
   const [distance, setDistance] = useState(10);
-  const [isAc, setIsAc] = useState(false);
+  const [isAc, setIsAc] = useState(true);
   const [direction, setDirection] = useState(1);
 
   const [tiltStyle, setTiltStyle] = useState({
@@ -57,7 +57,7 @@ export default function Hero() {
       name: 'Hatchback', 
       desc: 'Indica / Vista / Figo',
       nonAcMin: 150, acMin: 200,
-      nonAcExtra: 20, acExtra: 25,
+      nonAcExtra: 10, acExtra: 11,
       minKm: 4, localLimit: 6,
       image: hatchbackTaxiImg
     },
@@ -65,7 +65,7 @@ export default function Hero() {
       name: 'Sedan', 
       desc: 'Etios / Dzire / Xcent',
       nonAcMin: 180, acMin: 230,
-      nonAcExtra: 22, acExtra: 27,
+      nonAcExtra: 11, acExtra: 12,
       minKm: 4, localLimit: 6,
       image: premiumTaxiImg
     },
@@ -73,7 +73,7 @@ export default function Hero() {
       name: 'SUV', 
       desc: 'Ertiga / XUV / SUV',
       nonAcMin: 220, acMin: 280,
-      nonAcExtra: 15, acExtra: 32,
+      nonAcExtra: 15, acExtra: 16,
       minKm: 4, localLimit: 6,
       image: suvTaxiImg
     },
@@ -81,7 +81,7 @@ export default function Hero() {
       name: 'Innova', 
       desc: 'Toyota Innova',
       nonAcMin: 280, acMin: 350,
-      nonAcExtra: 17, acExtra: 35,
+      nonAcExtra: 16, acExtra: 17,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },
@@ -89,7 +89,7 @@ export default function Hero() {
       name: 'Crysta', 
       desc: 'Toyota Innova Crysta',
       nonAcMin: 350, acMin: 420,
-      nonAcExtra: 20, acExtra: 40,
+      nonAcExtra: 20, acExtra: 24,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },

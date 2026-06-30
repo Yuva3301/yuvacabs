@@ -3,7 +3,7 @@ import { Moon, Check, Coins, Milestone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Pricing() {
-  const [isAc, setIsAc] = useState(false);
+  const [isAc, setIsAc] = useState(true);
 
   const fleets = [
     {
@@ -11,7 +11,7 @@ export default function Pricing() {
       subTitle: 'Indica / Vista / Figo',
       type: 'Tata Tiago, Indica, Vista, Swift',
       nonAcMin: 150, acMin: 200,
-      nonAcExtra: 20, acExtra: 25,
+      nonAcExtra: 10, acExtra: 11,
       seating: '4 + 1 Passengers',
       suitcases: '1 - 2 Bags',
       notes: 'Local 6 kms limit only',
@@ -24,7 +24,7 @@ export default function Pricing() {
       subTitle: 'Etios / Dzire / Xcent',
       type: 'Maruti Dzire, Hyundai Xcent, Toyota Etios',
       nonAcMin: 180, acMin: 230,
-      nonAcExtra: 22, acExtra: 27,
+      nonAcExtra: 11, acExtra: 12,
       seating: '4 + 1 Passengers',
       suitcases: '2 - 3 Bags',
       notes: 'Local 6 kms limit only',
@@ -37,7 +37,7 @@ export default function Pricing() {
       subTitle: 'Ertiga / XUV / SUV',
       type: 'Maruti Ertiga, Mahindra XUV, Renault Triber',
       nonAcMin: 220, acMin: 280,
-      nonAcExtra: '15 - 16', acExtra: 32,
+      nonAcExtra: 15, acExtra: 16,
       seating: '6 + 1 Passengers',
       suitcases: '3 - 4 Bags',
       notes: 'Local 6 kms limit only',
@@ -50,7 +50,7 @@ export default function Pricing() {
       subTitle: 'Toyota Innova',
       type: 'Premium Gold-Standard Luxury MPV',
       nonAcMin: 280, acMin: 350,
-      nonAcExtra: 17, acExtra: 35,
+      nonAcExtra: 16, acExtra: 17,
       seating: '7 + 1 Passengers',
       suitcases: '4 - 5 Bags',
       notes: 'Local 6 kms limit only',
@@ -63,7 +63,7 @@ export default function Pricing() {
       subTitle: 'Toyota Innova Crysta',
       type: 'Ultra-Premium Gold-Standard Luxury MPV',
       nonAcMin: 350, acMin: 420,
-      nonAcExtra: '20 - 24', acExtra: 40,
+      nonAcExtra: 20, acExtra: 24,
       seating: '7 + 1 Passengers',
       suitcases: '4 - 5 Bags',
       notes: 'Local 6 kms limit only',

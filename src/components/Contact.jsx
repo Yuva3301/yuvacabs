@@ -11,7 +11,7 @@ export default function Contact() {
     date: '',
     time: '',
     vehicle: 'sedan',
-    ac_service: 'non-ac',
+    ac_service: 'ac',
     message: ''
   });
 
@@ -261,11 +261,11 @@ export default function Contact() {
                     <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Choose Fleet Class</label>
                     <div className="grid grid-cols-2 sm:grid-cols-6 gap-2">
                       {[
-                        { val: 'hatchback', label: 'Hatchback', details: '₹20-25/km' },
-                        { val: 'sedan', label: 'Sedan', details: '₹22-27/km' },
-                        { val: 'suv', label: 'SUV', details: '₹15-32/km' },
-                        { val: 'innova', label: 'Innova', details: '₹17-35/km' },
-                        { val: 'crysta', label: 'Crysta', details: '₹20-40/km' },
+                        { val: 'hatchback', label: 'Hatchback', details: '₹10-11/km' },
+                        { val: 'sedan', label: 'Sedan', details: '₹11-12/km' },
+                        { val: 'suv', label: 'SUV', details: '₹15-16/km' },
+                        { val: 'innova', label: 'Innova', details: '₹16-17/km' },
+                        { val: 'crysta', label: 'Crysta', details: '₹20-24/km' },
                         { val: 'tempo', label: 'Tempo', details: '₹38-45/km' }
                       ].map((item) => (
                         <label
