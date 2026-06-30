@@ -37,7 +37,7 @@ export default function Pricing() {
       subTitle: 'Ertiga / XUV / SUV',
       type: 'Maruti Ertiga, Mahindra XUV, Renault Triber',
       nonAcMin: 220, acMin: 280,
-      nonAcExtra: 26, acExtra: 32,
+      nonAcExtra: '15 - 16', acExtra: 32,
       seating: '6 + 1 Passengers',
       suitcases: '3 - 4 Bags',
       notes: 'Local 6 kms limit only',
@@ -50,12 +50,25 @@ export default function Pricing() {
       subTitle: 'Toyota Innova',
       type: 'Premium Gold-Standard Luxury MPV',
       nonAcMin: 280, acMin: 350,
-      nonAcExtra: 30, acExtra: 35,
+      nonAcExtra: 17, acExtra: 35,
       seating: '7 + 1 Passengers',
       suitcases: '4 - 5 Bags',
       notes: 'Local 6 kms limit only',
       bestFor: 'VIP corporate transits, large family groups & elite tours.',
       tag: 'Premium Luxury',
+      isPopular: false
+    },
+    {
+      vehicle: 'Innova Crysta Cabs',
+      subTitle: 'Toyota Innova Crysta',
+      type: 'Ultra-Premium Gold-Standard Luxury MPV',
+      nonAcMin: 350, acMin: 420,
+      nonAcExtra: '20 - 24', acExtra: 40,
+      seating: '7 + 1 Passengers',
+      suitcases: '4 - 5 Bags',
+      notes: 'Local 6 kms limit only',
+      bestFor: 'VIP corporate transits, large family groups & elite tours.',
+      tag: 'Ultra-Premium Luxury',
       isPopular: false
     },
     {
@@ -119,8 +132,8 @@ export default function Pricing() {
           </div>
         </div>
 
-        {/* Pricing Cards Grid - 5 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 items-stretch mb-16">
+        {/* Pricing Cards Grid - 3 Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch mb-16">
           {fleets.map((fleet, idx) => {
             const minFare = isAc ? fleet.acMin : fleet.nonAcMin;
             const extraKm = isAc ? fleet.acExtra : fleet.nonAcExtra;

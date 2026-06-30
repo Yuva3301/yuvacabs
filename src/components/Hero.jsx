@@ -73,7 +73,7 @@ export default function Hero() {
       name: 'SUV', 
       desc: 'Ertiga / XUV / SUV',
       nonAcMin: 220, acMin: 280,
-      nonAcExtra: 26, acExtra: 32,
+      nonAcExtra: 15, acExtra: 32,
       minKm: 4, localLimit: 6,
       image: suvTaxiImg
     },
@@ -81,7 +81,15 @@ export default function Hero() {
       name: 'Innova', 
       desc: 'Toyota Innova',
       nonAcMin: 280, acMin: 350,
-      nonAcExtra: 30, acExtra: 35,
+      nonAcExtra: 17, acExtra: 35,
+      minKm: 4, localLimit: 6,
+      image: innovaTaxiImg
+    },
+    crysta: { 
+      name: 'Crysta', 
+      desc: 'Toyota Innova Crysta',
+      nonAcMin: 350, acMin: 420,
+      nonAcExtra: 20, acExtra: 40,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },
@@ -95,7 +103,7 @@ export default function Hero() {
     }
   };
 
-  const vehicleKeys = ['hatchback', 'sedan', 'suv', 'innova', 'tempo'];
+  const vehicleKeys = ['hatchback', 'sedan', 'suv', 'innova', 'crysta', 'tempo'];
 
   const selectVehicleWithDirection = (key) => {
     const newIdx = vehicleKeys.indexOf(key);

@@ -259,12 +259,13 @@ export default function Contact() {
                   {/* Vehicle Class Choice */}
                   <div className="flex flex-col space-y-1.5 text-left sm:col-span-2">
                     <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Choose Fleet Class</label>
-                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                    <div className="grid grid-cols-2 sm:grid-cols-6 gap-2">
                       {[
                         { val: 'hatchback', label: 'Hatchback', details: '₹20-25/km' },
                         { val: 'sedan', label: 'Sedan', details: '₹22-27/km' },
-                        { val: 'suv', label: 'SUV', details: '₹26-32/km' },
-                        { val: 'innova', label: 'Innova', details: '₹30-35/km' },
+                        { val: 'suv', label: 'SUV', details: '₹15-32/km' },
+                        { val: 'innova', label: 'Innova', details: '₹17-35/km' },
+                        { val: 'crysta', label: 'Crysta', details: '₹20-40/km' },
                         { val: 'tempo', label: 'Tempo', details: '₹38-45/km' }
                       ].map((item) => (
                         <label
