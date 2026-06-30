@@ -10,7 +10,7 @@ import tempoTravellerImg from '../assets/tempo_traveller.png';
 export default function Hero() {
   const [selectedVehicle, setSelectedVehicle] = useState('sedan');
   const [distance, setDistance] = useState(10);
-  const [isAc, setIsAc] = useState(true);
+  const [isAc, setIsAc] = useState(false);
   const [direction, setDirection] = useState(1);
 
   const [tiltStyle, setTiltStyle] = useState({

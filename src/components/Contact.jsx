@@ -11,7 +11,7 @@ export default function Contact() {
     date: '',
     time: '',
     vehicle: 'sedan',
-    ac_service: 'ac',
+    ac_service: 'non-ac',
     message: ''
   });
 

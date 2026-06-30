@@ -3,7 +3,7 @@ import { Moon, Check, Coins, Milestone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Pricing() {
-  const [isAc, setIsAc] = useState(true);
+  const [isAc, setIsAc] = useState(false);
 
   const fleets = [
     {
