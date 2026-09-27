@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa6';
 
 export default function Footer({ onAdminToggle }) {
   const quickLinks = [
@@ -121,6 +122,18 @@ export default function Footer({ onAdminToggle }) {
               <Mail className="w-4 h-4 text-brand-yellow flex-shrink-0" />
               <a href="mailto:bookings@yuvacalltaxi.com" className="hover:text-brand-yellow transition-colors">
                 bookings@yuvacalltaxi.com
+              </a>
+            </li>
+
+            <li className="flex items-center space-x-2.5">
+              <FaInstagram className="w-4 h-4 text-pink-400 flex-shrink-0" />
+              <a 
+                href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-pink-400 transition-colors font-bold text-pink-400"
+              >
+                @yuva_call_taxi_70 on Instagram
               </a>
             </li>
 

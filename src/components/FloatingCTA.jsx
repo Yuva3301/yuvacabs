@@ -1,4 +1,5 @@
 import { Phone, MessageSquare } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
@@ -19,22 +20,41 @@ export default function FloatingCTA() {
       {/* 1. Pulsing WhatsApp Orb (Desktop only, visible after scrolling past the fold) */}
       <AnimatePresence>
         {isVisible && (
-          <motion.a
-            key="whatsapp-float-desktop"
-            initial={{ opacity: 0, scale: 0.8, y: 20 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            transition={{ duration: 0.3 }}
-            href="https://wa.me/918248710285?text=Hi! I need to book a taxi in Hosur."
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Chat on WhatsApp"
-            className="hidden md:flex fixed bottom-8 right-8 z-40 w-14 h-14 bg-emerald-500 rounded-full items-center justify-center text-white shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all cursor-pointer group"
-          >
-            {/* Pulsing ring animations behind the orb */}
-            <div className="absolute inset-0 bg-emerald-500 rounded-full scale-110 opacity-30 animate-ping pointer-events-none" />
-            <MessageSquare className="w-6 h-6 group-hover:scale-115 transition-transform" />
-          </motion.a>
+          <>
+            {/* Desktop Instagram Orb */}
+            <motion.a
+              key="instagram-float-desktop"
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              transition={{ duration: 0.3 }}
+              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow us on Instagram"
+              className="hidden md:flex fixed bottom-24 right-8 z-40 w-14 h-14 bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600 rounded-full items-center justify-center text-white shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:shadow-[0_0_30px_rgba(219,39,119,0.6)] hover:scale-110 transition-all cursor-pointer group"
+            >
+              <FaInstagram className="w-6 h-6 group-hover:scale-115 transition-transform" />
+            </motion.a>
+
+            {/* Desktop WhatsApp Orb */}
+            <motion.a
+              key="whatsapp-float-desktop"
+              initial={{ opacity: 0, scale: 0.8, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.8, y: 20 }}
+              transition={{ duration: 0.3 }}
+              href="https://wa.me/918248710285?text=Hi! I need to book a taxi in Hosur."
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Chat on WhatsApp"
+              className="hidden md:flex fixed bottom-8 right-8 z-40 w-14 h-14 bg-emerald-500 rounded-full items-center justify-center text-white shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all cursor-pointer group"
+            >
+              {/* Pulsing ring animations behind the orb */}
+              <div className="absolute inset-0 bg-emerald-500 rounded-full scale-110 opacity-30 animate-ping pointer-events-none" />
+              <MessageSquare className="w-6 h-6 group-hover:scale-115 transition-transform" />
+            </motion.a>
+          </>
         )}
       </AnimatePresence>
 

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Phone, Menu, X, ShieldAlert, Sun, Moon } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header({ onAdminToggle, theme, setTheme }) {
@@ -68,6 +69,17 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
 
           {/* Action CTAs */}
           <div className="hidden md:flex items-center space-x-4">
+            {/* Instagram Button */}
+            <a
+              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow us on Instagram"
+              className="p-2 text-pink-400 hover:text-pink-300 hover:bg-pink-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-pink-500/20"
+            >
+              <FaInstagram className="w-5 h-5" />
+            </a>
+
             {/* Theme Switcher Toggle */}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -100,6 +112,17 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
 
           {/* Mobile Menu Buttons */}
           <div className="flex items-center space-x-2 md:space-x-3 lg:hidden">
+            {/* Instagram Link Mobile */}
+            <a
+              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-pink-400 hover:text-pink-300 rounded-full cursor-pointer flex items-center justify-center border border-pink-500/20"
+              title="Instagram"
+            >
+              <FaInstagram className="w-5 h-5" />
+            </a>
+
             {/* Theme Switcher Toggle */}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -148,6 +171,16 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
               </a>
             ))}
             <div className="pt-4 border-t border-white/5 flex flex-col space-y-3">
+              <a
+                href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold shadow-md"
+              >
+                <FaInstagram className="w-5 h-5" />
+                <span>Follow on Instagram</span>
+              </a>
               <a
                 href="tel:+918248710285"
                 onClick={() => setMobileMenuOpen(false)}
