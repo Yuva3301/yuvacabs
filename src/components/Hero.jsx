@@ -9,8 +9,6 @@ import tempoTravellerImg from '../assets/tempo_traveller.png';
 
 export default function Hero() {
   const [selectedVehicle, setSelectedVehicle] = useState('sedan');
-  const [distance, setDistance] = useState(10);
-  const [isAc, setIsAc] = useState(true);
   const [direction, setDirection] = useState(1);
 
   const [tiltStyle, setTiltStyle] = useState({
@@ -118,31 +116,13 @@ export default function Hero() {
     setSelectedVehicle(vehicleKeys[nextIndex]);
   };
 
-  const calculateEstimate = () => {
-    const v = vehicles[selectedVehicle];
-    // Outstation pricing (distance >= 80 km) starting at ₹9-12/km
-    if (distance >= 80) {
-      const outstationRate = isAc ? 12 : 9;
-      return distance * outstationRate;
-    }
-    const minRate = isAc ? v.acMin : v.nonAcMin;
-    const extraRate = isAc ? v.acExtra : v.nonAcExtra;
-    let fare = minRate;
-    if (distance > v.minKm) {
-      fare += (distance - v.minKm) * extraRate;
-    }
-    return fare;
-  };
-
-  const renderCarCarousel = (isMobile) => {
+  const renderCarCarousel = () => {
     return (
       <div 
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={tiltStyle}
-        className={`relative w-full h-[240px] sm:h-[280px] flex items-center justify-center overflow-hidden p-4 bg-white rounded-3xl border border-slate-200/60 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] tilted-perspective tilted-card cursor-default ${
-          isMobile ? 'block lg:hidden mt-6 mb-2' : 'hidden lg:flex'
-        }`}
+        className="relative w-full h-[260px] sm:h-[320px] flex items-center justify-center overflow-hidden p-4 bg-white rounded-3xl border border-slate-200/60 dark:border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.06)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.3)] tilted-perspective tilted-card cursor-default"
       >
         {/* Ambient Radial glow behind car */}
         <div className="absolute inset-0 w-80 h-40 bg-gradient-to-r from-brand-yellow to-brand-gold blur-[60px] opacity-15 rounded-full mx-auto pointer-events-none" />
@@ -274,9 +254,6 @@ export default function Hero() {
             24/7 Local & Outstation Cab Booking. <span className="text-brand-yellow font-extrabold">Outstation trips @ ₹9 to ₹12/km</span>. Verified drivers, clean fleet, and transparent pricing.
           </motion.p>
 
-          {/* Mobile Display: Render the car image directly below the text on mobile */}
-          {renderCarCarousel(true)}
-
           {/* Action CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -342,116 +319,9 @@ export default function Hero() {
 
         </div>
 
-        {/* Right Side: 3D Car Graphic and Slider Fare Calculator */}
+        {/* Right Side: 3D Car Graphic Showcase */}
         <div className="lg:col-span-5 flex flex-col space-y-6 relative">
-          
-          {/* Desktop Display: Render the car image carousel on desktop only */}
-          {renderCarCarousel(false)}
-
-          {/* Real-time Glassmorphism Fare Calculator */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="glass-card gold-gradient-border p-6 rounded-3xl border border-slate-200/60 dark:border-white/5 relative z-20 flex flex-col space-y-4 shadow-[0_20px_50px_rgba(0,0,0,0.06)] dark:shadow-none"
-          >
-            <div className="flex items-center justify-between">
-              <h3 className="text-lg font-bold text-brand-white tracking-tight">Quick Fare Estimator</h3>
-              <span className="text-[10px] bg-amber-500/10 dark:bg-brand-yellow/10 text-amber-700 dark:text-brand-yellow border border-amber-500/20 dark:border-brand-yellow/20 px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">Hosur Regional</span>
-            </div>
-
-            {/* Vehicle Selector */}
-            <div className="grid grid-cols-3 sm:grid-cols-5 gap-1.5">
-              {Object.entries(vehicles).map(([key, value]) => (
-                <button
-                  key={key}
-                  onClick={() => selectVehicleWithDirection(key)}
-                  className={`py-2 px-1 rounded-xl text-[10px] font-bold transition-all duration-300 cursor-pointer border border-brand-yellow ${
-                    selectedVehicle === key
-                      ? 'bg-brand-yellow text-brand-black shadow-[0_4px_12px_rgba(255,212,59,0.25)]'
-                      : 'bg-white dark:bg-brand-charcoal text-slate-700 dark:text-brand-silver hover:bg-slate-50 dark:hover:bg-white/5'
-                  }`}
-                >
-                  {value.name}
-                </button>
-              ))}
-            </div>
-
-            {/* A/C Toggle */}
-            <div className="flex items-center justify-between bg-white dark:bg-brand-charcoal/40 p-2.5 rounded-2xl border border-slate-200/30 dark:border-white/5">
-              <span className="text-xs font-semibold text-slate-700 dark:text-brand-silver">Air Conditioning (A/C)</span>
-              <button
-                onClick={() => setIsAc(!isAc)}
-                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 cursor-pointer ${
-                  isAc ? 'bg-brand-yellow shadow-[0_0_10px_#FFD43B]' : 'bg-slate-200 dark:bg-brand-gray/50'
-                }`}
-              >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-brand-black transition-transform duration-300 ${
-                    isAc ? 'translate-x-6' : 'translate-x-1'
-                  }`}
-                />
-              </button>
-            </div>
-
-            {/* KM Slider */}
-            <div className="flex flex-col space-y-2">
-              <div className="flex items-center justify-between text-xs font-semibold text-slate-700 dark:text-brand-silver">
-                <span>Distance Estimate</span>
-                <span className="text-amber-600 dark:text-brand-yellow font-extrabold text-sm">{distance} KM</span>
-              </div>
-              <input
-                type="range"
-                min={vehicles[selectedVehicle].minKm}
-                max="250"
-                value={distance}
-                onChange={(e) => setDistance(Number(e.target.value))}
-                className="w-full h-1.5 bg-slate-200 dark:bg-brand-charcoal rounded-lg appearance-none cursor-pointer accent-brand-yellow"
-              />
-              <div className="flex justify-between text-[10px] text-brand-gray">
-                <span>Min ({vehicles[selectedVehicle].minKm}km)</span>
-                <span>BLR Airport (~80km)</span>
-                <span>Outstation (250km)</span>
-              </div>
-            </div>
-
-            {/* Fare Result */}
-            <div className="pt-3 border-t border-slate-200/60 dark:border-white/5 flex items-center justify-between">
-              <div className="flex flex-col text-left">
-                <span className="text-xs text-brand-gray font-semibold">Estimated Fare</span>
-                <span className="text-[9px] text-brand-gray/85">*Tolls, Parking & Night charges extra</span>
-              </div>
-              <div className="text-right">
-                <span className="text-2xl font-black text-brand-white text-glow-yellow">
-                  ₹{calculateEstimate()}
-                </span>
-                <span className="block text-[9px] text-amber-700 dark:text-brand-yellow font-semibold">
-                  {vehicles[selectedVehicle].name} • {isAc ? 'A/C' : 'Non-A/C'} • {distance} km {distance >= 80 ? '(Outstation Rate ₹9-12/km)' : ''}
-                </span>
-              </div>
-            </div>
-
-            <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                const formEl = document.getElementById('contact');
-                if (formEl) {
-                  const messageInput = document.getElementById('booking-message');
-                  if (messageInput) {
-                    messageInput.value = `Fare estimate: ${vehicles[selectedVehicle].name} (${isAc ? 'A/C' : 'Non-A/C'}). Distance: ${distance} KM. Est. Total: ₹${calculateEstimate()}`;
-                  }
-                  formEl.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="w-full flex items-center justify-center space-x-1 py-3 rounded-xl bg-brand-yellow hover:bg-brand-yellow/90 text-brand-black font-extrabold text-xs tracking-wider shadow-[0_4px_12px_rgba(255,212,59,0.15)] dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-yellow dark:border dark:border-brand-yellow/20 dark:shadow-none dark:hover:border-brand-yellow/45 transition-all cursor-pointer"
-            >
-              <span>Instant Book This Estimate</span>
-              <ChevronRight className="w-3.5 h-3.5" />
-            </a>
-
-          </motion.div>
-
+          {renderCarCarousel()}
         </div>
 
       </div>
