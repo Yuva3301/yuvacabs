@@ -46,11 +46,11 @@ export default function Pricing() {
       isPopular: false
     },
     {
-      vehicle: 'Toyota Innova Cabs',
-      subTitle: 'Toyota Innova',
-      type: 'Premium Gold-Standard Luxury MPV',
-      nonAcMin: 280, acMin: 350,
-      nonAcExtra: 30, acExtra: 35,
+      vehicle: 'Toyota Innova & Crysta',
+      subTitle: 'Innova / Innova Crysta',
+      type: 'Premium Gold-Standard 7+1 Seater MPV',
+      nonAcMin: 250, acMin: 280,
+      nonAcExtra: 18, acExtra: 19,
       seating: '7 + 1 Passengers',
       suitcases: '4 - 5 Bags',
       notes: 'Local 6 kms limit only',

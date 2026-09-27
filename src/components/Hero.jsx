@@ -78,10 +78,10 @@ export default function Hero() {
       image: suvTaxiImg
     },
     innova: { 
-      name: 'Innova', 
-      desc: 'Toyota Innova',
-      nonAcMin: 280, acMin: 350,
-      nonAcExtra: 30, acExtra: 35,
+      name: 'Innova & Crysta', 
+      desc: 'Toyota Innova / Innova Crysta',
+      nonAcMin: 250, acMin: 280,
+      nonAcExtra: 18, acExtra: 19,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },

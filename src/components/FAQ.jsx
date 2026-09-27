@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'What is the taxi fare in Hosur?',
-      answer: 'Our rates are fully transparent and distance-based. Outstation round trips are specially priced at just ₹9 to ₹12/km (plus driver allowance per day). Local Hatchbacks start at ₹9-10/km, Sedans at ₹10-12/km, and SUVs at ₹26-32/km. Tolls, parking, and night charges (10 PM to 6 AM) are extra.'
+      answer: 'Our rates are fully transparent and distance-based. Outstation round trips are specially priced at just ₹9 to ₹12/km (plus driver allowance per day). Local Hatchbacks start at ₹9-10/km, Sedans at ₹10-12/km, and Innova & Crysta at ₹18-19/km. Tolls, parking, and night charges (10 PM to 6 AM) are extra.'
     },
     {
       question: 'Is airport pickup available from Hosur?',

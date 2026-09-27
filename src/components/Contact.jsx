@@ -264,7 +264,7 @@ export default function Contact() {
                         { val: 'hatchback', label: 'Hatchback', details: '₹9-10/km' },
                         { val: 'sedan', label: 'Sedan', details: '₹10-12/km' },
                         { val: 'suv', label: 'SUV', details: '₹26-32/km' },
-                        { val: 'innova', label: 'Innova', details: '₹30-35/km' },
+                        { val: 'innova', label: 'Innova / Crysta', details: '₹18-19/km' },
                         { val: 'tempo', label: 'Tempo', details: '₹38-45/km' }
                       ].map((item) => (
                         <label
