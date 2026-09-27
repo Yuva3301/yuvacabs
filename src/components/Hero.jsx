@@ -56,16 +56,16 @@ export default function Hero() {
     hatchback: { 
       name: 'Hatchback', 
       desc: 'Indica / Vista / Figo',
-      nonAcMin: 150, acMin: 200,
-      nonAcExtra: 20, acExtra: 25,
+      nonAcMin: 150, acMin: 180,
+      nonAcExtra: 9, acExtra: 10,
       minKm: 4, localLimit: 6,
       image: hatchbackTaxiImg
     },
     sedan: { 
       name: 'Sedan', 
       desc: 'Etios / Dzire / Xcent',
-      nonAcMin: 180, acMin: 230,
-      nonAcExtra: 22, acExtra: 27,
+      nonAcMin: 180, acMin: 220,
+      nonAcExtra: 10, acExtra: 12,
       minKm: 4, localLimit: 6,
       image: premiumTaxiImg
     },
@@ -120,6 +120,11 @@ export default function Hero() {
 
   const calculateEstimate = () => {
     const v = vehicles[selectedVehicle];
+    // Outstation pricing (distance >= 80 km) starting at ₹9-12/km
+    if (distance >= 80) {
+      const outstationRate = isAc ? 12 : 9;
+      return distance * outstationRate;
+    }
     const minRate = isAc ? v.acMin : v.nonAcMin;
     const extraRate = isAc ? v.acExtra : v.nonAcExtra;
     let fare = minRate;
@@ -198,14 +203,13 @@ export default function Hero() {
           </AnimatePresence>
         </div>
 
-        {/* Overlay Phone Badge to match Mockup */}
-        <a 
-          href="tel:+918248710285"
-          className="absolute bottom-3 right-3 z-30 inline-flex items-center space-x-1.5 px-3.5 py-1.5 bg-[#00bfa5] hover:bg-[#00c853] text-white rounded-full font-black text-[11px] shadow-[0_4px_12px_rgba(0,191,165,0.35)] transition-all cursor-pointer pointer-events-auto hover:scale-105 active:scale-95"
-        >
-          <Phone className="w-3.5 h-3.5 fill-white text-white" />
-          <span>+91 82487 10285</span>
-        </a>
+        {/* Overlay Phone Badge */}
+        <div className="absolute bottom-3 right-3 z-30 flex items-center space-x-1.5 px-3 py-1.5 bg-[#00bfa5] text-white rounded-full font-black text-[10px] shadow-[0_4px_12px_rgba(0,191,165,0.35)] pointer-events-auto">
+          <Phone className="w-3 h-3 fill-white text-white flex-shrink-0" />
+          <a href="tel:+918248710285" className="hover:underline">+91 82487 10285</a>
+          <span>/</span>
+          <a href="tel:+919944271322" className="hover:underline">+91 99442 71322</a>
+        </div>
 
         {/* Indicator dots */}
         <div className="absolute bottom-3 flex space-x-1.5 z-20">
@@ -267,7 +271,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg sm:text-xl md:text-2xl text-brand-silver/90 max-w-xl font-semibold leading-relaxed text-left"
           >
-            24/7 Local & Outstation Cab Booking. Verified professional drivers, clean fleet, and absolute transparent pricing.
+            24/7 Local & Outstation Cab Booking. <span className="text-brand-yellow font-extrabold">Outstation trips @ ₹9 to ₹12/km</span>. Verified drivers, clean fleet, and transparent pricing.
           </motion.p>
 
           {/* Mobile Display: Render the car image directly below the text on mobile */}
@@ -289,13 +293,22 @@ export default function Hero() {
               <span>Book Cab Now</span>
             </a>
 
-            {/* Call Now */}
+            {/* Call Line 1 */}
             <a
               href="tel:+918248710285"
-              className="flex items-center justify-center space-x-2 px-8 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
+              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
             >
               <Phone className="w-5 h-5 text-brand-yellow" />
               <span>Call: +91 82487 10285</span>
+            </a>
+
+            {/* Call Line 2 */}
+            <a
+              href="tel:+919944271322"
+              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
+            >
+              <Phone className="w-5 h-5 text-brand-yellow" />
+              <span>Call: +91 99442 71322</span>
             </a>
 
             {/* WhatsApp */}
@@ -413,7 +426,7 @@ export default function Hero() {
                   ₹{calculateEstimate()}
                 </span>
                 <span className="block text-[9px] text-amber-700 dark:text-brand-yellow font-semibold">
-                  {vehicles[selectedVehicle].name} • {isAc ? 'A/C' : 'Non-A/C'} • {distance} km
+                  {vehicles[selectedVehicle].name} • {isAc ? 'A/C' : 'Non-A/C'} • {distance} km {distance >= 80 ? '(Outstation Rate ₹9-12/km)' : ''}
                 </span>
               </div>
             </div>

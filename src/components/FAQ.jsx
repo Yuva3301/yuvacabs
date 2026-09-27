@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: 'What is the taxi fare in Hosur?',
-      answer: 'Our rates are fully transparent and distance-based. Hatchbacks are priced at ₹20-25/km (plus ₹300 driver allowance per day), Premium Sedans at ₹22-27/km (plus ₹300 driver allowance), and Executive SUVs at ₹26-32/km (plus ₹300 driver allowance). Tolls, parking fee, and night charges (10 PM to 6 AM) are extra.'
+      answer: 'Our rates are fully transparent and distance-based. Outstation round trips are specially priced at just ₹9 to ₹12/km (plus driver allowance per day). Local Hatchbacks start at ₹9-10/km, Sedans at ₹10-12/km, and SUVs at ₹26-32/km. Tolls, parking, and night charges (10 PM to 6 AM) are extra.'
     },
     {
       question: 'Is airport pickup available from Hosur?',
@@ -20,11 +20,11 @@ export default function FAQ() {
     },
     {
       question: 'Do you provide outstation travel from Hosur?',
-      answer: 'Yes, we provide outstation round-trips and one-way drops from Hosur to major cities like Bangalore, Chennai, Salem, Coimbatore, Madurai, Pondicherry, and more. One-way bookings enjoy lower rates since you only pay for the distance traveled.'
+      answer: 'Yes, we provide outstation round-trips and one-way drops from Hosur to major cities like Bangalore, Chennai, Salem, Coimbatore, Madurai, Pondicherry, and more at special rates starting from ₹9 to ₹12/km.'
     },
     {
       question: 'How can I book a taxi with YUVA CABS?',
-      answer: 'You can book a taxi instantly by calling our hotline (+91 82487 10285), clicking our WhatsApp button to chat directly, or by filling out the online booking request form located in the Contact section. We will confirm your car within minutes.'
+      answer: 'You can book a taxi instantly by calling our hotlines (+91 82487 10285 / +91 99442 71322), clicking our WhatsApp button to chat directly, or by filling out the online booking request form located in the Contact section. We will confirm your car within minutes.'
     }
   ];
 

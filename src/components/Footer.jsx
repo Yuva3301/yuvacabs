@@ -104,17 +104,23 @@ export default function Footer({ onAdminToggle }) {
               </a>
             </li>
             
-            <li className="flex items-center space-x-2.5">
-              <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-              <a href="tel:+918248710285" className="hover:text-brand-yellow transition-colors font-bold">
-                +91 82487 10285
+            <li className="flex flex-col space-y-1 sm:space-y-0 sm:flex-row sm:items-center sm:space-x-2.5">
+              <div className="flex items-center space-x-2.5">
+                <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
+                <a href="tel:+918248710285" className="hover:text-brand-yellow transition-colors font-bold">
+                  +91 82487 10285
+                </a>
+              </div>
+              <span className="hidden sm:inline text-brand-gray">/</span>
+              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors font-bold pl-6 sm:pl-0">
+                +91 99442 71322
               </a>
             </li>
 
             <li className="flex items-center space-x-2.5">
               <Mail className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-              <a href="mailto:bookings@yuvacabs.in" className="hover:text-brand-yellow transition-colors">
-                bookings@yuvacabs.in
+              <a href="mailto:bookings@yuvacalltaxi.com" className="hover:text-brand-yellow transition-colors">
+                bookings@yuvacalltaxi.com
               </a>
             </li>
 

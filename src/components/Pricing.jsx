@@ -10,8 +10,8 @@ export default function Pricing() {
       vehicle: 'Hatchback Cabs',
       subTitle: 'Indica / Vista / Figo',
       type: 'Tata Tiago, Indica, Vista, Swift',
-      nonAcMin: 150, acMin: 200,
-      nonAcExtra: 20, acExtra: 25,
+      nonAcMin: 150, acMin: 180,
+      nonAcExtra: 9, acExtra: 10,
       seating: '4 + 1 Passengers',
       suitcases: '1 - 2 Bags',
       notes: 'Local 6 kms limit only',
@@ -23,8 +23,8 @@ export default function Pricing() {
       vehicle: 'Premium Sedan Cabs',
       subTitle: 'Etios / Dzire / Xcent',
       type: 'Maruti Dzire, Hyundai Xcent, Toyota Etios',
-      nonAcMin: 180, acMin: 230,
-      nonAcExtra: 22, acExtra: 27,
+      nonAcMin: 180, acMin: 220,
+      nonAcExtra: 10, acExtra: 12,
       seating: '4 + 1 Passengers',
       suitcases: '2 - 3 Bags',
       notes: 'Local 6 kms limit only',
@@ -90,6 +90,21 @@ export default function Pricing() {
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
             No hidden costs. No surprises. Our flat regional rates are calculated systematically to provide total clarity for your budget.
           </p>
+        </div>
+
+        {/* Special Outstation Banner */}
+        <div className="max-w-3xl mx-auto mb-10 p-4 rounded-2xl bg-gradient-to-r from-brand-yellow/15 via-amber-500/20 to-brand-yellow/15 border border-brand-yellow/40 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left space-y-3 sm:space-y-0 sm:space-x-4 shadow-[0_0_25px_rgba(255,212,59,0.15)]">
+          <div className="flex items-center space-x-3">
+            <span className="px-3 py-1 rounded-full bg-brand-yellow text-brand-black font-black text-xs uppercase tracking-wider">
+              Outstation Special
+            </span>
+            <span className="text-sm font-extrabold text-white">
+              Outstation Trips @ <span className="text-brand-yellow text-glow-yellow font-black text-lg">₹9 – ₹12 / KM</span>
+            </span>
+          </div>
+          <span className="text-xs text-brand-silver font-semibold">
+            Flat per KM rates for round trips & long distance journeys!
+          </span>
         </div>
 
         {/* Global A/C vs Non-A/C selector switch */}
@@ -259,9 +274,9 @@ export default function Pricing() {
               <Milestone className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Outstation Minimums</h4>
+              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Outstation Trips (₹9 – ₹12 / KM)</h4>
               <p className="text-xs text-brand-gray/95 mt-1 leading-relaxed font-semibold">
-                Round-trip outstation journeys carry a minimum billing average of 250 Kilometers per calendar day.
+                Outstation journeys start at just ₹9 – ₹12 / KM. Round-trip outstation journeys carry a minimum billing average of 250 Kilometers per calendar day.
               </p>
             </div>
           </div>

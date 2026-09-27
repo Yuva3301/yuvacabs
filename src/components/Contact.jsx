@@ -261,8 +261,8 @@ export default function Contact() {
                     <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Choose Fleet Class</label>
                     <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
                       {[
-                        { val: 'hatchback', label: 'Hatchback', details: '₹20-25/km' },
-                        { val: 'sedan', label: 'Sedan', details: '₹22-27/km' },
+                        { val: 'hatchback', label: 'Hatchback', details: '₹9-10/km' },
+                        { val: 'sedan', label: 'Sedan', details: '₹10-12/km' },
                         { val: 'suv', label: 'SUV', details: '₹26-32/km' },
                         { val: 'innova', label: 'Innova', details: '₹30-35/km' },
                         { val: 'tempo', label: 'Tempo', details: '₹38-45/km' }
@@ -391,33 +391,63 @@ export default function Contact() {
 
           {/* Quick CTA panel */}
           <div className="flex flex-col space-y-3">
-            {/* Call */}
+            {/* Call Line 1 */}
             <a
               href="tel:+918248710285"
-              className="glass-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
             >
               <div className="p-3 rounded-xl bg-brand-yellow/5 border border-brand-yellow/10 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Call Desk</span>
-                <span className="text-lg font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 82487 10285</span>
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Hotline Line 1</span>
+                <span className="text-base font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 82487 10285</span>
               </div>
             </a>
 
-            {/* WhatsApp */}
+            {/* Call Line 2 */}
+            <a
+              href="tel:+919944271322"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
+            >
+              <div className="p-3 rounded-xl bg-brand-yellow/5 border border-brand-yellow/10 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
+                <Phone className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Hotline Line 2</span>
+                <span className="text-base font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 99442 71322</span>
+              </div>
+            </a>
+
+            {/* WhatsApp Line 1 */}
             <a
               href="https://wa.me/918248710285?text=Hello! I need to book a cab in Hosur."
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card p-5 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
             >
               <div className="p-3 rounded-xl bg-brand-emerald/5 border border-brand-emerald/10 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300">
                 <MessageSquare className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Dispatcher</span>
-                <span className="text-lg font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 82487 10285</span>
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Line 1</span>
+                <span className="text-base font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 82487 10285</span>
+              </div>
+            </a>
+
+            {/* WhatsApp Line 2 */}
+            <a
+              href="https://wa.me/919944271322?text=Hello! I need to book a cab in Hosur."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
+            >
+              <div className="p-3 rounded-xl bg-brand-emerald/5 border border-brand-emerald/10 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300">
+                <MessageSquare className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Line 2</span>
+                <span className="text-base font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 99442 71322</span>
               </div>
             </a>
           </div>

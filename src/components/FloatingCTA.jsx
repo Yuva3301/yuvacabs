@@ -40,26 +40,35 @@ export default function FloatingCTA() {
 
       {/* 2. Permanent Sticky Bottom Action Ribbon (Mobile only, visible immediately) */}
       <div
-        className="fixed bottom-0 left-0 w-full z-45 bg-white/95 dark:bg-brand-black/90 backdrop-blur-md border-t border-slate-200/60 dark:border-white/10 py-3 px-4 md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.06)]"
+        className="fixed bottom-0 left-0 w-full z-45 bg-white/95 dark:bg-brand-black/90 backdrop-blur-md border-t border-slate-200/60 dark:border-white/10 py-2.5 px-3 md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.06)]"
       >
-        <div className="flex space-x-3 w-full max-w-lg mx-auto">
-          {/* Call Now Button */}
+        <div className="grid grid-cols-3 gap-2 w-full max-w-lg mx-auto">
+          {/* Call Line 1 */}
           <a
             href="tel:+918248710285"
-            className="flex-1 flex items-center justify-center space-x-2 py-3.5 rounded-full bg-brand-black hover:bg-brand-charcoal text-white font-extrabold text-sm tracking-wide shadow-[0_4px_12px_rgba(0,0,0,0.15)] border border-white/10 active:scale-95 transition-all cursor-pointer mobile-tel-btn"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
           >
-            <Phone className="w-4 h-4 fill-white text-white" />
-            <span>Call Now</span>
+            <Phone className="w-3.5 h-3.5 fill-white text-white" />
+            <span>Call Line 1</span>
           </a>
 
-          {/* WhatsApp Button - Vibrant Green */}
+          {/* Call Line 2 */}
+          <a
+            href="tel:+919944271322"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
+          >
+            <Phone className="w-3.5 h-3.5 fill-white text-white" />
+            <span>Call Line 2</span>
+          </a>
+
+          {/* WhatsApp Button */}
           <a
             href="https://wa.me/918248710285?text=Hi! I want to book a taxi in Hosur."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center space-x-2 py-3.5 rounded-full bg-[#3bb352] hover:bg-green-600 text-white font-extrabold text-sm tracking-wide shadow-[0_4px_12px_rgba(59,179,82,0.2)] active:scale-95 transition-all cursor-pointer"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-[#3bb352] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
           >
-            <MessageSquare className="w-4 h-4 fill-white text-white" />
+            <MessageSquare className="w-3.5 h-3.5 fill-white text-white" />
             <span>WhatsApp</span>
           </a>
         </div>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zorocabs.in/sitemap.xml
+Sitemap: https://yuvacalltaxi.com/sitemap.xml

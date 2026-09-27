@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
     {
       icon: Banknote,
       title: 'Affordable & Flat Pricing',
-      description: 'Transparent rates starting at just ₹20/km. Zero surprise charges or surge fees during emergency bookings.',
+      description: 'Transparent rates starting at just ₹9 – ₹12/km for outstation trips. Zero surprise charges or surge fees during emergency bookings.',
       glowColor: 'group-hover:border-brand-yellow/30'
     },
     {

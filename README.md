@@ -1,6 +1,6 @@
-# ZORO CABS - Premium Taxi Booking Website (Hosur, India)
+# YUVA CABS - Premium Taxi Booking Website (Hosur, India)
 
-Welcome to the **Zoro Cabs** landing page codebase — a premium, high-tech, cinematic taxi service website designed for search rankings and passenger conversions in **Hosur, Tamil Nadu, India**. 
+Welcome to the **YUVA CABS** landing page codebase — a premium, high-tech, cinematic taxi service website designed for search rankings and passenger conversions in **Hosur, Tamil Nadu, India**. 
 
 This application features a stunning glassmorphism design system, smooth scroll animations, an interactive fare calculator, dynamic SEO schema injection, and a private **Administrative Control Panel** to manage customer bookings in real-time.
 
@@ -22,7 +22,7 @@ This application features a stunning glassmorphism design system, smooth scroll 
 ```text
 ├── public/
 │   ├── .htaccess          # Redirects subpaths to index.html (Apache/GoDaddy SPA Support)
-│   ├── sitemap.xml        # Web crawler sitemap containing zorocabs.in domains
+│   ├── sitemap.xml        # Web crawler sitemap containing yuvacalltaxi.com domains
 │   └── robots.txt         # Search indexing parameters and sitemap link
 ├── src/
 │   ├── assets/
@@ -79,7 +79,7 @@ Instead of sending booking details to emails (which can go to spam or get delaye
 
 ### 🔑 Sign In Instructions
 1. **Access Method 1**: Scroll to the bottom of the landing page and click **"Admin Control Panel"** in the copyright footer.
-2. **Access Method 2**: Append `#admin` to the website URL (e.g., `https://zorocabs.in/#admin`) and press Enter.
+2. **Access Method 2**: Append `#admin` to the website URL (e.g., `https://yuvacalltaxi.com/#admin`) and press Enter.
 3. **PIN Gate**: Enter the secure administrative PIN:
    - **Default Passcode: `2026`**
 
@@ -91,7 +91,7 @@ Instead of sending booking details to emails (which can go to spam or get delaye
   - Click **"Mark Completed"** once the ride is finished to flag it as *Completed* (green).
   - Click **"Cancel Trip"** if the client cancels.
 - **Direct Dispatch CTAs**: Every card has one-click call buttons and pre-filled WhatsApp link shortcuts. Clicking the WhatsApp icon opens a chat with a pre-templated text like:
-  *"Hi Priya Dharshini, this is Zoro Cabs confirming your booking BK-154823 scheduled for..."*
+  *"Hi Priya Dharshini, this is YUVA CABS confirming your booking BK-154823 scheduled for..."*
 - **Purge Logs**: Use the "Purge Database" button in the admin controls to delete all logs and start fresh.
 
 ---
@@ -110,7 +110,7 @@ This will compile all React code, bundle styles, and compress assets into a clea
 ### Step 2: Archive the Files
 1. Navigate into the newly created `/dist` folder.
 2. Select all items inside `/dist` (including `.htaccess`, `index.html`, `sitemap.xml`, and the `assets` folder).
-3. Right-click and choose **"Compress to ZIP file"**. Name the file `zorocabs_build.zip`.
+3. Right-click and choose **"Compress to ZIP file"**. Name the file `yuvacabs_build.zip`.
    *(Important: Zip the contents of `/dist` directly, not the `/dist` folder itself).*
 
 ### Step 3: Upload via GoDaddy cPanel
@@ -118,7 +118,7 @@ This will compile all React code, bundle styles, and compress assets into a clea
 2. Open the **File Manager**.
 3. Navigate to `public_html` (or your dedicated subdomain directory).
 4. Click **"Upload"** in the top navigation bar.
-5. Select `zorocabs_build.zip` from your computer and wait for the upload indicator to hit 100%.
+5. Select `yuvacabs_build.zip` from your computer and wait for the upload indicator to hit 100%.
 6. Go back to the File Manager, select the uploaded `.zip` file, and click **"Extract"** in the top bar. Extracted files will place immediately into the folder.
 
 ### Step 4: Verify the Routing Rule (.htaccess)
@@ -138,7 +138,7 @@ The `.htaccess` file is critical for single-page routing (e.g., reloading the pa
    ```
 
 ### Step 5: Test Live Deployment
-1. Browse to your domain: `https://zorocabs.in`
+1. Browse to your domain: `https://yuvacalltaxi.com`
 2. Verify that the cinematic preloader loads and smooth scroll links navigate accurately.
 3. Submit a booking via the contact form and confirm that the success modal displays correctly.
 4. Type `#admin` at the end of your domain, log in with PIN `2026`, and verify that your submitted booking card appears instantly in the logs!

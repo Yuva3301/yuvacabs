@@ -147,7 +147,7 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
                 {item.name}
               </a>
             ))}
-            <div className="pt-4 border-t border-white/5 flex flex-col space-y-4">
+            <div className="pt-4 border-t border-white/5 flex flex-col space-y-3">
               <a
                 href="tel:+918248710285"
                 onClick={() => setMobileMenuOpen(false)}
@@ -155,6 +155,14 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
               >
                 <Phone className="w-5 h-5" />
                 <span>Call +91 82487 10285</span>
+              </a>
+              <a
+                href="tel:+919944271322"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-white/10 text-white font-bold border border-white/10 hover:bg-white/20"
+              >
+                <Phone className="w-5 h-5 text-brand-yellow" />
+                <span>Call +91 99442 71322</span>
               </a>
             </div>
           </motion.div>
