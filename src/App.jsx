@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import WhyChooseUs from './components/WhyChooseUs';
 import Services from './components/Services';
 import Pricing from './components/Pricing';
+import LocalSEO from './components/LocalSEO';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -138,6 +139,7 @@ export default function App() {
             <About />
             <Services />
             <Pricing />
+            <LocalSEO />
             <WhyChooseUs />
             <Testimonials />
             <FAQ />

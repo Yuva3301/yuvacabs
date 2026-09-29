@@ -20,6 +20,7 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
+    { name: 'Routes', href: '#local-seo' },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Reviews', href: '#testimonials' },
     { name: 'FAQs', href: '#faq' },

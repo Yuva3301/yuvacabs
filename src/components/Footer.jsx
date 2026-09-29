@@ -7,6 +7,7 @@ export default function Footer({ onAdminToggle }) {
     { name: 'Why Us', href: '#why-us' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
+    { name: 'Hosur Routes', href: '#local-seo' },
   ];
 
   const secondaryLinks = [
