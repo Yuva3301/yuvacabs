@@ -1,4 +1,4 @@
-import { Phone, MessageSquare } from 'lucide-react';
+import { Phone, MessageSquare, Calendar } from 'lucide-react';
 import { FaInstagram } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
@@ -44,7 +44,7 @@ export default function FloatingCTA() {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.8, y: 20 }}
               transition={{ duration: 0.3 }}
-              href="https://wa.me/918248710285?text=Hi! I need to book a taxi in Hosur."
+              href="https://wa.me/919944271322?text=Hi! I need to book a taxi in Hosur."
               target="_blank"
               rel="noopener noreferrer"
               title="Chat on WhatsApp"
@@ -63,33 +63,33 @@ export default function FloatingCTA() {
         className="fixed bottom-0 left-0 w-full z-45 bg-white/95 dark:bg-brand-black/90 backdrop-blur-md border-t border-slate-200/60 dark:border-white/10 py-2.5 px-3 md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.06)]"
       >
         <div className="grid grid-cols-3 gap-2 w-full max-w-lg mx-auto">
-          {/* Call Line 1 */}
-          <a
-            href="tel:+918248710285"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
-          >
-            <Phone className="w-3.5 h-3.5 fill-white text-white" />
-            <span>Call Line 1</span>
-          </a>
-
-          {/* Call Line 2 */}
+          {/* Call Hotline */}
           <a
             href="tel:+919944271322"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
           >
-            <Phone className="w-3.5 h-3.5 fill-white text-white" />
-            <span>Call Line 2</span>
+            <Phone className="w-3.5 h-3.5 fill-brand-black text-brand-black" />
+            <span>Call Now</span>
           </a>
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/918248710285?text=Hi! I want to book a taxi in Hosur."
+            href="https://wa.me/919944271322?text=Hi! I want to book a taxi in Hosur."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-[#3bb352] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-[#25D366] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
           >
             <MessageSquare className="w-3.5 h-3.5 fill-white text-white" />
             <span>WhatsApp</span>
+          </a>
+
+          {/* Book Online */}
+          <a
+            href="#contact"
+            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black dark:bg-white/10 text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
+          >
+            <Calendar className="w-3.5 h-3.5 text-brand-yellow" />
+            <span>Book Cab</span>
           </a>
         </div>
       </div>

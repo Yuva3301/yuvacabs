@@ -1,4 +1,5 @@
 import { Star, Quote } from 'lucide-react';
+import { FaGoogle } from 'react-icons/fa6';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 
@@ -55,6 +56,23 @@ export default function Testimonials() {
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
             Read stories of business executives, travelers, and local families in Hosur who ride with YUVA CABS daily.
           </p>
+
+          <div className="flex items-center justify-center pt-2">
+            <a
+              href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2.5 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:border-blue-400/40 hover:bg-blue-500/10 transition-all duration-300 text-xs text-white"
+            >
+              <FaGoogle className="w-4 h-4 text-blue-400" />
+              <div className="flex items-center space-x-1.5">
+                <span className="font-extrabold text-brand-yellow flex items-center">
+                  <Star className="w-3.5 h-3.5 fill-brand-yellow mr-1" /> 4.9 / 5
+                </span>
+                <span className="text-brand-gray/80">• 385+ Google Reviews</span>
+              </div>
+            </a>
+          </div>
         </div>
 
         {/* Swiper Slider */}

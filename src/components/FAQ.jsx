@@ -24,7 +24,11 @@ export default function FAQ() {
     },
     {
       question: 'How can I book a taxi with YUVA CABS?',
-      answer: 'You can book a taxi instantly by calling our hotlines (+91 82487 10285 / +91 99442 71322), clicking our WhatsApp button to chat directly, or by filling out the online booking request form located in the Contact section. We will confirm your car within minutes.'
+      answer: 'You can book a taxi instantly by calling our 24/7 hotline (+91 99442 71322), chatting on WhatsApp (+91 99442 71322), or filling out the online booking form in the Contact section. We confirm your cab within minutes.'
+    },
+    {
+      question: 'Why is YUVA CABS the top-rated taxi service in Hosur?',
+      answer: 'YUVA CABS holds a 4.9/5 Google rating thanks to our 100% on-time pickups, experienced verified drivers, transparent per-kilometer pricing without hidden surcharges, sanitized luxury fleet, and dedicated 24/7 service across Hosur, SIPCOT 1 & 2, Mathigiri, and Bangalore Kempegowda Airport (BLR).'
     }
   ];
 

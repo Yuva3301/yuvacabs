@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Phone, MessageSquare, MapPin, Calendar, Clock, AlertCircle, Sparkles, CheckCircle2 } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa6';
+import { Phone, MessageSquare, MapPin, Calendar, Clock, AlertCircle, Sparkles, CheckCircle2, Star, ExternalLink } from 'lucide-react';
+import { FaInstagram, FaGoogle } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Contact() {
@@ -166,7 +166,7 @@ export default function Contact() {
                     <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Phone Number</label>
                     <input
                       type="tel"
-                      placeholder="e.g. 8248710285"
+                      placeholder="e.g. 9944271322"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className={`w-full bg-brand-charcoal text-white rounded-xl py-3 px-4 text-sm font-semibold border ${errors.phone ? 'border-red-500' : 'border-white/5'} focus:border-brand-yellow focus:outline-none transition-colors`}
@@ -392,64 +392,56 @@ export default function Contact() {
 
           {/* Quick CTA panel */}
           <div className="flex flex-col space-y-3">
-            {/* Call Line 1 */}
-            <a
-              href="tel:+918248710285"
-              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
-            >
-              <div className="p-3 rounded-xl bg-brand-yellow/5 border border-brand-yellow/10 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
-                <Phone className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Hotline Line 1</span>
-                <span className="text-base font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 82487 10285</span>
-              </div>
-            </a>
-
-            {/* Call Line 2 */}
+            {/* 24/7 Priority Hotline */}
             <a
               href="tel:+919944271322"
-              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/20 transition-all duration-300"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-yellow/30 transition-all duration-300"
             >
-              <div className="p-3 rounded-xl bg-brand-yellow/5 border border-brand-yellow/10 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
+              <div className="p-3 rounded-xl bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow group-hover:bg-brand-yellow group-hover:text-brand-black transition-all duration-300">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Priority Hotline Line 2</span>
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">24/7 Priority Hotline</span>
                 <span className="text-base font-black text-white group-hover:text-brand-yellow transition-colors duration-300">+91 99442 71322</span>
               </div>
             </a>
 
-            {/* WhatsApp Line 1 */}
-            <a
-              href="https://wa.me/918248710285?text=Hello! I need to book a cab in Hosur."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
-            >
-              <div className="p-3 rounded-xl bg-brand-emerald/5 border border-brand-emerald/10 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300">
-                <MessageSquare className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Line 1</span>
-                <span className="text-base font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 82487 10285</span>
-              </div>
-            </a>
-
-            {/* WhatsApp Line 2 */}
+            {/* Instant WhatsApp Booking */}
             <a
               href="https://wa.me/919944271322?text=Hello! I need to book a cab in Hosur."
               target="_blank"
               rel="noopener noreferrer"
-              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/20 transition-all duration-300"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-brand-emerald/30 transition-all duration-300"
             >
-              <div className="p-3 rounded-xl bg-brand-emerald/5 border border-brand-emerald/10 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300">
+              <div className="p-3 rounded-xl bg-brand-emerald/10 border border-brand-emerald/20 text-brand-emerald group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300">
                 <MessageSquare className="w-5 h-5" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">WhatsApp Line 2</span>
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Instant WhatsApp Chat</span>
                 <span className="text-base font-black text-white group-hover:text-brand-emerald transition-colors duration-300">+91 99442 71322</span>
               </div>
+            </a>
+
+            {/* Google Business Profile - Top 5 Local SEO Card */}
+            <a
+              href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-4 rounded-2xl border border-blue-500/20 bg-blue-500/5 flex items-center space-x-4 group hover:border-blue-500/40 hover:bg-blue-500/10 transition-all duration-300"
+            >
+              <div className="p-3 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-400 group-hover:scale-105 transition-all duration-300">
+                <FaGoogle className="w-5 h-5 text-blue-400" />
+              </div>
+              <div className="flex flex-col flex-1">
+                <div className="flex items-center space-x-2">
+                  <span className="text-[10px] text-blue-400 uppercase font-extrabold tracking-wider">Google Verified Profile</span>
+                  <span className="flex items-center text-[11px] font-black text-amber-400">
+                    <Star className="w-3 h-3 fill-amber-400 mr-0.5" /> 4.9 (385+ Reviews)
+                  </span>
+                </div>
+                <span className="text-sm font-bold text-white group-hover:text-blue-300 transition-colors">YUVA CABS on Google Maps</span>
+              </div>
+              <ExternalLink className="w-4 h-4 text-blue-400 group-hover:translate-x-0.5 transition-transform" />
             </a>
 
             {/* Instagram Social Card */}

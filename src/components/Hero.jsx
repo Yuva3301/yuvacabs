@@ -187,8 +187,6 @@ export default function Hero() {
         {/* Overlay Phone Badge */}
         <div className="absolute bottom-3 right-3 z-30 flex items-center space-x-1.5 px-3 py-1.5 bg-[#00bfa5] text-white rounded-full font-black text-[10px] shadow-[0_4px_12px_rgba(0,191,165,0.35)] pointer-events-auto">
           <Phone className="w-3 h-3 fill-white text-white flex-shrink-0" />
-          <a href="tel:+918248710285" className="hover:underline">+91 82487 10285</a>
-          <span>/</span>
           <a href="tel:+919944271322" className="hover:underline">+91 99442 71322</a>
         </div>
 
@@ -271,19 +269,10 @@ export default function Hero() {
               <span>Book Cab Now</span>
             </a>
 
-            {/* Call Line 1 */}
-            <a
-              href="tel:+918248710285"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
-            >
-              <Phone className="w-5 h-5 text-brand-yellow" />
-              <span>Call: +91 82487 10285</span>
-            </a>
-
-            {/* Call Line 2 */}
+            {/* Call Hotlines */}
             <a
               href="tel:+919944271322"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300"
+              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300 font-bold"
             >
               <Phone className="w-5 h-5 text-brand-yellow" />
               <span>Call: +91 99442 71322</span>
@@ -291,7 +280,7 @@ export default function Hero() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/918248710285?text=Hi! I want to book a taxi in Hosur."
+              href="https://wa.me/919944271322?text=Hi! I want to book a taxi in Hosur."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(16,185,129,0.25)] hover:shadow-[0_4px_20px_rgba(16,185,129,0.45)] hover:scale-105 transition-all duration-300 cursor-pointer"

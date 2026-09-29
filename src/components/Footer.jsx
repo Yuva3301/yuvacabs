@@ -1,5 +1,5 @@
-import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa6';
+import { Phone, Mail, MapPin, Clock, ShieldAlert, Star } from 'lucide-react';
+import { FaInstagram, FaGoogle } from 'react-icons/fa6';
 
 export default function Footer({ onAdminToggle }) {
   const quickLinks = [
@@ -22,7 +22,13 @@ export default function Footer({ onAdminToggle }) {
     'Hosur airport taxi',
     'Taxi booking Hosur',
     'Best cab in Hosur',
-    'Outstation taxi Hosur'
+    'Outstation taxi Hosur',
+    'Hosur to Bangalore Airport cab',
+    'SIPCOT Hosur cab service',
+    'Yuva Cabs Hosur',
+    '24/7 Call Taxi Hosur',
+    'One way drop taxi Hosur',
+    'Mathigiri cab booking'
   ];
 
   return (
@@ -98,23 +104,29 @@ export default function Footer({ onAdminToggle }) {
               <a 
                 href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="noopener noreferrer" 
                 className="hover:text-brand-yellow transition-colors"
               >
                 Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109
               </a>
             </li>
             
-            <li className="flex flex-col space-y-1 sm:space-y-0 sm:flex-row sm:items-center sm:space-x-2.5">
-              <div className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
-                <a href="tel:+918248710285" className="hover:text-brand-yellow transition-colors font-bold">
-                  +91 82487 10285
-                </a>
-              </div>
-              <span className="hidden sm:inline text-brand-gray">/</span>
-              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors font-bold pl-6 sm:pl-0">
+            <li className="flex items-center space-x-2.5">
+              <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
+              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors font-bold">
                 +91 99442 71322
+              </a>
+            </li>
+
+            <li className="flex items-center space-x-2.5">
+              <FaGoogle className="w-4 h-4 text-blue-400 flex-shrink-0" />
+              <a 
+                href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-300 transition-colors font-bold text-blue-400 flex items-center space-x-1"
+              >
+                <span>Google Business Profile (4.9 ⭐)</span>
               </a>
             </li>
 
