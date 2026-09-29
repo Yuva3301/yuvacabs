@@ -95,9 +95,11 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Hosur to Bangalore Airport Taxi (BLR)",
-                "description": "24/7 on-time Kempegowda International Airport drops and pickups from Hosur."
-              }
+                "name": "Hosur to Bangalore Airport Taxi - Swift Dzire",
+                "description": "Fixed package airport drop and pickup in Maruti Swift Dzire. Non-A/C ₹2,200 and A/C ₹2,300 with 24/7 flight tracking and on-time arrival."
+              },
+              "price": "2200",
+              "priceCurrency": "INR"
             },
             {
               "@type": "Offer",
@@ -144,7 +146,7 @@ export default function SEO() {
             "name": "Do you provide 24/7 airport taxi from Hosur to Bangalore Airport?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, YUVA CABS provides 24/7 dedicated airport drop and pickup service between Hosur and Kempegowda International Airport (BLR) with guaranteed on-time arrival."
+              "text": "Yes, YUVA CABS provides 24/7 dedicated airport drop and pickup service between Hosur and Kempegowda International Airport (BLR). For Maruti Swift Dzire, we offer a fixed package: Non-A/C ₹2,200 and A/C ₹2,300 with flight tracking and zero wait charges."
             }
           },
           {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Moon, Check, Coins, Milestone } from 'lucide-react';
+import { Moon, Check, Coins, Milestone, Plane, Sparkles, Phone, MessageSquare, Car } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Pricing() {
@@ -92,19 +92,99 @@ export default function Pricing() {
           </p>
         </div>
 
-        {/* Special Outstation Banner */}
-        <div className="max-w-3xl mx-auto mb-10 p-4 rounded-2xl bg-gradient-to-r from-brand-yellow/15 via-amber-500/20 to-brand-yellow/15 border border-brand-yellow/40 flex flex-col sm:flex-row items-center justify-between text-center sm:text-left space-y-3 sm:space-y-0 sm:space-x-4 shadow-[0_0_25px_rgba(255,212,59,0.15)]">
-          <div className="flex items-center space-x-3">
-            <span className="px-3 py-1 rounded-full bg-brand-yellow text-brand-black font-black text-xs uppercase tracking-wider">
-              Outstation Special
-            </span>
-            <span className="text-sm font-extrabold text-white">
-              Outstation Trips @ <span className="text-brand-yellow text-glow-yellow font-black text-lg">₹9 – ₹12 / KM</span>
-            </span>
+        {/* Special Regional Packages Grid: Outstation & Airport Drop Fixed Rates */}
+        <div className="max-w-5xl mx-auto mb-12 grid grid-cols-1 md:grid-cols-2 gap-5">
+          {/* Box 1: Outstation Special */}
+          <div className="p-5 rounded-2xl bg-gradient-to-r from-brand-yellow/15 via-amber-500/10 to-brand-yellow/15 border border-brand-yellow/30 flex flex-col justify-between space-y-3 shadow-[0_0_20px_rgba(255,212,59,0.1)] text-left">
+            <div className="flex items-center justify-between">
+              <span className="px-3 py-1 rounded-full bg-brand-yellow text-brand-black font-black text-[10px] uppercase tracking-wider">
+                Outstation Special
+              </span>
+              <span className="text-[10px] text-brand-silver font-semibold">Tamil Nadu & Karnataka</span>
+            </div>
+            <div>
+              <div className="text-xl font-black text-white">
+                Outstation Trips @ <span className="text-brand-yellow text-glow-yellow text-2xl font-black">₹9 – ₹12</span> / KM
+              </div>
+              <p className="text-xs text-brand-silver/90 mt-1">
+                Flat per KM rates for round trips, family excursions & intercity journeys. No surge fees!
+              </p>
+            </div>
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between">
+              <span className="text-[11px] text-brand-gray font-medium">Hatchback, Sedan, SUV & Innova available</span>
+              <a href="#contact" className="text-xs font-bold text-brand-yellow hover:underline flex items-center space-x-1">
+                <span>Book Outstation</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-          <span className="text-xs text-brand-silver font-semibold">
-            Flat per KM rates for round trips & long distance journeys!
-          </span>
+
+          {/* Box 2: Swift Dzire Airport Drop & Pickup Package (Non-AC ₹2200 / AC ₹2300) */}
+          <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-600/15 via-brand-charcoal to-brand-yellow/10 border-2 border-brand-yellow/50 relative overflow-hidden flex flex-col justify-between space-y-3 shadow-[0_0_30px_rgba(255,212,59,0.18)] text-left group">
+            {/* Top Badge */}
+            <div className="flex items-center justify-between">
+              <span className="px-3 py-1 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-[10px] uppercase tracking-wider flex items-center space-x-1 shadow-sm">
+                <Plane className="w-3 h-3 text-brand-black" />
+                <span>Airport Fixed Package</span>
+              </span>
+              <span className="text-[10px] text-emerald-400 font-extrabold flex items-center">
+                <Sparkles className="w-3 h-3 mr-1 text-emerald-400" /> 24/7 Guaranteed Pickup
+              </span>
+            </div>
+
+            {/* Car Name & Route */}
+            <div>
+              <div className="flex items-center space-x-2">
+                <Car className="w-4 h-4 text-brand-yellow" />
+                <h3 className="text-lg font-black text-white tracking-tight">
+                  Swift Dzire <span className="text-brand-yellow font-extrabold">— Airport Drop & Pickup</span>
+                </h3>
+              </div>
+              <p className="text-xs text-brand-silver font-semibold mt-0.5">
+                Hosur ⇄ Kempegowda International Airport Bengaluru (BLR)
+              </p>
+            </div>
+
+            {/* Rates Pills - Non A/C ₹2200 and A/C ₹2300 */}
+            <div className="grid grid-cols-2 gap-3 py-1">
+              {/* Non-A/C Rate Box */}
+              <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-yellow/40 transition-all text-center">
+                <span className="text-[10px] text-brand-silver uppercase font-extrabold tracking-wider block">Non-A/C Rate</span>
+                <span className="text-2xl font-black text-brand-yellow">₹2,200</span>
+                <span className="text-[10px] text-brand-gray block mt-0.5">Flat One-Way Fare</span>
+              </div>
+
+              {/* A/C Rate Box */}
+              <div className="p-2.5 rounded-xl bg-brand-yellow/10 border border-brand-yellow/40 hover:border-brand-yellow transition-all text-center shadow-[0_0_15px_rgba(255,212,59,0.1)]">
+                <span className="text-[10px] text-brand-yellow uppercase font-extrabold tracking-wider block">A/C Service Rate</span>
+                <span className="text-2xl font-black text-white text-glow-yellow">₹2,300</span>
+                <span className="text-[10px] text-brand-silver block mt-0.5">Flat One-Way Fare</span>
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between gap-2">
+              <span className="text-[10px] text-brand-gray font-medium">Flight delay tracking included</span>
+              <div className="flex items-center space-x-2">
+                <a
+                  href="tel:+919944271322"
+                  className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center space-x-1 transition-all"
+                >
+                  <Phone className="w-3 h-3 text-brand-yellow" />
+                  <span>Call</span>
+                </a>
+                <a
+                  href="https://wa.me/919944271322?text=Hello! I want to book Swift Dzire for Bangalore Airport Drop/Pickup. (Non-AC ₹2200 / AC ₹2300)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3 py-1.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs flex items-center space-x-1 shadow-sm transition-all"
+                >
+                  <MessageSquare className="w-3 h-3 fill-white" />
+                  <span>Book Swift Dzire</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Global A/C vs Non-A/C selector switch */}

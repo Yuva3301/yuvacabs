@@ -12,11 +12,11 @@ export default function LocalSEO() {
       to: 'Bengaluru Kempegowda Airport (BLR)',
       distance: '80 km',
       time: '1 hr 45 min',
-      badge: '24/7 Airport Taxi',
+      badge: 'Swift Dzire Fixed Rate',
       icon: Plane,
-      rate: 'Starts @ ₹9/km',
-      desc: 'Guaranteed on-time flight pickup and drop. Driver tracks your flight landing time with zero wait-time anxiety.',
-      highlight: 'Top Searched'
+      rate: 'Non-A/C ₹2,200 | A/C ₹2,300',
+      desc: 'Swift Dzire special fixed fare: Non-A/C ₹2,200 & A/C ₹2,300. Guaranteed on-time flight pickup, landing delay tracking & zero surge fees.',
+      highlight: 'Best Deal'
     },
     {
       from: 'Hosur',

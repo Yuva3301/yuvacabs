@@ -11,8 +11,8 @@ export default function FAQ() {
       answer: 'Our rates are fully transparent and distance-based. Outstation round trips are specially priced at just ₹9 to ₹12/km (plus driver allowance per day). Local Hatchbacks start at ₹9-10/km, Sedans at ₹10-12/km, and Innova & Crysta at ₹18-19/km. Tolls, parking, and night charges (10 PM to 6 AM) are extra.'
     },
     {
-      question: 'Is airport pickup available from Hosur?',
-      answer: 'Yes! We specialize in reliable airport transfers between Hosur and Bengaluru Kempegowda International Airport (BLR). The distance is approximately 80km. You can book airport pickups and drops 24/7. We track flight delays to ensure drivers are at arrival on-time.'
+      question: 'Is airport pickup and drop available from Hosur, and what is the fare?',
+      answer: 'Yes! We provide 24/7 dedicated airport transfers between Hosur and Kempegowda International Airport (BLR). For Maruti Swift Dzire, we offer an exclusive flat package: Non-A/C ₹2,200 and A/C ₹2,300. We track flight delays in real-time to guarantee on-time arrival with zero surge fees.'
     },
     {
       question: 'Are YUVA CABS taxis available 24/7?',
