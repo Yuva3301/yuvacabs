@@ -52,11 +52,11 @@ export default function About() {
         <div className="lg:col-span-6 flex flex-col space-y-6 text-left order-1 lg:order-2">
           <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">About YUVA CABS</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            Proudly Serving <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Hosur & Environs</span> Since 2018
+            YUVA CABS - Proudly Serving <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Hosur & Environs</span> Since 2018
           </h2>
           
           <p className="text-sm sm:text-base text-brand-gray/95 leading-relaxed font-medium">
-            Based in Hosur, the prominent industrial manufacturing capital of Tamil Nadu bordering Bangalore, we understand the high expectations for fast, reliable, and premium transportation. 
+            Based in Hosur, the prominent industrial manufacturing capital of Tamil Nadu bordering Bangalore, we understand the high expectations for fast, reliable, and premium transportation. Also known as Yuva Call Taxi, we are Hosur's most trusted taxi and cab service provider.
           </p>
           <p className="text-sm text-brand-gray/90 leading-relaxed font-semibold">
             Whether you are a corporate executive visiting manufacturing parks, a resident heading to Bengaluru International Airport (BLR) for a flight, or a tourist booking an outstation tour, we provide the highest standard of cab service with absolute transparency.

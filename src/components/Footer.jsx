@@ -164,6 +164,19 @@ export default function Footer({ onAdminToggle }) {
 
       </div>
 
+      {/* SEO Footer Content */}
+      <div className="border-t border-white/5 pt-8 mt-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-sm font-bold text-brand-silver mb-3">YUVA CABS — Hosur's Most Trusted Taxi & Cab Service</h3>
+          <p className="text-xs text-brand-gray/80 leading-relaxed font-medium">
+            YUVA CABS (Yuva Call Taxi) is Hosur's #1 rated taxi and cab booking service. Whether you need a <strong className="text-brand-silver">taxi in Hosur</strong>, a <strong className="text-brand-silver">cab in Hosur</strong>, or an <strong className="text-brand-silver">outstation taxi from Hosur</strong>, we provide 24/7 reliable service with transparent pricing starting from ₹9 per km. Our fleet includes Hatchback, Sedan (Dzire, Etios), SUV (Ertiga, XUV), Toyota Innova, Innova Crysta, and Tempo Traveller. Popular routes include <strong className="text-brand-silver">Hosur to Bangalore taxi</strong>, <strong className="text-brand-silver">Hosur to Chennai cab</strong>, Hosur to Salem, Hosur to Coimbatore, Hosur to Tirupati, and <strong className="text-brand-silver">Hosur to Bangalore Airport taxi</strong>. Call us at <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking. YUVA CABS — your trusted <strong className="text-brand-silver">call taxi in Hosur</strong>.
+          </p>
+          <address className="text-xs text-brand-gray/70 mt-3 not-italic">
+            YUVA CABS | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: +91 99442 71322 | yuvacalltaxi.com
+          </address>
+        </div>
+      </div>
+
       {/* Copyright Bar & Admin trigger */}
       <div className="max-w-7xl mx-auto px-6 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-gray font-semibold gap-4">
         <div>

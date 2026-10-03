@@ -78,10 +78,10 @@ export default function Services() {
         <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col space-y-4">
           <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Premium Offerings</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            Our Elite <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Transit Services</span>
+            Taxi & Cab <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Services in Hosur</span>
           </h2>
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
-            From short local commutes to long-distance outstation adventures, choose the transit package that fits your lifestyle perfectly.
+            From short local commutes to long-distance outstation adventures, choose the transit package that fits your lifestyle perfectly. YUVA CABS (Yuva Call Taxi) is your premier choice for taxi in Hosur and reliable cab service.
           </p>
         </div>
 

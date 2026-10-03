@@ -178,7 +178,7 @@ export default function Hero() {
               animate="center"
               exit="exit"
               src={vehicles[selectedVehicle].image}
-              alt={vehicles[selectedVehicle].name}
+              alt={`${vehicles[selectedVehicle].name} taxi cab in Hosur - YUVA CABS`}
               className="w-full h-full object-contain select-none p-2 mt-6"
             />
           </AnimatePresence>
@@ -239,7 +239,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-black tracking-tight text-brand-white leading-[1.05] text-left"
           >
-            Reliable <span className="text-stroke-yellow text-transparent font-black">Taxi</span> <br />
+            Best <span className="text-stroke-yellow text-transparent font-black">Taxi & Cab</span> <br />
             <span className="text-stroke-yellow text-transparent font-black">Service in Hosur</span>
           </motion.h1>
 
