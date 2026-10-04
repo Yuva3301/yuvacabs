@@ -7,8 +7,10 @@ export default function SEO() {
       {
         "@type": ["TaxiService", "LocalBusiness"],
         "@id": "https://yuvacalltaxi.com/#localbusiness",
-        "name": "YUVA CABS - Best Taxi Service in Hosur",
+        "name": "YUVAA CALL TAXI - Best Taxi Service in Hosur",
         "alternateName": [
+          "YUVAA CALL TAXI",
+          "Yuva Call Taxi",
           "YUVA CABS",
           "Yuva Cabs Hosur",
           "Hosur Outstation Cabs",
@@ -17,7 +19,6 @@ export default function SEO() {
           "Yuva Call Taxi Hosur",
           "Yuva Travels Hosur",
           "Best Cab in Hosur",
-          "Yuva Call Taxi",
           "Best Taxi in Hosur",
           "Cab in Hosur",
           "Hosur Taxi",
@@ -241,7 +242,8 @@ export default function SEO() {
       {
         "@type": "WebSite",
         "@id": "https://yuvacalltaxi.com/#website",
-        "name": "YUVA CABS — Best Taxi & Cab Service in Hosur",
+        "name": "YUVAA CALL TAXI",
+        "alternateName": "YUVAA CALL TAXI — Best Taxi Service in Hosur",
         "url": "https://yuvacalltaxi.com",
         "description": "Book Hosur's #1 rated taxi and cab service. Local rides, outstation trips, airport transfers from ₹9/km.",
         "publisher": { "@id": "https://yuvacalltaxi.com/#localbusiness" },
@@ -268,10 +270,11 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>YUVA CABS | Best Taxi &amp; Cab in Hosur | Yuva Call Taxi | ₹9/km</title>
-      <meta name="title" content="YUVA CABS | Best Taxi & Cab in Hosur | Yuva Call Taxi | ₹9/km" />
-      <meta name="description" content="YUVA CABS (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
-      <meta name="keywords" content="hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <title>YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
+      <meta name="title" content="YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta name="description" content="YUVAA CALL TAXI (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />
 
@@ -285,9 +288,9 @@ export default function SEO() {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
-      <meta property="og:site_name" content="YUVA CABS Hosur" />
-      <meta property="og:title" content="YUVA CABS | Best Taxi & Cab in Hosur | Yuva Call Taxi | ₹9/km" />
-      <meta property="og:description" content="YUVA CABS (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta property="og:site_name" content="YUVAA CALL TAXI" />
+      <meta property="og:title" content="YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta property="og:description" content="YUVAA CALL TAXI (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -300,8 +303,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="YUVA CABS | Best Taxi & Cab in Hosur | Yuva Call Taxi | ₹9/km" />
-      <meta property="twitter:description" content="YUVA CABS (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta property="twitter:title" content="YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta property="twitter:description" content="YUVAA CALL TAXI (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}
