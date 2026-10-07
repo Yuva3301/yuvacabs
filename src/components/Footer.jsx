@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Clock, ShieldAlert, Star } from 'lucide-react';
-import { FaInstagram, FaGoogle } from 'react-icons/fa6';
+import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 
 export default function Footer({ onAdminToggle }) {
   const quickLinks = [
@@ -152,6 +152,18 @@ export default function Footer({ onAdminToggle }) {
                 className="hover:text-pink-400 transition-colors font-bold text-pink-400"
               >
                 @yuva_call_taxi_70 on Instagram
+              </a>
+            </li>
+
+            <li className="flex items-center space-x-2.5">
+              <FaFacebook className="w-4 h-4 text-blue-400 flex-shrink-0" />
+              <a 
+                href="https://www.facebook.com/share/1BwH4m16r9/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-blue-300 transition-colors font-bold text-blue-400"
+              >
+                YUVA Call Taxi Hosur on Facebook
               </a>
             </li>
 

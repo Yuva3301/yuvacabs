@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Phone, Menu, X, ShieldAlert, Sun, Moon } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa6';
+import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Header({ onAdminToggle, theme, setTheme }) {
@@ -79,6 +79,17 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
               className="p-2 text-pink-400 hover:text-pink-300 hover:bg-pink-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-pink-500/20"
             >
               <FaInstagram className="w-5 h-5" />
+            </a>
+
+            {/* Facebook Button */}
+            <a
+              href="https://www.facebook.com/share/1BwH4m16r9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Follow us on Facebook"
+              className="p-2 text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-blue-500/20"
+            >
+              <FaFacebook className="w-5 h-5" />
             </a>
 
             {/* Theme Switcher Toggle */}
@@ -181,6 +192,16 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
               >
                 <FaInstagram className="w-5 h-5" />
                 <span>Follow on Instagram</span>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1BwH4m16r9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center space-x-2 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold shadow-md"
+              >
+                <FaFacebook className="w-5 h-5" />
+                <span>Follow on Facebook</span>
               </a>
               <a
                 href="tel:+919944271322"

@@ -124,22 +124,58 @@ export default function LocalSEO() {
 
   const localZones = [
     {
-      title: 'SIPCOT Industrial Area (Phase 1 & 2)',
-      areas: ['SIPCOT Phase 1', 'SIPCOT Phase 2', 'Moranapalli', 'Mookandapalli', 'Zuzuvadi', 'TVS Motor Belt'],
+      title: 'SIPCOT & Industrial Corridor',
+      areas: [
+        'SIPCOT Phase 1 (Zuzuvadi & Mookandapalli)',
+        'TANSIDCO Industrial Estate',
+        'SIPCOT Phase 2 (Moranapalli & Thorapalli)',
+        'Adagurukki & Doripalli (SIPCOT Expansion)',
+        'Hosur IT Park (Viswanathapuram)',
+        'TVS Motor Belt & Industrial Hubs'
+      ],
       tag: 'Industrial & Corporate',
       pickupTime: '10 - 15 Mins'
     },
     {
       title: 'Hosur City & Residential Hubs',
-      areas: ['Railway Station Road', 'Hamman Nagar', 'Mathigiri', 'Bagalur Road', 'Rayakottai Road', 'Avalapalli'],
+      areas: [
+        'Hosur Bus Stand & Central Hosur',
+        'Railway Station & Station Road',
+        'Hamman Nagar',
+        'Mathigiri',
+        'Shanthi Nagar',
+        'Nehru Nagar & Denkanikottai Road',
+        'Avalapalli & Avalapalli Road',
+        'Sanasandiram & Kamaraj Colony',
+        'Old Bengaluru Road & MG Road',
+        'Bagalur Road & Bagalur Junction'
+      ],
       tag: 'Local Point-to-Point',
       pickupTime: '5 - 10 Mins'
     },
     {
-      title: 'Border & Suburban Connectors',
-      areas: ['Attibele Border', 'Anekal Road', 'Thally Road', 'Kelamangalam', 'Berigai', 'Denkanikottai'],
-      tag: 'Suburban Cabs',
-      pickupTime: '15 - 20 Mins'
+      title: 'Bangalore & Tech Border Belt',
+      areas: [
+        'Attibele Border',
+        'Chandapura',
+        'Bommasandra Industrial Area',
+        'Electronic City Corridor',
+        'Anekal Road'
+      ],
+      tag: 'Interstate Transit',
+      pickupTime: '10 - 20 Mins'
+    },
+    {
+      title: 'Suburban Connectors & Highways',
+      areas: [
+        'Hosur-Thally Road',
+        'Shoolagiri Highway Belt',
+        'Kelamangalam',
+        'Rayakottai Road',
+        'Krishnagiri NH44 Expressway'
+      ],
+      tag: 'Suburban & Outstation',
+      pickupTime: '15 - 25 Mins'
     }
   ];
 
@@ -375,7 +411,7 @@ export default function LocalSEO() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {localZones.map((zone, idx) => (
               <div

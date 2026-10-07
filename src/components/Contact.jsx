@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Phone, MessageSquare, MapPin, Calendar, Clock, AlertCircle, Sparkles, CheckCircle2, Star, ExternalLink } from 'lucide-react';
-import { FaInstagram, FaGoogle } from 'react-icons/fa6';
+import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Contact() {
@@ -457,6 +457,22 @@ export default function Contact() {
               <div className="flex flex-col">
                 <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Official Instagram</span>
                 <span className="text-base font-black text-white group-hover:text-pink-400 transition-colors duration-300">@yuva_call_taxi_70</span>
+              </div>
+            </a>
+
+            {/* Facebook Social Card */}
+            <a
+              href="https://www.facebook.com/share/1BwH4m16r9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-4 rounded-2xl border border-white/5 flex items-center space-x-4 group hover:border-blue-500/30 transition-all duration-300"
+            >
+              <div className="p-3 rounded-xl bg-blue-600 text-white group-hover:scale-105 transition-transform duration-300">
+                <FaFacebook className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[10px] text-brand-gray uppercase font-extrabold tracking-wider">Official Facebook Page</span>
+                <span className="text-base font-black text-white group-hover:text-blue-400 transition-colors duration-300">YUVA Call Taxi Hosur</span>
               </div>
             </a>
           </div>

@@ -4,27 +4,39 @@ export default function LocalKeywordMatrix() {
   const routeDistances = [
     { route: 'Hosur to Bangalore Taxi', distance: '45 km', time: '1 hr', rate: '₹10/km', type: 'Local & Outstation' },
     { route: 'Hosur to BLR Airport Taxi', distance: '80 km', time: '1 hr 45 min', rate: 'Fixed ₹2,200', type: 'Kempegowda Airport' },
+    { route: 'Hosur to Electronic City / Silk Board', distance: '32 km', time: '40 min', rate: '₹10/km', type: 'IT Corridor Express' },
+    { route: 'Hosur to Attibele / Bommasandra / Chandapura', distance: '15-25 km', time: '25 min', rate: '₹10/km', type: 'Border Industrial' },
     { route: 'Hosur to Chennai Cab', distance: '310 km', time: '5.5 hrs', rate: '₹10/km', type: 'One-Way Drop Taxi' },
+    { route: 'Hosur to Krishnagiri / Dharmapuri', distance: '50-90 km', time: '1-1.5 hrs', rate: '₹10/km', type: 'NH44 Expressway' },
     { route: 'Hosur to Salem Taxi', distance: '160 km', time: '2.5 hrs', rate: '₹10/km', type: 'NH44 Expressway' },
     { route: 'Hosur to Coimbatore Cab', distance: '320 km', time: '5.5 hrs', rate: '₹10/km', type: 'Textile Hub Outstation' },
     { route: 'Hosur to Tirupati Taxi', distance: '245 km', time: '4.5 hrs', rate: '₹10/km', type: 'Pilgrimage Special' },
     { route: 'Hosur to Ooty Cab', distance: '285 km', time: '6.5 hrs', rate: '₹10/km', type: 'Hill Station Package' },
     { route: 'Hosur to Pondicherry Taxi', distance: '260 km', time: '5 hrs', rate: '₹10/km', type: 'Weekend Getaway' },
-    { route: 'Hosur to Madurai Cab', distance: '380 km', time: '6 hrs', rate: '₹10/km', type: 'Heritage Express' },
-    { route: 'Hosur to Mysore Taxi', distance: '195 km', time: '3.5 hrs', rate: '₹10/km', type: 'Palace Tour' }
+    { route: 'Hosur to Shoolagiri / Rayakottai / Kelamangalam', distance: '20-35 km', time: '30 min', rate: '₹10/km', type: 'Suburban Connectors' }
   ];
 
   const localPickupHubs = [
-    'SIPCOT Phase 1 & 2 Industrial Park',
+    'SIPCOT Phase 1 (Zuzuvadi & Mookandapalli)',
+    'TANSIDCO Industrial Estate',
+    'SIPCOT Phase 2 (Moranapalli & Thorapalli)',
+    'Adagurukki & Doripalli (SIPCOT Expansion)',
+    'Hosur IT Park (Viswanathapuram)',
     'Hosur Railway Station Road',
-    'Hosur New Bus Stand & Central',
-    'Bagalur Road & TVS Nagar',
-    'Mathigiri & Denkanikottai Road',
-    'Mookondapalli & Zuzuvadi',
-    'Attibele Border & Electronic City',
-    'Chennathur & Juvaraj Nagar',
+    'Hosur Central Bus Stand',
+    'Bagalur Road & Bagalur Junction',
+    'Shanthi Nagar',
+    'Nehru Nagar & Denkanikottai Road',
+    'Mathigiri Town',
     'Avalapalli Road & Bedrapalli',
-    'Rayakottai Road & Moranapalli'
+    'Sanasandiram & Kamaraj Colony',
+    'Old Bengaluru Road & MG Road',
+    'Hosur-Thally Road',
+    'Attibele Border & Chandapura',
+    'Bommasandra & Electronic City',
+    'Anekal Road Belt',
+    'Shoolagiri & Rayakottai',
+    'Kelamangalam & Krishnagiri'
   ];
 
   return (

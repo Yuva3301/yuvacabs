@@ -74,12 +74,40 @@ export default function SEO() {
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Hosur" },
           { "@type": "AdministrativeArea", "name": "SIPCOT Phase 1 Hosur" },
-          { "@type": "AdministrativeArea", "name": "SIPCOT Phase 2 Hosur" },
-          { "@type": "AdministrativeArea", "name": "Mathigiri" },
-          { "@type": "AdministrativeArea", "name": "Bagalur" },
-          { "@type": "AdministrativeArea", "name": "Mookandapalli" },
           { "@type": "AdministrativeArea", "name": "Zuzuvadi" },
+          { "@type": "AdministrativeArea", "name": "Mookandapalli" },
+          { "@type": "AdministrativeArea", "name": "TANSIDCO Hosur" },
+          { "@type": "AdministrativeArea", "name": "SIPCOT Phase 2 Hosur" },
+          { "@type": "AdministrativeArea", "name": "Moranapalli" },
+          { "@type": "AdministrativeArea", "name": "Thorapalli" },
+          { "@type": "AdministrativeArea", "name": "Bagalur Road" },
+          { "@type": "AdministrativeArea", "name": "Bagalur Junction" },
+          { "@type": "AdministrativeArea", "name": "Hosur Railway Station Road" },
+          { "@type": "AdministrativeArea", "name": "Hosur Bus Stand" },
+          { "@type": "AdministrativeArea", "name": "Hamman Nagar" },
+          { "@type": "AdministrativeArea", "name": "Shanthi Nagar Hosur" },
+          { "@type": "AdministrativeArea", "name": "Nehru Nagar Hosur" },
+          { "@type": "AdministrativeArea", "name": "Denkanikottai Road" },
+          { "@type": "AdministrativeArea", "name": "Mathigiri" },
+          { "@type": "AdministrativeArea", "name": "Avalapalli" },
+          { "@type": "AdministrativeArea", "name": "Avalapalli Road" },
+          { "@type": "AdministrativeArea", "name": "Sanasandiram" },
+          { "@type": "AdministrativeArea", "name": "Kamaraj Colony" },
+          { "@type": "AdministrativeArea", "name": "Old Bengaluru Road" },
+          { "@type": "AdministrativeArea", "name": "MG Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "Hosur-Thally Road" },
+          { "@type": "AdministrativeArea", "name": "Hosur IT Park" },
+          { "@type": "AdministrativeArea", "name": "Viswanathapuram" },
+          { "@type": "AdministrativeArea", "name": "Adagurukki" },
+          { "@type": "AdministrativeArea", "name": "Doripalli" },
+          { "@type": "AdministrativeArea", "name": "Shoolagiri" },
+          { "@type": "AdministrativeArea", "name": "Kelamangalam" },
+          { "@type": "AdministrativeArea", "name": "Rayakottai" },
+          { "@type": "AdministrativeArea", "name": "Krishnagiri" },
+          { "@type": "AdministrativeArea", "name": "Anekal" },
           { "@type": "AdministrativeArea", "name": "Attibele" },
+          { "@type": "AdministrativeArea", "name": "Chandapura" },
+          { "@type": "AdministrativeArea", "name": "Bommasandra" },
           { "@type": "AdministrativeArea", "name": "Electronic City" },
           { "@type": "AdministrativeArea", "name": "Bengaluru Kempegowda Airport (BLR)" },
           { "@type": "AdministrativeArea", "name": "Bangalore" },
@@ -88,12 +116,7 @@ export default function SEO() {
           { "@type": "AdministrativeArea", "name": "Coimbatore" },
           { "@type": "AdministrativeArea", "name": "Tirupati" },
           { "@type": "AdministrativeArea", "name": "Pondicherry" },
-          { "@type": "AdministrativeArea", "name": "Ooty" },
-          { "@type": "AdministrativeArea", "name": "Madurai" },
-          { "@type": "AdministrativeArea", "name": "Trichy" },
-          { "@type": "AdministrativeArea", "name": "Mysore" },
-          { "@type": "AdministrativeArea", "name": "Krishnagiri" },
-          { "@type": "AdministrativeArea", "name": "Dharmapuri" }
+          { "@type": "AdministrativeArea", "name": "Ooty" }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -273,7 +296,7 @@ export default function SEO() {
       <title>YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
       <meta name="title" content="YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
       <meta name="description" content="YUVAA CALL TAXI (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
-      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, sipcot taxi hosur, sipcot phase 1 taxi, zuzuvadi taxi, mookandapalli cab, tansidco hosur taxi, sipcot phase 2 cab, moranapalli taxi, bagalur road taxi, hosur railway station taxi, hosur bus stand taxi, shanthi nagar hosur cab, nehru nagar cab, mathigiri taxi, avalapalli cab, sanasandiram taxi, kamaraj colony cab, old bengaluru road taxi, hosur thally road cab, hosur it park taxi, adagurukki cab, doripalli taxi, shoolagiri taxi, kelamangalam cab, krishnagiri taxi, rayakottai cab, anekal taxi, attibele cab, chandapura taxi, bommasandra cab, electronic city cab, hosur to bangalore taxi, hosur to chennai cab, hosur airport taxi, outstation taxi hosur, drop taxi hosur" />
       <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />

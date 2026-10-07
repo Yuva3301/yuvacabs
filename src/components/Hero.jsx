@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Phone, MessageSquare, Calendar, ChevronRight, CheckCircle2 } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa6';
+import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 import hatchbackTaxiImg from '../assets/hatchback_taxi.png';
 import premiumTaxiImg from '../assets/premium_taxi.png';
@@ -298,6 +298,17 @@ export default function Hero() {
             >
               <FaInstagram className="w-5 h-5" />
               <span>Instagram</span>
+            </a>
+
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/share/1BwH4m16r9/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_4px_20px_rgba(37,99,235,0.5)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <FaFacebook className="w-5 h-5" />
+              <span>Facebook</span>
             </a>
           </motion.div>
 
