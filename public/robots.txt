@@ -1,4 +1,19 @@
+# YUVA CABS - yuvacalltaxi.com
+# Best Taxi & Cab Service in Hosur
+
 User-agent: *
 Allow: /
+Disallow: /admin
 
+# Sitemaps
 Sitemap: https://yuvacalltaxi.com/sitemap.xml
+
+# Crawl optimization
+Crawl-delay: 1
+
+# Allow major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

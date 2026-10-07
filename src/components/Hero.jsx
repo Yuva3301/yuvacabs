@@ -54,9 +54,9 @@ export default function Hero() {
   const vehicles = {
     hatchback: { 
       name: 'Hatchback', 
-      desc: 'Indica / Vista / Figo',
+      desc: 'Indica / Vista / Tiago / Figo',
       nonAcMin: 150, acMin: 180,
-      nonAcExtra: 9, acExtra: 10,
+      nonAcExtra: 10, acExtra: 11,
       minKm: 4, localLimit: 6,
       image: hatchbackTaxiImg
     },
@@ -64,7 +64,7 @@ export default function Hero() {
       name: 'Sedan', 
       desc: 'Etios / Dzire / Xcent',
       nonAcMin: 180, acMin: 220,
-      nonAcExtra: 10, acExtra: 12,
+      nonAcExtra: 11, acExtra: 12,
       minKm: 4, localLimit: 6,
       image: premiumTaxiImg
     },
@@ -72,15 +72,15 @@ export default function Hero() {
       name: 'SUV', 
       desc: 'Ertiga / XUV / SUV',
       nonAcMin: 220, acMin: 280,
-      nonAcExtra: 26, acExtra: 32,
+      nonAcExtra: 15, acExtra: 16,
       minKm: 4, localLimit: 6,
       image: suvTaxiImg
     },
     innova: { 
       name: 'Innova & Crysta', 
       desc: 'Toyota Innova / Innova Crysta',
-      nonAcMin: 250, acMin: 280,
-      nonAcExtra: 18, acExtra: 19,
+      nonAcMin: 250, acMin: 300,
+      nonAcExtra: 16, acExtra: 17,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },
@@ -88,7 +88,7 @@ export default function Hero() {
       name: 'Tempo Traveller', 
       desc: '12+1 Seater Van',
       nonAcMin: 400, acMin: 500,
-      nonAcExtra: 38, acExtra: 45,
+      nonAcExtra: 38, acExtra: 38,
       minKm: 10, localLimit: 10,
       image: tempoTravellerImg
     }
@@ -178,7 +178,7 @@ export default function Hero() {
               animate="center"
               exit="exit"
               src={vehicles[selectedVehicle].image}
-              alt={vehicles[selectedVehicle].name}
+              alt={`${vehicles[selectedVehicle].name} taxi cab in Hosur - YUVA CABS`}
               className="w-full h-full object-contain select-none p-2 mt-6"
             />
           </AnimatePresence>
@@ -239,7 +239,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-black tracking-tight text-brand-white leading-[1.05] text-left"
           >
-            Reliable <span className="text-stroke-yellow text-transparent font-black">Taxi</span> <br />
+            Best <span className="text-stroke-yellow text-transparent font-black">Taxi & Cab</span> <br />
             <span className="text-stroke-yellow text-transparent font-black">Service in Hosur</span>
           </motion.h1>
 

@@ -7,25 +7,31 @@ export default function SEO() {
       {
         "@type": ["TaxiService", "LocalBusiness"],
         "@id": "https://yuvacalltaxi.com/#localbusiness",
-        "name": "YUVA CABS -9944271322 Best Taxi Service in Hosur",
+        "name": "YUVAA CALL TAXI (YUVA CABS) - Best Taxi Service in Hosur",
         "alternateName": [
+          "YUVAA CALL TAXI",
+          "Yuva Call Taxi",
+          "YUVA CABS",
           "HOSUR CABS",
           "Yuva Cabs Hosur",
           "Call Taxi Hosur",
           "Hosur Travels",
           "Best Cab in Hosur",
+          "Best Taxi in Hosur",
           "Hosur to Bangalore Airport Taxi",
+          "Hosur Outstation Cabs",
+          "Outstation Taxi Hosur",
+          "One Way Drop Taxi Hosur",
+          "Yuva Call Taxi Hosur",
+          "Yuva Travels Hosur",
+          "Cab in Hosur",
+          "Hosur Taxi",
           "Taxi Near Me",
           "Cab Near Me",
-          "Call Taxi",
           "Call Taxi Near Me",
-          "Call Taxi in Hosur",
-          "Call Taxi in Tamil Nadu",
-          "Call Taxi in Bangalore",
           "Call Taxi in Hosur",
           "Hosur Railway Station Taxi",
           "Hosur Busstand Taxi"
-
         ],
         "image": "https://yuvacalltaxi.com/og-image.jpg",
         "description": "Hosur's #1 rated taxi and cab service available 24/7. Affordable outstation cabs starting @ ₹9/km, 24/7 Bangalore Airport transfers (BLR), SIPCOT corporate cabs, and local drops.",
@@ -64,7 +70,7 @@ export default function SEO() {
           "opens": "00:00",
           "closes": "23:59"
         },
-        "priceRange": "₹9 - ₹19 per km",
+        "priceRange": "₹9 - ₹45 per km",
         "currenciesAccepted": "INR",
         "paymentAccepted": "Cash, UPI, Google Pay, PhonePe, Net Banking",
         "aggregateRating": {
@@ -168,7 +174,72 @@ export default function SEO() {
               "@type": "Answer",
               "text": "Yes, YUVA CABS operates 24 hours a day, 7 days a week, including midnight emergency pickups and early morning rides across Hosur and SIPCOT."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Which is the best taxi service in Hosur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "YUVA CABS (Yuva Call Taxi) is rated #1 on Google with 4.9 stars and 385+ reviews. We offer the most affordable per-km rates starting at ₹9/km with 24/7 availability, professional drivers, and a clean fleet of Hatchbacks, Sedans, Innova, and Tempo Travellers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I book a cab in Hosur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can book a YUVA CABS taxi instantly by calling +91 99442 71322, sending a WhatsApp message to the same number, or filling out the online booking form at yuvacalltaxi.com. Our dispatcher confirms your driver within 5 minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the phone number of Yuva Call Taxi Hosur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can reach YUVA CABS (Yuva Call Taxi) at +91 99442 71322. We are available 24 hours a day, 7 days a week for local rides, outstation trips, and airport transfers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a 24/7 taxi available in Hosur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! YUVA CABS operates round-the-clock, 24 hours a day, 365 days a year. Whether you need a late-night airport drop, early morning pickup, or emergency ride, our drivers are always available in Hosur and surrounding areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a taxi cost in Hosur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Taxi fares in Hosur with YUVA CABS start from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), ₹15/km for SUV, ₹18/km for Toyota Innova & Crysta, and ₹38/km for Tempo Traveller. Local rides have minimum fare starting from ₹150."
+            }
           }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://yuvacalltaxi.com/#website",
+        "name": "YUVAA CALL TAXI",
+        "alternateName": "YUVAA CALL TAXI — Best Taxi Service in Hosur",
+        "url": "https://yuvacalltaxi.com",
+        "description": "Book Hosur's #1 rated taxi and cab service. Local rides, outstation trips, airport transfers from ₹9/km.",
+        "publisher": { "@id": "https://yuvacalltaxi.com/#localbusiness" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yuvacalltaxi.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://yuvacalltaxi.com/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://yuvacalltaxi.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Taxi Services in Hosur", "item": "https://yuvacalltaxi.com/#services" },
+          { "@type": "ListItem", "position": 3, "name": "Cab Pricing", "item": "https://yuvacalltaxi.com/#pricing" },
+          { "@type": "ListItem", "position": 4, "name": "Outstation Routes", "item": "https://yuvacalltaxi.com/#local-seo" },
+          { "@type": "ListItem", "position": 5, "name": "Book a Cab", "item": "https://yuvacalltaxi.com/#contact" }
         ]
       }
     ]
@@ -177,10 +248,11 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>YUVA CABS | Best Taxi Service in Hosur | 24/7 Outstation Cabs ₹9/km</title>
-      <meta name="title" content="YUVA CABS | Best Taxi Service in Hosur | 24/7 Outstation Cabs ₹9/km" />
-      <meta name="description" content="Book Hosur's #1 rated taxi service. YUVA CABS offers 24/7 outstation cabs @ ₹9/km, Bangalore Airport drops, local city rides, and corporate travel. Call +91 99442 71322 for instant pickup." />
-      <meta name="keywords" content="Taxi in Hosur, Cab service Hosur, Hosur taxi booking, Best taxi in Hosur, Hosur to Bangalore Airport taxi, Outstation cabs Hosur, Yuva Cabs, Yuva Call Taxi, 24/7 taxi Hosur, Cheap cab Hosur, SIPCOT Hosur cab service, One way taxi Hosur, Hosur travels, Call Taxi in Hosur" />
+      <title>YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
+      <meta name="title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta name="description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />
 
@@ -194,9 +266,9 @@ export default function SEO() {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
-      <meta property="og:site_name" content="YUVA CABS Hosur" />
-      <meta property="og:title" content="YUVA CABS | Best Taxi Service in Hosur | 24/7 Cab Booking" />
-      <meta property="og:description" content="Hosur's top-rated taxi service. Outstation cabs @ ₹9/km, Bangalore airport transfers, 24/7 local cabs. Call +91 99442 71322." />
+      <meta property="og:site_name" content="YUVAA CALL TAXI (YUVA CABS)" />
+      <meta property="og:title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta property="og:description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -209,8 +281,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="YUVA CABS | Best Taxi Service in Hosur | 24/7 Cab Booking" />
-      <meta property="twitter:description" content="Book affordable taxi services in Hosur with YUVA CABS. Outstation trips from ₹9/km. Fast pickup, airport transfer 24/7." />
+      <meta property="twitter:title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
+      <meta property="twitter:description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}
