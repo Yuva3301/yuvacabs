@@ -18,23 +18,45 @@ export default function SEO() {
           "Hosur Travels",
           "Best Cab in Hosur",
           "Best Taxi in Hosur",
+          "SIPCOT Phase 1 Taxi Service",
+          "SIPCOT Phase 2 Cab Service",
+          "Zuzuvadi Taxi Hosur",
+          "Mookandapalli Cab Service",
+          "TANSIDCO Hosur Taxi",
+          "Moranapalli Cab Service",
+          "Thorapalli Taxi",
+          "Bagalur Road Cab Booking",
+          "Hosur Railway Station Taxi",
+          "Hosur Bus Stand Cab",
+          "Shanthi Nagar Taxi Hosur",
+          "Nehru Nagar Cab Hosur",
+          "Mathigiri Taxi Service",
+          "Avalapalli Road Cab",
+          "Sanasandiram Taxi",
+          "Old Bengaluru Road Taxi",
+          "Hosur IT Park Cab Service",
+          "Adagurukki Doripalli Taxi",
+          "Shoolagiri Taxi Service",
+          "Chandapura to Hosur Cab",
+          "Anekal Taxi Hosur",
+          "Bommasandra Taxi Service",
+          "Denkanikottai Cab Service",
+          "Rayakottai Taxi",
+          "Kelamangalam Cab Booking",
           "Hosur to Bangalore Airport Taxi",
           "Hosur Outstation Cabs",
           "Outstation Taxi Hosur",
           "One Way Drop Taxi Hosur",
           "Yuva Call Taxi Hosur",
-          "Yuva Travels Hosur",
           "Cab in Hosur",
           "Hosur Taxi",
           "Taxi Near Me",
           "Cab Near Me",
           "Call Taxi Near Me",
-          "Call Taxi in Hosur",
-          "Hosur Railway Station Taxi",
-          "Hosur Busstand Taxi"
+          "Call Taxi in Hosur"
         ],
         "image": "https://yuvacalltaxi.com/og-image.jpg",
-        "description": "Hosur's #1 rated taxi and cab service available 24/7. Affordable outstation cabs starting @ ₹9/km, 24/7 Bangalore Airport transfers (BLR), SIPCOT corporate cabs, and local drops.",
+        "description": "Hosur's #1 rated taxi and cab service available 24/7. Fast 5-10 min pickups in SIPCOT Phase 1 & 2, Zuzuvadi, Mookandapalli, TANSIDCO, Mathigiri, Bagalur Rd, Railway Station, Chandapura, Bommasandra, Anekal, Shoolagiri & BLR Airport transfers.",
         "telephone": "+919944271322",
         "url": "https://yuvacalltaxi.com",
         "email": "bookings@yuvacalltaxi.com",
@@ -53,8 +75,8 @@ export default function SEO() {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "12.7409",
-          "longitude": "77.8253"
+          "latitude": 12.7409,
+          "longitude": 77.8253
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -83,13 +105,38 @@ export default function SEO() {
         "areaServed": [
           { "@type": "AdministrativeArea", "name": "Hosur" },
           { "@type": "AdministrativeArea", "name": "SIPCOT Phase 1 Hosur" },
+          { "@type": "AdministrativeArea", "name": "Zuzuvadi Hosur" },
+          { "@type": "AdministrativeArea", "name": "Mookandapalli Hosur" },
+          { "@type": "AdministrativeArea", "name": "TANSIDCO Hosur" },
           { "@type": "AdministrativeArea", "name": "SIPCOT Phase 2 Hosur" },
-          { "@type": "AdministrativeArea", "name": "Mathigiri" },
-          { "@type": "AdministrativeArea", "name": "Bagalur" },
-          { "@type": "AdministrativeArea", "name": "Mookandapalli" },
-          { "@type": "AdministrativeArea", "name": "Zuzuvadi" },
-          { "@type": "AdministrativeArea", "name": "Attibele" },
-          { "@type": "AdministrativeArea", "name": "Electronic City" },
+          { "@type": "AdministrativeArea", "name": "Moranapalli Hosur" },
+          { "@type": "AdministrativeArea", "name": "Thorapalli Hosur" },
+          { "@type": "AdministrativeArea", "name": "Bagalur Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "Bagalur Junction Hosur" },
+          { "@type": "AdministrativeArea", "name": "Hosur Railway Station Road" },
+          { "@type": "AdministrativeArea", "name": "Shanthi Nagar Hosur" },
+          { "@type": "AdministrativeArea", "name": "Nehru Nagar Hosur" },
+          { "@type": "AdministrativeArea", "name": "Denkanikottai Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "Mathigiri Hosur" },
+          { "@type": "AdministrativeArea", "name": "Avalapalli Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "Sanasandiram Hosur" },
+          { "@type": "AdministrativeArea", "name": "Kamaraj Colony Hosur" },
+          { "@type": "AdministrativeArea", "name": "Old Bengaluru Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "MG Road Hosur" },
+          { "@type": "AdministrativeArea", "name": "Hosur Bus Stand Central" },
+          { "@type": "AdministrativeArea", "name": "Hosur-Thally Road" },
+          { "@type": "AdministrativeArea", "name": "Hosur IT Park Viswanathapuram" },
+          { "@type": "AdministrativeArea", "name": "Adagurukki Hosur" },
+          { "@type": "AdministrativeArea", "name": "Doripalli Hosur" },
+          { "@type": "AdministrativeArea", "name": "Shoolagiri" },
+          { "@type": "AdministrativeArea", "name": "Chandapura" },
+          { "@type": "AdministrativeArea", "name": "Anekal" },
+          { "@type": "AdministrativeArea", "name": "Bommasandra" },
+          { "@type": "AdministrativeArea", "name": "Denkanikottai" },
+          { "@type": "AdministrativeArea", "name": "Rayakottai" },
+          { "@type": "AdministrativeArea", "name": "Kelamangalam" },
+          { "@type": "AdministrativeArea", "name": "Attibele Border" },
+          { "@type": "AdministrativeArea", "name": "Electronic City Bangalore" },
           { "@type": "AdministrativeArea", "name": "Bengaluru Kempegowda Airport (BLR)" },
           { "@type": "AdministrativeArea", "name": "Krishnagiri" },
           { "@type": "AdministrativeArea", "name": "Dharmapuri" },
@@ -105,15 +152,15 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Outstation Cab Booking from Hosur",
-                "description": "Round trip and one way outstation taxi service starting at ₹9 to ₹12 per km."
+                "name": "SIPCOT Phase 1 & 2 Industrial Employee & Corporate Cab Service",
+                "description": "Round-the-clock shift drop and employee transportation for SIPCOT Phase 1 (Zuzuvadi, Mookandapalli), SIPCOT Phase 2 (Moranapalli, Thorapalli), TANSIDCO, and Adagurukki/Doripalli expansion."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Hosur to Bangalore Airport Taxi - Swift Dzire",
+                "name": "Hosur to Bangalore Airport Taxi - Swift Dzire Fixed Fare",
                 "description": "Fixed package airport drop and pickup in Maruti Swift Dzire. Non-A/C ₹2,200 and A/C ₹2,300 with 24/7 flight tracking and on-time arrival."
               },
               "price": "2200",
@@ -123,16 +170,32 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Local Hosur City Cab & Hourly Rental",
-                "description": "Affordable city ride services across Hosur, Hamman Nagar, SIPCOT, and Mathigiri."
+                "name": "Hosur City Rapid Point-to-Point Cabs (Railway Station, Bus Stand, Mathigiri)",
+                "description": "Instant 5-10 minute cab dispatch across Hosur Railway Station, Hosur Central Bus Stand, Bagalur Road, Shanthi Nagar, Nehru Nagar, Avalapalli, and MG Road."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "SIPCOT Hosur Corporate Cab Hire",
-                "description": "Dedicated corporate transportation, staff pick-and-drop, and executive rides."
+                "name": "Bangalore Border Industrial Corridor Taxi (Bommasandra, Chandapura, Anekal)",
+                "description": "Direct interstate point-to-point and shift rides between Hosur, Attibele, Bommasandra Industrial Area, Chandapura, and Anekal without interstate hassle."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Regional Towns & Highway Drop Taxi (Shoolagiri, Denkanikottai, Rayakottai, Kelamangalam)",
+                "description": "Dependable outstation and rural connectivity starting @ ₹9/km across Shoolagiri, Denkanikottai, Rayakottai, Kelamangalam, and Thally."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Outstation Cab Booking from Hosur",
+                "description": "Round trip and one way outstation taxi service starting at ₹9 to ₹12 per km to Chennai, Bangalore, Salem, Coimbatore, and Pondicherry."
               }
             }
           ]
@@ -143,6 +206,38 @@ export default function SEO() {
         "@type": "FAQPage",
         "@id": "https://yuvacalltaxi.com/#faq",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide cabs in SIPCOT Phase 1, Phase 2, Zuzuvadi, and Mookandapalli?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! YUVA CABS operates dedicated cabs stationed directly inside SIPCOT Phase 1 (Zuzuvadi, Mookandapalli) and SIPCOT Phase 2 (Moranapalli, Thorapalli), as well as TANSIDCO and the Adagurukki/Doripalli expansion zones. Drivers arrive within 5 to 10 minutes for industrial shift pickups and corporate trips."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I book taxis to and from Chandapura, Bommasandra, and Anekal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We operate frequent point-to-point cabs between Hosur and the Bangalore industrial belt including Bommasandra, Chandapura, Anekal, and Attibele border, offering fixed and per-kilometer rates starting at ₹10/km."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are cabs available in Shoolagiri, Denkanikottai, Rayakottai, and Kelamangalam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, YUVA CABS provides 24/7 service across all surrounding taluks and highway corridors including Shoolagiri (NH44), Denkanikottai, Rayakottai, Kelamangalam, and Thally with swift dispatch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How fast can I get a cab at Hosur Railway Station or Hosur Bus Stand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We maintain cabs stationed at Hosur Railway Station Road and Hosur Central Bus Stand 24 hours a day. Pickup is typically within 3 to 7 minutes of booking."
+            }
+          },
           {
             "@type": "Question",
             "name": "What is the taxi fare per km in Hosur?",
@@ -169,50 +264,10 @@ export default function SEO() {
           },
           {
             "@type": "Question",
-            "name": "Are cabs available 24 hours in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, YUVA CABS operates 24 hours a day, 7 days a week, including midnight emergency pickups and early morning rides across Hosur and SIPCOT."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "Which is the best taxi service in Hosur?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "YUVA CABS (Yuva Call Taxi) is rated #1 on Google with 4.9 stars and 385+ reviews. We offer the most affordable per-km rates starting at ₹9/km with 24/7 availability, professional drivers, and a clean fleet of Hatchbacks, Sedans, Innova, and Tempo Travellers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I book a cab in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can book a YUVA CABS taxi instantly by calling +91 99442 71322, sending a WhatsApp message to the same number, or filling out the online booking form at yuvacalltaxi.com. Our dispatcher confirms your driver within 5 minutes."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the phone number of Yuva Call Taxi Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can reach YUVA CABS (Yuva Call Taxi) at +91 99442 71322. We are available 24 hours a day, 7 days a week for local rides, outstation trips, and airport transfers."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is there a 24/7 taxi available in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes! YUVA CABS operates round-the-clock, 24 hours a day, 365 days a year. Whether you need a late-night airport drop, early morning pickup, or emergency ride, our drivers are always available in Hosur and surrounding areas."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How much does a taxi cost in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Taxi fares in Hosur with YUVA CABS start from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), ₹15/km for SUV, ₹18/km for Toyota Innova & Crysta, and ₹38/km for Tempo Traveller. Local rides have minimum fare starting from ₹150."
+              "text": "YUVA CABS (Yuva Call Taxi) is rated #1 on Google with 4.9 stars and 385+ reviews. We offer the most affordable per-km rates starting at ₹9/km with 24/7 availability across SIPCOT, Mathigiri, Bagalur Rd, and outstation routes."
             }
           }
         ]
@@ -250,8 +305,8 @@ export default function SEO() {
       {/* Primary HTML Meta Tags */}
       <title>YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
       <meta name="title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
-      <meta name="description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
-      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <meta name="description" content="Hosur's #1 rated cab service. 24/7 cabs in SIPCOT Phase 1 & 2, Zuzuvadi, Mookandapalli, TANSIDCO, Mathigiri, Bagalur Rd, Railway Station, Chandapura, Bommasandra, Anekal, Shoolagiri & BLR Airport from ₹9/km. Call +91 99442 71322." />
+      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, sipcot phase 1 taxi, sipcot phase 2 cab, zuzuvadi taxi, mookandapalli cab, tansidco hosur taxi, moranapalli cab, thorapalli taxi, bagalur road taxi, bagalur junction cab, hosur railway station taxi, shanthi nagar hosur taxi, nehru nagar cab, mathigiri taxi service, avalapalli road cab, sanasandiram taxi, kamaraj colony cab, old bengaluru road taxi, mg road hosur taxi, hosur bus stand taxi, hosur it park taxi, viswanathapuram cab, adagurukki taxi, doripalli cab, shoolagiri taxi, chandapura cab, anekal taxi hosur, bommasandra taxi, denkanikottai cab, rayakottai taxi, kelamangalam cab, hosur to bangalore airport taxi, outstation cabs hosur, 24/7 taxi hosur" />
       <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />

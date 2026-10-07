@@ -18,18 +18,41 @@ export default function Footer({ onAdminToggle }) {
   ];
 
   const keywords = [
-    'Taxi in Hosur',
-    'Cab service Hosur',
-    'Hosur airport taxi',
-    'Taxi booking Hosur',
-    'Best cab in Hosur',
-    'Outstation taxi Hosur',
+    'SIPCOT Phase 1 taxi',
+    'SIPCOT Phase 2 cab',
+    'Zuzuvadi taxi Hosur',
+    'Mookandapalli cab service',
+    'TANSIDCO Hosur taxi',
+    'Moranapalli taxi',
+    'Thorapalli cab',
+    'Bagalur Road taxi',
+    'Bagalur Junction cab',
+    'Hosur Railway Station taxi',
+    'Shanthi Nagar Hosur cab',
+    'Nehru Nagar taxi',
+    'Denkanikottai Road cab',
+    'Mathigiri cab booking',
+    'Avalapalli Road taxi',
+    'Sanasandiram cab',
+    'Kamaraj Colony taxi',
+    'Old Bengaluru Road taxi',
+    'MG Road Hosur cab',
+    'Hosur Bus Stand taxi',
+    'Hosur-Thally Road cab',
+    'Hosur IT Park taxi',
+    'Viswanathapuram cab',
+    'Adagurukki taxi',
+    'Doripalli cab service',
+    'Shoolagiri taxi',
+    'Chandapura cab',
+    'Anekal taxi Hosur',
+    'Bommasandra cab service',
+    'Denkanikottai taxi',
+    'Rayakottai cab',
+    'Kelamangalam taxi',
     'Hosur to Bangalore Airport cab',
-    'SIPCOT Hosur cab service',
-    'Yuva Cabs Hosur',
-    '24/7 Call Taxi Hosur',
-    'One way drop taxi Hosur',
-    'Mathigiri cab booking'
+    'Outstation taxi Hosur',
+    '24/7 Call Taxi Hosur'
   ];
 
   return (
@@ -164,7 +187,7 @@ export default function Footer({ onAdminToggle }) {
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-sm font-bold text-brand-silver mb-3">YUVA CABS — Hosur's Most Trusted Taxi & Cab Service</h3>
           <p className="text-xs text-brand-gray/80 leading-relaxed font-medium">
-            YUVA CABS (Yuva Call Taxi) is Hosur's #1 rated taxi and cab booking service. Whether you need a <strong className="text-brand-silver">taxi in Hosur</strong>, a <strong className="text-brand-silver">cab in Hosur</strong>, or an <strong className="text-brand-silver">outstation taxi from Hosur</strong>, we provide 24/7 reliable service with transparent pricing starting from ₹9 per km. Our fleet includes Hatchback, Sedan (Dzire, Etios), SUV (Ertiga, XUV), Toyota Innova, Innova Crysta, and Tempo Traveller. Popular routes include <strong className="text-brand-silver">Hosur to Bangalore taxi</strong>, <strong className="text-brand-silver">Hosur to Chennai cab</strong>, Hosur to Salem, Hosur to Coimbatore, Hosur to Tirupati, and <strong className="text-brand-silver">Hosur to Bangalore Airport taxi</strong>. Call us at <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking. YUVA CABS — your trusted <strong className="text-brand-silver">call taxi in Hosur</strong>.
+            YUVA CABS (Yuva Call Taxi) is Hosur's #1 rated taxi and cab booking service. We provide 24/7 rapid 5-10 minute pickups across <strong className="text-brand-silver">SIPCOT Phase 1 (Zuzuvadi, Mookandapalli)</strong>, <strong className="text-brand-silver">TANSIDCO</strong>, <strong className="text-brand-silver">SIPCOT Phase 2 (Moranapalli, Thorapalli)</strong>, <strong className="text-brand-silver">Adagurukki & Doripalli expansion</strong>, <strong className="text-brand-silver">Bagalur Road & Junction</strong>, <strong className="text-brand-silver">Hosur Railway Station Road</strong>, <strong className="text-brand-silver">Hosur Central Bus Stand</strong>, <strong className="text-brand-silver">Mathigiri</strong>, <strong className="text-brand-silver">Avalapalli Road</strong>, <strong className="text-brand-silver">Shanthi Nagar</strong>, <strong className="text-brand-silver">Nehru Nagar</strong>, <strong className="text-brand-silver">Sanasandiram</strong>, <strong className="text-brand-silver">Old Bengaluru Road & MG Road</strong>, and <strong className="text-brand-silver">Hosur IT Park</strong>. We also provide direct interstate and regional cabs to <strong className="text-brand-silver">Bommasandra</strong>, <strong className="text-brand-silver">Chandapura</strong>, <strong className="text-brand-silver">Anekal</strong>, <strong className="text-brand-silver">Shoolagiri</strong>, <strong className="text-brand-silver">Denkanikottai</strong>, <strong className="text-brand-silver">Rayakottai</strong>, and <strong className="text-brand-silver">Kelamangalam</strong>. Fixed-fare <strong className="text-brand-silver">Hosur to Bangalore Airport taxi</strong> starting @ ₹2,200, and outstation cabs starting @ ₹9/km. Call <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking.
           </p>
           <address className="text-xs text-brand-gray/70 mt-3 not-italic">
             YUVA CABS | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: +91 99442 71322 | yuvacalltaxi.com

@@ -55,22 +55,66 @@ export default function LocalSEO() {
 
   const localZones = [
     {
-      title: 'SIPCOT Industrial Area (Phase 1 & 2)',
-      areas: ['SIPCOT Phase 1', 'SIPCOT Phase 2', 'Moranapalli', 'Mookandapalli', 'Zuzuvadi', 'TVS Motor Belt'],
-      tag: 'Industrial & Corporate',
-      pickupTime: '10 - 15 Mins'
+      title: 'SIPCOT & Industrial Concentrated Zones',
+      areas: [
+        'SIPCOT Phase 1',
+        'Zuzuvadi (NH44)',
+        'Mookandapalli Industrial Hub',
+        'TANSIDCO Industrial Estate',
+        'SIPCOT Phase 2',
+        'Moranapalli',
+        'Thorapalli Industrial Area',
+        'Adagurukki & Doripalli (SIPCOT Expansion)',
+        'Hosur IT Park / Viswanathapuram'
+      ],
+      tag: 'Priority Industrial Fleet',
+      pickupTime: '5 - 10 Mins',
+      desc: 'Dedicated 24/7 corporate cabs and shift pickups for manufacturing hubs, IT parks, and logistics warehouses.'
     },
     {
-      title: 'Hosur City & Residential Hubs',
-      areas: ['Railway Station Road', 'Hamman Nagar', 'Mathigiri', 'Bagalur Road', 'Rayakottai Road', 'Avalapalli'],
-      tag: 'Local Point-to-Point',
-      pickupTime: '5 - 10 Mins'
+      title: 'Central Hosur & Transit Terminals',
+      areas: [
+        'Hosur Bus Stand & Central Hosur',
+        'Hosur Railway Station Road',
+        'Bagalur Road & Bagalur Junction',
+        'Old Bengaluru Road',
+        'MG Road & Market Zone',
+        'Hamman Nagar Headquarters'
+      ],
+      tag: 'Rapid Station Dispatch',
+      pickupTime: '3 - 7 Mins',
+      desc: 'Immediate 24-hour taxi pickup outside Hosur railway station, central bus stand, and core commercial centers.'
     },
     {
-      title: 'Border & Suburban Connectors',
-      areas: ['Attibele Border', 'Anekal Road', 'Thally Road', 'Kelamangalam', 'Berigai', 'Denkanikottai'],
-      tag: 'Suburban Cabs',
-      pickupTime: '15 - 20 Mins'
+      title: 'Prime Residential & Suburbs',
+      areas: [
+        'Mathigiri',
+        'Avalapalli & Avalapalli Road',
+        'Shanthi Nagar',
+        'Nehru Nagar & Denkanikottai Road',
+        'Sanasandiram & Kamaraj Colony',
+        'Hosur-Thally Road',
+        'Bedrapalli & Chennathur'
+      ],
+      tag: 'Doorstep Residential Cabs',
+      pickupTime: '5 - 10 Mins',
+      desc: 'Clean Hatchbacks and Sedans for local Hosur family drops, shopping trips, clinic visits, and school commutes.'
+    },
+    {
+      title: 'Bangalore Border & Surrounding Towns',
+      areas: [
+        'Bommasandra Industrial Area',
+        'Chandapura Circle',
+        'Anekal Town & Connector',
+        'Attibele Border & Electronic City',
+        'Shoolagiri (NH44 Highway Belt)',
+        'Denkanikottai Town',
+        'Rayakottai Corridor',
+        'Kelamangalam'
+      ],
+      tag: 'Interstate & Regional Drops',
+      pickupTime: '10 - 15 Mins',
+      desc: 'Direct hassle-free interstate taxis to Bangalore industrial zones and peaceful regional rides across Krishnagiri district.'
     }
   ];
 
@@ -209,7 +253,7 @@ export default function LocalSEO() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
           >
             {localZones.map((zone, idx) => (
               <div
@@ -227,15 +271,19 @@ export default function LocalSEO() {
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-white mb-4">
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-2">
                     {zone.title}
                   </h3>
+
+                  <p className="text-xs text-brand-gray/90 mb-4 leading-relaxed font-medium">
+                    {zone.desc}
+                  </p>
 
                   <div className="flex flex-wrap gap-1.5 mb-6">
                     {zone.areas.map((area, aIdx) => (
                       <span
                         key={aIdx}
-                        className="text-[11px] font-semibold text-brand-silver bg-white/5 border border-white/5 px-2.5 py-1 rounded-lg flex items-center space-x-1"
+                        className="text-[11px] font-semibold text-brand-silver bg-white/5 border border-white/5 px-2.5 py-1 rounded-lg flex items-center space-x-1 hover:border-brand-yellow/20 transition-colors"
                       >
                         <MapPin className="w-2.5 h-2.5 text-brand-yellow mr-1" />
                         <span>{area}</span>
@@ -244,13 +292,24 @@ export default function LocalSEO() {
                   </div>
                 </div>
 
-                <a
-                  href="tel:+919944271322"
-                  className="w-full py-2.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 text-brand-silver font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Request Pickup in this Zone</span>
-                </a>
+                <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
+                  <a
+                    href="tel:+919944271322"
+                    className="py-2.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 text-brand-silver font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Call Driver</span>
+                  </a>
+                  <a
+                    href={`https://wa.me/919944271322?text=${encodeURIComponent(`Hi YUVA CABS, I need a cab in ${zone.title}. Please share driver availability.`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 text-emerald-400 font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5"
+                  >
+                    <MessageSquare className="w-3.5 h-3.5" />
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
               </div>
             ))}
           </motion.div>
