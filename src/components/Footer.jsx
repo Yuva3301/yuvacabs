@@ -19,22 +19,17 @@ export default function Footer({ onAdminToggle }) {
 
   const keywords = [
     'Taxi in Hosur',
-    'Outstation taxi Hosur',
-    'Hosur outstation cabs from ₹9/km',
-    'One way drop taxi Hosur',
-    'Hosur to Chennai cab',
-    'Hosur to Bangalore taxi',
-    'Hosur to Salem cab',
-    'Hosur to Coimbatore taxi',
-    'Hosur to Tirupati taxi',
-    'Hosur to Pondicherry cab',
-    'Hosur to Ooty taxi',
-    'Hosur airport taxi',
     'Cab service Hosur',
+    'Hosur airport taxi',
+    'Taxi booking Hosur',
     'Best cab in Hosur',
+    'Outstation taxi Hosur',
+    'Hosur to Bangalore Airport cab',
     'SIPCOT Hosur cab service',
     'Yuva Cabs Hosur',
-    '24/7 Call Taxi Hosur'
+    '24/7 Call Taxi Hosur',
+    'One way drop taxi Hosur',
+    'Mathigiri cab booking'
   ];
 
   return (
