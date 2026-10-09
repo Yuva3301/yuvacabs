@@ -15,40 +15,40 @@ export default function LocalSEO() {
       badge: 'Swift Dzire Fixed Rate',
       icon: Plane,
       rate: 'Non-A/C ₹2,200 | A/C ₹2,300',
-      desc: 'Swift Dzire special fixed fare: Non-A/C ₹2,200 & A/C ₹2,300. Guaranteed on-time flight pickup, landing delay tracking & zero surge fees.',
+      desc: 'Swift dzire taxi hosur special fixed fare: Non-A/C ₹2,200 & A/C ₹2,300. 24/7 bangalore airport taxi from hosur with flight tracking, zero wait charges, and guaranteed pickup.',
       highlight: 'Best Deal'
     },
     {
       from: 'Hosur',
-      to: 'Electronic City / Silk Board',
-      distance: '35 km',
-      time: '45 min',
-      badge: 'Daily IT Corridor',
+      to: 'Bangalore (Silk Board / Electronic City)',
+      distance: '45 km',
+      time: '1 hr',
+      badge: 'Hosur to Bangalore Taxi',
       icon: Building2,
       rate: 'Starts @ ₹10/km',
-      desc: 'Seamless inter-state corporate transit between Hosur manufacturing zones and Bangalore tech campuses.',
-      highlight: 'Popular'
+      desc: 'Hosur to Bangalore taxi service for daily commuters, tech park workers, and corporate trips with sedan car rental hosur and swift dzire taxi hosur.',
+      highlight: 'Most Frequent'
     },
     {
       from: 'Hosur',
       to: 'Chennai (Central / Airport)',
       distance: '310 km',
       time: '5 hr 30 min',
-      badge: 'One-Way / Round Trip',
+      badge: 'Chennai Airport Taxi',
       icon: Navigation,
       rate: 'Starts @ ₹10/km',
-      desc: 'Smooth highway drive via NH48. Spacious AC Sedans and Innova Crysta for comfortable long-distance travel.',
+      desc: 'Dedicated Chennai airport taxi from hosur and outstation one way taxi in Hosur. Spacious sedans, 7 seater taxi in Hosur, and Innova Crysta rental in Hosur.',
       highlight: 'Best Value'
     },
     {
       from: 'Hosur',
-      to: 'Salem / Coimbatore',
-      distance: '160 km / 310 km',
+      to: 'Salem / Coimbatore / Outstation',
+      distance: '160 km / 320 km',
       time: '2.5 hrs / 5 hrs',
-      badge: 'Express Outstation',
+      badge: 'Outstation & Family Trip',
       icon: MapPin,
       rate: 'Starts @ ₹9/km',
-      desc: 'Affordable outstation cab hire with experienced highway drivers, clean cars, and zero hidden toll charges.',
+      desc: 'Cheap taxi service in Hosur for family trip taxi hosur, business trip taxi hosur, and pilgrimage with Innova Crysta and Tempo Traveller rental in Hosur.',
       highlight: 'Highway Special'
     }
   ];
@@ -57,64 +57,68 @@ export default function LocalSEO() {
     {
       title: 'SIPCOT & Industrial Concentrated Zones',
       areas: [
+        'Call taxi in SIPCOT Hosur',
         'SIPCOT Phase 1',
-        'Zuzuvadi (NH44)',
-        'Mookandapalli Industrial Hub',
+        'Call taxi zuzuvadi hosur',
+        'Taxi service mookandapalli hosur',
         'TANSIDCO Industrial Estate',
         'SIPCOT Phase 2',
         'Moranapalli',
         'Thorapalli Industrial Area',
-        'Adagurukki & Doripalli (SIPCOT Expansion)',
-        'Hosur IT Park / Viswanathapuram'
+        'Adagurukki & Doripalli',
+        'Hosur IT Park Viswanathapuram'
       ],
       tag: 'Priority Industrial Fleet',
       pickupTime: '5 - 10 Mins',
-      desc: 'Dedicated 24/7 corporate cabs and shift pickups for manufacturing hubs, IT parks, and logistics warehouses.'
+      desc: 'Dedicated 24 hours taxi service in Hosur for corporate shifts, industrial workers, and business trip taxi hosur across SIPCOT corridors.'
     },
     {
       title: 'Central Hosur & Transit Terminals',
       areas: [
-        'Hosur Bus Stand & Central Hosur',
-        'Hosur Railway Station Road',
-        'Bagalur Road & Bagalur Junction',
+        'Call taxi near Hosur bus stand',
+        'Taxi service near Hosur new bus stand',
+        'Taxi near Hosur railway station',
+        'Taxi service bagalur road Hosur',
+        'Call taxi in dinnur hosur',
+        'Taxi service jeeva nagar hosur',
         'Old Bengaluru Road',
-        'MG Road & Market Zone',
-        'Hamman Nagar Headquarters'
+        'MG Road & Market Zone'
       ],
       tag: 'Rapid Station Dispatch',
       pickupTime: '3 - 7 Mins',
-      desc: 'Immediate 24-hour taxi pickup outside Hosur railway station, central bus stand, and core commercial centers.'
+      desc: 'Immediate 24-hour taxi pickup outside Hosur railway station, Hosur new bus stand, Bagalur road, and central market locations.'
     },
     {
       title: 'Prime Residential & Suburbs',
       areas: [
-        'Mathigiri',
+        'Taxi service mathigiri hosur',
+        'Call taxi sanasandiram hosur',
+        'Call taxi denkanikottai road Hosur',
+        'Call taxi kelamangalam road hosur',
         'Avalapalli & Avalapalli Road',
         'Shanthi Nagar',
-        'Nehru Nagar & Denkanikottai Road',
-        'Sanasandiram & Kamaraj Colony',
-        'Hosur-Thally Road',
-        'Bedrapalli & Chennathur'
+        'Nehru Nagar',
+        'Kamaraj Colony'
       ],
       tag: 'Doorstep Residential Cabs',
       pickupTime: '5 - 10 Mins',
-      desc: 'Clean Hatchbacks and Sedans for local Hosur family drops, shopping trips, clinic visits, and school commutes.'
+      desc: 'Clean Hatchbacks, swift dzire taxi hosur, and seven seater car rental hosur for family trip taxi hosur, shopping, clinic visits, and school commutes.'
     },
     {
       title: 'Bangalore Border & Surrounding Towns',
       areas: [
+        'Taxi service attibele',
+        'Call taxi berigai',
+        'Hosur to Bangalore taxi',
         'Bommasandra Industrial Area',
         'Chandapura Circle',
         'Anekal Town & Connector',
-        'Attibele Border & Electronic City',
-        'Shoolagiri (NH44 Highway Belt)',
-        'Denkanikottai Town',
-        'Rayakottai Corridor',
-        'Kelamangalam'
+        'Shoolagiri (NH44 Belt)',
+        'Denkanikottai & Rayakottai'
       ],
       tag: 'Interstate & Regional Drops',
       pickupTime: '10 - 15 Mins',
-      desc: 'Direct hassle-free interstate taxis to Bangalore industrial zones and peaceful regional rides across Krishnagiri district.'
+      desc: 'Direct interstate cabs between Hosur, Attibele, Berigai, Bommasandra, Chandapura, and regional trips across Krishnagiri.'
     }
   ];
 

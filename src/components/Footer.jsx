@@ -18,41 +18,61 @@ export default function Footer({ onAdminToggle }) {
   ];
 
   const keywords = [
+    'Yuva Call Taxi Hosur',
+    'most reliable taxi service in Hosur',
+    'taxi service in Hosur',
+    'call taxi near me',
+    'taxi near me',
+    'cab service in Hosur',
+    'car rental in Hosur',
+    'online taxi booking in Hosur',
+    'local taxi service in Hosur',
+    'outstation taxi in Hosur',
+    'airport taxi in Hosur',
+    'airport pickup and drop in Hosur',
+    'one way taxi in Hosur',
+    'round trip taxi in Hosur',
+    '24 hours taxi service in Hosur',
+    'seven seater taxi in Hosur',
+    'Innova Crysta rental in Hosur',
+    'Tempo Traveller rental in Hosur',
+    'tour and travel service in Hosur',
+    'cheap taxi service in Hosur',
+    'call taxi near Hosur bus stand',
+    'taxi near Hosur railway station',
+    'taxi service near Hosur new bus stand',
+    'call taxi in SIPCOT Hosur',
+    'taxi service bagalur road Hosur',
+    'call taxi denkanikottai road Hosur',
+    'call taxi in dinnur hosur',
+    'taxi service jeeva nagar hosur',
+    'call taxi sanasandiram hosur',
+    'taxi service mathigiri hosur',
+    'call taxi kelamangalam road hosur',
+    'taxi service attibele',
+    'call taxi berigai',
+    'taxi service mookandapalli hosur',
+    'call taxi zuzuvadi hosur',
+    'sedan car rental hosur',
+    'swift dzire taxi hosur',
+    'seven seater car rental hosur',
+    'family trip taxi hosur',
+    'business trip taxi hosur',
+    'chennai airport taxi from hosur',
+    'bangalore airport taxi from hosur',
+    'hosur to bangalore taxi',
     'SIPCOT Phase 1 taxi',
     'SIPCOT Phase 2 cab',
-    'Zuzuvadi taxi Hosur',
-    'Mookandapalli cab service',
     'TANSIDCO Hosur taxi',
-    'Moranapalli taxi',
-    'Thorapalli cab',
-    'Bagalur Road taxi',
-    'Bagalur Junction cab',
-    'Hosur Railway Station taxi',
     'Shanthi Nagar Hosur cab',
-    'Nehru Nagar taxi',
-    'Denkanikottai Road cab',
-    'Mathigiri cab booking',
-    'Avalapalli Road taxi',
-    'Sanasandiram cab',
-    'Kamaraj Colony taxi',
     'Old Bengaluru Road taxi',
-    'MG Road Hosur cab',
-    'Hosur Bus Stand taxi',
-    'Hosur-Thally Road cab',
     'Hosur IT Park taxi',
-    'Viswanathapuram cab',
-    'Adagurukki taxi',
-    'Doripalli cab service',
     'Shoolagiri taxi',
     'Chandapura cab',
     'Anekal taxi Hosur',
     'Bommasandra cab service',
     'Denkanikottai taxi',
-    'Rayakottai cab',
-    'Kelamangalam taxi',
-    'Hosur to Bangalore Airport cab',
-    'Outstation taxi Hosur',
-    '24/7 Call Taxi Hosur'
+    'Kelamangalam taxi'
   ];
 
   return (
@@ -185,9 +205,15 @@ export default function Footer({ onAdminToggle }) {
       {/* SEO Footer Content */}
       <div className="border-t border-white/5 pt-8 mt-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-sm font-bold text-brand-silver mb-3">YUVA CABS — Hosur's Most Trusted Taxi & Cab Service</h3>
+          <h3 className="text-sm font-bold text-brand-silver mb-3">YUVA CABS — Yuva Call Taxi Hosur | Most Reliable Taxi Service in Hosur</h3>
           <p className="text-xs text-brand-gray/80 leading-relaxed font-medium">
-            YUVA CABS (Yuva Call Taxi) is Hosur's #1 rated taxi and cab booking service. We provide 24/7 rapid 5-10 minute pickups across <strong className="text-brand-silver">SIPCOT Phase 1 (Zuzuvadi, Mookandapalli)</strong>, <strong className="text-brand-silver">TANSIDCO</strong>, <strong className="text-brand-silver">SIPCOT Phase 2 (Moranapalli, Thorapalli)</strong>, <strong className="text-brand-silver">Adagurukki & Doripalli expansion</strong>, <strong className="text-brand-silver">Bagalur Road & Junction</strong>, <strong className="text-brand-silver">Hosur Railway Station Road</strong>, <strong className="text-brand-silver">Hosur Central Bus Stand</strong>, <strong className="text-brand-silver">Mathigiri</strong>, <strong className="text-brand-silver">Avalapalli Road</strong>, <strong className="text-brand-silver">Shanthi Nagar</strong>, <strong className="text-brand-silver">Nehru Nagar</strong>, <strong className="text-brand-silver">Sanasandiram</strong>, <strong className="text-brand-silver">Old Bengaluru Road & MG Road</strong>, and <strong className="text-brand-silver">Hosur IT Park</strong>. We also provide direct interstate and regional cabs to <strong className="text-brand-silver">Bommasandra</strong>, <strong className="text-brand-silver">Chandapura</strong>, <strong className="text-brand-silver">Anekal</strong>, <strong className="text-brand-silver">Shoolagiri</strong>, <strong className="text-brand-silver">Denkanikottai</strong>, <strong className="text-brand-silver">Rayakottai</strong>, and <strong className="text-brand-silver">Kelamangalam</strong>. Fixed-fare <strong className="text-brand-silver">Hosur to Bangalore Airport taxi</strong> starting @ ₹2,200, and outstation cabs starting @ ₹9/km. Call <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking.
+            YUVA CABS (<strong className="text-brand-silver">Yuva Call Taxi Hosur</strong>) is recognized as the <strong className="text-brand-silver">most reliable taxi service in Hosur</strong>. Whether you need a <strong className="text-brand-silver">taxi service in Hosur</strong>, searching for <strong className="text-brand-silver">call taxi near me</strong> or <strong className="text-brand-silver">taxi near me</strong>, our 24/7 fleet offers the best <strong className="text-brand-silver">cab service in Hosur</strong> and <strong className="text-brand-silver">car rental in Hosur</strong> with seamless <strong className="text-brand-silver">online taxi booking in Hosur</strong>. We specialize in <strong className="text-brand-silver">local taxi service in Hosur</strong>, <strong className="text-brand-silver">outstation taxi in Hosur</strong>, <strong className="text-brand-silver">airport taxi in Hosur</strong>, <strong className="text-brand-silver">airport pickup and drop in Hosur</strong>, <strong className="text-brand-silver">one way taxi in Hosur</strong>, and <strong className="text-brand-silver">round trip taxi in Hosur</strong> with dedicated <strong className="text-brand-silver">24 hours taxi service in Hosur</strong>.
+          </p>
+          <p className="text-xs text-brand-gray/80 leading-relaxed font-medium mt-2">
+            Looking for vehicle hire? Choose from our <strong className="text-brand-silver">sedan car rental hosur</strong> (<strong className="text-brand-silver">swift dzire taxi hosur</strong>), <strong className="text-brand-silver">seven seater taxi in Hosur</strong>, <strong className="text-brand-silver">seven seater car rental hosur</strong>, <strong className="text-brand-silver">Innova Crysta rental in Hosur</strong>, and <strong className="text-brand-silver">Tempo Traveller rental in Hosur</strong>. We provide end-to-end <strong className="text-brand-silver">tour and travel service in Hosur</strong> with <strong className="text-brand-silver">cheap taxi service in Hosur</strong> tariffs for <strong className="text-brand-silver">family trip taxi hosur</strong> and <strong className="text-brand-silver">business trip taxi hosur</strong>.
+          </p>
+          <p className="text-xs text-brand-gray/80 leading-relaxed font-medium mt-2">
+            Instant 5-10 minute pickups available: <strong className="text-brand-silver">call taxi near Hosur bus stand</strong>, <strong className="text-brand-silver">taxi service near Hosur new bus stand</strong>, <strong className="text-brand-silver">taxi near Hosur railway station</strong>, <strong className="text-brand-silver">call taxi in SIPCOT Hosur</strong>, <strong className="text-brand-silver">taxi service bagalur road Hosur</strong>, <strong className="text-brand-silver">call taxi denkanikottai road Hosur</strong>, <strong className="text-brand-silver">call taxi in dinnur hosur</strong>, <strong className="text-brand-silver">taxi service jeeva nagar hosur</strong>, <strong className="text-brand-silver">call taxi sanasandiram hosur</strong>, <strong className="text-brand-silver">taxi service mathigiri hosur</strong>, <strong className="text-brand-silver">call taxi kelamangalam road hosur</strong>, <strong className="text-brand-silver">taxi service attibele</strong>, <strong className="text-brand-silver">call taxi berigai</strong>, <strong className="text-brand-silver">taxi service mookandapalli hosur</strong>, and <strong className="text-brand-silver">call taxi zuzuvadi hosur</strong>. We also operate daily <strong className="text-brand-silver">chennai airport taxi from hosur</strong>, <strong className="text-brand-silver">bangalore airport taxi from hosur</strong>, and direct <strong className="text-brand-silver">hosur to bangalore taxi</strong> services. Call <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a>.
           </p>
           <address className="text-xs text-brand-gray/70 mt-3 not-italic">
             YUVA CABS | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: +91 99442 71322 | yuvacalltaxi.com
