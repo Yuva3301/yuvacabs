@@ -138,11 +138,11 @@ export default function LocalSEO() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Best Taxi Service in <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Hosur & Popular Routes</span>
+            Yuva Call Taxi Hosur — <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Fast Pickups Across All Locations</span>
           </h2>
 
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed font-medium">
-            Whether you need a quick 10-minute local pickup in SIPCOT, a midnight transfer to Kempegowda Airport (BLR), or an outstation drop across Tamil Nadu & Karnataka, YUVA CABS guarantees on-time arrival.
+            Hosur's #1 most reliable taxi service. Cabs stationed 24/7 across SIPCOT, Hosur Bus Stand, Railway Station, Dinnur, Mathigiri, Bagalur Rd, Attibele & Bangalore Airport with guaranteed 5-10 minute driver dispatch. Call <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a>.
           </p>
 
           {/* Toggle Pills */}
@@ -299,18 +299,18 @@ export default function LocalSEO() {
                 <div className="grid grid-cols-2 gap-2 pt-2 border-t border-white/5">
                   <a
                     href="tel:+919944271322"
-                    className="py-2.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 text-brand-silver font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5"
+                    className="py-2.5 rounded-xl bg-brand-yellow text-brand-black hover:brightness-110 font-black text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-sm"
                   >
-                    <Phone className="w-3.5 h-3.5" />
+                    <Phone className="w-3.5 h-3.5 fill-brand-black" />
                     <span>Call Driver</span>
                   </a>
                   <a
                     href={`https://wa.me/919944271322?text=${encodeURIComponent(`Hi YUVA CABS, I need a cab in ${zone.title}. Please share driver availability.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500 hover:text-white border border-emerald-500/20 text-emerald-400 font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5"
+                    className="py-2.5 rounded-xl bg-[#25D366] text-white hover:brightness-110 font-bold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-sm"
                   >
-                    <MessageSquare className="w-3.5 h-3.5" />
+                    <MessageSquare className="w-3.5 h-3.5 fill-white" />
                     <span>WhatsApp</span>
                   </a>
                 </div>

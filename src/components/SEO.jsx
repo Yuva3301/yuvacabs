@@ -348,9 +348,9 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
-      <meta name="title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
-      <meta name="description" content="Hosur's #1 rated cab service. 24/7 cabs in SIPCOT Phase 1 & 2, Zuzuvadi, Mookandapalli, TANSIDCO, Mathigiri, Bagalur Rd, Railway Station, Chandapura, Bommasandra, Anekal, Shoolagiri & BLR Airport from ₹9/km. Call +91 99442 71322." />
+      <title>Yuva Call Taxi Hosur | Most Reliable Taxi Service in Hosur | 24/7 Call Taxi Near Me</title>
+      <meta name="title" content="Yuva Call Taxi Hosur | Most Reliable Taxi Service in Hosur | 24/7 Call Taxi Near Me" />
+      <meta name="description" content="Yuva Call Taxi Hosur — Most reliable taxi service in Hosur. 24/7 call taxi near me with 5-10 min pickup in SIPCOT, Bus Stand, Railway Station, Dinnur, Mathigiri, Bagalur Rd & Bangalore Airport from ₹9/km. Call +91 99442 71322." />
       <meta name="keywords" content="Yuva Call Taxi Hosur, most reliable taxi service in Hosur, taxi service in Hosur, call taxi near me, taxi near me, cab service in Hosur, car rental in Hosur, online taxi booking in Hosur, local taxi service in Hosur, outstation taxi in Hosur, airport taxi in Hosur, airport pickup and drop in Hosur, one way taxi in Hosur, round trip taxi in Hosur, 24 hours taxi service in Hosur, seven seater taxi in Hosur, Innova Crysta rental in Hosur, Tempo Traveller rental in Hosur, tour and travel service in Hosur, cheap taxi service in Hosur, call taxi near Hosur bus stand, taxi near Hosur railway station, taxi service near Hosur new bus stand, call taxi in SIPCOT Hosur, taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, call taxi berigai, taxi service mookandapalli hosur, call taxi zuzuvadi hosur, sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur, family trip taxi hosur, business trip taxi hosur, chennai airport taxi from hosur, bangalore airport taxi from hosur, hosur to bangalore taxi, yuvaa call taxi, yuvacalltaxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, sipcot phase 1 taxi, sipcot phase 2 cab, zuzuvadi taxi, mookandapalli cab, tansidco hosur taxi, moranapalli cab, thorapalli taxi, bagalur road taxi, bagalur junction cab, hosur railway station taxi, shanthi nagar hosur taxi, nehru nagar cab, mathigiri taxi service, avalapalli road cab, sanasandiram taxi, kamaraj colony cab, old bengaluru road taxi, mg road hosur taxi, hosur bus stand taxi, hosur it park taxi, viswanathapuram cab, adagurukki taxi, doripalli cab, shoolagiri taxi, chandapura cab, anekal taxi hosur, bommasandra taxi, denkanikottai cab, rayakottai taxi, kelamangalam cab, hosur to bangalore airport taxi, outstation cabs hosur, 24/7 taxi hosur" />
       <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -366,9 +366,9 @@ export default function SEO() {
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
-      <meta property="og:site_name" content="YUVAA CALL TAXI (YUVA CABS)" />
-      <meta property="og:title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
-      <meta property="og:description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
+      <meta property="og:title" content="Yuva Call Taxi Hosur | Most Reliable Taxi Service in Hosur | 24/7 Call Taxi Near Me" />
+      <meta property="og:description" content="Yuva Call Taxi Hosur — Most reliable taxi service in Hosur. 24/7 call taxi near me with 5-10 min pickups in SIPCOT, Bus Stand, Railway Station, Dinnur, Mathigiri & Bangalore Airport. Call +91 99442 71322." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -381,8 +381,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="YUVAA CALL TAXI (YUVA CABS) | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
-      <meta property="twitter:description" content="YUVAA CALL TAXI (YUVA CABS) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
+      <meta property="twitter:title" content="Yuva Call Taxi Hosur | Most Reliable Taxi Service in Hosur | 24/7 Call Taxi Near Me" />
+      <meta property="twitter:description" content="Yuva Call Taxi Hosur — Most reliable taxi service in Hosur. 24/7 call taxi near me with 5-10 min pickups in SIPCOT, Bus Stand, Railway Station, Dinnur, Mathigiri & Bangalore Airport. Call +91 99442 71322." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}
