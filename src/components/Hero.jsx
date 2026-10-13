@@ -222,35 +222,36 @@ export default function Hero() {
         <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
           
           {/* Animated Gold Tag */}
+          {/* Animated Gold Tag */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="self-start inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-semibold uppercase tracking-widest"
+            className="self-start inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold uppercase tracking-widest"
           >
-            <span className="w-2 h-2 rounded-full bg-brand-yellow animate-ping" />
-            <span>YUVA CABS Hosur</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+            <span>⚡ 24/7 Call Taxi Near Me • 5-10 Min Pickup in Hosur</span>
           </motion.div>
 
-          {/* Heading with increased font size */}
+          {/* Heading with primary keyword authority */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-black tracking-tight text-brand-white leading-[1.05] text-left"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] font-black tracking-tight text-brand-white leading-[1.08] text-left"
           >
-            Best <span className="text-stroke-yellow text-transparent font-black">Taxi & Cab</span> <br />
-            <span className="text-stroke-yellow text-transparent font-black">Service in Hosur</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">YUVA CALL TAXI</span> <br />
+            <span className="text-white">Most Reliable Taxi Service in Hosur</span>
           </motion.h1>
 
-          {/* Subtitle with increased font size */}
+          {/* Subtitle with high-ranking location keywords */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl md:text-2xl text-brand-silver/90 max-w-xl font-semibold leading-relaxed text-left"
+            className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            24/7 Local & Outstation Cab Booking. <span className="text-brand-yellow font-extrabold">Outstation trips @ ₹9 to ₹12/km</span>. Verified drivers, clean fleet, and transparent pricing.
+            Hosur's #1 rated 24 hours taxi service. Rapid 5-10 min pickups in <strong className="text-brand-yellow">SIPCOT</strong>, <strong className="text-brand-yellow">Hosur Bus Stand</strong>, <strong className="text-brand-yellow">Railway Station</strong>, <strong className="text-brand-yellow">Dinnur</strong>, <strong className="text-brand-yellow">Mathigiri</strong>, <strong className="text-brand-yellow">Bagalur Rd</strong> & <strong className="text-brand-yellow">BLR Airport</strong>. Outstation trips from <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
           {/* Action CTAs */}
@@ -260,22 +261,22 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-wrap gap-4 pt-4"
           >
+            {/* Primary Call Now Hotline Button */}
+            <a
+              href="tel:+919944271322"
+              className="flex items-center justify-center space-x-2 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-base tracking-tight shadow-[0_0_30px_rgba(255,212,59,0.35)] hover:shadow-[0_0_45px_rgba(255,212,59,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
+            >
+              <Phone className="w-5 h-5 fill-brand-black" />
+              <span>Call: +91 99442 71322</span>
+            </a>
+
             {/* Book Now */}
             <a
               href="#contact"
-              className="flex items-center justify-center space-x-2 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-base tracking-tight shadow-[0_0_30px_rgba(255,212,59,0.35)] hover:shadow-[0_0_45px_rgba(255,212,59,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="flex items-center justify-center space-x-2 px-7 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300 font-bold"
             >
-              <Calendar className="w-5 h-5" />
-              <span>Book Cab Now</span>
-            </a>
-
-            {/* Call Hotlines */}
-            <a
-              href="tel:+919944271322"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300 font-bold"
-            >
-              <Phone className="w-5 h-5 text-brand-yellow" />
-              <span>Call: +91 99442 71322</span>
+              <Calendar className="w-5 h-5 text-brand-yellow" />
+              <span>Book Cab Online</span>
             </a>
 
             {/* WhatsApp */}

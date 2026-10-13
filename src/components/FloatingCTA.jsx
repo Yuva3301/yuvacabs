@@ -21,6 +21,26 @@ export default function FloatingCTA() {
       <AnimatePresence>
         {isVisible && (
           <>
+            {/* Desktop Quick Call Floating Pill */}
+            <motion.a
+              key="call-float-desktop"
+              initial={{ opacity: 0, scale: 0.8, x: -20 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={{ opacity: 0, scale: 0.8, x: -20 }}
+              transition={{ duration: 0.3 }}
+              href="tel:+919944271322"
+              title="Call Yuva Call Taxi Hosur"
+              className="hidden md:flex fixed bottom-8 left-8 z-40 items-center space-x-2.5 px-5 py-3.5 bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black rounded-full font-black text-sm shadow-[0_0_25px_rgba(255,212,59,0.4)] hover:shadow-[0_0_35px_rgba(255,212,59,0.7)] hover:scale-105 transition-all cursor-pointer group"
+            >
+              <div className="w-8 h-8 rounded-full bg-brand-black flex items-center justify-center text-brand-yellow">
+                <Phone className="w-4 h-4 fill-brand-yellow" />
+              </div>
+              <div className="flex flex-col text-left leading-tight">
+                <span className="text-[10px] uppercase font-extrabold tracking-wider opacity-80">24/7 Call Taxi Hosur</span>
+                <span className="text-sm font-black">+91 99442 71322</span>
+              </div>
+            </motion.a>
+
             {/* Desktop Instagram Orb */}
             <motion.a
               key="instagram-float-desktop"
