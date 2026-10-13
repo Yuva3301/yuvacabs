@@ -93,7 +93,20 @@ export default function SEO() {
           { "@type": "AdministrativeArea", "name": "Trichy" },
           { "@type": "AdministrativeArea", "name": "Mysore" },
           { "@type": "AdministrativeArea", "name": "Krishnagiri" },
-          { "@type": "AdministrativeArea", "name": "Dharmapuri" }
+          { "@type": "AdministrativeArea", "name": "Dharmapuri" },
+          { "@type": "AdministrativeArea", "name": "Uthanapalli" },
+          { "@type": "AdministrativeArea", "name": "Rayakottai" },
+          { "@type": "AdministrativeArea", "name": "Berigai" },
+          { "@type": "AdministrativeArea", "name": "Jigini" },
+          { "@type": "AdministrativeArea", "name": "Sarjapura" },
+          { "@type": "AdministrativeArea", "name": "Whitefield" },
+          { "@type": "AdministrativeArea", "name": "Denkanikottai" },
+          { "@type": "AdministrativeArea", "name": "Dinnur Hosur" },
+          { "@type": "AdministrativeArea", "name": "Jeeva Nagar Hosur" },
+          { "@type": "AdministrativeArea", "name": "Sanasandiram Hosur" },
+          { "@type": "AdministrativeArea", "name": "Kelamangalam" },
+          { "@type": "AdministrativeArea", "name": "Hosur Bus Stand" },
+          { "@type": "AdministrativeArea", "name": "Hosur Railway Station" }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -273,7 +286,7 @@ export default function SEO() {
       <title>YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport &amp; Outstation Taxi Service</title>
       <meta name="title" content="YUVAA CALL TAXI | Best Taxi Service in Hosur | 24/7 Airport & Outstation Taxi Service" />
       <meta name="description" content="YUVAA CALL TAXI (Yuva Call Taxi) — Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. 24/7 airport taxi to Bangalore, one-way drop to Chennai, Salem, Coimbatore. Call +91 99442 71322." />
-      <meta name="keywords" content="yuvaa call taxi, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, hosur taxi service, hosur cab service, hosur to bangalore taxi, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, outstation cab hosur, local taxi hosur, one way taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, taxi booking hosur, cab booking hosur, yuva call taxi hosur" />
+      <meta name="keywords" content="yuvaa call taxi, yuva call taxi hosur, yuvacalltaxi, hosur taxi, taxi in hosur, cab in hosur, hosur cab, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, most reliable taxi service in hosur, taxi service in hosur, call taxi near me, taxi near me, cab service in hosur, car rental in hosur, online taxi booking in hosur, local taxi service in hosur, outstation taxi in hosur, airport taxi in hosur, airport pickup and drop in hosur, one way taxi in hosur, round trip taxi in hosur, 24 hours taxi service in hosur, seven seater taxi in hosur, innova crysta rental in hosur, tempo traveller rental in hosur, tour and travel service in hosur, cheap taxi service in hosur, call taxi near hosur bus stand, taxi near hosur railway station, taxi service near hosur new bus stand, call taxi in sipcot hosur, taxi service bagalur road hosur, call taxi denkanikottai road hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, call taxi berigai, taxi service mookandapalli hosur, call taxi zuzuvadi hosur, sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur, family trip taxi hosur, business trip taxi hosur, chennai airport taxi from hosur, bangalore airport taxi from hosur, hosur to bangalore taxi, uthanapalli taxi, rayakottai taxi, berigai taxi, krishnagiri taxi, electronic city taxi from hosur, jigini taxi, sarjapura taxi, whitefield taxi from hosur, hosur taxi service, hosur cab service, hosur to chennai cab, hosur to chennai taxi, hosur airport taxi, outstation taxi hosur, local taxi hosur, drop taxi hosur, hosur to bangalore airport taxi, hosur to salem taxi, hosur to coimbatore cab, hosur to tirupati taxi, hosur to ooty cab, hosur to pondicherry taxi, taxi booking hosur, cab booking hosur" />
       <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />
