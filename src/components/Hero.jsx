@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, MessageSquare, Calendar, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Phone, MessageSquare, Calendar, ChevronRight, CheckCircle2, MapPin, Clock, Sparkles } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 import hatchbackTaxiImg from '../assets/hatchback_taxi.png';
@@ -226,90 +226,116 @@ export default function Hero() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="self-start inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-semibold uppercase tracking-widest"
+            className="self-start inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold uppercase tracking-wider"
           >
-            <span className="w-2 h-2 rounded-full bg-brand-yellow animate-ping" />
-            <span>YUVA CABS Hosur</span>
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+            <span>⚡ 5–10 Min Pickup • 24/7 Available in Hosur</span>
           </motion.div>
 
-          {/* Heading with increased font size */}
+          {/* Search Optimized High-Conversion Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-7xl md:text-8xl lg:text-[5.5rem] font-black tracking-tight text-brand-white leading-[1.05] text-left"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] font-black tracking-tight text-brand-white leading-[1.08] text-left"
           >
-            Best <span className="text-stroke-yellow text-transparent font-black">Taxi & Cab</span> <br />
-            <span className="text-stroke-yellow text-transparent font-black">Service in Hosur</span>
+            Call Taxi Near Me <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow">
+              Hosur 24/7 Local Cab
+            </span>
           </motion.h1>
 
-          {/* Subtitle with increased font size */}
+          {/* Subtitle with High-Ranking Locations and Pricing */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg sm:text-xl md:text-2xl text-brand-silver/90 max-w-xl font-semibold leading-relaxed text-left"
+            className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            24/7 Local & Outstation Cab Booking. <span className="text-brand-yellow font-extrabold">Outstation trips @ ₹9 to ₹12/km</span>. Verified drivers, clean fleet, and transparent pricing.
+            Need a cab right now? Guaranteed 5–10 min arrival at <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Hosur Bus Stand</strong>, <strong className="text-white">SIPCOT 1 &amp; 2</strong>, Mathigiri &amp; all local areas. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
-          {/* Action CTAs */}
+          {/* High-Conversion Primary Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap gap-4 pt-4"
+            className="flex flex-wrap items-center gap-3.5 pt-2"
           >
-            {/* Book Now */}
-            <a
-              href="#contact"
-              className="flex items-center justify-center space-x-2 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-base tracking-tight shadow-[0_0_30px_rgba(255,212,59,0.35)] hover:shadow-[0_0_45px_rgba(255,212,59,0.6)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
-              <Calendar className="w-5 h-5" />
-              <span>Book Cab Now</span>
-            </a>
-
-            {/* Call Hotlines */}
+            {/* Primary Instant Call CTA */}
             <a
               href="tel:+919944271322"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-white hover:bg-slate-50 text-slate-800 border border-slate-200 dark:bg-brand-charcoal dark:hover:bg-brand-charcoal/80 dark:text-brand-white dark:border-white/10 dark:hover:border-brand-yellow/30 transition-all duration-300 font-bold"
+              className="flex items-center justify-center space-x-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-base sm:text-lg tracking-tight shadow-[0_0_35px_rgba(255,212,59,0.5)] hover:shadow-[0_0_55px_rgba(255,212,59,0.8)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
             >
-              <Phone className="w-5 h-5 text-brand-yellow" />
-              <span>Call: +91 99442 71322</span>
+              <Phone className="w-5 h-5 fill-brand-black text-brand-black animate-bounce" />
+              <span>Call Taxi: +91 99442 71322</span>
             </a>
 
-            {/* WhatsApp */}
+            {/* Direct WhatsApp Instant Booking */}
             <a
-              href="https://wa.me/919944271322?text=Hi! I want to book a taxi in Hosur."
+              href="https://wa.me/919944271322?text=Hello%20YUVA%20CABS,%20I%20need%20a%20taxi%20pickup%20in%20Hosur%20right%20now."
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(16,185,129,0.25)] hover:shadow-[0_4px_20px_rgba(16,185,129,0.45)] hover:scale-105 transition-all duration-300 cursor-pointer"
+              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm sm:text-base tracking-tight shadow-[0_4px_16px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
             >
-              <MessageSquare className="w-5 h-5" />
-              <span>WhatsApp Chat</span>
+              <MessageSquare className="w-5 h-5 fill-white" />
+              <span>WhatsApp Booking</span>
             </a>
 
-            {/* Instagram */}
+            {/* Online Schedule */}
             <a
-              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:to-amber-600 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(219,39,119,0.3)] hover:shadow-[0_4px_20px_rgba(219,39,119,0.5)] hover:scale-105 transition-all duration-300 cursor-pointer"
+              href="#contact"
+              className="flex items-center justify-center space-x-2 px-5 py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white font-bold text-xs sm:text-sm border border-white/10 hover:border-brand-yellow/40 transition-all duration-300"
             >
-              <FaInstagram className="w-5 h-5" />
-              <span>Instagram</span>
+              <Calendar className="w-4 h-4 text-brand-yellow" />
+              <span>Schedule Ride</span>
             </a>
+          </motion.div>
 
-            {/* Facebook */}
-            <a
-              href="https://www.facebook.com/share/1BwH4m16r9/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-bold text-base tracking-tight shadow-[0_4px_14px_rgba(37,99,235,0.3)] hover:shadow-[0_4px_20px_rgba(37,99,235,0.5)] hover:scale-105 transition-all duration-300 cursor-pointer"
-            >
-              <FaFacebook className="w-5 h-5" />
-              <span>Facebook</span>
-            </a>
+          {/* Quick Instant-Pickup Hub Badges (Tap to Call for Area) */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="pt-2"
+          >
+            <span className="text-[11px] text-brand-gray uppercase font-bold tracking-wider block mb-2">
+              📍 Rapid Dispatch Hubs (Tap to Call):
+            </span>
+            <div className="flex flex-wrap gap-2">
+              <a
+                href="tel:+919944271322"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
+                title="Call for Hosur Railway Station Taxi Pickup"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
+                <span>Railway Station Taxi (3–5 min)</span>
+              </a>
+              <a
+                href="tel:+919944271322"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
+                title="Call for Hosur Bus Stand Taxi Pickup"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
+                <span>Bus Stand Taxi (3–5 min)</span>
+              </a>
+              <a
+                href="tel:+919944271322"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
+                title="Call for SIPCOT Hosur Taxi Pickup"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
+                <span>SIPCOT 1 &amp; 2 (5–10 min)</span>
+              </a>
+              <a
+                href="tel:+919944271322"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
+                title="Call for Local Cab in Hosur"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
+                <span>Local Cab (Any Location)</span>
+              </a>
+            </div>
           </motion.div>
 
           {/* Quick Trust factors */}
@@ -317,15 +343,19 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex items-center space-x-6 text-brand-silver/60 text-sm pt-4"
+            className="flex flex-wrap items-center gap-4 text-brand-silver/70 text-xs pt-1"
           >
-            <div className="flex items-center space-x-2">
-              <CheckCircle2 className="w-4 h-4 text-brand-emerald" />
-              <span>No Hidden Charges</span>
+            <div className="flex items-center space-x-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>Zero Surge Pricing</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <CheckCircle2 className="w-4 h-4 text-brand-emerald" />
-              <span>Top Rated Drivers</span>
+            <div className="flex items-center space-x-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>Local Starts @ ₹150</span>
+            </div>
+            <div className="flex items-center space-x-1.5">
+              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+              <span>4.9★ Google Rating (385+ Reviews)</span>
             </div>
           </motion.div>
 

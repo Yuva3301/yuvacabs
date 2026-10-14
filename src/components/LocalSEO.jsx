@@ -191,15 +191,15 @@ export default function LocalSEO() {
         <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col space-y-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-bold uppercase tracking-widest self-center">
             <Compass className="w-3.5 h-3.5" />
-            <span>Hosur & Outstation Transit Network</span>
+            <span>24/7 Local Cab Hubs &amp; Outstation Transit Network</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Best Taxi in Hosur & <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Outstation Cabs from ₹9/km</span>
+            Call Taxi Near Me &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Local Cabs in Hosur from ₹150</span>
           </h2>
           
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed font-medium">
-            From 15-minute local pickups across SIPCOT & Hosur to long-distance outstation trips across Tamil Nadu, Karnataka & Andhra Pradesh, YUVA CABS guarantees transparent fares and certified chauffeurs.
+            Dedicated cabs stationed 24/7 across Hosur Railway Station, Bus Stand, SIPCOT &amp; all local neighborhoods for 5–10 min pickup. Plus transparent outstation trips from ₹9/km with certified chauffeurs.
           </p>
 
           {/* Toggle Pills */}

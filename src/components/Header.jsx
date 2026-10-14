@@ -124,15 +124,14 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
 
           {/* Mobile Menu Buttons */}
           <div className="flex items-center space-x-2 md:space-x-3 lg:hidden">
-            {/* Instagram Link Mobile */}
+            {/* Quick Call Button on Mobile */}
             <a
-              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 text-pink-400 hover:text-pink-300 rounded-full cursor-pointer flex items-center justify-center border border-pink-500/20"
-              title="Instagram"
+              href="tel:+919944271322"
+              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-xs shadow-md active:scale-95 transition-all"
+              title="Call Taxi Now"
             >
-              <FaInstagram className="w-5 h-5" />
+              <Phone className="w-3.5 h-3.5 fill-brand-black text-brand-black" />
+              <span>Call</span>
             </a>
 
             {/* Theme Switcher Toggle */}

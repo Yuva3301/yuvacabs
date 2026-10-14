@@ -92,6 +92,19 @@ export default function Contact() {
         window.dispatchEvent(new Event('yuvacabs_booking_submitted'));
         
         setSubmitSuccess(true);
+        
+        // Auto-launch WhatsApp with full booking details
+        const waMsg = `Hello YUVA CALL TAXI, I want to book a cab:\n` +
+          `• Name: ${formData.name}\n` +
+          `• Phone: ${formData.phone}\n` +
+          `• Pickup: ${formData.pickup}\n` +
+          `• Drop: ${formData.drop}\n` +
+          `• Date/Time: ${formData.date} at ${formData.time}\n` +
+          `• Vehicle: ${formData.vehicle.toUpperCase()} (${formData.ac_service.toUpperCase()})\n` +
+          (formData.message ? `• Note: ${formData.message}\n` : '');
+        
+        window.open(`https://wa.me/919944271322?text=${encodeURIComponent(waMsg)}`, '_blank');
+
         setFormData({
           name: '',
           phone: '',

@@ -17,26 +17,6 @@ export default function Footer({ onAdminToggle }) {
     { name: 'Book Now', href: '#contact' },
   ];
 
-  const keywords = [
-    'Taxi in Hosur',
-    'Outstation taxi Hosur',
-    'Hosur outstation cabs from ₹9/km',
-    'One way drop taxi Hosur',
-    'Hosur to Chennai cab',
-    'Hosur to Bangalore taxi',
-    'Hosur to Salem cab',
-    'Hosur to Coimbatore taxi',
-    'Hosur to Tirupati taxi',
-    'Hosur to Pondicherry cab',
-    'Hosur to Ooty taxi',
-    'Hosur airport taxi',
-    'Cab service Hosur',
-    'Best cab in Hosur',
-    'SIPCOT Hosur cab service',
-    'Yuva Cabs Hosur',
-    '24/7 Call Taxi Hosur'
-  ];
-
   return (
     <footer className="bg-brand-black dark-blue-section border-t border-white/5 pt-16 pb-28 md:pb-12 text-left relative overflow-hidden">
       {/* Radial mesh glowing effect */}
@@ -44,7 +24,7 @@ export default function Footer({ onAdminToggle }) {
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start mb-12">
         
-        {/* Column 1: Brand intro & Local Keywords */}
+        {/* Column 1: Brand intro */}
         <div className="lg:col-span-4 flex flex-col space-y-4 text-left">
           <a href="#home" className="flex items-center space-x-2">
             <span className="text-xl font-black text-white logo-text-yuva">
@@ -55,21 +35,6 @@ export default function Footer({ onAdminToggle }) {
           <p className="text-xs text-brand-gray/95 font-medium leading-relaxed max-w-sm">
             YUVA CABS is Hosur's premier 24/7 luxury taxi and cab booking service. We specialize in flat-rate airport pickups, reliable outstation travel, and corporate fleet hire. Enjoy safe, air-conditioned, and professional commutes.
           </p>
-
-          {/* Hidden organic SEO keywords wrapper for search crawlers */}
-          <div className="pt-2">
-            <span className="text-[10px] text-brand-gray/60 uppercase font-bold tracking-wider block mb-1.5">Local Services Matrix</span>
-            <div className="flex flex-wrap gap-1.5">
-              {keywords.map((kw, idx) => (
-                <span
-                  key={idx}
-                  className="text-[10px] text-brand-gray bg-white/5 border border-white/5 px-2 py-0.5 rounded-full font-medium"
-                >
-                  {kw}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Column 2: Navigation Links */}
@@ -176,12 +141,12 @@ export default function Footer({ onAdminToggle }) {
 
       </div>
 
-      {/* SEO Footer Content */}
+      {/* Footer Summary & Contact Info */}
       <div className="border-t border-white/5 pt-8 mt-8">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-sm font-bold text-brand-silver mb-3">YUVA CABS — Hosur's Most Trusted Taxi & Cab Service</h3>
           <p className="text-xs text-brand-gray/80 leading-relaxed font-medium">
-            YUVA CABS (Yuva Call Taxi) is Hosur's #1 rated taxi and cab booking service. Whether you need a <strong className="text-brand-silver">taxi in Hosur</strong>, a <strong className="text-brand-silver">cab in Hosur</strong>, or an <strong className="text-brand-silver">outstation taxi from Hosur</strong>, we provide 24/7 reliable service with transparent pricing starting from ₹9 per km. Our fleet includes Hatchback, Sedan (Dzire, Etios), SUV (Ertiga, XUV), Toyota Innova, Innova Crysta, and Tempo Traveller. Popular routes include <strong className="text-brand-silver">Hosur to Bangalore taxi</strong>, <strong className="text-brand-silver">Hosur to Chennai cab</strong>, Hosur to Salem, Hosur to Coimbatore, Hosur to Tirupati, and <strong className="text-brand-silver">Hosur to Bangalore Airport taxi</strong>. Call us at <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking. YUVA CABS — your trusted <strong className="text-brand-silver">call taxi in Hosur</strong>.
+            YUVA CABS provides 24/7 reliable local commutes and outstation travel across Hosur, Bangalore Airport, Chennai, Salem, Coimbatore, and surrounding regions. Enjoy transparent per-km pricing starting from ₹9/km, certified drivers, and a modern fleet of Hatchbacks, Sedans, SUVs, Innova Crysta, and Tempo Travellers. Call us at <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-bold">+91 99442 71322</a> for instant booking.
           </p>
           <address className="text-xs text-brand-gray/70 mt-3 not-italic">
             YUVA CABS | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: +91 99442 71322 | yuvacalltaxi.com

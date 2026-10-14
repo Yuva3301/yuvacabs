@@ -1,95 +1,48 @@
 import { Phone, MessageSquare, Calendar } from 'lucide-react';
-import { FaInstagram } from 'react-icons/fa6';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
 
 export default function FloatingCTA() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Only show desktop floating buttons after scrolling past the fold
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsVisible(window.scrollY > 400);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <>
-      {/* 1. Pulsing WhatsApp Orb (Desktop only, visible after scrolling past the fold) */}
-      <AnimatePresence>
-        {isVisible && (
-          <>
-            {/* Desktop Instagram Orb */}
-            <motion.a
-              key="instagram-float-desktop"
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.8, y: 20 }}
-              transition={{ duration: 0.3 }}
-              href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Follow us on Instagram"
-              className="hidden md:flex fixed bottom-24 right-8 z-40 w-14 h-14 bg-gradient-to-tr from-amber-500 via-pink-600 to-purple-600 rounded-full items-center justify-center text-white shadow-[0_0_20px_rgba(219,39,119,0.4)] hover:shadow-[0_0_30px_rgba(219,39,119,0.6)] hover:scale-110 transition-all cursor-pointer group"
-            >
-              <FaInstagram className="w-6 h-6 group-hover:scale-115 transition-transform" />
-            </motion.a>
-
-            {/* Desktop WhatsApp Orb */}
-            <motion.a
-              key="whatsapp-float-desktop"
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.8, y: 20 }}
-              transition={{ duration: 0.3 }}
-              href="https://wa.me/919944271322?text=Hi! I need to book a taxi in Hosur."
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Chat on WhatsApp"
-              className="hidden md:flex fixed bottom-8 right-8 z-40 w-14 h-14 bg-emerald-500 rounded-full items-center justify-center text-white shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-all cursor-pointer group"
-            >
-              {/* Pulsing ring animations behind the orb */}
-              <div className="absolute inset-0 bg-emerald-500 rounded-full scale-110 opacity-30 animate-ping pointer-events-none" />
-              <MessageSquare className="w-6 h-6 group-hover:scale-115 transition-transform" />
-            </motion.a>
-          </>
-        )}
-      </AnimatePresence>
-
-      {/* 2. Permanent Sticky Bottom Action Ribbon (Mobile only, visible immediately) */}
+      {/* Permanent Sticky Bottom Action Ribbon (Mobile only, visible immediately) */}
       <div
-        className="fixed bottom-0 left-0 w-full z-45 bg-white/95 dark:bg-brand-black/90 backdrop-blur-md border-t border-slate-200/60 dark:border-white/10 py-2.5 px-3 md:hidden shadow-[0_-5px_20px_rgba(0,0,0,0.06)]"
+        className="fixed bottom-0 left-0 w-full z-45 bg-brand-black/95 backdrop-blur-lg border-t border-brand-yellow/30 py-2 px-3 md:hidden shadow-[0_-5px_25px_rgba(255,212,59,0.15)]"
       >
-        <div className="grid grid-cols-3 gap-2 w-full max-w-lg mx-auto">
-          {/* Call Hotline */}
+        <div className="flex items-center justify-between text-[10px] text-brand-silver font-bold px-1 pb-1.5 border-b border-white/5 mb-1.5">
+          <span className="flex items-center text-brand-yellow">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping mr-1.5" />
+            5–10 Min Dispatch: Station • Bus Stand • SIPCOT
+          </span>
+          <span className="text-emerald-400 font-extrabold">24/7 Available</span>
+        </div>
+
+        <div className="grid grid-cols-12 gap-2 w-full max-w-lg mx-auto">
+          {/* Call Hotline - 6 cols */}
           <a
             href="tel:+919944271322"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
+            className="col-span-6 flex items-center justify-center space-x-1.5 py-3 rounded-2xl bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-xs tracking-tight shadow-md active:scale-95 transition-all cursor-pointer"
           >
-            <Phone className="w-3.5 h-3.5 fill-brand-black text-brand-black" />
-            <span>Call Now</span>
+            <Phone className="w-4 h-4 fill-brand-black text-brand-black animate-pulse" />
+            <span>Call Taxi Near Me</span>
           </a>
 
-          {/* WhatsApp Button */}
+          {/* WhatsApp Button - 3 cols */}
           <a
-            href="https://wa.me/919944271322?text=Hi! I want to book a taxi in Hosur."
+            href="https://wa.me/919944271322?text=Hello%20YUVA%20CABS,%20I%20need%20a%20taxi%20pickup%20in%20Hosur."
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-[#25D366] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
+            className="col-span-3 flex items-center justify-center space-x-1 py-3 rounded-2xl bg-[#25D366] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"
           >
             <MessageSquare className="w-3.5 h-3.5 fill-white text-white" />
             <span>WhatsApp</span>
           </a>
 
-          {/* Book Online */}
+          {/* Book Online - 3 cols */}
           <a
             href="#contact"
-            className="flex items-center justify-center space-x-1.5 py-3 rounded-full bg-brand-black dark:bg-white/10 text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
+            className="col-span-3 flex items-center justify-center space-x-1 py-3 rounded-2xl bg-white/10 text-white font-extrabold text-xs tracking-tight shadow-sm border border-white/10 active:scale-95 transition-all cursor-pointer"
           >
             <Calendar className="w-3.5 h-3.5 text-brand-yellow" />
-            <span>Book Cab</span>
+            <span>Book</span>
           </a>
         </div>
       </div>

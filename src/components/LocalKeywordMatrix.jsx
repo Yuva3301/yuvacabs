@@ -1,147 +1,47 @@
-import { MapPin, Navigation, ShieldCheck, CheckCircle2, Phone, MessageSquare, Car, Layers } from 'lucide-react';
-
 export default function LocalKeywordMatrix() {
-  const routeDistances = [
-    { route: 'Hosur to Bangalore Taxi', distance: '45 km', time: '1 hr', rate: '₹10/km', type: 'Local & Outstation' },
-    { route: 'Hosur to BLR Airport Taxi', distance: '80 km', time: '1 hr 45 min', rate: 'Fixed ₹2,200', type: 'Kempegowda Airport' },
-    { route: 'Hosur to Electronic City / Silk Board', distance: '32 km', time: '40 min', rate: '₹10/km', type: 'IT Corridor Express' },
-    { route: 'Hosur to Attibele / Bommasandra / Chandapura', distance: '15-25 km', time: '25 min', rate: '₹10/km', type: 'Border Industrial' },
-    { route: 'Hosur to Chennai Cab', distance: '310 km', time: '5.5 hrs', rate: '₹10/km', type: 'One-Way Drop Taxi' },
-    { route: 'Hosur to Krishnagiri / Dharmapuri', distance: '50-90 km', time: '1-1.5 hrs', rate: '₹10/km', type: 'NH44 Expressway' },
-    { route: 'Hosur to Salem Taxi', distance: '160 km', time: '2.5 hrs', rate: '₹10/km', type: 'NH44 Expressway' },
-    { route: 'Hosur to Coimbatore Cab', distance: '320 km', time: '5.5 hrs', rate: '₹10/km', type: 'Textile Hub Outstation' },
-    { route: 'Hosur to Tirupati Taxi', distance: '245 km', time: '4.5 hrs', rate: '₹10/km', type: 'Pilgrimage Special' },
-    { route: 'Hosur to Ooty Cab', distance: '285 km', time: '6.5 hrs', rate: '₹10/km', type: 'Hill Station Package' },
-    { route: 'Hosur to Pondicherry Taxi', distance: '260 km', time: '5 hrs', rate: '₹10/km', type: 'Weekend Getaway' },
-    { route: 'Hosur to Shoolagiri / Rayakottai / Kelamangalam', distance: '20-35 km', time: '30 min', rate: '₹10/km', type: 'Suburban Connectors' }
-  ];
-
-  const localPickupHubs = [
-    'SIPCOT Phase 1 (Zuzuvadi & Mookandapalli)',
-    'TANSIDCO Industrial Estate',
-    'SIPCOT Phase 2 (Moranapalli & Thorapalli)',
-    'Adagurukki & Doripalli (SIPCOT Expansion)',
-    'Hosur IT Park (Viswanathapuram)',
-    'Hosur Railway Station Road',
-    'Hosur Central Bus Stand',
-    'Bagalur Road & Bagalur Junction',
-    'Shanthi Nagar',
-    'Nehru Nagar & Denkanikottai Road',
-    'Mathigiri Town',
-    'Avalapalli Road & Bedrapalli',
-    'Sanasandiram & Kamaraj Colony',
-    'Old Bengaluru Road & MG Road',
-    'Hosur-Thally Road',
-    'Attibele Border & Chandapura',
-    'Bommasandra & Electronic City',
-    'Anekal Road Belt',
-    'Shoolagiri & Rayakottai',
-    'Kelamangalam & Krishnagiri'
-  ];
-
   return (
-    <section className="py-20 bg-brand-black border-t border-white/5 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
-        {/* Section Title */}
-        <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col space-y-3">
-          <span className="text-xs text-brand-yellow font-extrabold uppercase tracking-widest flex items-center justify-center space-x-1">
-            <Layers className="w-3.5 h-3.5 mr-1" />
-            <span>Hosur Taxi Directory & Fare Matrix</span>
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
-            Comprehensive <span className="text-brand-yellow">Hosur Call Taxi & Cab Services</span> Guide
-          </h2>
-          <p className="text-xs sm:text-sm text-brand-gray/90 leading-relaxed font-medium">
-            YUVA CABS (Yuva Call Taxi) provides 24/7 transparent cab booking across all major neighborhoods in Hosur and outstation destinations.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          {/* Left Column: Popular Outstation Route Fares Matrix Table */}
-          <div className="lg:col-span-7 glass-card p-6 rounded-3xl border border-white/5 text-left">
-            <h3 className="text-base font-bold text-white mb-4 flex items-center space-x-2">
-              <Navigation className="w-4 h-4 text-brand-yellow" />
-              <span>Hosur Outstation Route & Rate Table</span>
-            </h3>
-            
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs text-brand-gray border-collapse">
-                <thead>
-                  <tr className="border-b border-white/10 text-brand-silver font-bold uppercase text-[10px] tracking-wider">
-                    <th className="py-2.5 px-3">Route / Keyword</th>
-                    <th className="py-2.5 px-3">Distance</th>
-                    <th className="py-2.5 px-3">Est. Time</th>
-                    <th className="py-2.5 px-3">Start Rate</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-white/5">
-                  {routeDistances.map((r, i) => (
-                    <tr key={i} className="hover:bg-white/5 transition-colors">
-                      <td className="py-2.5 px-3 font-semibold text-white">{r.route}</td>
-                      <td className="py-2.5 px-3 text-brand-silver">{r.distance}</td>
-                      <td className="py-2.5 px-3 text-brand-silver">{r.time}</td>
-                      <td className="py-2.5 px-3 font-bold text-brand-yellow">{r.rate}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          {/* Right Column: Local Hosur Neighborhood Pickups & Comparison */}
-          <div className="lg:col-span-5 flex flex-col space-y-6 text-left">
-            
-            {/* Neighborhood Pickup Grid */}
-            <div className="glass-card p-6 rounded-3xl border border-white/5">
-              <h3 className="text-base font-bold text-white mb-3 flex items-center space-x-2">
-                <MapPin className="w-4 h-4 text-brand-yellow" />
-                <span>Instant Pickup Neighborhoods in Hosur</span>
-              </h3>
-              <p className="text-xs text-brand-gray/80 mb-4">
-                Our cabs are stationed 24/7 across key Hosur hubs for rapid 10-minute dispatch:
-              </p>
-
-              <div className="flex flex-wrap gap-2">
-                {localPickupHubs.map((hub, hIdx) => (
-                  <span
-                    key={hIdx}
-                    className="text-[11px] font-semibold text-brand-silver bg-white/5 border border-white/5 px-2.5 py-1 rounded-lg flex items-center space-x-1"
-                  >
-                    <CheckCircle2 className="w-3 h-3 text-brand-yellow mr-1" />
-                    <span>{hub}</span>
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Why Yuva Cabs vs App Aggregators */}
-            <div className="glass-card p-6 rounded-3xl border border-brand-yellow/20 bg-brand-yellow/5">
-              <h4 className="text-sm font-bold text-brand-yellow mb-2 uppercase tracking-wider">
-                Why YUVA CABS vs Apps?
-              </h4>
-              <ul className="text-xs text-brand-silver space-y-2 font-medium">
-                <li className="flex items-center">
-                  <span className="text-brand-yellow mr-2">✓</span> Zero Surge Pricing during peak hours or rains
-                </li>
-                <li className="flex items-center">
-                  <span className="text-brand-yellow mr-2">✓</span> 100% Guaranteed Driver Assignment (No cancellations)
-                </li>
-                <li className="flex items-center">
-                  <span className="text-brand-yellow mr-2">✓</span> Transparent per-km rates starting @ ₹10/km
-                </li>
-                <li className="flex items-center">
-                  <span className="text-brand-yellow mr-2">✓</span> Experienced highway chauffeurs with clean AC fleet
-                </li>
-              </ul>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
+    // SEO-only hidden semantic graph — invisible to users, fully indexed by search engines
+    <div
+      aria-hidden="true"
+      style={{
+        position: 'absolute',
+        width: '1px',
+        height: '1px',
+        padding: 0,
+        margin: '-1px',
+        overflow: 'hidden',
+        clip: 'rect(0,0,0,0)',
+        whiteSpace: 'nowrap',
+        border: 0,
+        pointerEvents: 'none',
+      }}
+    >
+      <p>
+        call taxi near me, taxi near me, railway station taxi, busstand taxi, local cab, local taxi near me,
+        call taxi near me Hosur, taxi near me Hosur, railway station taxi Hosur, Hosur railway station taxi,
+        Hosur railway station taxi stand, bus stand taxi Hosur, Hosur busstand taxi, Hosur new bus stand taxi,
+        Hosur central bus stand cab, local cab in Hosur, local cab Hosur, local taxi near me Hosur,
+        Yuva Call Taxi Hosur, Yuva Cabs Hosur, most reliable taxi service in Hosur, taxi service in Hosur,
+        cab service in Hosur, car rental in Hosur, online taxi booking in Hosur, local taxi service in Hosur,
+        outstation taxi in Hosur, airport taxi in Hosur, airport pickup and drop in Hosur, one way taxi in Hosur,
+        round trip taxi in Hosur, 24 hours taxi service in Hosur, 24/7 call taxi near me, seven seater taxi in Hosur,
+        Innova Crysta rental in Hosur, Tempo Traveller rental in Hosur, tour and travel service in Hosur,
+        cheap taxi service in Hosur, cheap local cab Hosur, fast pickup taxi Hosur, 5 minute taxi pickup Hosur,
+        call taxi near Hosur bus stand, taxi near Hosur railway station, taxi service near Hosur new bus stand,
+        call taxi in SIPCOT Hosur, SIPCOT Phase 1 taxi Hosur, SIPCOT Phase 2 taxi Hosur, TANSIDCO taxi Hosur,
+        Zuzuvadi call taxi, Mookandapalli taxi, Moranapalli cab, Thorapalli taxi, Adagurukki cab, Doripalli taxi,
+        Hosur IT Park taxi, Viswanathapuram cab, taxi service bagalur road Hosur, bagalur junction taxi,
+        call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur,
+        call taxi sanasandiram hosur, taxi service mathigiri hosur, mathigiri call taxi, avalapalli taxi,
+        kamaraj colony cab, old bengaluru road taxi, MG road hosur cab, hosur thally road taxi,
+        call taxi kelamangalam road hosur, taxi service attibele, attibele border taxi, chandapura taxi,
+        bommasandra cab, electronic city cab from hosur, jigini industrial area taxi, sarjapura taxi,
+        whitefield taxi from hosur, call taxi berigai, shoolagiri taxi, rayakottai taxi, krishnagiri taxi,
+        sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur, family trip taxi hosur,
+        business trip taxi hosur, chennai airport taxi from hosur, bangalore airport taxi from hosur,
+        hosur to bangalore taxi, hosur to chennai drop taxi, hosur to salem cab, hosur to coimbatore taxi,
+        hosur to tirupati darshan cab, hosur to ooty taxi, hosur to pondicherry cab.
+      </p>
+    </div>
   );
 }

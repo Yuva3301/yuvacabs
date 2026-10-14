@@ -13,6 +13,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import LocalKeywordMatrix from './components/LocalKeywordMatrix';
 import FloatingCTA from './components/FloatingCTA';
+import WhatsAppGreeting from './components/WhatsAppGreeting';
 import Footer from './components/Footer';
 import AdminDashboard from './components/AdminDashboard';
 
@@ -153,6 +154,7 @@ export default function App() {
 
           {/* Floating Mobile and WhatsApp triggers */}
           <FloatingCTA />
+          <WhatsAppGreeting />
 
           {/* Protected Administrative Dashboard overlay */}
           <AnimatePresence>

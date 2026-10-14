@@ -31,24 +31,24 @@ export default function FAQ() {
       answer: 'YUVA CABS holds a 4.9/5 Google rating thanks to our 100% on-time pickups, experienced verified drivers, transparent per-kilometer pricing without hidden surcharges, sanitized luxury fleet, and dedicated 24/7 service across Hosur, SIPCOT 1 & 2, Mathigiri, and Bangalore Kempegowda Airport (BLR).'
     },
     {
-      question: 'Which is the best taxi service in Hosur?',
-      answer: 'YUVA CABS (Yuva Call Taxi) is rated #1 on Google with 4.9 stars and 385+ reviews. We offer the most affordable per-km rates starting at ₹9/km with 24/7 availability, professional drivers, and a clean fleet.'
+      question: 'How quickly can I get a call taxi near me in Hosur?',
+      answer: 'Call YUVA CABS directly at +91 99442 71322 or send a WhatsApp message. Our nearest GPS-tracked driver is dispatched immediately, arriving at your doorstep or pickup point within 5 to 10 minutes with zero surge pricing.'
     },
     {
-      question: 'How do I book a cab in Hosur?',
-      answer: 'You can book a YUVA CABS taxi instantly by calling +91 99442 71322, sending a WhatsApp message to the same number, or filling out the online booking form at yuvacalltaxi.com. Our dispatcher confirms your driver within 5 minutes.'
+      question: 'Can I get an instant taxi at Hosur Railway Station or Hosur Bus Stand?',
+      answer: 'Yes! We have dedicated cabs stationed 24/7 directly outside Hosur Railway Station (Platforms 1 & 2) and Hosur Central & New Bus Stand. Pickup takes just 3 to 5 minutes for local Hosur drops, SIPCOT commutes, or Bangalore Airport transfers.'
     },
     {
-      question: 'What is the Yuva Call Taxi Hosur phone number?',
-      answer: 'You can reach YUVA CABS (Yuva Call Taxi) at +91 99442 71322. We are available 24/7 for local rides, outstation trips, and airport transfers.'
+      question: 'What are the charges for a local cab in Hosur?',
+      answer: 'Local cab rides within Hosur start at just ₹150 minimum fare for Hatchbacks and ₹180 for Sedans (Maruti Dzire, Toyota Etios) covering up to 4 km. Extra kilometers are just ₹10–₹12/km, providing the most economical local transit in town.'
     },
     {
-      question: 'Is there a 24/7 taxi available in Hosur?',
-      answer: 'Yes! YUVA CABS operates round-the-clock, 24 hours a day, 365 days a year. Whether you need a late-night airport drop, early morning pickup, or emergency ride, our drivers are always available.'
+      question: 'What is the Yuva Call Taxi Hosur phone number for 24/7 booking?',
+      answer: 'You can reach YUVA CABS (Yuva Call Taxi) 24 hours a day at +91 99442 71322 for instant dispatch, outstation trips, and airport transfers.'
     },
     {
-      question: 'How much does a taxi cost in Hosur?',
-      answer: 'Taxi fares with YUVA CABS start from ₹9/km for Hatchback, ₹10/km for Sedan, ₹15/km for SUV, ₹18/km for Innova, and ₹38/km for Tempo Traveller. Local rides have minimum fare starting from ₹150.'
+      question: 'Which areas in Hosur are covered for 24/7 taxi pickup?',
+      answer: 'We cover every neighborhood across Hosur with 24/7 on-demand dispatch: SIPCOT Phase 1 & 2, TANSIDCO, Mathigiri, Bagalur Road, Railway Station Road, Bus Stand, Shanthi Nagar, Nehru Nagar, Avalapalli, Sanasandiram, Old Bengaluru Road, Electronic City corridor, Attibele, and Krishnagiri.'
     }
   ];
 

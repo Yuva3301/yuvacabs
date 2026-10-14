@@ -12,10 +12,10 @@ export default function Services() {
     },
     {
       icon: Navigation,
-      title: 'Local Taxi Hailing',
-      description: 'Point-to-point transfers and hourly rentals within Hosur city. Ride in comfort to your destination in clean, air-conditioned cars.',
+      title: 'Local Cab & City Taxi',
+      description: 'Point-to-point transfers and 5–10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT & all local residential areas from ₹150.',
       accent: 'border-brand-yellow/30',
-      badge: 'Quick Pickup'
+      badge: '5–10 Min Pickup'
     },
     {
       icon: Milestone,
