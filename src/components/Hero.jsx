@@ -207,7 +207,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen bg-brand-black flex items-center justify-center pt-24 pb-16 overflow-hidden bg-gradient-mesh">
+    <section id="home" className="relative min-h-screen bg-brand-black flex items-center justify-center pt-32 sm:pt-36 pb-16 overflow-hidden bg-gradient-mesh">
       {/* Background Glowing Ambient Orbs */}
       <div className="absolute top-1/4 left-10 w-96 h-96 rounded-full bg-brand-purple/20 glow-orb animate-orb-glow" />
       <div className="absolute bottom-10 right-10 w-[500px] h-[500px] rounded-full bg-brand-blue/10 glow-orb animate-pulse-glow" />
@@ -221,15 +221,22 @@ export default function Hero() {
         {/* Left Side: Cinematic Copy and Badge buttons */}
         <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
           
-          {/* Animated Gold Tag */}
+          {/* 3 Core Services Badge Pill with Contact Number */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="self-start inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold uppercase tracking-wider"
+            className="self-start inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold"
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            <span>⚡ 5–10 Min Pickup • 24/7 Available in Hosur</span>
+            <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
+              <span className="text-brand-yellow font-black">Outstation</span> • <span className="text-brand-yellow font-black">Airport</span> • <span className="text-brand-yellow font-black">Local</span>
+            </span>
+            <span className="text-brand-silver/40 hidden sm:inline">•</span>
+            <a href="tel:+919944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
+              <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
+              <span>+91 99442 71322</span>
+            </a>
           </motion.div>
 
           {/* Search Optimized High-Conversion Heading */}
@@ -237,13 +244,81 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] font-black tracking-tight text-brand-white leading-[1.08] text-left"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.25rem] font-black tracking-tight text-brand-white leading-[1.08] text-left"
           >
-            Call Taxi Near Me <br />
+            Outstation • Airport • Local <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow">
-              Hosur 24/7 Local Cab
+              Taxi Service in Hosur
             </span>
           </motion.h1>
+
+          {/* 3 Separate Headlines Grid - Outstation, Airport, Local with Call +919944271322 */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full pt-1"
+          >
+            {/* Separate Headline 1: Outstation Taxi Hosur */}
+            <a
+              href="tel:+919944271322"
+              className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-brand-yellow/15 border border-brand-yellow/30 hover:border-brand-yellow transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-brand-yellow text-brand-black uppercase tracking-wider">
+                  Outstation
+                </span>
+                <span className="text-[11px] text-emerald-400 font-extrabold">₹9/km</span>
+              </div>
+              <h2 className="text-base sm:text-lg font-black text-white group-hover:text-brand-yellow transition-colors leading-tight mt-1">
+                Outstation Taxi Hosur
+              </h2>
+              <div className="flex items-center space-x-1.5 mt-2.5 text-brand-yellow font-black text-xs sm:text-sm">
+                <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow animate-bounce" />
+                <span>Call +919944271322</span>
+              </div>
+            </a>
+
+            {/* Separate Headline 2: Airport Taxi Hosur */}
+            <a
+              href="tel:+919944271322"
+              className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-blue-500/15 border border-blue-500/30 hover:border-blue-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-blue-500 text-white uppercase tracking-wider">
+                  Airport
+                </span>
+                <span className="text-[11px] text-emerald-400 font-extrabold">Fixed ₹2,200</span>
+              </div>
+              <h2 className="text-base sm:text-lg font-black text-white group-hover:text-blue-300 transition-colors leading-tight mt-1">
+                Airport Taxi Hosur
+              </h2>
+              <div className="flex items-center space-x-1.5 mt-2.5 text-blue-400 font-black text-xs sm:text-sm">
+                <Phone className="w-3.5 h-3.5 fill-blue-400 text-blue-400 animate-bounce" />
+                <span>Call +919944271322</span>
+              </div>
+            </a>
+
+            {/* Separate Headline 3: Local Taxi Hosur */}
+            <a
+              href="tel:+919944271322"
+              className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white uppercase tracking-wider">
+                  Local Cab
+                </span>
+                <span className="text-[11px] text-emerald-400 font-extrabold">5–10 Min</span>
+              </div>
+              <h2 className="text-base sm:text-lg font-black text-white group-hover:text-emerald-300 transition-colors leading-tight mt-1">
+                Local Taxi Hosur
+              </h2>
+              <div className="flex items-center space-x-1.5 mt-2.5 text-emerald-400 font-black text-xs sm:text-sm">
+                <Phone className="w-3.5 h-3.5 fill-emerald-400 text-emerald-400 animate-bounce" />
+                <span>Call +919944271322</span>
+              </div>
+            </a>
+          </motion.div>
 
           {/* Subtitle with High-Ranking Locations and Pricing */}
           <motion.p
@@ -252,7 +327,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            Need a cab right now? Guaranteed 5–10 min arrival at <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Hosur Bus Stand</strong>, <strong className="text-white">SIPCOT 1 &amp; 2</strong>, Mathigiri &amp; all local areas. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
+            Need a cab right now? Guaranteed 5–10 min arrival for <strong>Outstation</strong>, <strong>Local</strong>, and <strong>Airport</strong> trips at <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Hosur Bus Stand</strong>, <strong className="text-white">SIPCOT 1 &amp; 2</strong>, Mathigiri &amp; all local areas. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
           {/* High-Conversion Primary Action Buttons */}
@@ -264,11 +339,11 @@ export default function Hero() {
           >
             {/* Primary Instant Call CTA */}
             <a
-              href="tel:+919944271322"
+              href="tel:9944271322"
               className="flex items-center justify-center space-x-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-base sm:text-lg tracking-tight shadow-[0_0_35px_rgba(255,212,59,0.5)] hover:shadow-[0_0_55px_rgba(255,212,59,0.8)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
             >
               <Phone className="w-5 h-5 fill-brand-black text-brand-black animate-bounce" />
-              <span>Call Taxi: +91 99442 71322</span>
+              <span>Call Taxi: 9944271322</span>
             </a>
 
             {/* Direct WhatsApp Instant Booking */}

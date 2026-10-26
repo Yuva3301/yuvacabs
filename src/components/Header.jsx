@@ -30,13 +30,39 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? 'py-4 bg-brand-black/75 backdrop-blur-md border-b border-white/5 shadow-md'
-            : 'py-6 bg-transparent'
+            ? 'bg-brand-black/95 backdrop-blur-md border-b border-white/5 shadow-md'
+            : 'bg-brand-black/85 backdrop-blur-sm'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        {/* Top 3 Headlines Banner */}
+        <div className="w-full bg-[#070a11] border-b border-brand-yellow/20 py-1.5 px-4 text-xs">
+          <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-xs font-black">
+            <div className="flex items-center space-x-1.5">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+              <span className="text-brand-yellow uppercase tracking-wider">Hosur 24/7 Cabs:</span>
+            </div>
+            <div className="flex flex-wrap items-center gap-2.5 sm:gap-5 font-extrabold text-white">
+              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
+                <span className="text-brand-silver">Outstation Taxi Hosur:</span>
+                <span className="text-brand-yellow font-black">Call +919944271322</span>
+              </a>
+              <span className="text-white/20 hidden md:inline">•</span>
+              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
+                <span className="text-brand-silver">Airport Taxi Hosur:</span>
+                <span className="text-brand-yellow font-black">Call +919944271322</span>
+              </a>
+              <span className="text-white/20 hidden md:inline">•</span>
+              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
+                <span className="text-brand-silver">Local Taxi Hosur:</span>
+                <span className="text-brand-yellow font-black">Call +919944271322</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center text-brand-black font-black text-xl shadow-[0_0_15px_rgba(255,212,59,0.3)] group-hover:scale-105 transition-transform duration-300">

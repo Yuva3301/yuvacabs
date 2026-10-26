@@ -143,12 +143,14 @@ export default function LocalSEO() {
         'Railway Station & Station Road',
         'Hamman Nagar',
         'Mathigiri',
+        'Dinnur & Jeeva Nagar',
         'Shanthi Nagar',
         'Nehru Nagar & Denkanikottai Road',
         'Avalapalli & Avalapalli Road',
         'Sanasandiram & Kamaraj Colony',
         'Old Bengaluru Road & MG Road',
-        'Bagalur Road & Bagalur Junction'
+        'Bagalur Road & Bagalur Junction',
+        'Kelamangalam Road'
       ],
       tag: 'Local Point-to-Point',
       pickupTime: '5 - 10 Mins'
@@ -170,7 +172,7 @@ export default function LocalSEO() {
       areas: [
         'Hosur-Thally Road',
         'Shoolagiri Highway Belt',
-        'Kelamangalam',
+        'Kelamangalam & Berigai',
         'Rayakottai Road',
         'Krishnagiri NH44 Expressway'
       ],
