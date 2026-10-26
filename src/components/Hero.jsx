@@ -244,12 +244,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.25rem] font-black tracking-tight text-brand-white leading-[1.08] text-left"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
-            Outstation • Airport • Local <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow">
-              Taxi Service in Hosur
-            </span>
+            Taxi Service Hosur <br />
+            <a
+              href="tel:+919944271322"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-1"
+            >
+              Call Now +919944271322
+            </a>
           </motion.h1>
 
           {/* 3 Separate Headlines Grid - Outstation, Airport, Local with Call +919944271322 */}
