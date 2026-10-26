@@ -17,8 +17,6 @@ export default function LocalKeywordMatrix() {
       }}
     >
       <p>
-        Outstation Taxi Hosur Call +919944271322, Airport Taxi Hosur Call +919944271322, Local Taxi Hosur Call +919944271322,
-        Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur,
         Yuva Call Taxi Hosur, most reliable taxi service in Hosur, taxi service in Hosur, call taxi near me,
         taxi near me, cab service in Hosur, car rental in Hosur, online taxi booking in Hosur,
         local taxi service in Hosur, outstation taxi in Hosur, airport taxi in Hosur,
@@ -32,7 +30,9 @@ export default function LocalKeywordMatrix() {
         call taxi berigai, taxi service mookandapalli hosur, call taxi zuzuvadi hosur,
         sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur,
         family trip taxi hosur, business trip taxi hosur, chennai airport taxi from hosur,
-        bangalore airport taxi from hosur, hosur to bangalore taxi, Taxi Service, Taxi in Hosur, Taxi hosur,
+        bangalore airport taxi from hosur, hosur to bangalore taxi,
+        Outstation Taxi Hosur Call +919944271322, Airport Taxi Hosur Call +919944271322, Local Taxi Hosur Call +919944271322,
+        Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur, Taxi Service, Taxi in Hosur, Taxi hosur,
         railway station taxi, busstand taxi, local cab, local taxi near me, call taxi near me Hosur,
         taxi near me Hosur, railway station taxi Hosur, Hosur railway station taxi, Hosur railway station taxi stand,
         bus stand taxi Hosur, Hosur busstand taxi, Hosur new bus stand taxi, Hosur central bus stand cab,
