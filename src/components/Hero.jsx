@@ -246,7 +246,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
-            Taxi Service Hosur <br />
+            <span className="text-brand-yellow">Yuva</span> Taxi Service Hosur <br />
             <a
               href="tel:+919944271322"
               className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-1"

@@ -392,10 +392,10 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi</title>
-      <meta name="title" content="Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
-      <meta name="description" content="Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
-      <meta name="keywords" content="Taxi Service Hosur-Call Now +919944271322, Yuva Call Taxi Hosur, most reliable taxi service in Hosur, taxi service in Hosur, call taxi near me, taxi near me, cab service in Hosur, car rental in Hosur, online taxi booking in Hosur, local taxi service in Hosur, outstation taxi in Hosur, airport taxi in Hosur, airport pickup and drop in Hosur, one way taxi in Hosur, round trip taxi in Hosur, 24 hours taxi service in Hosur, seven seater taxi in Hosur, Innova Crysta rental in Hosur, Tempo Traveller rental in Hosur, tour and travel service in Hosur, cheap taxi service in Hosur, call taxi near Hosur bus stand, taxi near Hosur railway station, taxi service near Hosur new bus stand, call taxi in SIPCOT Hosur, taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, call taxi berigai, taxi service mookandapalli hosur, call taxi zuzuvadi hosur, sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur, family trip taxi hosur, business trip taxi hosur, chennai airport taxi from hosur, bangalore airport taxi from hosur, hosur to bangalore taxi, Outstation Taxi Hosur Call +919944271322, Airport Taxi Hosur Call +919944271322, Local Taxi Hosur Call +919944271322, Taxi Service, Taxi in Hosur, Taxi hosur, railway station taxi, busstand taxi, local cab, local taxi near me, yuvaa call taxi, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, sipcot phase 1 taxi, sipcot phase 2 cab, electronic city cab, hosur to chennai cab, outstation taxi hosur, drop taxi hosur" />
+      <title>Yuva Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi</title>
+      <meta name="title" content="Yuva Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
+      <meta name="description" content="Yuva Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
+      <meta name="keywords" content="Yuva Taxi Service Hosur-Call Now +919944271322, Taxi Service Hosur-Call Now +919944271322, Yuva Call Taxi Hosur, most reliable taxi service in Hosur, taxi service in Hosur, call taxi near me, taxi near me, cab service in Hosur, car rental in Hosur, online taxi booking in Hosur, local taxi service in Hosur, outstation taxi in Hosur, airport taxi in Hosur, airport pickup and drop in Hosur, one way taxi in Hosur, round trip taxi in Hosur, 24 hours taxi service in Hosur, seven seater taxi in Hosur, Innova Crysta rental in Hosur, Tempo Traveller rental in Hosur, tour and travel service in Hosur, cheap taxi service in Hosur, call taxi near Hosur bus stand, taxi near Hosur railway station, taxi service near Hosur new bus stand, call taxi in SIPCOT Hosur, taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, call taxi berigai, taxi service mookandapalli hosur, call taxi zuzuvadi hosur, sedan car rental hosur, swift dzire taxi hosur, seven seater car rental hosur, family trip taxi hosur, business trip taxi hosur, chennai airport taxi from hosur, bangalore airport taxi from hosur, hosur to bangalore taxi, Outstation Taxi Hosur Call +919944271322, Airport Taxi Hosur Call +919944271322, Local Taxi Hosur Call +919944271322, Taxi Service, Taxi in Hosur, Taxi hosur, railway station taxi, busstand taxi, local cab, local taxi near me, yuvaa call taxi, yuva call taxi, yuva cabs, yuva cabs hosur, call taxi hosur, best taxi hosur, best cab hosur, sipcot phase 1 taxi, sipcot phase 2 cab, electronic city cab, hosur to chennai cab, outstation taxi hosur, drop taxi hosur" />
       <meta name="application-name" content="YUVAA CALL TAXI" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/" />
@@ -411,8 +411,8 @@ export default function SEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
       <meta property="og:site_name" content="YUVAA CALL TAXI" />
-      <meta property="og:title" content="Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
-      <meta property="og:description" content="Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
+      <meta property="og:title" content="Yuva Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
+      <meta property="og:description" content="Yuva Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -425,8 +425,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
-      <meta property="twitter:description" content="Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
+      <meta property="twitter:title" content="Yuva Taxi Service Hosur-Call Now +919944271322 | Outstation, Airport & Local Taxi" />
+      <meta property="twitter:description" content="Yuva Taxi Service Hosur-Call Now +919944271322. Outstation Taxi Hosur, Airport Taxi Hosur, Local Taxi Hosur. 24/7 instant 5-10 min pickup, transparent rates from ₹9/km, and flat Bangalore airport drops." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}
