@@ -149,21 +149,25 @@ export default function Footer({ onAdminToggle }) {
           </div>
 
           <h3 className="text-base sm:text-lg font-black text-white mb-2">
-            Yuva Call Taxi Hosur — Most Reliable Taxi Service in Hosur
+            Local, Airport & Outstation Cabs in Hosur | 9944271322
           </h3>
           <p className="text-xs text-brand-gray/80 leading-relaxed font-medium max-w-3xl mx-auto mb-6">
-            YUVA CABS (Yuva Call Taxi Hosur) is the #1 choice for local taxi service in Hosur, 24 hours taxi service in Hosur, call taxi near me dispatch, and instant online taxi booking in Hosur. Enjoy transparent per-km rates starting from ₹9/km, sanitized AC cars, and 5–10 min arrival across all Hosur areas. Call <a href="tel:+919944271322" className="text-brand-yellow hover:underline font-extrabold">+91 99442 71322</a>.
+            Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150, outstation from ₹9/km. Call <a href="tel:9944271322" className="text-brand-yellow hover:underline font-extrabold">9944271322</a>.
           </p>
 
           {/* Keyword Quick-Call Directory Matrix for Google Top Ranking & Call Generation */}
           <div className="text-left bg-white/[0.02] border border-white/5 rounded-2xl p-5 mb-8">
             <span className="text-[11px] text-brand-yellow font-extrabold uppercase tracking-wider block mb-3">
-              ⚡ Instant 5–10 Min Pickup Hubs & Vehicle Rentals (Tap to Call +91 99442 71322):
+              ⚡ Instant 5–10 Min Pickup Hubs & Vehicle Rentals (Tap to Call 9944271322):
             </span>
             <div className="flex flex-wrap gap-2 text-[11px]">
               {[
-                { name: 'Yuva Call Taxi Hosur', tel: '+919944271322' },
-                { name: 'most reliable taxi service in Hosur', tel: '+919944271322' },
+                { name: 'Local, Airport & Outstation Cabs in Hosur | 9944271322', tel: '9944271322' },
+                { name: 'Local Taxi in Hosur | Yuva Call Taxi – 9944271322', tel: '9944271322' },
+                { name: 'Bangalore Airport Taxi from Hosur | Call 9944271322', tel: '9944271322' },
+                { name: 'Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322', tel: '9944271322' },
+                { name: 'Yuva Call Taxi Hosur', tel: '9944271322' },
+                { name: 'most reliable taxi service in Hosur', tel: '9944271322' },
                 { name: 'taxi service in Hosur', tel: '+919944271322' },
                 { name: 'call taxi near me', tel: '+919944271322' },
                 { name: 'taxi near me', tel: '+919944271322' },

@@ -230,12 +230,12 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
-              <span className="text-brand-yellow font-black">Outstation</span> • <span className="text-brand-yellow font-black">Airport</span> • <span className="text-brand-yellow font-black">Local</span>
+              Local, Airport & Outstation Cabs in Hosur
             </span>
             <span className="text-brand-silver/40 hidden sm:inline">•</span>
-            <a href="tel:+919944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
+            <a href="tel:9944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
               <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
-              <span>+91 99442 71322</span>
+              <span>9944271322</span>
             </a>
           </motion.div>
 
@@ -247,27 +247,28 @@ export default function Hero() {
             className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
             <span className="text-xs sm:text-sm font-extrabold text-brand-yellow uppercase tracking-widest block mb-2">
-              Yuva Call Taxi Hosur — Most Reliable Taxi Service in Hosur
+              Local, Airport & Outstation Cabs in Hosur | 9944271322
             </span>
             <span className="text-brand-yellow">Yuva</span> Taxi Service Hosur <br />
             <a
-              href="tel:+919944271322"
+              href="tel:9944271322"
               className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-1"
             >
-              Call Now +919944271322
+              Call Now 9944271322
             </a>
           </motion.h1>
 
-          {/* 3 Separate Headlines Grid - Outstation, Airport, Local with Call +919944271322 */}
+          {/* 3 Separate Headlines Grid - Outstation, Airport, Local with Exact SEO Titles */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full pt-1"
           >
-            {/* Separate Headline 1: Outstation Taxi Hosur */}
+            {/* Exact SEO Title 1: Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322 */}
             <a
-              href="tel:+919944271322"
+              href="tel:9944271322"
+              title="Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-brand-yellow/15 border border-brand-yellow/30 hover:border-brand-yellow transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
@@ -277,17 +278,18 @@ export default function Hero() {
                 <span className="text-[11px] text-emerald-400 font-extrabold">₹9/km</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-brand-yellow transition-colors leading-tight mt-1">
-                Outstation Taxi Hosur
+                Outstation Taxi Service in Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-brand-yellow font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow animate-bounce" />
-                <span>Call +919944271322</span>
+                <span>Yuva Call Taxi – 9944271322</span>
               </div>
             </a>
 
-            {/* Separate Headline 2: Airport Taxi Hosur */}
+            {/* Exact SEO Title 2: Bangalore Airport Taxi from Hosur | Call 9944271322 */}
             <a
-              href="tel:+919944271322"
+              href="tel:9944271322"
+              title="Bangalore Airport Taxi from Hosur | Call 9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-blue-500/15 border border-blue-500/30 hover:border-blue-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
@@ -297,17 +299,18 @@ export default function Hero() {
                 <span className="text-[11px] text-emerald-400 font-extrabold">Fixed ₹2,200</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-blue-300 transition-colors leading-tight mt-1">
-                Airport Taxi Hosur
+                Bangalore Airport Taxi from Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-blue-400 font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-blue-400 text-blue-400 animate-bounce" />
-                <span>Call +919944271322</span>
+                <span>Call 9944271322</span>
               </div>
             </a>
 
-            {/* Separate Headline 3: Local Taxi Hosur */}
+            {/* Exact SEO Title 3: Local Taxi in Hosur | Yuva Call Taxi – 9944271322 */}
             <a
-              href="tel:+919944271322"
+              href="tel:9944271322"
+              title="Local Taxi in Hosur | Yuva Call Taxi – 9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
@@ -317,11 +320,11 @@ export default function Hero() {
                 <span className="text-[11px] text-emerald-400 font-extrabold">5–10 Min</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-emerald-300 transition-colors leading-tight mt-1">
-                Local Taxi Hosur
+                Local Taxi in Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-emerald-400 font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-emerald-400 text-emerald-400 animate-bounce" />
-                <span>Call +919944271322</span>
+                <span>Yuva Call Taxi – 9944271322</span>
               </div>
             </a>
           </motion.div>

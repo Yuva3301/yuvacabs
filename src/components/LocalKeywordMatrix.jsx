@@ -17,6 +17,10 @@ export default function LocalKeywordMatrix() {
       }}
     >
       <p>
+        Local Taxi in Hosur | Yuva Call Taxi – 9944271322,
+        Bangalore Airport Taxi from Hosur | Call 9944271322,
+        Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322,
+        Local, Airport & Outstation Cabs in Hosur | 9944271322,
         Yuva Call Taxi Hosur, most reliable taxi service in Hosur, taxi service in Hosur, call taxi near me,
         taxi near me, cab service in Hosur, car rental in Hosur, online taxi booking in Hosur,
         local taxi service in Hosur, outstation taxi in Hosur, airport taxi in Hosur,
