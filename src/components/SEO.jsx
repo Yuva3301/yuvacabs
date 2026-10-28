@@ -2,6 +2,16 @@
 
 export default function SEO() {
   const targetKeywords = [
+    "Call Taxi",
+    "Taxi Service Near Me",
+    "Call Taxi Near Me",
+    "Cab Service",
+    "Hosur Call Taxi",
+    "Airport Taxi Hosur",
+    "Call Taxi Hosur",
+    "Cab Service Hosur",
+    "Taxi Service Near Me Hosur",
+    "Call Taxi Near Me Hosur",
     "Yuva Call Taxi",
     "Yuva Call Taxi Hosur",
     "Yuva Call Taxi 9944271322",
@@ -113,7 +123,7 @@ export default function SEO() {
         "@id": "https://yuvacalltaxi.com/#localbusiness",
         "name": "Yuva Call Taxi Hosur - Most Reliable Taxi Service in Hosur",
         "alternateName": targetKeywords,
-        "keywords": targetKeywords.join(", "),
+        "keywords": targetKeywords.join(", "),`r`n        "serviceType": ["Call Taxi", "Taxi Service Near Me", "Call Taxi Near Me", "Cab Service", "Hosur Call Taxi", "Airport Taxi Hosur", "Local Taxi", "Outstation Taxi"],
         "image": "https://yuvacalltaxi.com/og-image.jpg",
         "description": "Yuva Call Taxi Hosur (+919944271322) - Most reliable taxi service in Hosur. 24/7 call taxi near me, local taxi service from ₹150, outstation taxi from ₹9/km, Bangalore airport taxi (₹2,200), seven seater Innova & Swift Dzire car rental. Guaranteed 5-10 min pickup.",
         "telephone": "+919944271322",
@@ -228,8 +238,8 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322",
-                "description": "Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150 and outstation from ₹9/km."
+                "name": "Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service",
+                "description": "Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150 and outstation from ₹9/km."
               }
             },
             {
@@ -465,9 +475,9 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322</title>
-      <meta name="title" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322" />
-      <meta name="description" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. Fast 5-10 min pickup from ₹150, outstation @ ₹9/km." />
+      <title>Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service</title>
+      <meta name="title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
+      <meta name="description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. Fast 5-10 min pickup from ₹150, outstation @ ₹9/km." />
       <meta name="keywords" content={targetKeywords.join(", ")} />
       <meta name="application-name" content="Yuva Call Taxi Hosur" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -484,8 +494,8 @@ export default function SEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322" />
-      <meta property="og:description" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
+      <meta property="og:title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
+      <meta property="og:description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -498,8 +508,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322" />
-      <meta property="twitter:description" content="Yuva Call Taxi-Hosur | Local Cabs, BLR Airport & Outstation Taxi | 9944271322. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
+      <meta property="twitter:title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
+      <meta property="twitter:description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}

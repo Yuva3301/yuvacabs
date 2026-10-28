@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { ChevronDown, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -7,12 +7,12 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'Which is the most reliable taxi service in Hosur?',
-      answer: 'Yuva Call Taxi Hosur (YUVA CABS) is recognized as the most reliable taxi service in Hosur with a Google 4.9★ rating. We provide 24 hours taxi service in Hosur, online taxi booking in Hosur, cheap taxi service in Hosur, local taxi service from ₹150, and outstation taxi from ₹9/km. Call +91 99442 71322 for instant booking.'
+      question: 'Which is the most reliable Hosur Call Taxi and Cab Service?',
+      answer: 'Yuva Call Taxi-Hosur is recognized as the top-rated Hosur Call Taxi and premier Cab Service with a Google 4.9★ rating. We provide 24 hours Call Taxi service in Hosur, local rides from ₹150, fixed Airport Taxi Hosur drops from ₹2,200, and outstation taxi from ₹9/km. Call +91 99442 71322 for instant dispatch.'
     },
     {
-      question: 'How to get a call taxi near me or taxi near me in Hosur with instant pickup?',
-      answer: 'When you search for "call taxi near me" or "taxi near me" in Hosur, simply dial Yuva Call Taxi at +91 99442 71322 or chat on WhatsApp. Our nearest GPS-tracked driver is dispatched immediately, arriving at your doorstep or pickup point within 5 to 10 minutes with zero surge pricing.'
+      question: 'How can I book a Call Taxi Near Me or Taxi Service Near Me in Hosur?',
+      answer: 'When searching for "Call Taxi Near Me" or "Taxi Service Near Me" in Hosur, simply call Yuva Call Taxi at +91 99442 71322 or chat on WhatsApp. Our GPS-dispatched drivers arrive in 5 to 10 minutes anywhere in Hosur with flat transparent fares and zero surge fees.'
     },
     {
       question: 'Is call taxi available near Hosur bus stand and railway station?',

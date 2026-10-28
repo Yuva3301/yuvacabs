@@ -220,11 +220,11 @@ export default function LocalSEO() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Call Taxi Near Me &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Local Cabs in Hosur from ₹150</span>
+            Hosur Call Taxi &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Call Taxi Near Me — 24/7 Cab Service</span>
           </h2>
           
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed font-medium">
-            Dedicated cabs stationed 24/7 across Hosur Railway Station, Bus Stand, SIPCOT &amp; all local neighborhoods for 5–10 min pickup. Plus transparent outstation trips from ₹9/km with certified chauffeurs.
+            Searching for a trusted <strong>Call Taxi Near Me</strong>, <strong>Taxi Service Near Me</strong>, or flat-rate <strong>Airport Taxi Hosur</strong>? Yuva Call Taxi is Hosur's premier <strong>Cab Service</strong> with 5–10 min pickup across all zones and outstation trips from ₹9/km.
           </p>
 
           {/* Toggle Pills */}

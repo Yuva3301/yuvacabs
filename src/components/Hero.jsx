@@ -230,7 +230,7 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
-              Local, Airport & Outstation Cabs in Hosur
+              Hosur Call Taxi • 24/7 Call Taxi &amp; Cab Service
             </span>
             <span className="text-brand-silver/40 hidden sm:inline">•</span>
             <a href="tel:9944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
@@ -247,7 +247,7 @@ export default function Hero() {
             className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
             <span className="text-xs sm:text-sm font-extrabold text-brand-yellow uppercase tracking-widest block mb-2">
-              24/7 Local Cabs, BLR Airport & Outstation Taxi in Hosur
+              Hosur Call Taxi • Taxi Service Near Me • Airport Taxi Hosur
             </span>
             <span className="text-brand-yellow">Yuva Call Taxi</span>-Hosur <br />
             <a
@@ -265,19 +265,19 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full pt-1"
           >
-            {/* Service Card 1: Outstation Taxi */}
+            {/* Service Card 1: Outstation Cab Service */}
             <a
               href="tel:9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-brand-yellow/15 border border-brand-yellow/30 hover:border-brand-yellow transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-brand-yellow text-brand-black uppercase tracking-wider">
-                  Outstation
+                  Cab Service
                 </span>
                 <span className="text-[11px] text-emerald-400 font-extrabold">₹9/km</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-brand-yellow transition-colors leading-tight mt-1">
-                Outstation Taxi Service
+                Outstation Cab Service
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-brand-yellow font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
@@ -285,55 +285,55 @@ export default function Hero() {
               </div>
             </a>
 
-            {/* Service Card 2: Airport Taxi */}
+            {/* Service Card 2: Airport Taxi Hosur */}
             <a
               href="tel:9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-blue-500/15 border border-blue-500/30 hover:border-blue-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-blue-500 text-white uppercase tracking-wider">
-                  Airport
+                  Airport Taxi
                 </span>
                 <span className="text-[11px] text-emerald-400 font-extrabold">Fixed ₹2,200</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-blue-300 transition-colors leading-tight mt-1">
-                Bangalore Airport Taxi
+                Airport Taxi Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-blue-400 font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-blue-400 text-blue-400" />
-                <span>Swift Dzire Fixed Fare</span>
+                <span>Kempegowda BLR Drop</span>
               </div>
             </a>
 
-            {/* Service Card 3: Local Taxi */}
+            {/* Service Card 3: Call Taxi Near Me */}
             <a
               href="tel:9944271322"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white uppercase tracking-wider">
-                  Local Cab
+                  Call Taxi
                 </span>
                 <span className="text-[11px] text-emerald-400 font-extrabold">From ₹150</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-emerald-300 transition-colors leading-tight mt-1">
-                Local Taxi in Hosur
+                Call Taxi Near Me
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-emerald-400 font-black text-xs sm:text-sm">
                 <Phone className="w-3.5 h-3.5 fill-emerald-400 text-emerald-400" />
-                <span>5–10 Min Pickup Hubs</span>
+                <span>5–10 Min Fast Pickup</span>
               </div>
             </a>
           </motion.div>
 
-          {/* Subtitle with High-Ranking Locations and Pricing */}
+          {/* Subtitle with High-Ranking Priority Keywords */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            Need a cab right now? Guaranteed 5–10 min arrival across <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Bus Stand</strong>, <strong className="text-white">Bagalur Road</strong>, <strong className="text-white">Bathalapalli</strong>, <strong className="text-white">Mookandapalli</strong>, <strong className="text-white">Shoolagiri</strong>, <strong className="text-white">Rayakottai</strong>, <strong className="text-white">Krishnagiri</strong> &amp; <strong className="text-white">BLR Airport</strong>. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
+            Looking for a <strong className="text-white">Call Taxi Near Me</strong>, reliable <strong className="text-white">Taxi Service Near Me</strong>, or <strong className="text-white">Airport Taxi Hosur</strong>? Yuva Call Taxi is your trusted 24/7 <strong className="text-white">Hosur Call Taxi</strong> &amp; <strong className="text-white">Cab Service</strong> partner with 5–10 min pickup across Railway Station, Bus Stand, Bagalur, Bathalapalli, Mookandapalli &amp; Krishnagiri. Fares from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
           {/* High-Conversion Primary Action Buttons */}

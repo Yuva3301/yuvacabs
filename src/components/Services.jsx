@@ -1,28 +1,28 @@
-import { Plane, Navigation, Milestone, Briefcase, ChevronRight, CornerUpRight, RefreshCcw } from 'lucide-react';
+﻿import { Plane, Navigation, Milestone, Briefcase, ChevronRight, CornerUpRight, RefreshCcw } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Services() {
   const services = [
     {
       icon: Plane,
-      title: 'Airport Taxi Transfers',
-      description: 'Staggered pickup and dropoff services between Hosur and Kempegowda International Airport Bengaluru (BLR). We ensure absolute timeliness.',
+      title: 'Airport Taxi Hosur',
+      description: 'Dedicated pickup and drop service between Hosur and Kempegowda International Airport Bengaluru (BLR) with fixed ₹2,200 rates and flight tracking.',
       accent: 'border-brand-yellow/30',
-      badge: 'BLR Airport Dedicated'
+      badge: 'Airport Taxi Hosur'
     },
     {
       icon: Navigation,
-      title: 'Local Cab & City Taxi',
-      description: 'Point-to-point transfers and 5–10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT & all local residential areas from ₹150.',
+      title: 'Call Taxi Near Me (Local Cabs)',
+      description: 'Fast 5–10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur Road & all local residential areas starting from ₹150.',
       accent: 'border-brand-yellow/30',
-      badge: '5–10 Min Pickup'
+      badge: 'Call Taxi Near Me'
     },
     {
       icon: Milestone,
-      title: 'Outstation Travel',
-      description: 'Travel beyond Hosur with premium long-distance cabs. Clean, inspected sedans and SUVs ready for family trips and weekend excursions.',
+      title: 'Outstation Cab Service',
+      description: 'Travel beyond Hosur with top-rated outstation cabs starting at ₹9/km. Clean sedans and Innova Crysta for Bangalore, Chennai, Salem, and Coimbatore.',
       accent: 'border-brand-purple/30',
-      badge: 'Inter-City travel'
+      badge: 'Cab Service'
     },
     {
       icon: Briefcase,
