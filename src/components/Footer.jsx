@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, ShieldAlert, Star } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
 import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 
 export default function Footer({ onAdminToggle }) {
@@ -141,90 +141,40 @@ export default function Footer({ onAdminToggle }) {
 
       </div>
 
-      {/* Footer Summary, Local Keyword Directory & Contact Info */}
+      {/* Footer Summary & Direct Hotline */}
       <div className="border-t border-white/5 pt-10 mt-8">
-        <div className="max-w-6xl mx-auto text-center px-4">
+        <div className="max-w-4xl mx-auto text-center px-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-[11px] font-bold uppercase tracking-wider mb-4">
-            <span>Hosur 24/7 Local & Outstation Taxi Directory</span>
+            <span>Hosur 24/7 Local &amp; Outstation Taxi Network</span>
           </div>
 
-          <h3 className="text-base sm:text-lg font-black text-white mb-2">
-            Local, Airport & Outstation Cabs in Hosur | 9944271322
+          <h3 className="text-xl sm:text-2xl font-black text-white mb-3">
+            YUVA CABS — Your Trusted Travel Partner in Hosur
           </h3>
-          <p className="text-xs text-brand-gray/80 leading-relaxed font-medium max-w-3xl mx-auto mb-6">
-            Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150, outstation from ₹9/km. Call <a href="tel:9944271322" className="text-brand-yellow hover:underline font-extrabold">9944271322</a>.
+          <p className="text-xs sm:text-sm text-brand-gray/80 leading-relaxed font-medium max-w-2xl mx-auto mb-6">
+            Available 24 hours for instant local pickups across Hosur Railway Station, Bus Stand, SIPCOT &amp; all local areas from ₹150, fixed Kempegowda Airport drops from ₹2,200, and outstation trips starting at ₹9/km.
           </p>
 
-          {/* Keyword Quick-Call Directory Matrix for Google Top Ranking & Call Generation */}
-          <div className="text-left bg-white/[0.02] border border-white/5 rounded-2xl p-5 mb-8">
-            <span className="text-[11px] text-brand-yellow font-extrabold uppercase tracking-wider block mb-3">
-              ⚡ Instant 5–10 Min Pickup Hubs & Vehicle Rentals (Tap to Call 9944271322):
-            </span>
-            <div className="flex flex-wrap gap-2 text-[11px]">
-              {[
-                { name: 'Local, Airport & Outstation Cabs in Hosur | 9944271322', tel: '9944271322' },
-                { name: 'Local Taxi in Hosur | Yuva Call Taxi – 9944271322', tel: '9944271322' },
-                { name: 'Bangalore Airport Taxi from Hosur | Call 9944271322', tel: '9944271322' },
-                { name: 'Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322', tel: '9944271322' },
-                { name: 'Yuva Call Taxi Hosur', tel: '9944271322' },
-                { name: 'most reliable taxi service in Hosur', tel: '9944271322' },
-                { name: 'taxi service in Hosur', tel: '+919944271322' },
-                { name: 'call taxi near me', tel: '+919944271322' },
-                { name: 'taxi near me', tel: '+919944271322' },
-                { name: 'cab service in Hosur', tel: '+919944271322' },
-                { name: 'car rental in Hosur', tel: '+919944271322' },
-                { name: 'online taxi booking in Hosur', tel: '+919944271322' },
-                { name: 'local taxi service in Hosur', tel: '+919944271322' },
-                { name: 'outstation taxi in Hosur', tel: '+919944271322' },
-                { name: 'airport taxi in Hosur', tel: '+919944271322' },
-                { name: 'airport pickup and drop in Hosur', tel: '+919944271322' },
-                { name: 'one way taxi in Hosur', tel: '+919944271322' },
-                { name: 'round trip taxi in Hosur', tel: '+919944271322' },
-                { name: '24 hours taxi service in Hosur', tel: '+919944271322' },
-                { name: 'seven seater taxi in Hosur', tel: '+919944271322' },
-                { name: 'Innova Crysta rental in Hosur', tel: '+919944271322' },
-                { name: 'Tempo Traveller rental in Hosur', tel: '+919944271322' },
-                { name: 'tour and travel service in Hosur', tel: '+919944271322' },
-                { name: 'cheap taxi service in Hosur', tel: '+919944271322' },
-                { name: 'call taxi near Hosur bus stand', tel: '+919944271322' },
-                { name: 'taxi near Hosur railway station', tel: '+919944271322' },
-                { name: 'taxi service near Hosur new bus stand', tel: '+919944271322' },
-                { name: 'call taxi in SIPCOT Hosur', tel: '+919944271322' },
-                { name: 'taxi service bagalur road Hosur', tel: '+919944271322' },
-                { name: 'call taxi denkanikottai road Hosur', tel: '+919944271322' },
-                { name: 'call taxi in dinnur hosur', tel: '+919944271322' },
-                { name: 'taxi service jeeva nagar hosur', tel: '+919944271322' },
-                { name: 'call taxi sanasandiram hosur', tel: '+919944271322' },
-                { name: 'taxi service mathigiri hosur', tel: '+919944271322' },
-                { name: 'call taxi kelamangalam road hosur', tel: '+919944271322' },
-                { name: 'taxi service attibele', tel: '+919944271322' },
-                { name: 'call taxi berigai', tel: '+919944271322' },
-                { name: 'taxi service mookandapalli hosur', tel: '+919944271322' },
-                { name: 'call taxi zuzuvadi hosur', tel: '+919944271322' },
-                { name: 'sedan car rental hosur', tel: '+919944271322' },
-                { name: 'swift dzire taxi hosur', tel: '+919944271322' },
-                { name: 'seven seater car rental hosur', tel: '+919944271322' },
-                { name: 'family trip taxi hosur', tel: '+919944271322' },
-                { name: 'business trip taxi hosur', tel: '+919944271322' },
-                { name: 'chennai airport taxi from hosur', tel: '+919944271322' },
-                { name: 'bangalore airport taxi from hosur', tel: '+919944271322' },
-                { name: 'hosur to bangalore taxi', tel: '+919944271322' },
-              ].map((item, index) => (
-                <a
-                  key={index}
-                  href={`tel:${item.tel}`}
-                  className="px-2.5 py-1 rounded-lg bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/5 hover:border-brand-yellow text-brand-silver transition-all duration-200 inline-flex items-center space-x-1"
-                  title={`Call Yuva Call Taxi for ${item.name}`}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-brand-yellow mr-1" />
-                  <span>{item.name}</span>
-                </a>
-              ))}
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+            <a
+              href="tel:+919944271322"
+              className="px-5 py-2.5 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs flex items-center space-x-2 hover:brightness-110 active:scale-95 transition-all shadow-md"
+            >
+              <Phone className="w-3.5 h-3.5 fill-brand-black" />
+              <span>Call +91 99442 71322</span>
+            </a>
+            <a
+              href="https://wa.me/919944271322?text=Hello!%20I%20would%20like%20to%20book%20a%20taxi%20in%20Hosur."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 rounded-full bg-[#25D366] text-white font-extrabold text-xs flex items-center space-x-2 hover:brightness-110 active:scale-95 transition-all shadow-md"
+            >
+              <span>Book via WhatsApp</span>
+            </a>
           </div>
 
           <address className="text-xs text-brand-gray/70 not-italic">
-            YUVA CABS (Yuva Call Taxi) | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold">+91 99442 71322</a> | yuvacalltaxi.com
+            YUVA CABS (Yuva Call Taxi) | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a> | yuvacalltaxi.com
           </address>
         </div>
       </div>

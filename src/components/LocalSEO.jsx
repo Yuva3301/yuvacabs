@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Navigation, Clock, Plane, Building2, ShieldCheck, Phone, MessageSquare, ArrowRight, Star, ExternalLink, CheckCircle2, Compass, Car } from 'lucide-react';
 import { FaGoogle } from 'react-icons/fa6';
@@ -126,11 +126,11 @@ export default function LocalSEO() {
     {
       title: 'Hosur Bus Stand & Railway Station Hub',
       areas: [
-        'Call taxi near Hosur bus stand',
-        'Taxi near Hosur railway station',
-        'Taxi service near Hosur new bus stand',
-        'Railway Station Road & Hamman Nagar',
-        'Hosur Central Bus Stand Hub'
+        'Hosur Railway Station',
+        'Hosur Central Bus Stand',
+        'New Bus Stand Terminal',
+        'Railway Station Road',
+        'Hamman Nagar Hub'
       ],
       tag: 'Station & Bus Stand Hub',
       pickupTime: '3 - 7 Mins',
@@ -139,12 +139,12 @@ export default function LocalSEO() {
     {
       title: 'SIPCOT, Mookandapalli & Zuzuvadi',
       areas: [
-        'Call taxi in SIPCOT Hosur',
-        'Taxi service mookandapalli hosur',
-        'Call taxi zuzuvadi hosur',
-        'SIPCOT Phase 1 & Phase 2',
+        'SIPCOT Phase 1',
+        'SIPCOT Phase 2',
+        'Mookandapalli Industrial Belt',
+        'Zuzuvadi Checkpost',
         'TANSIDCO Industrial Estate',
-        'TVS Motor Belt & Moranapalli'
+        'TVS Motor Corridor & Moranapalli'
       ],
       tag: 'Industrial & Shift Commute',
       pickupTime: '5 - 10 Mins',
@@ -153,11 +153,11 @@ export default function LocalSEO() {
     {
       title: 'Bagalur Road & Denkanikottai Road',
       areas: [
-        'Taxi service bagalur road Hosur',
-        'Call taxi denkanikottai road Hosur',
         'Bagalur Junction & Ring Road',
-        'Shanthi Nagar & Nehru Nagar',
-        'Hosur-Thally Road'
+        'Denkanikottai Road',
+        'Shanthi Nagar',
+        'Nehru Nagar',
+        'Hosur-Thally Road Corridor'
       ],
       tag: 'Connecting Arteries',
       pickupTime: '5 - 10 Mins',
@@ -166,10 +166,10 @@ export default function LocalSEO() {
     {
       title: 'Mathigiri, Dinnur, Jeeva Nagar & Sanasandiram',
       areas: [
-        'Taxi service mathigiri hosur',
-        'Call taxi in dinnur hosur',
-        'Taxi service jeeva nagar hosur',
-        'Call taxi sanasandiram hosur',
+        'Mathigiri Town',
+        'Dinnur Circle',
+        'Jeeva Nagar',
+        'Sanasandiram',
         'Avalapalli & Kamaraj Colony'
       ],
       tag: 'City & Residential Hubs',
@@ -179,10 +179,10 @@ export default function LocalSEO() {
     {
       title: 'Kelamangalam Road, Attibele & Berigai',
       areas: [
-        'Call taxi kelamangalam road hosur',
-        'Taxi service attibele border',
-        'Call taxi berigai',
-        'Chandapura & Electronic City corridor',
+        'Kelamangalam Road',
+        'Attibele Border Toll',
+        'Berigai Junction',
+        'Chandapura & Electronic City Corridor',
         'Shoolagiri & Rayakottai'
       ],
       tag: 'Border & Suburban Connectors',
@@ -190,16 +190,14 @@ export default function LocalSEO() {
       desc: 'Seamless border crossings to Attibele toll, Electronic City tech parks, and rural suburban panchayats.'
     },
     {
-      title: 'Car Rental & Fleet Services Hosur',
+      title: 'Car Rental & Fleet Options',
       areas: [
-        'Sedan car rental hosur',
-        'Swift dzire taxi hosur',
-        'Seven seater taxi in Hosur',
-        'Seven seater car rental hosur',
-        'Innova Crysta rental in Hosur',
-        'Tempo Traveller rental in Hosur',
-        'Family trip taxi hosur',
-        'Business trip taxi hosur'
+        'Swift Dzire & Etios Sedans',
+        'Toyota Innova & Innova Crysta',
+        'Ertiga & 7-Seater Family SUVs',
+        'Tempo Traveller (12+1 Seater)',
+        'Executive Corporate Sedans',
+        'Outstation Tour Vehicles'
       ],
       tag: 'Fleet & Rental Specialists',
       pickupTime: 'Available 24/7',

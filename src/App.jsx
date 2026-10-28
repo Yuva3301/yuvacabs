@@ -11,7 +11,6 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
-import LocalKeywordMatrix from './components/LocalKeywordMatrix';
 import FloatingCTA from './components/FloatingCTA';
 import WhatsAppGreeting from './components/WhatsAppGreeting';
 import Footer from './components/Footer';
@@ -35,7 +34,7 @@ export default function App() {
     localStorage.setItem('yuva_theme', theme);
   }, [theme]);
 
-  // 2. URL Hash routing logic: Check if URI contains '#admin' to launch the dashboard
+  // URL Hash routing logic: Check if URI contains '#admin' to launch the dashboard
   useEffect(() => {
     const handleHashRouter = () => {
       if (window.location.hash === '#admin') {
@@ -52,7 +51,7 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashRouter);
   }, []);
 
-  // 2. Mock preloader loading meter for luxury brand experience
+  // Mock preloader loading meter for luxury brand experience
   useEffect(() => {
     if (!loading) return;
 
@@ -146,7 +145,6 @@ export default function App() {
             <Testimonials />
             <FAQ />
             <Contact />
-            <LocalKeywordMatrix />
           </main>
 
           {/* Footer bar */}
