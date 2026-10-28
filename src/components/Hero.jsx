@@ -246,6 +246,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
+            <span className="text-xs sm:text-sm font-extrabold text-brand-yellow uppercase tracking-widest block mb-2">
+              Yuva Call Taxi Hosur — Most Reliable Taxi Service in Hosur
+            </span>
             <span className="text-brand-yellow">Yuva</span> Taxi Service Hosur <br />
             <a
               href="tel:+919944271322"

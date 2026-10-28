@@ -7,48 +7,44 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'What is the taxi fare in Hosur?',
-      answer: 'Our rates are fully transparent and distance-based. Outstation round trips are specially priced at just ₹9 to ₹12/km (plus driver allowance per day). Local Hatchbacks start at ₹9-10/km, Sedans at ₹10-12/km, and Innova & Crysta at ₹18-19/km. Tolls, parking, and night charges (10 PM to 6 AM) are extra.'
+      question: 'Which is the most reliable taxi service in Hosur?',
+      answer: 'Yuva Call Taxi Hosur (YUVA CABS) is recognized as the most reliable taxi service in Hosur with a Google 4.9★ rating. We provide 24 hours taxi service in Hosur, online taxi booking in Hosur, cheap taxi service in Hosur, local taxi service from ₹150, and outstation taxi from ₹9/km. Call +91 99442 71322 for instant booking.'
     },
     {
-      question: 'Is airport pickup and drop available from Hosur, and what is the fare?',
-      answer: 'Yes! We provide 24/7 dedicated airport transfers between Hosur and Kempegowda International Airport (BLR). For Maruti Swift Dzire, we offer an exclusive flat package: Non-A/C ₹2,200 and A/C ₹2,300. We track flight delays in real-time to guarantee on-time arrival with zero surge fees.'
+      question: 'How to get a call taxi near me or taxi near me in Hosur with instant pickup?',
+      answer: 'When you search for "call taxi near me" or "taxi near me" in Hosur, simply dial Yuva Call Taxi at +91 99442 71322 or chat on WhatsApp. Our nearest GPS-tracked driver is dispatched immediately, arriving at your doorstep or pickup point within 5 to 10 minutes with zero surge pricing.'
     },
     {
-      question: 'Are YUVA CABS taxis available 24/7?',
-      answer: 'Absolutely. We operate twenty-four hours a day, seven days a week. Whether you have an early morning flight, a midnight emergency, or a late-night corporate trip, you can book online or call us anytime for immediate dispatch.'
+      question: 'Is call taxi available near Hosur bus stand and railway station?',
+      answer: 'Yes! We provide 24/7 dedicated call taxi near Hosur bus stand, taxi near Hosur railway station, and taxi service near Hosur new bus stand. Cabs are parked directly outside station platforms and bus stands for immediate departure.'
     },
     {
-      question: 'Do you provide outstation travel from Hosur?',
-      answer: 'Yes, we provide outstation round-trips and one-way drops from Hosur to major cities like Bangalore, Chennai, Salem, Coimbatore, Madurai, Pondicherry, and more at special rates starting from ₹9 to ₹12/km.'
+      question: 'Do you provide call taxi in SIPCOT Hosur, Mookandapalli, and Zuzuvadi?',
+      answer: 'Yes! Yuva Call Taxi offers rapid 5-10 minute dispatch for call taxi in SIPCOT Hosur (Phase 1 & Phase 2), taxi service mookandapalli hosur, and call taxi zuzuvadi hosur for shift pickups, corporate visits, and airport transfers.'
     },
     {
-      question: 'How can I book a taxi with YUVA CABS?',
-      answer: 'You can book a taxi instantly by calling our 24/7 hotline (+91 99442 71322), chatting on WhatsApp (+91 99442 71322), or filling out the online booking form in the Contact section. We confirm your cab within minutes.'
+      question: 'Which local areas and roads in Hosur are covered for 24/7 taxi pickup?',
+      answer: 'We cover all local routes: taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, and call taxi berigai.'
     },
     {
-      question: 'Why is YUVA CABS the top-rated taxi service in Hosur?',
-      answer: 'YUVA CABS holds a 4.9/5 Google rating thanks to our 100% on-time pickups, experienced verified drivers, transparent per-kilometer pricing without hidden surcharges, sanitized luxury fleet, and dedicated 24/7 service across Hosur, SIPCOT 1 & 2, Mathigiri, and Bangalore Kempegowda Airport (BLR).'
+      question: 'Can I book a seven seater taxi, Innova Crysta rental, or Tempo Traveller rental in Hosur?',
+      answer: 'Yes! We offer seven seater taxi in Hosur, seven seater car rental hosur, Innova Crysta rental in Hosur, and Tempo Traveller rental in Hosur. Perfect for family trip taxi hosur, business trip taxi hosur, and complete tour and travel service in Hosur.'
     },
     {
-      question: 'How quickly can I get a call taxi near me in Hosur?',
-      answer: 'Call YUVA CABS directly at +91 99442 71322 or send a WhatsApp message. Our nearest GPS-tracked driver is dispatched immediately, arriving at your doorstep or pickup point within 5 to 10 minutes with zero surge pricing.'
+      question: 'Do you offer sedan car rental and Swift Dzire taxi in Hosur?',
+      answer: 'Yes, YUVA CABS provides spotless AC sedan car rental hosur and swift dzire taxi hosur with verified professional chauffeurs for city rides, corporate transit, and outstation trips.'
     },
     {
-      question: 'Can I get an instant taxi at Hosur Railway Station or Hosur Bus Stand?',
-      answer: 'Yes! We have dedicated cabs stationed 24/7 directly outside Hosur Railway Station (Platforms 1 & 2) and Hosur Central & New Bus Stand. Pickup takes just 3 to 5 minutes for local Hosur drops, SIPCOT commutes, or Bangalore Airport transfers.'
+      question: 'What is the fare for Bangalore airport taxi and Chennai airport taxi from Hosur?',
+      answer: 'Bangalore airport taxi from Hosur (Kempegowda BLR Airport) has an exclusive fixed package rate in Swift Dzire: Non-A/C ₹2,200 and A/C ₹2,300 with 24/7 flight delay tracking. Chennai airport taxi from Hosur is available for one way taxi or round trip taxi from ₹9/km.'
     },
     {
-      question: 'What are the charges for a local cab in Hosur?',
-      answer: 'Local cab rides within Hosur start at just ₹150 minimum fare for Hatchbacks and ₹180 for Sedans (Maruti Dzire, Toyota Etios) covering up to 4 km. Extra kilometers are just ₹10–₹12/km, providing the most economical local transit in town.'
+      question: 'What are the rates for outstation taxi, one way taxi, and round trip taxi in Hosur?',
+      answer: 'Outstation taxi in Hosur starts from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), and ₹18/km for Innova Crysta. We also offer one way taxi in Hosur where you pay only one-way for Bangalore, Chennai, Salem, Coimbatore, and Tirupati.'
     },
     {
-      question: 'What is the Yuva Call Taxi Hosur phone number for 24/7 booking?',
-      answer: 'You can reach YUVA CABS (Yuva Call Taxi) 24 hours a day at +91 99442 71322 for instant dispatch, outstation trips, and airport transfers.'
-    },
-    {
-      question: 'Which areas in Hosur are covered for 24/7 taxi pickup?',
-      answer: 'We cover every neighborhood across Hosur with 24/7 on-demand dispatch: SIPCOT Phase 1 & 2, TANSIDCO, Mathigiri, Bagalur Road, Railway Station Road, Bus Stand, Shanthi Nagar, Nehru Nagar, Avalapalli, Sanasandiram, Old Bengaluru Road, Electronic City corridor, Attibele, and Krishnagiri.'
+      question: 'What is the Yuva Call Taxi Hosur phone number for 24 hours taxi service and online taxi booking?',
+      answer: 'You can reach Yuva Call Taxi Hosur 24 hours a day at +91 99442 71322 for instant dispatch, outstation trips, airport transfers, and online taxi booking in Hosur. Confirmation is delivered in minutes.'
     }
   ];
 
