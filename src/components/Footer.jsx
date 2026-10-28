@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
+﻿import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
 import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 
 export default function Footer({ onAdminToggle }) {
@@ -149,10 +149,10 @@ export default function Footer({ onAdminToggle }) {
           </div>
 
           <h3 className="text-xl sm:text-2xl font-black text-white mb-3">
-            YUVA CABS — Your Trusted Travel Partner in Hosur
+            Yuva Call Taxi-Hosur — Premier 24/7 Cab Service
           </h3>
           <p className="text-xs sm:text-sm text-brand-gray/80 leading-relaxed font-medium max-w-2xl mx-auto mb-6">
-            Available 24 hours for instant local pickups across Hosur Railway Station, Bus Stand, SIPCOT &amp; all local areas from ₹150, fixed Kempegowda Airport drops from ₹2,200, and outstation trips starting at ₹9/km.
+            Instant 5–10 min pickup across Hosur Railway Station, Bus Stand, Bagalur, Bagalur Road, Bathalapalli, Mookandapalli, Shoolagiri, Rayakottai, Krishnagiri &amp; 24/7 BLR Airport drops. Local rides from ₹150, outstation @ ₹9/km.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">

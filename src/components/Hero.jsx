@@ -247,9 +247,9 @@ export default function Hero() {
             className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
             <span className="text-xs sm:text-sm font-extrabold text-brand-yellow uppercase tracking-widest block mb-2">
-              24/7 Local, Airport & Outstation Cabs in Hosur
+              24/7 Local Cabs, BLR Airport & Outstation Taxi in Hosur
             </span>
-            <span className="text-brand-yellow">YUVA</span> CABS HOSUR <br />
+            <span className="text-brand-yellow">Yuva Call Taxi</span>-Hosur <br />
             <a
               href="tel:9944271322"
               className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-1"
@@ -333,7 +333,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            Need a cab right now? Guaranteed 5–10 min arrival for <strong>Outstation</strong>, <strong>Local</strong>, and <strong>Airport</strong> trips at <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Hosur Bus Stand</strong>, <strong className="text-white">SIPCOT 1 &amp; 2</strong>, Mathigiri &amp; all local areas. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
+            Need a cab right now? Guaranteed 5–10 min arrival across <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">Bus Stand</strong>, <strong className="text-white">Bagalur Road</strong>, <strong className="text-white">Bathalapalli</strong>, <strong className="text-white">Mookandapalli</strong>, <strong className="text-white">Shoolagiri</strong>, <strong className="text-white">Rayakottai</strong>, <strong className="text-white">Krishnagiri</strong> &amp; <strong className="text-white">BLR Airport</strong>. Local rides from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
           {/* High-Conversion Primary Action Buttons */}

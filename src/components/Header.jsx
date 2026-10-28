@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Phone, Menu, X, ShieldAlert, Sun, Moon } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -70,13 +70,13 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
             </div>
             <div className="flex flex-col text-left">
               <span 
-                className="text-lg font-black tracking-tight logo-text-yuva leading-none"
+                className="text-base sm:text-lg font-black tracking-tight logo-text-yuva leading-none"
                 style={{ color: theme === 'light' ? '#0B0F19' : '#FFFFFF' }}
               >
-                YUVA <span className="text-brand-yellow text-glow-yellow">CABS</span>
+                YUVA CALL TAXI<span className="text-brand-yellow text-glow-yellow">-HOSUR</span>
               </span>
               <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-0.5 opacity-80">
-                Yuva Call Taxi • Hosur
+                24/7 Local &amp; Outstation Service
               </span>
             </div>
           </a>

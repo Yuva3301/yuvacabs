@@ -137,34 +137,60 @@ export default function LocalSEO() {
       desc: 'Stationed 24/7 right outside Hosur Railway Station (Platforms 1 & 2) and New Bus Stand for instant local or outstation departure.'
     },
     {
-      title: 'SIPCOT, Mookandapalli & Zuzuvadi',
+      title: 'Bagalur & Bagalur Road Corridor',
       areas: [
-        'SIPCOT Phase 1',
-        'SIPCOT Phase 2',
+        'Bagalur Town',
+        'Bagalur Road Junction',
+        'Bagalur Ring Road',
+        'Denkanikottai Road',
+        'Hosur-Thally Road Corridor'
+      ],
+      tag: 'Key Arterial Corridors',
+      pickupTime: '5 - 10 Mins',
+      desc: 'Fast pickup on Bagalur Road, Bagalur town, and arterial bypass lanes with transparent per-km rates and verified drivers.'
+    },
+    {
+      title: 'Mookandapalli, SIPCOT & Bathalapalli',
+      areas: [
         'Mookandapalli Industrial Belt',
+        'Bathalapalli Market & Hub',
+        'SIPCOT Phase 1 & 2',
         'Zuzuvadi Checkpost',
         'TANSIDCO Industrial Estate',
         'TVS Motor Corridor & Moranapalli'
       ],
-      tag: 'Industrial & Shift Commute',
+      tag: 'Industrial & Shift Hubs',
       pickupTime: '5 - 10 Mins',
-      desc: 'Immediate dispatch for industrial corporate employees, executive commutes, shift drops, and airport transfers.'
+      desc: 'Immediate dispatch across Mookandapalli, Bathalapalli, SIPCOT, and industrial belts for shift drops and executive travel.'
     },
     {
-      title: 'Bagalur Road & Denkanikottai Road',
+      title: 'Shoolagiri, Rayakottai & Krishnagiri Network',
       areas: [
-        'Bagalur Junction & Ring Road',
-        'Denkanikottai Road',
-        'Shanthi Nagar',
-        'Nehru Nagar',
-        'Hosur-Thally Road Corridor'
+        'Shoolagiri Highway Hub',
+        'Rayakottai Road & Town',
+        'Krishnagiri NH44 Highway Drop',
+        'Berigai Junction',
+        'Kelamangalam Road'
       ],
-      tag: 'Connecting Arteries',
-      pickupTime: '5 - 10 Mins',
-      desc: 'Prompt pickup on major arterial highways with transparent per-km rates and verified local chauffeurs.'
+      tag: 'Highway & Outstation Routes',
+      pickupTime: '10 - 15 Mins',
+      desc: 'Seamless highway travel to Shoolagiri, Rayakottai, Krishnagiri, and surrounding panchayats starting from ₹9/km.'
     },
     {
-      title: 'Mathigiri, Dinnur, Jeeva Nagar & Sanasandiram',
+      title: 'BLR Kempegowda Airport & Border Transit',
+      areas: [
+        'BLR Airport Kempegowda (Fixed ₹2,200)',
+        'Attibele Border Toll',
+        'Chandapura & Electronic City',
+        'Bommasandra Industrial Corridor',
+        'Silk Board & Bangalore Transit'
+      ],
+      tag: 'Airport & Border Routes',
+      pickupTime: 'Available 24/7',
+      desc: 'Direct fixed-rate Swift Dzire airport taxi to Kempegowda International Airport (BLR) and smooth border transfers.'
+    },
+    {
+      title: 'Mathigiri & City Residential Hubs',
       areas: [
         'Mathigiri Town',
         'Dinnur Circle',
@@ -175,33 +201,6 @@ export default function LocalSEO() {
       tag: 'City & Residential Hubs',
       pickupTime: '5 - 10 Mins',
       desc: 'Fast residential neighborhood service. Hospital emergencies, family shopping, and local station drop-offs.'
-    },
-    {
-      title: 'Kelamangalam Road, Attibele & Berigai',
-      areas: [
-        'Kelamangalam Road',
-        'Attibele Border Toll',
-        'Berigai Junction',
-        'Chandapura & Electronic City Corridor',
-        'Shoolagiri & Rayakottai'
-      ],
-      tag: 'Border & Suburban Connectors',
-      pickupTime: '10 - 15 Mins',
-      desc: 'Seamless border crossings to Attibele toll, Electronic City tech parks, and rural suburban panchayats.'
-    },
-    {
-      title: 'Car Rental & Fleet Options',
-      areas: [
-        'Swift Dzire & Etios Sedans',
-        'Toyota Innova & Innova Crysta',
-        'Ertiga & 7-Seater Family SUVs',
-        'Tempo Traveller (12+1 Seater)',
-        'Executive Corporate Sedans',
-        'Outstation Tour Vehicles'
-      ],
-      tag: 'Fleet & Rental Specialists',
-      pickupTime: 'Available 24/7',
-      desc: 'Specialized wedding cars, executive business sedans, and group tour vehicles with professional drivers.'
     }
   ];
 
