@@ -1,4 +1,4 @@
-﻿import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async';
 
 export default function SEO() {
   const targetKeywords = [
@@ -15,6 +15,20 @@ export default function SEO() {
     "Yuva Call Taxi",
     "Yuva Call Taxi Hosur",
     "Yuva Call Taxi 9944271322",
+    "Outstation Taxi Service in Hosur",
+    "Outstation Cabs Hosur",
+    "Hosur Outstation Cabs",
+    "One Way Drop Taxi Hosur",
+    "Hosur Drop Taxi",
+    "Drop Taxi Hosur",
+    "Hosur to Chennai Drop Taxi",
+    "Hosur to Bangalore Taxi",
+    "Hosur to Salem Drop Taxi",
+    "Hosur to Coimbatore Cab",
+    "Hosur to Tirupati Taxi",
+    "Seven Seater Taxi in Hosur",
+    "Innova Crysta Rental in Hosur",
+    "Tempo Traveller Rental in Hosur",
     "Taxi in Bagalur",
     "Call taxi Bagalur",
     "Bagalur taxi service",
@@ -123,9 +137,14 @@ export default function SEO() {
         "@id": "https://yuvacalltaxi.com/#localbusiness",
         "name": "Yuva Call Taxi Hosur - Most Reliable Taxi Service in Hosur",
         "alternateName": targetKeywords,
-        "keywords": targetKeywords.join(", "),`r`n        "serviceType": ["Call Taxi", "Taxi Service Near Me", "Call Taxi Near Me", "Cab Service", "Hosur Call Taxi", "Airport Taxi Hosur", "Local Taxi", "Outstation Taxi"],
+        "keywords": targetKeywords.join(", "),
+        "serviceType": [
+          "Call Taxi", "Taxi Service Near Me", "Call Taxi Near Me", "Cab Service",
+          "Hosur Call Taxi", "Airport Taxi Hosur", "Local Taxi", "Outstation Taxi",
+          "One Way Drop Taxi Hosur"
+        ],
         "image": "https://yuvacalltaxi.com/og-image.jpg",
-        "description": "Yuva Call Taxi Hosur (+919944271322) - Most reliable taxi service in Hosur. 24/7 call taxi near me, local taxi service from ₹150, outstation taxi from ₹9/km, Bangalore airport taxi (₹2,200), seven seater Innova & Swift Dzire car rental. Guaranteed 5-10 min pickup.",
+        "description": "Yuva Call Taxi Hosur (+91 99442 71322) - Most reliable taxi service in Hosur. 24/7 call taxi near me, local taxi service from ₹150, outstation taxi from ₹9/km, Bangalore airport taxi (₹2,200), seven seater Innova & Swift Dzire car rental. Guaranteed 5-10 min pickup.",
         "telephone": "+919944271322",
         "url": "https://yuvacalltaxi.com",
         "email": "bookings@yuvacalltaxi.com",
@@ -151,13 +170,7 @@ export default function SEO() {
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
           ],
           "opens": "00:00",
           "closes": "23:59"
@@ -168,7 +181,7 @@ export default function SEO() {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "385",
+          "reviewCount": "450",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -238,8 +251,8 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service",
-                "description": "Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150 and outstation from ₹9/km."
+                "name": "Hosur Call Taxi | Call Taxi Near Me | Outstation Drop Taxi & Airport Cabs Hosur",
+                "description": "Hosur Call Taxi | Call Taxi Near Me. 24/7 on-demand pickup across Hosur Railway Station, Bus Stand, SIPCOT & local areas from ₹150, outstation drop taxi from ₹9/km & airport taxi from ₹2,100."
               }
             },
             {
@@ -262,16 +275,8 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322",
-                "description": "Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. One-way and round trips starting from ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Yuva Call Taxi Hosur - Most Reliable Taxi Service in Hosur",
-                "description": "Yuva Call Taxi Hosur, the most reliable taxi service in Hosur offering 24 hours taxi service in Hosur, call taxi near me, and local taxi service in Hosur from ₹150 with instant online taxi booking."
+                "name": "Outstation Taxi Service in Hosur & One Way Drop Taxi | Yuva Call Taxi – 9944271322",
+                "description": "Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. One-way drop taxi and round trips starting from ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati."
               }
             },
             {
@@ -294,38 +299,6 @@ export default function SEO() {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Taxi Service Bagalur Road, Denkanikottai Road & Kelamangalam Road",
-                "description": "Affordable rides: taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, and call taxi kelamangalam road hosur starting @ ₹9/km."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Taxi Service Mathigiri, Dinnur, Jeeva Nagar & Sanasandiram",
-                "description": "Local city drops: taxi service mathigiri hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, and call taxi sanasandiram hosur."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Taxi Service Attibele & Call Taxi Berigai",
-                "description": "Interstate border and suburban transit: taxi service attibele and call taxi berigai with fast pickup and transparent fares."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Sedan Car Rental Hosur & Swift Dzire Taxi Hosur",
-                "description": "Air-conditioned sedan car rental hosur and swift dzire taxi hosur for family trip taxi hosur and business trip taxi hosur."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
                 "name": "Seven Seater Taxi in Hosur, Seven Seater Car Rental & Innova Crysta Rental",
                 "description": "Seven seater taxi in Hosur, seven seater car rental hosur, and Innova Crysta rental in Hosur for family trip taxi hosur and corporate travel."
               }
@@ -336,22 +309,6 @@ export default function SEO() {
                 "@type": "Service",
                 "name": "Tempo Traveller Rental in Hosur & Tour and Travel Service in Hosur",
                 "description": "Spacious Tempo Traveller rental in Hosur and complete tour and travel service in Hosur for pilgrimage, marriages, and vacation tours."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Bangalore Airport Taxi from Hosur & Chennai Airport Taxi from Hosur",
-                "description": "Dedicated airport taxi in Hosur, airport pickup and drop in Hosur, bangalore airport taxi from hosur (fixed ₹2,200), and chennai airport taxi from hosur."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Hosur to Bangalore Taxi, One Way Taxi in Hosur & Round Trip Taxi in Hosur",
-                "description": "Hosur to bangalore taxi, one way taxi in Hosur, round trip taxi in Hosur, and cheap taxi service in Hosur starting from ₹9/km."
               }
             }
           ]
@@ -396,30 +353,6 @@ export default function SEO() {
           },
           {
             "@type": "Question",
-            "name": "Which local areas in Hosur do you service?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We cover all local routes: taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, and call taxi berigai."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I book a seven seater taxi, Innova Crysta rental, or Tempo Traveller rental in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes! We offer seven seater taxi in Hosur, seven seater car rental hosur, Innova Crysta rental in Hosur, and Tempo Traveller rental in Hosur. Perfect for family trip taxi hosur, business trip taxi hosur, and complete tour and travel service in Hosur."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer sedan car rental and Swift Dzire taxi in Hosur?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, YUVA CABS provides spotless AC sedan car rental hosur and swift dzire taxi hosur with verified professional chauffeurs for city rides, corporate transit, and outstation trips."
-            }
-          },
-          {
-            "@type": "Question",
             "name": "What is the fare for Bangalore airport taxi and Chennai airport taxi from Hosur?",
             "acceptedAnswer": {
               "@type": "Answer",
@@ -431,15 +364,7 @@ export default function SEO() {
             "name": "What are the rates for outstation taxi, one way taxi, and round trip taxi in Hosur?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Outstation taxi in Hosur starts from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), and ₹18/km for Innova Crysta. We also offer one way taxi in Hosur where you pay only one-way for Bangalore, Chennai, Salem, Coimbatore, and Tirupati."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How to contact Yuva Call Taxi Hosur for 24 hours taxi service and online taxi booking?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Call or WhatsApp Yuva Call Taxi Hosur anytime 24/7 at +91 99442 71322, or complete the online taxi booking form on our website https://yuvacalltaxi.com. Instant confirmation with driver details in minutes."
+              "text": "Outstation taxi in Hosur starts from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), and ₹18/km for Innova Crysta. We also offer one way drop taxi in Hosur where you pay only one-way for Bangalore, Chennai, Salem, Coimbatore, and Tirupati."
             }
           }
         ]
@@ -475,9 +400,9 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service</title>
-      <meta name="title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
-      <meta name="description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322. Fast 5-10 min pickup from ₹150, outstation @ ₹9/km." />
+      <title>Hosur Call Taxi | Call Taxi Near Me | Outstation Drop Taxi &amp; Airport Cabs Hosur - Yuva Cabs</title>
+      <meta name="title" content="Hosur Call Taxi | Call Taxi Near Me | Outstation Drop Taxi &amp; Airport Cabs Hosur - Yuva Cabs" />
+      <meta name="description" content="Yuva Call Taxi Hosur (+91 99442 71322) - Best 24/7 Call Taxi Near Me, Local Cab Service from ₹150, Outstation One-Way Drop Taxi @ ₹9/km &amp; Bangalore Airport (BLR) Cabs from ₹1,499. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur." />
       <meta name="keywords" content={targetKeywords.join(", ")} />
       <meta name="application-name" content="Yuva Call Taxi Hosur" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -494,8 +419,8 @@ export default function SEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
-      <meta property="og:description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
+      <meta property="og:title" content="Hosur Call Taxi | Call Taxi Near Me | Outstation Drop Taxi &amp; Airport Cabs Hosur - Yuva Cabs" />
+      <meta property="og:description" content="Yuva Call Taxi Hosur (+91 99442 71322) - Best 24/7 Call Taxi Near Me, Local Cab Service from ₹150, Outstation One-Way Drop Taxi @ ₹9/km &amp; Bangalore Airport (BLR) Cabs from ₹1,499." />
       <meta property="og:image" content="https://yuvacalltaxi.com/og-image.jpg" />
       <meta property="og:locale" content="en_IN" />
       <meta property="business:contact_data:street_address" content="Railway Station Road, Hamman Nagar" />
@@ -508,8 +433,8 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service" />
-      <meta property="twitter:description" content="Hosur Call Taxi | Call Taxi Near Me | Airport Taxi Hosur | Cab Service. Local Taxi in Hosur | Yuva Call Taxi – 9944271322. Bangalore Airport Taxi from Hosur | Call 9944271322. Outstation Taxi Service in Hosur | Yuva Call Taxi – 9944271322." />
+      <meta property="twitter:title" content="Hosur Call Taxi | Call Taxi Near Me | Outstation Drop Taxi &amp; Airport Cabs Hosur - Yuva Cabs" />
+      <meta property="twitter:description" content="Yuva Call Taxi Hosur (+91 99442 71322) - Best 24/7 Call Taxi Near Me, Local Cab Service from ₹150, Outstation One-Way Drop Taxi @ ₹9/km &amp; Bangalore Airport (BLR) Cabs from ₹1,499." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/og-image.jpg" />
 
       {/* JSON-LD Schema Structuring */}
@@ -519,4 +444,3 @@ export default function SEO() {
     </Helmet>
   );
 }
-

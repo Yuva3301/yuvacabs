@@ -34,7 +34,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
       <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-brand-yellow/5 glow-orb blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 items-start mb-12">
-        
+
         {/* Column 1: Brand intro */}
         <div className="lg:col-span-4 flex flex-col space-y-4 text-left">
           <a href="#home" className="flex items-center space-x-2">
@@ -42,7 +42,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
               YUVA<span className="text-brand-yellow text-glow-yellow">CABS</span>
             </span>
           </a>
-          
+
           <p className="text-xs text-brand-gray/95 font-medium leading-relaxed max-w-sm">
             YUVA CABS is Hosur's premier 24/7 luxury taxi and cab booking service. We specialize in flat-rate Kempegowda Bangalore airport pickups, reliable outstation travel, and corporate fleet hire. Enjoy safe, air-conditioned, and professional commutes.
           </p>
@@ -54,12 +54,11 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
           <ul className="flex flex-col space-y-2.5 text-xs text-brand-gray font-bold">
             {quickLinks.map((link) => (
               <li key={link.name}>
-                <a 
-                  href={link.href} 
+                <a
+                  href={link.href}
                   onClick={(e) => handleLinkClick(e, link)}
-                  className={`transition-colors duration-200 ${
-                    link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
-                  }`}
+                  className={`transition-colors duration-200 ${link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
+                    }`}
                 >
                   {link.name}
                 </a>
@@ -74,12 +73,11 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
           <ul className="flex flex-col space-y-2.5 text-xs text-brand-gray font-bold">
             {secondaryLinks.map((link) => (
               <li key={link.name}>
-                <a 
-                  href={link.href} 
+                <a
+                  href={link.href}
                   onClick={(e) => handleLinkClick(e, link)}
-                  className={`transition-colors duration-200 ${
-                    link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
-                  }`}
+                  className={`transition-colors duration-200 ${link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
+                    }`}
                 >
                   {link.name}
                 </a>
@@ -91,20 +89,20 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
         {/* Column 4: Contact & Operations details */}
         <div className="lg:col-span-4 flex flex-col space-y-4 text-left">
           <h4 className="text-xs font-bold text-white uppercase tracking-widest">Headquarters</h4>
-          
+
           <ul className="flex flex-col space-y-3 text-xs text-brand-silver font-medium">
             <li className="flex items-start space-x-2.5">
               <MapPin className="w-4 h-4 text-brand-yellow mt-0.5 flex-shrink-0" />
-              <a 
-                href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-brand-yellow transition-colors"
               >
                 Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109
               </a>
             </li>
-            
+
             <li className="flex items-center space-x-2.5">
               <Phone className="w-4 h-4 text-brand-yellow flex-shrink-0" />
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors font-bold">
@@ -114,10 +112,10 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
 
             <li className="flex items-center space-x-2.5">
               <FaGoogle className="w-4 h-4 text-blue-400 flex-shrink-0" />
-              <a 
-                href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-blue-300 transition-colors font-bold text-blue-400 flex items-center space-x-1"
               >
                 <span>Google Business Profile (4.9 ⭐)</span>
@@ -133,10 +131,10 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
 
             <li className="flex items-center space-x-2.5">
               <FaInstagram className="w-4 h-4 text-pink-400 flex-shrink-0" />
-              <a 
-                href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-pink-400 transition-colors font-bold text-pink-400"
               >
                 @yuva_call_taxi_70 on Instagram
@@ -145,10 +143,10 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
 
             <li className="flex items-center space-x-2.5">
               <FaFacebook className="w-4 h-4 text-blue-400 flex-shrink-0" />
-              <a 
-                href="https://www.facebook.com/share/1BwH4m16r9/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.facebook.com/share/1BwH4m16r9/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-blue-300 transition-colors font-bold text-blue-400"
               >
                 YUVA Call Taxi Hosur on Facebook

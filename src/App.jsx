@@ -7,6 +7,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Services from './components/Services';
 import Pricing from './components/Pricing';
 import LocalSEO from './components/LocalSEO';
+import LocalKeywordMatrix from './components/LocalKeywordMatrix';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -196,6 +197,7 @@ export default function App() {
                 <Services />
                 <Pricing />
                 <LocalSEO />
+                <LocalKeywordMatrix />
                 <WhyChooseUs />
                 <Testimonials />
                 <FAQ />
