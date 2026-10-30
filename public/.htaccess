@@ -2,6 +2,12 @@
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
+
+  # Dedicated Airport Landing Page clean URLs for Google Search Crawlers
+  RewriteRule ^airport-taxi/?$ airport-taxi.html [L]
+  RewriteRule ^bangalore-airport-taxi-hosur/?$ airport-taxi.html [L]
+  RewriteRule ^airport/?$ airport-taxi.html [L]
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]

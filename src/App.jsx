@@ -15,11 +15,19 @@ import FloatingCTA from './components/FloatingCTA';
 import WhatsAppGreeting from './components/WhatsAppGreeting';
 import Footer from './components/Footer';
 import AdminDashboard from './components/AdminDashboard';
+import AirportTaxiPage from './components/AirportTaxiPage';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [loadingProgress, setLoadingProgress] = useState(0);
   const [showAdmin, setShowAdmin] = useState(false);
+  const [currentRoute, setCurrentRoute] = useState(() => {
+    const path = window.location.pathname.toLowerCase();
+    const hash = window.location.hash.toLowerCase();
+    if (path.includes('airport') || hash.includes('airport')) return 'airport';
+    return 'home';
+  });
+
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem('yuva_theme') || 'dark';
   });
@@ -34,21 +42,34 @@ export default function App() {
     localStorage.setItem('yuva_theme', theme);
   }, [theme]);
 
-  // URL Hash routing logic: Check if URI contains '#admin' to launch the dashboard
+  // URL Hash & History routing logic: Admin and Airport routes
   useEffect(() => {
-    const handleHashRouter = () => {
-      if (window.location.hash === '#admin') {
+    const handleRouter = () => {
+      const hash = window.location.hash.toLowerCase();
+      const path = window.location.pathname.toLowerCase();
+
+      if (hash === '#admin') {
         setShowAdmin(true);
       } else {
         setShowAdmin(false);
       }
+
+      if (path.includes('airport') || hash.includes('airport')) {
+        setCurrentRoute('airport');
+      } else {
+        setCurrentRoute('home');
+      }
     };
 
-    window.addEventListener('hashchange', handleHashRouter);
+    window.addEventListener('hashchange', handleRouter);
+    window.addEventListener('popstate', handleRouter);
     // Initial load check
-    handleHashRouter();
+    handleRouter();
 
-    return () => window.removeEventListener('hashchange', handleHashRouter);
+    return () => {
+      window.removeEventListener('hashchange', handleRouter);
+      window.removeEventListener('popstate', handleRouter);
+    };
   }, []);
 
   // Mock preloader loading meter for luxury brand experience
@@ -80,11 +101,28 @@ export default function App() {
     }
   };
 
+  const handleNavigateAirport = () => {
+    try {
+      window.history.pushState(null, '', '/airport-taxi');
+    } catch {
+      window.location.hash = 'airport-taxi';
+    }
+    setCurrentRoute('airport');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavigateHome = () => {
+    try {
+      window.history.pushState(null, '', '/');
+    } catch {
+      window.location.hash = '';
+    }
+    setCurrentRoute('home');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <>
-      {/* Search Engine Optimization Head */}
-      <SEO />
-
       <AnimatePresence mode="wait">
         {/* Startup Preloader Screen */}
         {loading && (
@@ -129,30 +167,52 @@ export default function App() {
 
       {/* Main Page Layout Wrapper */}
       {!loading && (
-        <div className="bg-brand-black text-brand-white min-h-screen relative bg-gradient-mesh selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
-          
-          {/* Header Navigation */}
-          <Header onAdminToggle={handleAdminToggle} theme={theme} setTheme={setTheme} />
+        <>
+          {currentRoute === 'airport' ? (
+            /* Dedicated Airport Taxi Landing Page */
+            <AirportTaxiPage 
+              theme={theme} 
+              setTheme={setTheme} 
+              onNavigateHome={handleNavigateHome} 
+            />
+          ) : (
+            /* Main Home Landing Page */
+            <div className="bg-brand-black text-brand-white min-h-screen relative bg-gradient-mesh selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
+              {/* Search Engine Optimization Head */}
+              <SEO />
+              
+              {/* Header Navigation */}
+              <Header 
+                onAdminToggle={handleAdminToggle} 
+                onNavigateAirport={handleNavigateAirport}
+                theme={theme} 
+                setTheme={setTheme} 
+              />
 
-          {/* Page Sections */}
-          <main>
-            <Hero />
-            <About />
-            <Services />
-            <Pricing />
-            <LocalSEO />
-            <WhyChooseUs />
-            <Testimonials />
-            <FAQ />
-            <Contact />
-          </main>
+              {/* Page Sections */}
+              <main>
+                <Hero />
+                <About />
+                <Services />
+                <Pricing />
+                <LocalSEO />
+                <WhyChooseUs />
+                <Testimonials />
+                <FAQ />
+                <Contact />
+              </main>
 
-          {/* Footer bar */}
-          <Footer onAdminToggle={handleAdminToggle} />
+              {/* Footer bar */}
+              <Footer 
+                onAdminToggle={handleAdminToggle} 
+                onNavigateAirport={handleNavigateAirport} 
+              />
 
-          {/* Floating Mobile and WhatsApp triggers */}
-          <FloatingCTA />
-          <WhatsAppGreeting />
+              {/* Floating Mobile and WhatsApp triggers */}
+              <FloatingCTA />
+              <WhatsAppGreeting />
+            </div>
+          )}
 
           {/* Protected Administrative Dashboard overlay */}
           <AnimatePresence>
@@ -167,8 +227,7 @@ export default function App() {
               </motion.div>
             )}
           </AnimatePresence>
-
-        </div>
+        </>
       )}
     </>
   );

@@ -1,9 +1,10 @@
-﻿import { Phone, Mail, MapPin, Clock, ShieldAlert } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ShieldAlert, Plane } from 'lucide-react';
 import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 
-export default function Footer({ onAdminToggle }) {
+export default function Footer({ onAdminToggle, onNavigateAirport }) {
   const quickLinks = [
     { name: 'Home', href: '#home' },
+    { name: '✈️ Bangalore Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
@@ -15,7 +16,17 @@ export default function Footer({ onAdminToggle }) {
     { name: 'Client Reviews', href: '#testimonials' },
     { name: 'Travel FAQs', href: '#faq' },
     { name: 'Book Now', href: '#contact' },
+    { name: 'BLR Airport Drop Rates', href: '/airport-taxi#route-pricing', isAirport: true },
   ];
+
+  const handleLinkClick = (e, link) => {
+    if (link.isAirport) {
+      if (onNavigateAirport) {
+        e.preventDefault();
+        onNavigateAirport();
+      }
+    }
+  };
 
   return (
     <footer className="bg-brand-black dark-blue-section border-t border-white/5 pt-16 pb-28 md:pb-12 text-left relative overflow-hidden">
@@ -33,7 +44,7 @@ export default function Footer({ onAdminToggle }) {
           </a>
           
           <p className="text-xs text-brand-gray/95 font-medium leading-relaxed max-w-sm">
-            YUVA CABS is Hosur's premier 24/7 luxury taxi and cab booking service. We specialize in flat-rate airport pickups, reliable outstation travel, and corporate fleet hire. Enjoy safe, air-conditioned, and professional commutes.
+            YUVA CABS is Hosur's premier 24/7 luxury taxi and cab booking service. We specialize in flat-rate Kempegowda Bangalore airport pickups, reliable outstation travel, and corporate fleet hire. Enjoy safe, air-conditioned, and professional commutes.
           </p>
         </div>
 
@@ -43,7 +54,13 @@ export default function Footer({ onAdminToggle }) {
           <ul className="flex flex-col space-y-2.5 text-xs text-brand-gray font-bold">
             {quickLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="hover:text-brand-yellow transition-colors duration-200">
+                <a 
+                  href={link.href} 
+                  onClick={(e) => handleLinkClick(e, link)}
+                  className={`transition-colors duration-200 ${
+                    link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
+                  }`}
+                >
                   {link.name}
                 </a>
               </li>
@@ -57,7 +74,13 @@ export default function Footer({ onAdminToggle }) {
           <ul className="flex flex-col space-y-2.5 text-xs text-brand-gray font-bold">
             {secondaryLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="hover:text-brand-yellow transition-colors duration-200">
+                <a 
+                  href={link.href} 
+                  onClick={(e) => handleLinkClick(e, link)}
+                  className={`transition-colors duration-200 ${
+                    link.isAirport ? 'text-brand-yellow hover:underline' : 'hover:text-brand-yellow'
+                  }`}
+                >
                   {link.name}
                 </a>
               </li>
@@ -145,14 +168,14 @@ export default function Footer({ onAdminToggle }) {
       <div className="border-t border-white/5 pt-10 mt-8">
         <div className="max-w-4xl mx-auto text-center px-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-[11px] font-bold uppercase tracking-wider mb-4">
-            <span>Hosur 24/7 Local &amp; Outstation Taxi Network</span>
+            <span>Hosur 24/7 Local, Outstation &amp; Kempegowda Airport Taxi</span>
           </div>
 
           <h3 className="text-xl sm:text-2xl font-black text-white mb-3">
             Yuva Call Taxi-Hosur — Premier 24/7 Cab Service
           </h3>
           <p className="text-xs sm:text-sm text-brand-gray/80 leading-relaxed font-medium max-w-2xl mx-auto mb-6">
-            Instant 5–10 min pickup across Hosur Railway Station, Bus Stand, Bagalur, Bagalur Road, Bathalapalli, Mookandapalli, Shoolagiri, Rayakottai, Krishnagiri &amp; 24/7 BLR Airport drops. Local rides from ₹150, outstation @ ₹9/km.
+            Instant 5–10 min pickup across Hosur Railway Station, Bus Stand, Bagalur, Bagalur Road, Bathalapalli, Mookandapalli, Shoolagiri, Rayakottai, Krishnagiri &amp; 24/7 BLR Kempegowda Airport drops. Local rides from ₹150, outstation @ ₹9/km, Airport drops from ₹2,100.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">

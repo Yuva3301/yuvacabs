@@ -1,9 +1,9 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Phone, Menu, X, ShieldAlert, Sun, Moon } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Header({ onAdminToggle, theme, setTheme }) {
+export default function Header({ onAdminToggle, onNavigateAirport, theme, setTheme }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -17,6 +17,7 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: '✈️ Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
@@ -26,6 +27,15 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
     { name: 'FAQs', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  const handleNavClick = (e, item) => {
+    if (item.isAirport) {
+      if (onNavigateAirport) {
+        e.preventDefault();
+        onNavigateAirport();
+      }
+    }
+  };
 
   return (
     <>
@@ -49,9 +59,18 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
                 <span className="text-brand-yellow font-black">Call +919944271322</span>
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
-              <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
+              <a 
+                href="/airport-taxi" 
+                onClick={(e) => {
+                  if (onNavigateAirport) {
+                    e.preventDefault();
+                    onNavigateAirport();
+                  }
+                }}
+                className="hover:text-brand-yellow transition-colors flex items-center space-x-1"
+              >
                 <span className="text-brand-silver">Airport Taxi Hosur:</span>
-                <span className="text-brand-yellow font-black">Call +919944271322</span>
+                <span className="text-brand-yellow font-black">Book BLR Cabs</span>
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
@@ -82,12 +101,17 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
           </a>
 
           {/* Desktop Nav Items */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center space-x-7">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-brand-silver/80 hover:text-brand-yellow transition-colors duration-300 relative py-1 after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-yellow after:transition-all after:duration-300 hover:after:w-full"
+                onClick={(e) => handleNavClick(e, item)}
+                className={`text-sm transition-colors duration-300 relative py-1 ${
+                  item.isAirport
+                    ? 'font-black text-brand-yellow hover:text-white px-2 py-0.5 rounded-md bg-brand-yellow/10 border border-brand-yellow/30'
+                    : 'font-medium text-brand-silver/80 hover:text-brand-yellow after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-yellow after:transition-all after:duration-300 hover:after:w-full'
+                }`}
               >
                 {item.name}
               </a>
@@ -201,8 +225,13 @@ export default function Header({ onAdminToggle, theme, setTheme }) {
               <a
                 key={item.name}
                 href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-base font-semibold text-brand-silver/90 hover:text-brand-yellow transition-colors py-2"
+                onClick={(e) => {
+                  setMobileMenuOpen(false);
+                  handleNavClick(e, item);
+                }}
+                className={`text-base font-semibold transition-colors py-2 ${
+                  item.isAirport ? 'text-brand-yellow font-black' : 'text-brand-silver/90 hover:text-brand-yellow'
+                }`}
               >
                 {item.name}
               </a>
