@@ -3,7 +3,7 @@ import { Phone, Menu, X, ShieldAlert, Sun, Moon } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Header({ onAdminToggle, onNavigateAirport, theme, setTheme }) {
+export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLocal, onNavigateOutstation, theme, setTheme }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -17,6 +17,8 @@ export default function Header({ onAdminToggle, onNavigateAirport, theme, setThe
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: '📍 Local Taxi', href: '/local-taxi', isLocal: true },
+    { name: '🚗 Outstation', href: '/outstation-taxi', isOutstation: true },
     { name: '✈️ Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
@@ -33,6 +35,16 @@ export default function Header({ onAdminToggle, onNavigateAirport, theme, setThe
       if (onNavigateAirport) {
         e.preventDefault();
         onNavigateAirport();
+      }
+    } else if (item.isLocal) {
+      if (onNavigateLocal) {
+        e.preventDefault();
+        onNavigateLocal();
+      }
+    } else if (item.isOutstation) {
+      if (onNavigateOutstation) {
+        e.preventDefault();
+        onNavigateOutstation();
       }
     }
   };

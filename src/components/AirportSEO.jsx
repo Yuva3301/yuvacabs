@@ -79,7 +79,7 @@ export default function AirportSEO() {
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "420",
+          "reviewCount": "450",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -176,8 +176,18 @@ export default function AirportSEO() {
         ]
       },
       {
+        "@type": "WebPage",
+        "@id": "https://yuvacalltaxi.com/airport-taxi#webpage",
+        "url": "https://yuvacalltaxi.com/airport-taxi",
+        "name": "Bangalore Airport Taxi from Hosur | Kempegowda Airport Cab Service - Yuva Cabs",
+        "description": "Book 24/7 Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport Drop & Pickup) starting at ₹2,200. Guaranteed on-time flight pickup, flight tracking, terminal meet & greet. Call +91 99442 71322.",
+        "isPartOf": { "@id": "https://yuvacalltaxi.com/#website" },
+        "breadcrumb": { "@id": "https://yuvacalltaxi.com/airport-taxi#breadcrumb" },
+        "inLanguage": "en-IN",
+        "publisher": { "@id": "https://yuvacalltaxi.com/#localbusiness" }
+      },
+      {
         "@type": "BreadcrumbList",
-        "@id": "https://yuvacalltaxi.com/airport-taxi#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -208,6 +218,9 @@ export default function AirportSEO() {
       <meta name="keywords" content={airportKeywords.join(", ")} />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://yuvacalltaxi.com/airport-taxi" />
+      <link rel="alternate" hreflang="en-IN" href="https://yuvacalltaxi.com/airport-taxi" />
+      <link rel="alternate" hreflang="ta" href="https://yuvacalltaxi.com/airport-taxi" />
+      <link rel="alternate" hreflang="x-default" href="https://yuvacalltaxi.com/airport-taxi" />
       <meta name="application-name" content="Yuva Call Taxi Hosur Airport Service" />
 
       {/* Local & Geographic SEO Meta Tags */}

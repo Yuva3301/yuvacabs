@@ -17,6 +17,8 @@ import WhatsAppGreeting from './components/WhatsAppGreeting';
 import Footer from './components/Footer';
 import AdminDashboard from './components/AdminDashboard';
 import AirportTaxiPage from './components/AirportTaxiPage';
+import LocalTaxiPage from './components/LocalTaxiPage';
+import OutstationTaxiPage from './components/OutstationTaxiPage';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -26,6 +28,8 @@ export default function App() {
     const path = window.location.pathname.toLowerCase();
     const hash = window.location.hash.toLowerCase();
     if (path.includes('airport') || hash.includes('airport')) return 'airport';
+    if (path.includes('local-taxi')) return 'local';
+    if (path.includes('outstation-taxi')) return 'outstation';
     return 'home';
   });
 
@@ -57,6 +61,10 @@ export default function App() {
 
       if (path.includes('airport') || hash.includes('airport')) {
         setCurrentRoute('airport');
+      } else if (path.includes('local-taxi')) {
+        setCurrentRoute('local');
+      } else if (path.includes('outstation-taxi')) {
+        setCurrentRoute('outstation');
       } else {
         setCurrentRoute('home');
       }
@@ -109,6 +117,26 @@ export default function App() {
       window.location.hash = 'airport-taxi';
     }
     setCurrentRoute('airport');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavigateLocal = () => {
+    try {
+      window.history.pushState(null, '', '/local-taxi');
+    } catch {
+      window.location.hash = 'local-taxi';
+    }
+    setCurrentRoute('local');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleNavigateOutstation = () => {
+    try {
+      window.history.pushState(null, '', '/outstation-taxi');
+    } catch {
+      window.location.hash = 'outstation-taxi';
+    }
+    setCurrentRoute('outstation');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -176,6 +204,20 @@ export default function App() {
               setTheme={setTheme} 
               onNavigateHome={handleNavigateHome} 
             />
+          ) : currentRoute === 'local' ? (
+            /* Dedicated Local Taxi Landing Page */
+            <LocalTaxiPage
+              theme={theme}
+              setTheme={setTheme}
+              onNavigateHome={handleNavigateHome}
+            />
+          ) : currentRoute === 'outstation' ? (
+            /* Dedicated Outstation Taxi Landing Page */
+            <OutstationTaxiPage
+              theme={theme}
+              setTheme={setTheme}
+              onNavigateHome={handleNavigateHome}
+            />
           ) : (
             /* Main Home Landing Page */
             <div className="bg-brand-black text-brand-white min-h-screen relative bg-gradient-mesh selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
@@ -186,6 +228,8 @@ export default function App() {
               <Header 
                 onAdminToggle={handleAdminToggle} 
                 onNavigateAirport={handleNavigateAirport}
+                onNavigateLocal={handleNavigateLocal}
+                onNavigateOutstation={handleNavigateOutstation}
                 theme={theme} 
                 setTheme={setTheme} 
               />
@@ -207,7 +251,9 @@ export default function App() {
               {/* Footer bar */}
               <Footer 
                 onAdminToggle={handleAdminToggle} 
-                onNavigateAirport={handleNavigateAirport} 
+                onNavigateAirport={handleNavigateAirport}
+                onNavigateLocal={handleNavigateLocal}
+                onNavigateOutstation={handleNavigateOutstation}
               />
 
               {/* Floating Mobile and WhatsApp triggers */}

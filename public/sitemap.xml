@@ -1,64 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+
   <!-- Main Homepage -->
   <url>
     <loc>https://yuvacalltaxi.com/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://yuvacalltaxi.com/og-image.jpg</image:loc>
-      <image:title>YUVA CABS - Best Call Taxi in Hosur</image:title>
+      <image:title>YUVA CABS - Best Call Taxi in Hosur | Yuva Call Taxi 9944271322</image:title>
+      <image:caption>Yuva Call Taxi Hosur - 24/7 Local, Airport &amp; Outstation Cab Service from ₹150</image:caption>
     </image:image>
+    <mobile:mobile/>
   </url>
 
-  <!-- Dedicated Bangalore Airport Taxi Landing Page for Google Search Ranking -->
+  <!-- Dedicated Bangalore Airport Taxi Landing Page -->
   <url>
     <loc>https://yuvacalltaxi.com/airport-taxi</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://yuvacalltaxi.com/og-image.jpg</image:loc>
-      <image:title>Bangalore Airport Taxi from Hosur - Kempegowda Airport Cab Service</image:title>
+      <image:title>Bangalore Airport Taxi from Hosur - Kempegowda BLR Airport Cab Service</image:title>
+      <image:caption>Fixed rate Hosur to Bangalore Airport taxi - Swift Dzire ₹2,200, Ertiga ₹2,800</image:caption>
     </image:image>
+    <mobile:mobile/>
   </url>
 
+  <!-- Dedicated Local Taxi Landing Page -->
   <url>
-    <loc>https://yuvacalltaxi.com/#services</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://yuvacalltaxi.com/local-taxi</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://yuvacalltaxi.com/og-image.jpg</image:loc>
+      <image:title>Local Taxi in Hosur | Call Taxi Near Me | 24/7 Cab Service - Yuva Cabs</image:title>
+      <image:caption>Instant 5-10 min local cab pickup across all 36 Hosur areas from ₹150</image:caption>
+    </image:image>
+    <mobile:mobile/>
   </url>
+
+  <!-- Dedicated Outstation Taxi Landing Page -->
   <url>
-    <loc>https://yuvacalltaxi.com/#pricing</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://yuvacalltaxi.com/outstation-taxi</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://yuvacalltaxi.com/og-image.jpg</image:loc>
+      <image:title>Outstation Taxi from Hosur | One Way Drop Taxi ₹9/km - Yuva Cabs</image:title>
+      <image:caption>One-way drop taxi from Hosur to Chennai, Bangalore, Salem, Coimbatore &amp; more</image:caption>
+    </image:image>
+    <mobile:mobile/>
   </url>
-  <url>
-    <loc>https://yuvacalltaxi.com/#local-seo</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://yuvacalltaxi.com/#about</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://yuvacalltaxi.com/#contact</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://yuvacalltaxi.com/#faq</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
 </urlset>

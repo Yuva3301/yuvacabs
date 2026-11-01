@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Navigation, Clock, Plane, Building2, ShieldCheck, Phone, MessageSquare, ArrowRight, Star, ExternalLink, CheckCircle2, Compass, Car } from 'lucide-react';
 import { FaGoogle } from 'react-icons/fa6';
@@ -508,7 +508,7 @@ export default function LocalSEO() {
               <div className="flex items-center space-x-2">
                 <span className="text-xs font-black text-blue-400 uppercase tracking-wider">Google Verified Business</span>
                 <span className="flex items-center text-xs font-extrabold text-amber-400">
-                  <Star className="w-3.5 h-3.5 fill-amber-400 mr-0.5" /> 4.9 Rating (385+ Reviews)
+                  <Star className="w-3.5 h-3.5 fill-amber-400 mr-0.5" /> 4.9 Rating (450+ Reviews)
                 </span>
               </div>
               <h4 className="text-lg sm:text-xl font-bold text-white tracking-tight">
