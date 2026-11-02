@@ -331,7 +331,7 @@ export default function LocalTaxiSEO() {
   return (
     <Helmet>
       {/* ── Primary Meta ── */}
-      <title>Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs</title>
+      <title>Local Taxi Service in Hosur | Yuva Call Taxi</title>
       <meta
         name="description"
         content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur. Local cab from ₹150."
@@ -361,7 +361,7 @@ export default function LocalTaxiSEO() {
       <meta property="og:locale:alternate" content="ta_IN" />
       <meta
         property="og:title"
-        content="Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs"
+        content="Local Taxi Service in Hosur | Yuva Call Taxi"
       />
       <meta
         property="og:description"
@@ -386,7 +386,7 @@ export default function LocalTaxiSEO() {
       <meta name="twitter:creator" content="@YuvaCallTaxi" />
       <meta
         name="twitter:title"
-        content="Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs"
+        content="Local Taxi Service in Hosur | Yuva Call Taxi"
       />
       <meta
         name="twitter:description"
@@ -400,11 +400,6 @@ export default function LocalTaxiSEO() {
         name="twitter:image:alt"
         content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me"
       />
-
-      {/* ── JSON-LD Structured Data ── */}
-      <script type="application/ld+json">
-        {JSON.stringify(jsonLd)}
-      </script>
     </Helmet>
   );
 }

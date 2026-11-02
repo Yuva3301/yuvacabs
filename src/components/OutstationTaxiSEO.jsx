@@ -428,7 +428,7 @@ export default function OutstationTaxiSEO() {
   return (
     <Helmet>
       {/* ── Primary Meta Tags ── */}
-      <title>Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs</title>
+      <title>Outstation Taxi Service in Hosur | Yuva Call Taxi</title>
       <meta
         name="description"
         content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Outstation one-way drop taxi ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Ooty &amp; Madurai."
@@ -456,7 +456,7 @@ export default function OutstationTaxiSEO() {
       <meta property="og:url" content="https://yuvacalltaxi.com/outstation-taxi" />
       <meta
         property="og:title"
-        content="Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs"
+        content="Outstation Taxi Service in Hosur | Yuva Call Taxi"
       />
       <meta
         property="og:description"
@@ -476,7 +476,7 @@ export default function OutstationTaxiSEO() {
       <meta name="twitter:creator" content="@YuvaCallTaxi" />
       <meta
         name="twitter:title"
-        content="Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs"
+        content="Outstation Taxi Service in Hosur | Yuva Call Taxi"
       />
       <meta
         name="twitter:description"
@@ -484,11 +484,6 @@ export default function OutstationTaxiSEO() {
       />
       <meta name="twitter:image" content="https://yuvacalltaxi.com/logo.jpg" />
       <meta name="twitter:image:alt" content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur" />
-
-      {/* ── JSON-LD Structured Data ── */}
-      <script type="application/ld+json">
-        {JSON.stringify(jsonLdSchema)}
-      </script>
     </Helmet>
   );
 }

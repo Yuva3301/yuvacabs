@@ -156,7 +156,7 @@ export default function SEO() {
         "logo": "https://yuvacalltaxi.com/logo.jpg",
         "description": "Yuva Call Taxi Hosur (+91 99442 71322) - Most reliable taxi service in Hosur. 24/7 call taxi near me, local taxi service from ₹150, one-way drop taxi ₹9/km to Chennai, Salem & Coimbatore, Bangalore airport taxi fixed ₹2,200, seven seater Innova & Swift Dzire car rental. Guaranteed 5-10 min pickup.",
         "telephone": "+919944271322",
-        "url": "https://yuvacalltaxi.com",
+        "url": "https://yuvacalltaxi.com/",
         "email": "bookings@yuvacalltaxi.com",
         "hasMap": "https://maps.app.goo.gl/gHwiq68N6k8QekBt8",
         "sameAs": [
@@ -554,7 +554,7 @@ export default function SEO() {
         "@id": "https://yuvacalltaxi.com/#website",
         "name": "Yuva Call Taxi Hosur",
         "alternateName": "Yuva Call Taxi Hosur - Most Reliable Taxi Service in Hosur",
-        "url": "https://yuvacalltaxi.com",
+        "url": "https://yuvacalltaxi.com/",
         "description": "Book Hosur's most reliable taxi and cab service. Local taxi from ₹150, outstation taxi from ₹9/km, 24 hours taxi service.",
         "publisher": { "@id": "https://yuvacalltaxi.com/#localbusiness" },
         "potentialAction": {
@@ -622,11 +622,6 @@ export default function SEO() {
       <meta property="twitter:title" content="Best Taxi Hosur | Red Taxi Hosur | Call Taxi | Cabs Near Me | Cab Service Hosur - Yuva Cabs" />
       <meta property="twitter:description" content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me. 24/7 call taxi near me, local cab ₹150, outstation one-way drop ₹9/km &amp; Bangalore Airport fixed ₹2,200." />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/logo.jpg" />
-
-      {/* JSON-LD Schema Structuring */}
-      <script type="application/ld+json">
-        {JSON.stringify(schemaData)}
-      </script>
     </Helmet>
   );
 }

@@ -214,8 +214,8 @@ export default function AirportSEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags for Google Search Engine Results */}
-      <title>Bangalore Airport Taxi from Hosur | Kempegowda Airport Cab Service - Yuva Cabs</title>
-      <meta name="title" content="Bangalore Airport Taxi from Hosur | Kempegowda Airport Cab Service - Yuva Cabs" />
+      <title>Airport Taxi Service in Hosur | Yuva Call Taxi</title>
+      <meta name="title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
       <meta 
         name="description" 
         content="Book 24/7 Bangalore Airport Taxi from Hosur (BLR Airport Drop & Pickup) starting at ₹1,499. On-time flight pickup guarantee, flight tracking, terminal meet & greet, clean AC cabs, 0% cancellation. Call +91 99442 71322." 
@@ -239,7 +239,7 @@ export default function AirportSEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://yuvacalltaxi.com/airport-taxi" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Best Taxi Hosur | Bangalore Airport Taxi | Red Taxi Alternative - Yuva Cabs" />
+      <meta property="og:title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
       <meta 
         property="og:description" 
         content="Book guaranteed on-time Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport) starting ₹1,499. Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Call +91 99442 71322." 
@@ -250,17 +250,12 @@ export default function AirportSEO() {
       {/* Twitter Cards */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://yuvacalltaxi.com/airport-taxi" />
-      <meta property="twitter:title" content="Best Taxi Hosur | Bangalore Airport Taxi | Red Taxi Alternative - Yuva Cabs" />
+      <meta property="twitter:title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
       <meta 
         property="twitter:description" 
         content="Reliable 24/7 Bangalore Airport Taxi from Hosur starting ₹1,499. Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Call +91 99442 71322." 
       />
       <meta property="twitter:image" content="https://yuvacalltaxi.com/logo.jpg" />
-
-      {/* JSON-LD Schema Structuring for Search Robots */}
-      <script type="application/ld+json">
-        {JSON.stringify(airportSchema)}
-      </script>
     </Helmet>
   );
 }
