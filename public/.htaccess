@@ -9,14 +9,14 @@
   RewriteRule ^airport/?$ airport-taxi.html [L]
 
   # Dedicated Local Taxi Landing Page clean URLs
-  RewriteRule ^local-taxi/?$ index.html [L]
-  RewriteRule ^hosur-local-taxi/?$ index.html [L]
-  RewriteRule ^call-taxi-hosur/?$ index.html [L]
+  RewriteRule ^local-taxi/?$ local-taxi.html [L]
+  RewriteRule ^hosur-local-taxi/?$ local-taxi.html [L]
+  RewriteRule ^call-taxi-hosur/?$ local-taxi.html [L]
 
   # Dedicated Outstation Taxi Landing Page clean URLs
-  RewriteRule ^outstation-taxi/?$ index.html [L]
-  RewriteRule ^hosur-outstation-cab/?$ index.html [L]
-  RewriteRule ^one-way-drop-taxi-hosur/?$ index.html [L]
+  RewriteRule ^outstation-taxi/?$ outstation-taxi.html [L]
+  RewriteRule ^hosur-outstation-cab/?$ outstation-taxi.html [L]
+  RewriteRule ^one-way-drop-taxi-hosur/?$ outstation-taxi.html [L]
 
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d

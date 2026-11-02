@@ -1,0 +1,8 @@
+feat: Add dedicated separate HTML pages and entry points for Local and Outstation Taxi
+
+- Create dedicated local-taxi.html with full SEO, JSON-LD Schema (25km coverage), and noscript fallback
+- Create dedicated outstation-taxi.html with full SEO, JSON-LD Schema (8 outstation routes), and noscript fallback
+- Create src/local.jsx and src/outstation.jsx entry points for multi-page Vite build
+- Update airport-taxi.html with noscript fallback, brand logo, and target keywords
+- Configure vite.config.js multi-page rollup inputs (main, airport, local, outstation)
+- Configure public/.htaccess clean URL rewrites to serve dedicated HTML files for Googlebot and direct visits

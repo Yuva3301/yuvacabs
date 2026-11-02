@@ -10,6 +10,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         airport: resolve(__dirname, 'airport-taxi.html'),
+        local: resolve(__dirname, 'local-taxi.html'),
+        outstation: resolve(__dirname, 'outstation-taxi.html'),
       },
     },
   },
