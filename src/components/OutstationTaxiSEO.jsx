@@ -2,6 +2,11 @@ import { Helmet } from 'react-helmet-async';
 
 export default function OutstationTaxiSEO() {
   const keywords = [
+    "Red Taxi Hosur",
+    "Best Taxi Hosur",
+    "Cab Service Hosur",
+    "Call Taxi",
+    "Cabs Near Me",
     "Outstation Taxi from Hosur",
     "One Way Drop Taxi Hosur",
     "Hosur Outstation Cabs",
@@ -40,11 +45,11 @@ export default function OutstationTaxiSEO() {
       {
         "@type": ["TaxiService", "LocalBusiness"],
         "@id": "https://yuvacalltaxi.com/outstation-taxi#service",
-        "name": "Outstation Taxi from Hosur | One Way Drop Taxi | Yuva Call Taxi",
+        "name": "Outstation Taxi from Hosur | Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me",
         "url": "https://yuvacalltaxi.com/outstation-taxi",
         "telephone": "+919944271322",
-        "image": "https://yuvacalltaxi.com/images/outstation-taxi-hosur.jpg",
-        "logo": "https://yuvacalltaxi.com/images/yuva-call-taxi-logo.png",
+        "image": "https://yuvacalltaxi.com/logo.jpg",
+        "logo": "https://yuvacalltaxi.com/logo.jpg",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Railway Station Road, Hamman Nagar",
@@ -423,10 +428,10 @@ export default function OutstationTaxiSEO() {
   return (
     <Helmet>
       {/* ── Primary Meta Tags ── */}
-      <title>Outstation Taxi from Hosur | One Way Drop Taxi ₹9/km | Hosur to Chennai, Bangalore, Salem - Yuva Cabs</title>
+      <title>Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs</title>
       <meta
         name="description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Outstation Taxi from Hosur. One-way drop taxi ₹9/km to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Pondicherry, Ooty, Trichy & Madurai. Book 24/7 call taxi."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Outstation one-way drop taxi ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Ooty &amp; Madurai."
       />
       <meta name="keywords" content={keywords.join(', ')} />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
@@ -451,14 +456,14 @@ export default function OutstationTaxiSEO() {
       <meta property="og:url" content="https://yuvacalltaxi.com/outstation-taxi" />
       <meta
         property="og:title"
-        content="Outstation Taxi from Hosur | One Way Drop Taxi ₹9/km | Hosur to Chennai, Bangalore, Salem - Yuva Cabs"
+        content="Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs"
       />
       <meta
         property="og:description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Outstation Taxi from Hosur. One-way drop taxi ₹9/km to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Pondicherry, Ooty, Trichy & Madurai. Book 24/7 call taxi."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Outstation one-way drop taxi ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Ooty &amp; Madurai."
       />
-      <meta property="og:image" content="https://yuvacalltaxi.com/images/outstation-taxi-hosur-og.jpg" />
-      <meta property="og:image:alt" content="Outstation Taxi from Hosur - Yuva Call Taxi" />
+      <meta property="og:image" content="https://yuvacalltaxi.com/logo.jpg" />
+      <meta property="og:image:alt" content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_IN" />
@@ -471,14 +476,14 @@ export default function OutstationTaxiSEO() {
       <meta name="twitter:creator" content="@YuvaCallTaxi" />
       <meta
         name="twitter:title"
-        content="Outstation Taxi from Hosur | One Way Drop Taxi ₹9/km | Hosur to Chennai, Bangalore, Salem - Yuva Cabs"
+        content="Best Taxi Hosur | Red Taxi Hosur | Outstation Cab Service Hosur | Cabs Near Me - Yuva Cabs"
       />
       <meta
         name="twitter:description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Outstation Taxi from Hosur. One-way drop taxi ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Pondicherry, Ooty, Trichy & Madurai. Book 24/7."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Outstation one-way drop taxi ₹9/km to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Ooty &amp; Madurai."
       />
-      <meta name="twitter:image" content="https://yuvacalltaxi.com/images/outstation-taxi-hosur-og.jpg" />
-      <meta name="twitter:image:alt" content="Outstation Taxi from Hosur - Yuva Call Taxi" />
+      <meta name="twitter:image" content="https://yuvacalltaxi.com/logo.jpg" />
+      <meta name="twitter:image:alt" content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur" />
 
       {/* ── JSON-LD Structured Data ── */}
       <script type="application/ld+json">

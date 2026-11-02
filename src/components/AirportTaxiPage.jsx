@@ -317,15 +317,17 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
 
             {/* Brand Logo */}
             <a href="#airport-top" className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-full bg-brand-yellow flex items-center justify-center text-brand-black font-black text-lg shadow-[0_0_15px_rgba(255,212,59,0.3)]">
-                ✈️
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Airport Taxi"
+                className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.3)]"
+              />
               <div className="flex flex-col text-left">
                 <span className="text-sm sm:text-base font-black tracking-tight logo-text-yuva leading-none">
                   YUVA CALL TAXI <span className="text-brand-yellow text-glow-yellow">AIRPORT</span>
                 </span>
                 <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-0.5">
-                  Hosur ⇄ Kempegowda Airport (BLR)
+                  Best Taxi Hosur · BLR Airport Flat ₹2,200
                 </span>
               </div>
             </a>

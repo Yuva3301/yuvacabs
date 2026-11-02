@@ -1,11 +1,15 @@
 import { Helmet } from 'react-helmet-async';
 
 const keywords = [
+  "Red Taxi Hosur",
+  "Best Taxi Hosur",
+  "Cab Service Hosur",
+  "Call Taxi",
+  "Cabs Near Me",
   "Local Taxi in Hosur",
   "Call Taxi Near Me",
   "Call Taxi Near Me Hosur",
   "Hosur Call Taxi",
-  "Cab Service Hosur",
   "Local Cab Hosur",
   "Taxi Near Me Hosur",
   "Call Taxi Hosur",
@@ -46,9 +50,11 @@ const jsonLd = {
     {
       "@type": ["TaxiService", "LocalBusiness"],
       "@id": "https://yuvacalltaxi.com/local-taxi#service",
-      "name": "Local Taxi in Hosur | Yuva Call Taxi — 24/7 Call Taxi Near Me",
+      "name": "Local Taxi in Hosur | Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me",
       "telephone": "+919944271322",
       "url": "https://yuvacalltaxi.com/local-taxi",
+      "logo": "https://yuvacalltaxi.com/logo.jpg",
+      "image": "https://yuvacalltaxi.com/logo.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Railway Station Road, Hamman Nagar",
@@ -325,10 +331,10 @@ export default function LocalTaxiSEO() {
   return (
     <Helmet>
       {/* ── Primary Meta ── */}
-      <title>Local Taxi in Hosur | Call Taxi Near Me | 24/7 Cab Service - Yuva Cabs</title>
+      <title>Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs</title>
       <meta
         name="description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Local Taxi Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur & all 36 areas. Local cab from ₹150. 24/7 on-demand call taxi in Hosur."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur. Local cab from ₹150."
       />
       <meta name="keywords" content={keywords.join(", ")} />
       <meta name="robots" content="index, follow" />
@@ -355,22 +361,22 @@ export default function LocalTaxiSEO() {
       <meta property="og:locale:alternate" content="ta_IN" />
       <meta
         property="og:title"
-        content="Local Taxi in Hosur | Call Taxi Near Me | 24/7 Cab Service - Yuva Cabs"
+        content="Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs"
       />
       <meta
         property="og:description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Local Taxi Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur & all 36 areas. Local cab from ₹150. 24/7 on-demand call taxi in Hosur."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur. Local cab from ₹150."
       />
       <meta property="og:url" content="https://yuvacalltaxi.com/local-taxi" />
       <meta
         property="og:image"
-        content="https://yuvacalltaxi.com/images/local-taxi-hosur-yuva-call-taxi.jpg"
+        content="https://yuvacalltaxi.com/logo.jpg"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta
         property="og:image:alt"
-        content="Yuva Call Taxi - Local Taxi in Hosur, 24/7 Call Taxi Near Me"
+        content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me"
       />
       <meta property="og:phone_number" content="+919944271322" />
 
@@ -380,19 +386,19 @@ export default function LocalTaxiSEO() {
       <meta name="twitter:creator" content="@YuvaCallTaxi" />
       <meta
         name="twitter:title"
-        content="Local Taxi in Hosur | Call Taxi Near Me | 24/7 Cab Service - Yuva Cabs"
+        content="Best Taxi Hosur | Red Taxi Hosur | Local Call Taxi | Cabs Near Me - Yuva Cabs"
       />
       <meta
         name="twitter:description"
-        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Local Taxi Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur & all 36 areas. Local cab from ₹150. 24/7 on-demand call taxi in Hosur."
+        content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur. Local cab from ₹150."
       />
       <meta
         name="twitter:image"
-        content="https://yuvacalltaxi.com/images/local-taxi-hosur-yuva-call-taxi.jpg"
+        content="https://yuvacalltaxi.com/logo.jpg"
       />
       <meta
         name="twitter:image:alt"
-        content="Yuva Call Taxi - Local Taxi in Hosur, 24/7 Call Taxi Near Me"
+        content="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me"
       />
 
       {/* ── JSON-LD Structured Data ── */}

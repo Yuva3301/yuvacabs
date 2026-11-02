@@ -80,8 +80,15 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
             <span>Back to Home</span>
           </button>
 
-          <a href="/" className="text-xl font-black tracking-tight">
-            YUVA<span className="text-brand-yellow">CABS</span>
+          <a href="/" className="flex items-center space-x-2.5">
+            <img
+              src="/logo.jpg"
+              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur"
+              className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_10px_rgba(255,212,59,0.3)]"
+            />
+            <span className="text-xl font-black tracking-tight">
+              YUVA<span className="text-brand-yellow">CABS</span>
+            </span>
           </a>
 
           <div className="flex items-center space-x-2">
@@ -115,16 +122,16 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-black uppercase tracking-widest mb-6">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>Hosur Local Taxi — All 36 Areas Covered</span>
+                <span>Best Taxi Hosur · Red Taxi Alternative · Cab Service Hosur · Cabs Near Me</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
-                Local Taxi in Hosur<br />
-                <span className="text-brand-yellow text-glow-yellow">Call Taxi Near Me</span>
+                Best Taxi Hosur · Local Call Taxi<br />
+                <span className="text-brand-yellow text-glow-yellow">Cab Service Hosur · Cabs Near Me</span>
               </h1>
 
               <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl mx-auto mb-8">
-                Instant <strong className="text-white">5–10 minute pickup</strong> across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur & all residential areas.
+                Rated Hosur's top Red Taxi alternative &amp; premier Cab Service Hosur. Instant <strong className="text-white">5–10 minute pickup</strong> across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur &amp; all residential areas.
                 Local cab from <strong className="text-brand-yellow">₹150</strong> · 24/7 on-demand · Zero surge pricing.
               </p>
 

@@ -1,9 +1,11 @@
 import { Phone, Mail, MapPin, Clock, ShieldAlert, Plane } from 'lucide-react';
 import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 
-export default function Footer({ onAdminToggle, onNavigateAirport }) {
+export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLocal, onNavigateOutstation }) {
   const quickLinks = [
     { name: 'Home', href: '#home' },
+    { name: '📍 Local Taxi Hosur', href: '/local-taxi', isLocal: true },
+    { name: '🚗 Outstation Drop Taxi', href: '/outstation-taxi', isOutstation: true },
     { name: '✈️ Bangalore Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Services', href: '#services' },
@@ -25,6 +27,16 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
         e.preventDefault();
         onNavigateAirport();
       }
+    } else if (link.isLocal) {
+      if (onNavigateLocal) {
+        e.preventDefault();
+        onNavigateLocal();
+      }
+    } else if (link.isOutstation) {
+      if (onNavigateOutstation) {
+        e.preventDefault();
+        onNavigateOutstation();
+      }
     }
   };
 
@@ -37,14 +49,24 @@ export default function Footer({ onAdminToggle, onNavigateAirport }) {
 
         {/* Column 1: Brand intro */}
         <div className="lg:col-span-4 flex flex-col space-y-4 text-left">
-          <a href="#home" className="flex items-center space-x-2">
-            <span className="text-xl font-black text-white logo-text-yuva">
-              YUVA<span className="text-brand-yellow text-glow-yellow">CABS</span>
-            </span>
+          <a href="#home" className="flex items-center space-x-3 group">
+            <img
+              src="/logo.jpg"
+              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me"
+              className="w-10 h-10 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.35)] group-hover:scale-105 transition-transform"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-xl font-black text-white logo-text-yuva leading-none">
+                YUVA CALL TAXI<span className="text-brand-yellow text-glow-yellow">-HOSUR</span>
+              </span>
+              <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-1 opacity-80">
+                Best Taxi Hosur · Cabs Near Me
+              </span>
+            </div>
           </a>
 
           <p className="text-xs text-brand-gray/95 font-medium leading-relaxed max-w-sm">
-            YUVA CABS is Hosur's premier 24/7 luxury taxi and cab booking service. We specialize in flat-rate Kempegowda Bangalore airport pickups, reliable outstation travel, and corporate fleet hire. Enjoy safe, air-conditioned, and professional commutes.
+            Yuva Call Taxi is Hosur's top-rated 24/7 taxi &amp; cab service (Best Taxi Hosur, Red Taxi Hosur alternative, Cab Service Hosur, Cabs Near Me). Starting at ₹9/km for outstation drop taxi, ₹150 local cab, and flat-rate Bangalore Airport (BLR) transfers at ₹2,200.
           </p>
         </div>
 

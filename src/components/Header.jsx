@@ -63,16 +63,16 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-xs font-black">
             <div className="flex items-center space-x-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="text-brand-yellow uppercase tracking-wider">Hosur 24/7 Cabs:</span>
+              <span className="text-brand-yellow uppercase tracking-wider">Best Taxi Hosur · Cabs Near Me:</span>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-5 font-extrabold text-white">
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
-                <span className="text-brand-silver">Outstation Taxi Hosur:</span>
-                <span className="text-brand-yellow font-black">Call +919944271322</span>
+                <span className="text-brand-silver">Call Taxi Hosur:</span>
+                <span className="text-brand-yellow font-black">+91 99442 71322</span>
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
-              <a 
-                href="/airport-taxi" 
+              <a
+                href="/airport-taxi"
                 onClick={(e) => {
                   if (onNavigateAirport) {
                     e.preventDefault();
@@ -86,8 +86,8 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
-                <span className="text-brand-silver">Local Taxi Hosur:</span>
-                <span className="text-brand-yellow font-black">Call +919944271322</span>
+                <span className="text-brand-silver">Cab Service Hosur:</span>
+                <span className="text-brand-yellow font-black">₹9/km Outstation</span>
               </a>
             </div>
           </div>
@@ -95,19 +95,25 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
 
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center text-brand-black font-black text-xl shadow-[0_0_15px_rgba(255,212,59,0.3)] group-hover:scale-105 transition-transform duration-300">
-              Y
-            </div>
+          <a href="#home" className="flex items-center space-x-3 group" aria-label="Yuva Call Taxi Hosur - Best Cab Service Hosur">
+            <img
+              src="/logo.jpg"
+              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Cabs Near Me | Call Taxi Hosur"
+              title="Yuva Call Taxi - Red Taxi Hosur | Best Taxi Hosur | Cab Service Hosur"
+              width="44"
+              height="44"
+              className="w-11 h-11 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.35)] group-hover:scale-105 transition-transform duration-300"
+              loading="eager"
+            />
             <div className="flex flex-col text-left">
-              <span 
+              <span
                 className="text-base sm:text-lg font-black tracking-tight logo-text-yuva leading-none"
                 style={{ color: theme === 'light' ? '#0B0F19' : '#FFFFFF' }}
               >
                 YUVA CALL TAXI<span className="text-brand-yellow text-glow-yellow">-HOSUR</span>
               </span>
               <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-0.5 opacity-80">
-                24/7 Local &amp; Outstation Service
+                Best Taxi Hosur · Cabs Near Me · 24/7
               </span>
             </div>
           </a>

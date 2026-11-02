@@ -1,7 +1,7 @@
 {
-  "name": "YUVAA CALL TAXI — Best Taxi Service in Hosur",
-  "short_name": "YUVAA CALL TAXI",
-  "description": "Hosur's #1 rated taxi & cab service. Book local & outstation cabs from ₹9/km. Call +91 99442 71322.",
+  "name": "Yuva Call Taxi — Best Taxi Hosur | Cab Service Hosur | Cabs Near Me",
+  "short_name": "Yuva Call Taxi",
+  "description": "Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me. 24/7 call taxi, local cab ₹150, outstation ₹9/km. Call +91 99442 71322.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0B0F19",
@@ -9,6 +9,12 @@
   "orientation": "portrait",
   "categories": ["travel", "transportation"],
   "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
     {
       "src": "/favicon.svg",
       "sizes": "any",

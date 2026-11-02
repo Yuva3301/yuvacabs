@@ -160,8 +160,15 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
             <span>Back to Home</span>
           </button>
 
-          <a href="/" className="text-xl font-black tracking-tight">
-            YUVA<span className="text-brand-yellow">CABS</span>
+          <a href="/" className="flex items-center space-x-2.5">
+            <img
+              src="/logo.jpg"
+              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur"
+              className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_10px_rgba(255,212,59,0.3)]"
+            />
+            <span className="text-xl font-black tracking-tight">
+              YUVA<span className="text-brand-yellow">CABS</span>
+            </span>
           </a>
 
           <div className="flex items-center space-x-2">
@@ -195,16 +202,16 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-black uppercase tracking-widest mb-6">
                 <Navigation className="w-3.5 h-3.5" />
-                <span>Outstation Drop Taxi — Starting ₹9/km · 8 Major Destinations</span>
+                <span>Best Taxi Hosur · Red Taxi Alternative · Cab Service Hosur · Outstation Drop ₹9/km</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
-                Outstation Taxi from Hosur<br />
-                <span className="text-brand-yellow text-glow-yellow">One-Way Drop ₹9/km</span>
+                Best Outstation Taxi Hosur<br />
+                <span className="text-brand-yellow text-glow-yellow">One-Way Drop Taxi ₹9/km</span>
               </h1>
 
               <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl mx-auto mb-8">
-                <strong className="text-white">Pay only one-way</strong> to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Ooty, Pondicherry & more.
+                Hosur's top-rated <strong>Cab Service Hosur</strong> &amp; <strong>Red Taxi alternative</strong> for outstation travel. <strong className="text-white">Pay only one-way</strong> to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Ooty, Pondicherry &amp; more.
                 Zero return charges · Zero surge · Sanitized AC cars · 24/7 booking.
               </p>
 
