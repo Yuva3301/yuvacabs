@@ -1,7 +1,0 @@
-feat: Add brand logo and optimize SEO for Red Taxi Hosur, Best Taxi Hosur, Cab Service Hosur, Call Taxi, Cabs Near Me
-
-- Copy and add official Yuva Call Taxi circular logo to public/logo.jpg
-- Update Header, LocalTaxiPage, OutstationTaxiPage, AirportTaxiPage, and Footer with logo
-- Prepend top-ranking targeted keywords: Red Taxi Hosur, Best Taxi Hosur, Cab Service Hosur, Call Taxi, Cabs Near Me
-- Optimize title, meta tags, OpenGraph, Twitter card, and JSON-LD schema across all pages
-- Update manifest.json and sitemap.xml with logo.jpg and targeted keywords
