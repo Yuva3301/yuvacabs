@@ -48,13 +48,27 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["TaxiService", "LocalBusiness"],
-      "@id": "https://yuvacalltaxi.com/local-taxi#service",
-      "name": "Local Taxi in Hosur | Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me",
+      "@type": "LocalBusiness",
+      "@id": "https://www.yuvacalltaxi.com/#localbusiness",
+      "name": "Yuva Call Taxi",
+      "alternateName": [
+        "Yuva Cabs",
+        "Yuva Call Taxi Hosur"
+      ],
       "telephone": "+919944271322",
-      "url": "https://yuvacalltaxi.com/local-taxi",
-      "logo": "https://yuvacalltaxi.com/logo.jpg",
-      "image": "https://yuvacalltaxi.com/logo.jpg",
+      "url": "https://www.yuvacalltaxi.com/",
+      "email": "bookings@yuvacalltaxi.com",
+      "logo": "https://www.yuvacalltaxi.com/logo.jpg",
+      "image": "https://www.yuvacalltaxi.com/logo.jpg",
+      "priceRange": "₹9 - ₹45 per km",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Google Pay, PhonePe, Net Banking",
+      "hasMap": "https://maps.app.goo.gl/gHwiq68N6k8QekBt8",
+      "sameAs": [
+        "https://maps.app.goo.gl/gHwiq68N6k8QekBt8",
+        "https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j",
+        "https://www.facebook.com/share/1BwH4m16r9/"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Railway Station Road, Hamman Nagar",
@@ -68,22 +82,34 @@ const jsonLd = {
         "latitude": 12.7409,
         "longitude": 77.8253,
       },
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 12.7409,
-          "longitude": 77.8253,
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Hosur"
         },
-        "geoRadius": "25000",
+        {
+          "@type": "AdministrativeArea",
+          "name": "Tamil Nadu"
+        }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "TaxiService",
+      "@id": "https://www.yuvacalltaxi.com/local-taxi#service",
+      "name": "Local Taxi Service in Hosur",
+      "telephone": "+919944271322",
+      "url": "https://www.yuvacalltaxi.com/local-taxi",
+      "description": "24/7 local taxi and cab service in Hosur starting from ₹150. Quick 5-10 minute pickup across Hosur Railway Station, Bus Stand, SIPCOT & all local areas.",
+      "provider": {
+        "@id": "https://www.yuvacalltaxi.com/#localbusiness"
       },
-      "openingHours": "Mo-Su 00:00-23:59",
       "priceRange": "₹150 - ₹500",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "450",
-      },
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+919944271322",
@@ -295,32 +321,32 @@ const jsonLd = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://yuvacalltaxi.com/local-taxi#webpage",
-      "url": "https://yuvacalltaxi.com/local-taxi",
+      "@id": "https://www.yuvacalltaxi.com/local-taxi#webpage",
+      "url": "https://www.yuvacalltaxi.com/local-taxi",
       "name": "Local Taxi in Hosur | Call Taxi Near Me | 24/7 Cab Service - Yuva Cabs",
       "description": "Yuva Call Taxi Hosur (+91 99442 71322) — Best Local Taxi Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur & all 36 areas. Local cab from ₹150. 24/7 on-demand call taxi in Hosur.",
       "breadcrumb": {
-        "@id": "https://yuvacalltaxi.com/local-taxi#breadcrumb",
+        "@id": "https://www.yuvacalltaxi.com/local-taxi#breadcrumb",
       },
       "publisher": {
-        "@id": "https://yuvacalltaxi.com/#localbusiness",
+        "@id": "https://www.yuvacalltaxi.com/#localbusiness",
       },
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://yuvacalltaxi.com/local-taxi#breadcrumb",
+      "@id": "https://www.yuvacalltaxi.com/local-taxi#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://yuvacalltaxi.com/",
+          "item": "https://www.yuvacalltaxi.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Local Taxi in Hosur",
-          "item": "https://yuvacalltaxi.com/local-taxi",
+          "name": "Local Taxi Service in Hosur",
+          "item": "https://www.yuvacalltaxi.com/local-taxi",
         },
       ],
     },
@@ -341,12 +367,12 @@ export default function LocalTaxiSEO() {
       <meta name="author" content="Yuva Call Taxi" />
 
       {/* ── Canonical ── */}
-      <link rel="canonical" href="https://yuvacalltaxi.com/local-taxi" />
+      <link rel="canonical" href="https://www.yuvacalltaxi.com/local-taxi" />
 
       {/* ── hreflang ── */}
-      <link rel="alternate" hrefLang="en-IN" href="https://yuvacalltaxi.com/local-taxi" />
-      <link rel="alternate" hrefLang="ta" href="https://yuvacalltaxi.com/local-taxi" />
-      <link rel="alternate" hrefLang="x-default" href="https://yuvacalltaxi.com/local-taxi" />
+      <link rel="alternate" hrefLang="en-IN" href="https://www.yuvacalltaxi.com/local-taxi" />
+      <link rel="alternate" hrefLang="ta" href="https://www.yuvacalltaxi.com/local-taxi" />
+      <link rel="alternate" hrefLang="x-default" href="https://www.yuvacalltaxi.com/local-taxi" />
 
       {/* ── Geo Meta Tags ── */}
       <meta name="geo.region" content="IN-TN" />
@@ -367,10 +393,10 @@ export default function LocalTaxiSEO() {
         property="og:description"
         content="Yuva Call Taxi Hosur (+91 99442 71322) — Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Instant 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT &amp; Bagalur. Local cab from ₹150."
       />
-      <meta property="og:url" content="https://yuvacalltaxi.com/local-taxi" />
+      <meta property="og:url" content="https://www.yuvacalltaxi.com/local-taxi" />
       <meta
         property="og:image"
-        content="https://yuvacalltaxi.com/logo.jpg"
+        content="https://www.yuvacalltaxi.com/logo.jpg"
       />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
@@ -394,7 +420,7 @@ export default function LocalTaxiSEO() {
       />
       <meta
         name="twitter:image"
-        content="https://yuvacalltaxi.com/logo.jpg"
+        content="https://www.yuvacalltaxi.com/logo.jpg"
       />
       <meta
         name="twitter:image:alt"

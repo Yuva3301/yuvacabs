@@ -6,7 +6,7 @@ Allow: /
 Disallow: /admin
 
 # Sitemaps
-Sitemap: https://yuvacalltaxi.com/sitemap.xml
+Sitemap: https://www.yuvacalltaxi.com/sitemap.xml
 
 # Crawl optimization
 Crawl-delay: 1

@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/airport-taxi", "destination": "/airport-taxi.html" },
+    { "source": "/local-taxi", "destination": "/local-taxi.html" },
+    { "source": "/outstation-taxi", "destination": "/outstation-taxi.html" }
+  ]
+}
