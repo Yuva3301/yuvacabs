@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 import OutstationTaxiPage from './components/OutstationTaxiPage';
+import DiwaliEffects from './components/DiwaliEffects';
 
 function OutstationApp() {
   const [theme, setTheme] = useState(() => {
@@ -23,11 +24,14 @@ function OutstationApp() {
   };
 
   return (
-    <OutstationTaxiPage 
-      theme={theme} 
-      setTheme={setTheme} 
-      onNavigateHome={handleNavigateHome} 
-    />
+    <>
+      <DiwaliEffects />
+      <OutstationTaxiPage 
+        theme={theme} 
+        setTheme={setTheme} 
+        onNavigateHome={handleNavigateHome} 
+      />
+    </>
   );
 }
 

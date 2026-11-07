@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 import LocalTaxiPage from './components/LocalTaxiPage';
+import DiwaliEffects from './components/DiwaliEffects';
 
 function LocalApp() {
   const [theme, setTheme] = useState(() => {
@@ -23,11 +24,14 @@ function LocalApp() {
   };
 
   return (
-    <LocalTaxiPage 
-      theme={theme} 
-      setTheme={setTheme} 
-      onNavigateHome={handleNavigateHome} 
-    />
+    <>
+      <DiwaliEffects />
+      <LocalTaxiPage 
+        theme={theme} 
+        setTheme={setTheme} 
+        onNavigateHome={handleNavigateHome} 
+      />
+    </>
   );
 }
 
