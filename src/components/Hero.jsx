@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Phone, MessageSquare, Calendar, ChevronRight, CheckCircle2, MapPin, Clock, Sparkles } from 'lucide-react';
 import { FaInstagram, FaFacebook } from 'react-icons/fa6';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -29,7 +29,7 @@ export default function Hero() {
     const dx = (x - xc) / xc;
     const dy = (y - yc) / yc;
     
-    const maxRotate = 10; // Max rotation angle
+    const maxRotate = 10;
     const rotateX = -dy * maxRotate;
     const rotateY = dx * maxRotate;
     
@@ -70,31 +70,31 @@ export default function Hero() {
     },
     suv: { 
       name: 'SUV', 
-      desc: 'Ertiga / XUV / SUV',
+      desc: 'Ertiga / XUV / Triber',
       nonAcMin: 220, acMin: 280,
       nonAcExtra: 15, acExtra: 16,
       minKm: 4, localLimit: 6,
       image: suvTaxiImg
     },
     innova: { 
-      name: 'Innova & Crysta', 
-      desc: 'Toyota Innova / Innova Crysta',
-      nonAcMin: 250, acMin: 300,
-      nonAcExtra: 16, acExtra: 17,
+      name: 'Toyota Innova', 
+      desc: 'Classic Innova / Innova Crysta',
+      nonAcMin: 350, acMin: 400,
+      nonAcExtra: 18, acExtra: 20,
       minKm: 4, localLimit: 6,
       image: innovaTaxiImg
     },
     tempo: { 
       name: 'Tempo Traveller', 
-      desc: '12+1 Seater Van',
-      nonAcMin: 400, acMin: 500,
-      nonAcExtra: 38, acExtra: 38,
-      minKm: 10, localLimit: 10,
+      desc: 'Force 12 - 16 Seater Luxury Van',
+      nonAcMin: 650, acMin: 800,
+      nonAcExtra: 35, acExtra: 38,
+      minKm: 4, localLimit: 6,
       image: tempoTravellerImg
     }
   };
 
-  const vehicleKeys = ['hatchback', 'sedan', 'suv', 'innova', 'tempo'];
+  const vehicleKeys = Object.keys(vehicles);
 
   const selectVehicleWithDirection = (key) => {
     const newIdx = vehicleKeys.indexOf(key);
@@ -145,9 +145,9 @@ export default function Hero() {
         </button>
 
         <div className="absolute top-4 left-4 z-20 flex flex-col text-left">
-          <span className="text-[10px] text-black dark:text-black font-extrabold uppercase tracking-wider">Fleet Showcase</span>
-          <span className="text-lg font-black text-black dark:text-black leading-tight">{vehicles[selectedVehicle].name}</span>
-          <span className="text-[10px] text-slate-700 dark:text-slate-700 font-bold">{vehicles[selectedVehicle].desc}</span>
+          <span className="text-[10px] text-black font-extrabold uppercase tracking-wider">Fleet Showcase</span>
+          <span className="text-lg font-black text-black leading-tight">{vehicles[selectedVehicle].name}</span>
+          <span className="text-[10px] text-slate-700 font-bold">{vehicles[selectedVehicle].desc}</span>
         </div>
 
         <div className="w-full h-full flex items-center justify-center pointer-events-none">
@@ -178,7 +178,7 @@ export default function Hero() {
               animate="center"
               exit="exit"
               src={vehicles[selectedVehicle].image}
-              alt={`${vehicles[selectedVehicle].name} taxi cab in Hosur - YUVA CABS`}
+              alt={`${vehicles[selectedVehicle].name} - Yuva Call Taxi cab in Hosur`}
               className="w-full h-full object-contain select-none p-2 mt-6"
             />
           </AnimatePresence>
@@ -197,7 +197,7 @@ export default function Hero() {
               key={key}
               onClick={() => selectVehicleWithDirection(key)}
               className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
-                selectedVehicle === key ? 'w-5 bg-slate-800 dark:bg-slate-800' : 'w-1.5 bg-slate-300 dark:bg-slate-300 hover:bg-slate-400'
+                selectedVehicle === key ? 'w-5 bg-slate-800' : 'w-1.5 bg-slate-300 hover:bg-slate-400'
               }`}
             />
           ))}
@@ -230,31 +230,32 @@ export default function Hero() {
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
             <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
-              Hosur Call Taxi • 24/7 Call Taxi &amp; Cab Service
+              Hosur Call Taxi • 24/7 Taxi Service &amp; Cab Booking
             </span>
             <span className="text-brand-silver/40 hidden sm:inline">•</span>
-            <a href="tel:9944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
+            <a href="tel:+919944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
               <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
-              <span>9944271322</span>
+              <span>+91 99442 71322</span>
             </a>
           </motion.div>
 
-          {/* Search Optimized High-Conversion Heading */}
+          {/* Search Optimized High-Conversion Single H1 */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl md:text-7xl lg:text-[4rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-[3.8rem] font-black tracking-tight text-brand-white leading-[1.1] text-left"
           >
             <span className="text-xs sm:text-sm font-extrabold text-brand-yellow uppercase tracking-widest block mb-2">
-              Hosur Call Taxi • Taxi Service Near Me • Airport Taxi Hosur
+              24 Hours Call Taxi in Hosur • Taxi Near Me
             </span>
-            <span className="text-brand-yellow">Yuva Call Taxi</span>-Hosur <br />
+            <span className="text-brand-yellow">Call Taxi in Hosur</span>
+            <span className="text-white text-3xl sm:text-4xl md:text-5xl block mt-1">Yuva Call Taxi</span>
             <a
-              href="tel:9944271322"
-              className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-1"
+              href="tel:+919944271322"
+              className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow hover:opacity-90 inline-block mt-2 text-2xl sm:text-3xl md:text-4xl"
             >
-              Call 99442 71322
+              +91 99442 71322
             </a>
           </motion.h1>
 
@@ -267,27 +268,26 @@ export default function Hero() {
           >
             {/* Service Card 1: Outstation Cab Service */}
             <a
-              href="tel:9944271322"
+              href="/outstation-taxi"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-brand-yellow/15 border border-brand-yellow/30 hover:border-brand-yellow transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-brand-yellow text-brand-black uppercase tracking-wider">
-                  Cab Service
+                  Outstation Taxi
                 </span>
                 <span className="text-[11px] text-emerald-400 font-extrabold">₹9/km</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-brand-yellow transition-colors leading-tight mt-1">
-                Outstation Cab Service
+                Outstation Taxi in Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-brand-yellow font-black text-xs sm:text-sm">
-                <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
-                <span>One-Way &amp; Round Trips</span>
+                <span>One-Way &amp; Round Trips →</span>
               </div>
             </a>
 
             {/* Service Card 2: Airport Taxi Hosur */}
             <a
-              href="tel:9944271322"
+              href="/airport-taxi"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-blue-500/15 border border-blue-500/30 hover:border-blue-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
@@ -297,31 +297,29 @@ export default function Hero() {
                 <span className="text-[11px] text-emerald-400 font-extrabold">Fixed ₹2,200</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-blue-300 transition-colors leading-tight mt-1">
-                Airport Taxi Hosur
+                Airport Taxi in Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-blue-400 font-black text-xs sm:text-sm">
-                <Phone className="w-3.5 h-3.5 fill-blue-400 text-blue-400" />
-                <span>Kempegowda BLR Drop</span>
+                <span>Bangalore Airport Pickup &amp; Drop →</span>
               </div>
             </a>
 
-            {/* Service Card 3: Call Taxi Near Me */}
+            {/* Service Card 3: Call Taxi Near Me / Local Taxi */}
             <a
-              href="tel:9944271322"
+              href="/local-taxi"
               className="group p-3.5 rounded-2xl bg-white/[0.04] hover:bg-emerald-500/15 border border-emerald-500/30 hover:border-emerald-400 transition-all duration-300 flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.25)] relative overflow-hidden"
             >
               <div className="flex items-center justify-between mb-1">
                 <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-emerald-500 text-white uppercase tracking-wider">
-                  Call Taxi
+                  Local Taxi
                 </span>
                 <span className="text-[11px] text-emerald-400 font-extrabold">From ₹150</span>
               </div>
               <h2 className="text-base sm:text-lg font-black text-white group-hover:text-emerald-300 transition-colors leading-tight mt-1">
-                Call Taxi Near Me
+                Local Taxi Service in Hosur
               </h2>
               <div className="flex items-center space-x-1.5 mt-2.5 text-emerald-400 font-black text-xs sm:text-sm">
-                <Phone className="w-3.5 h-3.5 fill-emerald-400 text-emerald-400" />
-                <span>5–10 Min Fast Pickup</span>
+                <span>5-10 Min Fast Pickup →</span>
               </div>
             </a>
           </motion.div>
@@ -333,7 +331,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg md:text-xl text-brand-silver/95 max-w-xl font-medium leading-relaxed text-left"
           >
-            Looking for a <strong className="text-white">Call Taxi Near Me</strong>, reliable <strong className="text-white">Taxi Service Near Me</strong>, or <strong className="text-white">Airport Taxi Hosur</strong>? Yuva Call Taxi is your trusted 24/7 <strong className="text-white">Hosur Call Taxi</strong> &amp; <strong className="text-white">Cab Service</strong> partner with 5–10 min pickup across Railway Station, Bus Stand, Bagalur, Bathalapalli, Mookandapalli &amp; Krishnagiri. Fares from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
+            Looking for a <strong className="text-white">Call Taxi in Hosur</strong>, <strong className="text-white">Taxi Near Me</strong>, or <strong className="text-white">Hosur to Bangalore Airport Taxi</strong>? Yuva Call Taxi is your trusted 24/7 <strong className="text-white">Hosur Taxi Service</strong> partner with 5-10 min pickup across <strong className="text-white">Hosur Railway Station</strong>, <strong className="text-white">SIPCOT</strong>, <strong className="text-white">Bagalur</strong>, <strong className="text-white">Dinnur</strong> &amp; <strong className="text-white">Jeeva Nagar</strong>. Local cabs from <span className="text-brand-yellow font-extrabold">₹150</span>, outstation drop taxi @ <span className="text-brand-yellow font-extrabold">₹9/km</span>.
           </motion.p>
 
           {/* High-Conversion Primary Action Buttons */}
@@ -345,16 +343,16 @@ export default function Hero() {
           >
             {/* Primary Instant Call CTA */}
             <a
-              href="tel:9944271322"
+              href="tel:+919944271322"
               className="flex items-center justify-center space-x-2.5 px-8 py-4 rounded-full bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-base sm:text-lg tracking-tight shadow-[0_0_35px_rgba(255,212,59,0.5)] hover:shadow-[0_0_55px_rgba(255,212,59,0.8)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
             >
               <Phone className="w-5 h-5 fill-brand-black text-brand-black animate-bounce" />
-              <span>Call Taxi: 9944271322</span>
+              <span>Call Now: +91 99442 71322</span>
             </a>
 
             {/* Direct WhatsApp Instant Booking */}
             <a
-              href="https://wa.me/919944271322?text=Hello%20YUVA%20CABS,%20I%20need%20a%20taxi%20pickup%20in%20Hosur%20right%20now."
+              href="https://wa.me/919944271322?text=Hello%20Yuva%20Call%20Taxi,%20I%20need%20a%20cab%20pickup%20in%20Hosur."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 px-6 py-4 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-sm sm:text-base tracking-tight shadow-[0_4px_16px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer"
@@ -369,7 +367,7 @@ export default function Hero() {
               className="flex items-center justify-center space-x-2 px-5 py-3.5 rounded-full bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white font-bold text-xs sm:text-sm border border-white/10 hover:border-brand-yellow/40 transition-all duration-300"
             >
               <Calendar className="w-4 h-4 text-brand-yellow" />
-              <span>Schedule Ride</span>
+              <span>Online Booking</span>
             </a>
           </motion.div>
 
@@ -381,40 +379,48 @@ export default function Hero() {
             className="pt-2"
           >
             <span className="text-[11px] text-brand-gray uppercase font-bold tracking-wider block mb-2">
-              📍 Rapid Dispatch Hubs (Tap to Call):
+              📍 24/7 Rapid Pickup Areas in Hosur (Tap to Call):
             </span>
             <div className="flex flex-wrap gap-2">
               <a
                 href="tel:+919944271322"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
-                title="Call for Hosur Railway Station Taxi Pickup"
+                title="Railway Station Taxi Hosur"
               >
                 <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
-                <span>Railway Station Taxi (3–5 min)</span>
+                <span>Railway Station Taxi (3-5 min)</span>
               </a>
               <a
                 href="tel:+919944271322"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
-                title="Call for Hosur Bus Stand Taxi Pickup"
+                title="SIPCOT Taxi Service Hosur"
               >
                 <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
-                <span>Bus Stand Taxi (3–5 min)</span>
+                <span>SIPCOT Taxi Service (5-10 min)</span>
               </a>
               <a
                 href="tel:+919944271322"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
-                title="Call for SIPCOT Hosur Taxi Pickup"
+                title="Bagalur Taxi Service"
               >
                 <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
-                <span>SIPCOT 1 &amp; 2 (5–10 min)</span>
+                <span>Bagalur Taxi Service</span>
               </a>
               <a
                 href="tel:+919944271322"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
-                title="Call for Local Cab in Hosur"
+                title="Dinnur Call Taxi"
               >
                 <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
-                <span>Local Cab (Any Location)</span>
+                <span>Dinnur Call Taxi</span>
+              </a>
+              <a
+                href="tel:+919944271322"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black border border-white/10 hover:border-brand-yellow text-xs font-bold text-brand-silver transition-all"
+                title="Jeeva Nagar Taxi Service"
+              >
+                <MapPin className="w-3.5 h-3.5 text-brand-yellow" />
+                <span>Jeeva Nagar Taxi Service</span>
               </a>
             </div>
           </motion.div>
@@ -436,7 +442,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center space-x-1.5">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>4.9★ Google Rating (385+ Reviews)</span>
+              <span>24/7 Verified Chauffeurs</span>
             </div>
           </motion.div>
 

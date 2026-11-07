@@ -2,48 +2,31 @@ import { Helmet } from 'react-helmet-async';
 
 export default function AirportSEO() {
   const airportKeywords = [
-    "Red Taxi Hosur",
-    "Best Taxi Hosur",
-    "Cab Service Hosur",
-    "Call Taxi",
-    "Cabs Near Me",
-    "Bangalore Airport Taxi from Hosur",
+    "Airport Taxi in Hosur",
     "Hosur to Bangalore Airport Taxi",
-    "Airport Taxi Hosur",
-    "Hosur to BLR Airport Taxi",
+    "Bangalore Airport Pickup and Drop from Hosur",
     "BLR Airport Taxi Hosur",
     "Kempegowda Airport Taxi Hosur",
-    "Bangalore Airport to Hosur Cab",
-    "Hosur Airport Drop Cab",
-    "Hosur Airport Pickup Taxi",
-    "Hosur to Bangalore Airport Taxi Fare",
-    "Hosur to Kempegowda Airport Cab",
-    "Airport Cab Service Hosur",
-    "Call Taxi Hosur Airport",
-    "Yuva Call Taxi Airport Service",
-    "Hosur to Bangalore Airport Drop",
-    "Hosur to BLR Terminal 1 Cab",
-    "Hosur to BLR Terminal 2 Cab",
-    "Attibele to Bangalore Airport Taxi",
-    "Bagalur to Bangalore Airport Taxi",
+    "Call Taxi in Hosur",
+    "Call Taxi Hosur",
+    "Hosur Call Taxi",
+    "Taxi Service in Hosur",
+    "Taxi in Hosur",
+    "Hosur Taxi Number",
+    "24 Hours Call Taxi in Hosur",
     "SIPCOT Hosur to Bangalore Airport Taxi",
+    "Bagalur to Bangalore Airport Taxi",
+    "Attibele to Bangalore Airport Taxi",
     "Krishnagiri to Bangalore Airport Cab",
-    "24 Hours Airport Taxi Hosur",
-    "Early Morning Airport Taxi Hosur",
-    "Midnight Airport Drop Hosur",
-    "Innova Crysta Airport Taxi Hosur",
-    "Ertiga Airport Taxi Hosur",
-    "Dzire Airport Taxi Hosur",
-    "Cheap Airport Taxi Hosur",
-    "Best Airport Cab Service Hosur",
-    "Yuva Cabs Airport Taxi 9944271322"
+    "Yuva Call Taxi Hosur",
+    "Yuva Cabs Hosur"
   ];
 
   const airportSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "TaxiService"],
         "@id": "https://www.yuvacalltaxi.com/#localbusiness",
         "name": "Yuva Call Taxi",
         "alternateName": [
@@ -55,7 +38,7 @@ export default function AirportSEO() {
         "email": "bookings@yuvacalltaxi.com",
         "logo": "https://www.yuvacalltaxi.com/logo.jpg",
         "image": "https://www.yuvacalltaxi.com/logo.jpg",
-        "priceRange": "₹9 - ₹45 per km",
+        "priceRange": "₹2,200 - ₹3,800",
         "currenciesAccepted": "INR",
         "paymentAccepted": "Cash, UPI, Google Pay, PhonePe, Net Banking",
         "hasMap": "https://maps.app.goo.gl/gHwiq68N6k8QekBt8",
@@ -66,7 +49,7 @@ export default function AirportSEO() {
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Railway Station Road, Hamman Nagar",
+          "streetAddress": "Dinnur Main Road, Jeeva Nagar",
           "addressLocality": "Hosur",
           "addressRegion": "Tamil Nadu",
           "postalCode": "635109",
@@ -74,24 +57,19 @@ export default function AirportSEO() {
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "12.7409",
-          "longitude": "77.8253"
+          "latitude": 12.7409,
+          "longitude": 77.8253
         },
         "areaServed": [
-          {
-            "@type": "City",
-            "name": "Hosur"
-          },
-          {
-            "@type": "AdministrativeArea",
-            "name": "Tamil Nadu"
-          }
+          { "@type": "City", "name": "Hosur" },
+          { "@type": "Airport", "name": "Kempegowda International Airport Bengaluru (BLR)" },
+          { "@type": "AdministrativeArea", "name": "SIPCOT Hosur" },
+          { "@type": "AdministrativeArea", "name": "Bagalur" },
+          { "@type": "AdministrativeArea", "name": "Attibele" }
         ],
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-          ],
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           "opens": "00:00",
           "closes": "23:59"
         }
@@ -99,69 +77,28 @@ export default function AirportSEO() {
       {
         "@type": "TaxiService",
         "@id": "https://www.yuvacalltaxi.com/airport-taxi#service",
-        "name": "Bangalore Airport Taxi from Hosur",
+        "name": "Airport Taxi in Hosur (Hosur to Bangalore Airport BLR)",
         "url": "https://www.yuvacalltaxi.com/airport-taxi",
-        "description": "Book 24/7 Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport Drop & Pickup) starting at ₹1,499. Guaranteed on-time flight pickup, terminal meet & greet, flight delay tracking, and sanitized AC Sedans & SUVs. Call +91 99442 71322.",
+        "description": "Book 24/7 Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport Drop & Pickup) starting at fixed ₹2,200. Guaranteed on-time flight pickup, flight radar tracking, and sanitized AC sedans and SUVs.",
         "provider": {
           "@id": "https://www.yuvacalltaxi.com/#localbusiness"
         },
-        "priceRange": "₹1,499 - ₹3,800",
+        "priceRange": "₹2,200 - ₹3,800",
         "areaServed": [
           { "@type": "City", "name": "Hosur" },
-          { "@type": "Airport", "name": "Kempegowda International Airport Bengaluru (BLR)" },
-          { "@type": "AdministrativeArea", "name": "SIPCOT Hosur" },
-          { "@type": "AdministrativeArea", "name": "Bagalur" },
-          { "@type": "AdministrativeArea", "name": "Attibele" },
-          { "@type": "AdministrativeArea", "name": "Krishnagiri" },
-          { "@type": "AdministrativeArea", "name": "Electronic City" }
-        ],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Bangalore Airport Taxi Routes & Packages",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Hosur to Bangalore Airport Sedan Taxi (Dzire / Etios)",
-                "description": "Swift Dzire / Etios AC Sedan for Hosur to Kempegowda Airport BLR drop & pickup. Fixed transparent fares from ₹1,499.",
-                "price": "1499",
-                "priceCurrency": "INR"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Hosur to Bangalore Airport SUV Taxi (Ertiga)",
-                "description": "Spacious Ertiga 6-seater SUV for family airport trips with ample luggage space.",
-                "price": "2199",
-                "priceCurrency": "INR"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Hosur to Bangalore Airport Luxury Taxi (Innova Crysta)",
-                "description": "Executive Innova Crysta luxury cab for business travelers and corporate airport commutes.",
-                "price": "2899",
-                "priceCurrency": "INR"
-              }
-            }
-          ]
-        }
+          { "@type": "Airport", "name": "Kempegowda International Airport Bengaluru (BLR)" }
+        ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://yuvacalltaxi.com/airport-taxi#faq",
+        "@id": "https://www.yuvacalltaxi.com/airport-taxi#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "How much is the taxi fare from Hosur to Bangalore Airport (BLR)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Taxi fare from Hosur to Kempegowda International Airport (BLR) starts from ₹1,499 for AC Sedan (Swift Dzire/Etios) and ₹2,199 for 6-seater SUV (Ertiga). Fixed flat rates with zero surge pricing."
+              "text": "The taxi fare from Hosur to Kempegowda International Airport (BLR) is a fixed rate of ₹2,200 for Non-A/C and ₹2,300 for A/C Sedan (Swift Dzire/Etios), and ₹2,800 for a 6-seater Ertiga SUV. There are zero surge charges."
             }
           },
           {
@@ -169,7 +106,7 @@ export default function AirportSEO() {
             "name": "What is the distance and travel time from Hosur to Kempegowda Airport?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The distance between Hosur and Kempegowda International Airport (BLR) is approximately 75 to 80 km via Satellite Town Ring Road (STRR) and NH44. The travel time is typically 75 to 90 minutes depending on traffic."
+              "text": "The distance between Hosur and Kempegowda International Airport (BLR) is approximately 78 to 82 km via Satellite Town Ring Road (STRR) and NH44. The travel time is typically 75 to 90 minutes."
             }
           },
           {
@@ -177,7 +114,7 @@ export default function AirportSEO() {
             "name": "Do you provide midnight and early morning airport cabs from Hosur?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Yuva Call Taxi operates 24/7 with dedicated early morning (2 AM, 3 AM, 4 AM) and late-night airport drops and pickups with a 100% on-time guarantee and 0% cancellation."
+              "text": "Yes, Yuva Call Taxi operates 24/7 with dedicated early morning (2 AM, 3 AM, 4 AM) and late-night airport drops and pickups with a 100% on-time guarantee and zero cancellation."
             }
           },
           {
@@ -185,29 +122,10 @@ export default function AirportSEO() {
             "name": "Will the driver wait if my flight to Bangalore is delayed?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! We track your flight arrival live using your flight number. Even if your flight is delayed, your assigned driver will be stationed at Terminal 1 or Terminal 2 arrival pickup zone without extra waiting penalties."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I book an airport taxi from Hosur to BLR Airport?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can book instantly by calling our 24/7 hotline +91 99442 71322, messaging us on WhatsApp, or using the online airport booking form on our website."
+              "text": "Yes! We track your flight arrival live using your flight number. Even if your flight is delayed, your assigned driver will be waiting at Terminal 1 or Terminal 2 arrival pickup zone without extra waiting penalties."
             }
           }
         ]
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.yuvacalltaxi.com/airport-taxi#webpage",
-        "url": "https://www.yuvacalltaxi.com/airport-taxi",
-        "name": "Bangalore Airport Taxi from Hosur | Kempegowda Airport Cab Service - Yuva Cabs",
-        "description": "Book 24/7 Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport Drop & Pickup) starting at ₹2,200. Guaranteed on-time flight pickup, flight tracking, terminal meet & greet. Call +91 99442 71322.",
-        "isPartOf": { "@id": "https://www.yuvacalltaxi.com/#website" },
-        "breadcrumb": { "@id": "https://www.yuvacalltaxi.com/airport-taxi#breadcrumb" },
-        "inLanguage": "en-IN",
-        "publisher": { "@id": "https://www.yuvacalltaxi.com/#localbusiness" }
       },
       {
         "@type": "BreadcrumbList",
@@ -222,7 +140,7 @@ export default function AirportSEO() {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Bangalore Airport Taxi from Hosur",
+            "name": "Airport Taxi in Hosur",
             "item": "https://www.yuvacalltaxi.com/airport-taxi"
           }
         ]
@@ -232,20 +150,20 @@ export default function AirportSEO() {
 
   return (
     <Helmet>
-      {/* Primary HTML Meta Tags for Google Search Engine Results */}
-      <title>Airport Taxi Service in Hosur | Yuva Call Taxi</title>
-      <meta name="title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
-      <meta 
-        name="description" 
-        content="Book 24/7 Bangalore Airport Taxi from Hosur (BLR Airport Drop & Pickup) starting at ₹1,499. On-time flight pickup guarantee, flight tracking, terminal meet & greet, clean AC cabs, 0% cancellation. Call +91 99442 71322." 
+      {/* Primary HTML Meta Tags */}
+      <title>Airport Taxi in Hosur | Hosur to Bangalore Airport Taxi - Yuva Call Taxi</title>
+      <meta name="title" content="Airport Taxi in Hosur | Hosur to Bangalore Airport Taxi - Yuva Call Taxi" />
+      <meta
+        name="description"
+        content="Book Hosur to Bangalore Airport (BLR) taxi with Yuva Call Taxi (+91 99442 71322). Fixed fare from ₹2,200, 24/7 flight tracking, on-time pickup & zero surge charges."
       />
       <meta name="keywords" content={airportKeywords.join(", ")} />
+      <meta name="application-name" content="Yuva Call Taxi Hosur" />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://www.yuvacalltaxi.com/airport-taxi" />
       <link rel="alternate" hreflang="en-IN" href="https://www.yuvacalltaxi.com/airport-taxi" />
       <link rel="alternate" hreflang="ta" href="https://www.yuvacalltaxi.com/airport-taxi" />
       <link rel="alternate" hreflang="x-default" href="https://www.yuvacalltaxi.com/airport-taxi" />
-      <meta name="application-name" content="Yuva Call Taxi Hosur Airport Service" />
 
       {/* Local & Geographic SEO Meta Tags */}
       <meta name="geo.region" content="IN-TN" />
@@ -254,28 +172,32 @@ export default function AirportSEO() {
       <meta name="ICBM" content="12.7409, 77.8253" />
       <meta name="contact" content="+919944271322" />
 
-      {/* Open Graph / Facebook Meta Tags */}
+      {/* Open Graph / Facebook */}
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://www.yuvacalltaxi.com/airport-taxi" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
-      <meta 
-        property="og:description" 
-        content="Book guaranteed on-time Bangalore Airport Taxi from Hosur (BLR Kempegowda Airport) starting ₹1,499. Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Call +91 99442 71322." 
+      <meta property="og:title" content="Airport Taxi in Hosur | Hosur to Bangalore Airport Taxi - Yuva Call Taxi" />
+      <meta
+        property="og:description"
+        content="Book Hosur to Bangalore Airport (BLR) taxi with Yuva Call Taxi (+91 99442 71322). Fixed fare from ₹2,200, 24/7 flight tracking, on-time pickup & zero surge charges."
       />
       <meta property="og:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
       <meta property="og:locale" content="en_IN" />
 
-      {/* Twitter Cards */}
+      {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://www.yuvacalltaxi.com/airport-taxi" />
-      <meta property="twitter:title" content="Airport Taxi Service in Hosur | Yuva Call Taxi" />
-      <meta 
-        property="twitter:description" 
-        content="Reliable 24/7 Bangalore Airport Taxi from Hosur starting ₹1,499. Best Taxi Hosur | Red Taxi Hosur alternative | Cab Service Hosur | Cabs Near Me. Call +91 99442 71322." 
+      <meta property="twitter:title" content="Airport Taxi in Hosur | Hosur to Bangalore Airport Taxi - Yuva Call Taxi" />
+      <meta
+        property="twitter:description"
+        content="Book Hosur to Bangalore Airport (BLR) taxi with Yuva Call Taxi (+91 99442 71322). Fixed fare from ₹2,200, 24/7 flight tracking, on-time pickup & zero surge charges."
       />
       <meta property="twitter:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
+
+      {/* Structured Data: LocalBusiness, TaxiService, FAQPage, BreadcrumbList */}
+      <script type="application/ld+json">
+        {JSON.stringify(airportSchema)}
+      </script>
     </Helmet>
   );
 }
-

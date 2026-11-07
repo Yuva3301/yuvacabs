@@ -15,7 +15,7 @@ export default function LocalSEO() {
       badge: 'Swift Dzire Fixed Rate',
       icon: Plane,
       rate: 'Non-A/C ₹2,200 | A/C ₹2,300',
-      desc: 'Swift Dzire special fixed fare: Non-A/C ₹2,200 & A/C ₹2,300. Guaranteed on-time flight pickup, landing delay tracking & zero surge fees.',
+      desc: 'Swift Dzire fixed fare: Non-A/C ₹2,200 & A/C ₹2,300. Guaranteed on-time flight pickup, landing delay tracking & zero surge fees.',
       highlight: 'Best Deal'
     },
     {
@@ -48,7 +48,7 @@ export default function LocalSEO() {
       badge: 'Express Outstation',
       icon: MapPin,
       rate: 'Starts @ ₹9/km',
-      desc: 'Affordable outstation cab hire with experienced highway drivers, clean cars, and zero hidden toll charges.',
+      desc: 'Affordable outstation cab hire with experienced highway drivers, clean cars, and zero return fare on one-way drops.',
       highlight: 'Highway Special'
     }
   ];
@@ -56,7 +56,7 @@ export default function LocalSEO() {
   const outstationDestinations = [
     {
       city: 'Chennai',
-      route: 'Hosur ⇄ Chennai (Central / Airport / OMR)',
+      route: 'Hosur → Chennai (Central / Airport / OMR)',
       distance: '310 km',
       time: '5.5 hrs',
       highway: 'NH48 Expressway',
@@ -67,479 +67,253 @@ export default function LocalSEO() {
     },
     {
       city: 'Salem',
-      route: 'Hosur ⇄ Salem City / Junction',
+      route: 'Hosur → Salem City / Junction',
       distance: '160 km',
       time: '2.5 hrs',
       highway: 'NH44 6-Lane Expressway',
       types: 'Hatchback, Sedan & Innova',
       rate: 'Starts @ ₹9/km',
-      desc: 'Direct corridor through Dharmapuri with top highway safety. Fixed driver allowance and zero cancellation fees.',
-      tag: 'Direct NH44 Corridor'
+      desc: 'Direct express connectivity via Dharmapuri. One-way drop taxis available with zero return fare charges.',
+      tag: 'Express Drop Taxi'
     },
     {
       city: 'Coimbatore',
-      route: 'Hosur ⇄ Coimbatore (City / Airport)',
+      route: 'Hosur → Coimbatore (Airport / Gandhipuram)',
       distance: '320 km',
       time: '5.5 hrs',
-      highway: 'NH544 via Salem & Erode',
-      types: 'Etios, Dzire & Innova Crysta',
+      highway: 'NH44 & NH544',
+      types: 'AC Sedan & Innova Crysta',
       rate: 'Starts @ ₹9/km',
-      desc: 'Top-rated outstation cab service to the textile capital. Experienced long-drive chauffeurs with clean AC cars.',
-      tag: 'Business & Family Travel'
+      desc: 'Comfortable long-haul transit to the Manchester of South India. Ample boot space for luggage and seamless cruising.',
+      tag: 'Textile Hub Special'
     },
     {
       city: 'Tirupati',
-      route: 'Hosur ⇄ Tirupati (Balaji Temple)',
+      route: 'Hosur → Tirumala / Tirupati Temple',
       distance: '245 km',
       time: '4.5 hrs',
-      highway: 'via Chittoor / Palamaner',
-      types: 'Innova Crysta, Ertiga & Sedans',
+      highway: 'NH69 & NH40',
+      types: 'Maruti Ertiga & Innova Crysta',
       rate: 'Starts @ ₹9/km',
-      desc: 'Dedicated pilgrim package with temple darshan wait-time included. Safe mountain ghat road navigation.',
-      tag: 'Pilgrimage Darshan'
+      desc: 'Dedicated Tirupati Balaji pilgrimage packages with darshan waiting options and skilled hill drivers.',
+      tag: 'Pilgrimage Package'
     },
     {
       city: 'Pondicherry',
-      route: 'Hosur ⇄ Pondicherry (White Town / Beach)',
+      route: 'Hosur → Pondicherry (White Town)',
       distance: '260 km',
       time: '5 hrs',
-      highway: 'via Tiruvannamalai / Tindivanam',
-      types: 'Sedans & Executive SUVs',
+      highway: 'NH77 via Tiruvannamalai',
+      types: 'Sedan & SUV',
       rate: 'Starts @ ₹9/km',
-      desc: 'Relaxing weekend beach getaway. No rush, multiple scenic stopovers allowed, and flat per-km calculation.',
-      tag: 'Weekend Beach Tour'
+      desc: 'Scenic holiday rides to French colonies and beaches with flexible sightseeing stops along the way.',
+      tag: 'Weekend Beach Getaway'
     },
     {
-      city: 'Ooty (Nilgiris)',
-      route: 'Hosur ⇄ Ooty / Coonoor / Kotagiri',
+      city: 'Ooty',
+      route: 'Hosur → Ooty / Coonoor Hill Station',
       distance: '285 km',
       time: '6.5 hrs',
-      highway: 'via Mettupalayam / Bandipur',
-      types: 'Innova Crysta & Etios',
-      rate: 'Starts @ ₹9/km',
-      desc: 'Specialized hill station drivers skilled in 36 hairpin bends, misty ghat roads, and family holiday comfort.',
-      tag: 'Hill Station Specialist'
+      highway: 'NH44 & Ghat Road via Mettupalayam',
+      types: 'Innova Crysta & Tempo Traveller',
+      rate: 'Custom Ghat Package',
+      desc: 'Hill station tours with professional mountain drivers skilled in 36 hairpin bends and ghat road navigation.',
+      tag: 'Hill Station Special'
     }
   ];
 
-  const localZones = [
-    {
-      title: 'Hosur Bus Stand & Railway Station Hub',
-      areas: [
-        'Hosur Railway Station',
-        'Hosur Central Bus Stand',
-        'New Bus Stand Terminal',
-        'Railway Station Road',
-        'Hamman Nagar Hub'
-      ],
-      tag: 'Station & Bus Stand Hub',
-      pickupTime: '3 - 7 Mins',
-      desc: 'Stationed 24/7 right outside Hosur Railway Station (Platforms 1 & 2) and New Bus Stand for instant local or outstation departure.'
-    },
-    {
-      title: 'Bagalur & Bagalur Road Corridor',
-      areas: [
-        'Bagalur Town',
-        'Bagalur Road Junction',
-        'Bagalur Ring Road',
-        'Denkanikottai Road',
-        'Hosur-Thally Road Corridor'
-      ],
-      tag: 'Key Arterial Corridors',
-      pickupTime: '5 - 10 Mins',
-      desc: 'Fast pickup on Bagalur Road, Bagalur town, and arterial bypass lanes with transparent per-km rates and verified drivers.'
-    },
-    {
-      title: 'Mookandapalli, SIPCOT & Bathalapalli',
-      areas: [
-        'Mookandapalli Industrial Belt',
-        'Bathalapalli Market & Hub',
-        'SIPCOT Phase 1 & 2',
-        'Zuzuvadi Checkpost',
-        'TANSIDCO Industrial Estate',
-        'TVS Motor Corridor & Moranapalli'
-      ],
-      tag: 'Industrial & Shift Hubs',
-      pickupTime: '5 - 10 Mins',
-      desc: 'Immediate dispatch across Mookandapalli, Bathalapalli, SIPCOT, and industrial belts for shift drops and executive travel.'
-    },
-    {
-      title: 'Shoolagiri, Rayakottai & Krishnagiri Network',
-      areas: [
-        'Shoolagiri Highway Hub',
-        'Rayakottai Road & Town',
-        'Krishnagiri NH44 Highway Drop',
-        'Berigai Junction',
-        'Kelamangalam Road'
-      ],
-      tag: 'Highway & Outstation Routes',
-      pickupTime: '10 - 15 Mins',
-      desc: 'Seamless highway travel to Shoolagiri, Rayakottai, Krishnagiri, and surrounding panchayats starting from ₹9/km.'
-    },
-    {
-      title: 'BLR Kempegowda Airport & Border Transit',
-      areas: [
-        'BLR Airport Kempegowda (Fixed ₹2,200)',
-        'Attibele Border Toll',
-        'Chandapura & Electronic City',
-        'Bommasandra Industrial Corridor',
-        'Silk Board & Bangalore Transit'
-      ],
-      tag: 'Airport & Border Routes',
-      pickupTime: 'Available 24/7',
-      desc: 'Direct fixed-rate Swift Dzire airport taxi to Kempegowda International Airport (BLR) and smooth border transfers.'
-    },
-    {
-      title: 'Mathigiri & City Residential Hubs',
-      areas: [
-        'Mathigiri Town',
-        'Dinnur Circle',
-        'Jeeva Nagar',
-        'Sanasandiram',
-        'Avalapalli & Kamaraj Colony'
-      ],
-      tag: 'City & Residential Hubs',
-      pickupTime: '5 - 10 Mins',
-      desc: 'Fast residential neighborhood service. Hospital emergencies, family shopping, and local station drop-offs.'
-    }
+  const coverageAreas = [
+    { zone: 'Hosur Railway Station', time: '3-5 mins', badge: 'Stand Hub', note: '24/7 dedicated cabs right outside platform gates' },
+    { zone: 'Hosur Central & New Bus Stand', time: '3-5 mins', badge: 'Bus Stand Hub', note: 'Immediate departures for bus commuters' },
+    { zone: 'SIPCOT Phase 1 & 2', time: '5-8 mins', badge: 'Industrial Zone', note: 'TVS Motor, Ashok Leyland & Titan industrial belts' },
+    { zone: 'Bagalur Road & Junction', time: '5-10 mins', badge: 'Arterial Hub', note: 'Fast pickup on ring road and town bypass' },
+    { zone: 'Dinnur & Sanasandiram', time: '5-8 mins', badge: 'Residential Hub', note: 'Doorstep pickup in residential neighborhoods' },
+    { zone: 'Jeeva Nagar & Mathigiri', time: '5-10 mins', badge: 'Residential Hub', note: 'Rapid cab dispatch for Mathigiri and Jeeva Nagar' },
+    { zone: 'Bathalapalli & Mookandapalli', time: '5-8 mins', badge: 'Market & Industry', note: 'Direct cabs near wholesale market and industrial areas' },
+    { zone: 'Attibele Border & Zuzuvadi', time: '5-10 mins', badge: 'Interstate Border', note: 'Fast connection to Electronic City & Bangalore' },
   ];
 
   return (
-    <section id="local-seo" className="py-24 bg-brand-charcoal/40 dark-blue-section relative overflow-hidden border-t border-white/5">
-      {/* Background ambient lighting */}
-      <div className="absolute top-[15%] left-[5%] w-96 h-96 rounded-full bg-brand-yellow/5 glow-orb blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-[10%] right-[5%] w-96 h-96 rounded-full bg-blue-500/5 glow-orb blur-[140px] pointer-events-none" />
+    <section id="local-seo" className="py-24 bg-brand-charcoal/30 dark-blue-section relative overflow-hidden text-left">
+      {/* Background ambient light */}
+      <div className="absolute top-[15%] right-[-5%] w-96 h-96 rounded-full bg-brand-yellow/5 glow-orb blur-[120px]" />
+      <div className="absolute bottom-[15%] left-[-5%] w-96 h-96 rounded-full bg-brand-blue/5 glow-orb blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Section Header with High-Ranking SEO Entities */}
-        <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col space-y-4">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-bold uppercase tracking-widest self-center">
-            <Compass className="w-3.5 h-3.5" />
-            <span>24/7 Local Cab Hubs &amp; Outstation Transit Network</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-            Hosur Call Taxi &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Call Taxi Near Me — 24/7 Cab Service</span>
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col space-y-4">
+          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Hosur Travel Network</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Popular Cab Routes &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Coverage in Hosur</span>
           </h2>
-          
-          <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed font-medium">
-            Searching for a trusted <strong>Call Taxi Near Me</strong>, <strong>Taxi Service Near Me</strong>, or flat-rate <strong>Airport Taxi Hosur</strong>? Yuva Call Taxi is Hosur's premier <strong>Cab Service</strong> with 5–10 min pickup across all zones and outstation trips from ₹9/km.
+          <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
+            Yuva Call Taxi connects all major Hosur neighborhoods, industrial corridors, and outstation cities with transparent pricing and 24/7 availability.
           </p>
 
-          {/* Toggle Pills */}
-          <div className="flex items-center justify-center pt-2">
-            <div className="bg-brand-charcoal/80 p-1.5 rounded-full border border-white/10 flex flex-wrap justify-center gap-1">
+          {/* Navigation Pill Switcher */}
+          <div className="flex items-center justify-center pt-4">
+            <div className="inline-flex p-1 bg-white/5 border border-white/10 rounded-2xl">
               <button
                 onClick={() => setActiveTab('routes')}
-                className={`px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 cursor-pointer ${
+                className={`px-5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer ${
                   activeTab === 'routes'
                     ? 'bg-brand-yellow text-brand-black shadow-md'
                     : 'text-brand-silver hover:text-white'
                 }`}
               >
-                Top Highway & Airport Routes
+                Top Highway Corridors
               </button>
               <button
                 onClick={() => setActiveTab('outstation')}
-                className={`px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 cursor-pointer ${
+                className={`px-5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer ${
                   activeTab === 'outstation'
                     ? 'bg-brand-yellow text-brand-black shadow-md'
                     : 'text-brand-silver hover:text-white'
                 }`}
               >
-                Outstation Destinations (₹9/km)
+                Outstation Destinations
               </button>
               <button
-                onClick={() => setActiveTab('zones')}
-                className={`px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 cursor-pointer ${
-                  activeTab === 'zones'
+                onClick={() => setActiveTab('coverage')}
+                className={`px-5 py-2 rounded-xl text-xs font-black transition-all cursor-pointer ${
+                  activeTab === 'coverage'
                     ? 'bg-brand-yellow text-brand-black shadow-md'
                     : 'text-brand-silver hover:text-white'
                 }`}
               >
-                Hosur Local Coverage Areas
+                Hosur Local Hubs
               </button>
             </div>
           </div>
         </div>
 
-        {/* Tab 1: Popular Highway & Airport Routes */}
+        {/* Tab 1: Top Highway Corridors */}
         {activeTab === 'routes' && (
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {popularRoutes.map((route, idx) => {
               const Icon = route.icon;
               return (
                 <div
                   key={idx}
-                  className="glass-card p-6 rounded-3xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                  className="glass-card glass-card-hover p-6 rounded-3xl border border-white/5 flex flex-col justify-between space-y-4 group transition-all"
                 >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="p-3 rounded-2xl bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow group-hover:scale-105 transition-transform duration-300">
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      <div>
-                        <span className="text-[10px] uppercase font-extrabold tracking-wider text-brand-yellow block">
-                          {route.badge}
-                        </span>
-                        <h3 className="text-lg font-bold text-white tracking-tight flex items-center space-x-1.5">
-                          <span>{route.from}</span>
-                          <span className="text-brand-yellow">⇄</span>
-                          <span>{route.to}</span>
-                        </h3>
-                      </div>
+                  <div className="flex items-center justify-between">
+                    <div className="w-10 h-10 rounded-xl bg-brand-yellow/10 border border-brand-yellow/20 flex items-center justify-center text-brand-yellow">
+                      <Icon className="w-5 h-5" />
                     </div>
-
-                    <span className="text-[10px] font-extrabold px-2.5 py-1 rounded-full bg-white/5 text-brand-silver border border-white/10">
-                      {route.highlight}
+                    <span className="text-[10px] font-black uppercase tracking-wider text-brand-yellow bg-brand-yellow/10 px-2 py-0.5 rounded-full border border-brand-yellow/20">
+                      {route.badge}
                     </span>
                   </div>
 
-                  <p className="text-xs text-brand-gray/90 leading-relaxed font-medium mb-5">
-                    {route.desc}
-                  </p>
-
-                  <div className="flex flex-wrap items-center justify-between pt-4 border-t border-white/5 gap-3">
-                    <div className="flex items-center space-x-4 text-xs">
-                      <div className="flex items-center space-x-1 text-brand-silver">
-                        <Navigation className="w-3.5 h-3.5 text-brand-yellow" />
-                        <span className="font-bold text-white">{route.distance}</span>
-                      </div>
-                      <div className="flex items-center space-x-1 text-brand-silver">
-                        <Clock className="w-3.5 h-3.5 text-brand-yellow" />
-                        <span className="font-bold text-white">{route.time}</span>
-                      </div>
-                      <span className="font-extrabold text-brand-yellow bg-brand-yellow/10 px-2.5 py-0.5 rounded-full text-[11px]">
-                        {route.rate}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center space-x-2">
-                      <a
-                        href="tel:+919944271322"
-                        className="px-3.5 py-2 rounded-xl bg-brand-yellow text-brand-black font-extrabold text-xs flex items-center space-x-1 hover:brightness-110 active:scale-95 transition-all shadow-sm"
-                      >
-                        <Phone className="w-3 h-3 fill-brand-black" />
-                        <span>Call</span>
-                      </a>
-                      <a
-                        href={`https://wa.me/919944271322?text=Hello! I want to book a taxi from ${encodeURIComponent(route.from)} to ${encodeURIComponent(route.to)}.`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-3.5 py-2 rounded-xl bg-[#25D366] text-white font-extrabold text-xs flex items-center space-x-1 hover:brightness-110 active:scale-95 transition-all shadow-sm"
-                      >
-                        <MessageSquare className="w-3 h-3 fill-white" />
-                        <span>WhatsApp</span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </motion.div>
-        )}
-
-        {/* Tab 2: Outstation Destinations Hub (SEO Heavyweight) */}
-        {activeTab === 'outstation' && (
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="flex flex-col space-y-8"
-          >
-            {/* Outstation Key Advantages Banner */}
-            <div className="glass-card p-6 rounded-3xl border border-brand-yellow/20 bg-brand-yellow/5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-              <div className="flex flex-col items-center">
-                <span className="text-xl font-black text-brand-yellow">₹9 / KM</span>
-                <span className="text-[11px] text-brand-silver font-semibold mt-0.5">Starting Outstation Rate</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-xl font-black text-white">One-Way Drop</span>
-                <span className="text-[11px] text-brand-silver font-semibold mt-0.5">Pay only one-way on top routes</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-xl font-black text-white">Fixed Beta</span>
-                <span className="text-[11px] text-brand-silver font-semibold mt-0.5">Transparent driver allowance</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <span className="text-xl font-black text-emerald-400">Zero Surge</span>
-                <span className="text-[11px] text-brand-silver font-semibold mt-0.5">Peak time flat rates</span>
-              </div>
-            </div>
-
-            {/* Outstation City Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {outstationDestinations.map((dest, idx) => (
-                <div
-                  key={idx}
-                  className="glass-card p-6 rounded-3xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 flex flex-col justify-between group"
-                >
                   <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-[10px] uppercase font-extrabold tracking-wider text-brand-yellow px-2.5 py-0.5 rounded-full bg-brand-yellow/10">
-                        {dest.tag}
-                      </span>
-                      <span className="text-xs font-black text-white text-glow-yellow">
-                        {dest.rate}
-                      </span>
-                    </div>
-
-                    <h3 className="text-lg font-bold text-white mb-1 group-hover:text-brand-yellow transition-colors">
-                      {dest.city} Outstation Cab
+                    <h3 className="text-base font-black text-white group-hover:text-brand-yellow transition-colors">
+                      {route.from} → {route.to}
                     </h3>
-                    <span className="text-xs text-brand-silver font-semibold block mb-2">{dest.route}</span>
-
-                    <div className="flex items-center space-x-3 text-[11px] text-brand-gray mb-3 pb-3 border-b border-white/5">
-                      <span className="flex items-center font-bold text-white">
-                        <Navigation className="w-3 h-3 text-brand-yellow mr-1" /> {dest.distance}
-                      </span>
+                    <div className="flex items-center space-x-3 text-xs text-brand-gray mt-1">
+                      <span>{route.distance}</span>
                       <span>•</span>
-                      <span className="flex items-center font-bold text-white">
-                        <Clock className="w-3 h-3 text-brand-yellow mr-1" /> {dest.time}
-                      </span>
-                      <span>•</span>
-                      <span className="text-brand-silver">{dest.highway}</span>
+                      <span>{route.time}</span>
                     </div>
-
-                    <p className="text-xs text-brand-gray/90 leading-relaxed font-medium mb-4">
-                      {dest.desc}
+                    <div className="mt-2 text-sm font-black text-brand-yellow">
+                      {route.rate}
+                    </div>
+                    <p className="text-xs text-brand-silver/90 mt-2 leading-relaxed">
+                      {route.desc}
                     </p>
                   </div>
 
-                  <div className="pt-2 flex items-center justify-between gap-2 border-t border-white/5">
-                    <span className="text-[10px] text-brand-silver font-semibold">{dest.types}</span>
-                    <a
-                      href={`https://wa.me/919944271322?text=Hello! I want to book an outstation cab from Hosur to ${encodeURIComponent(dest.city)}.`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-3.5 py-2 rounded-xl bg-[#25D366] text-white font-extrabold text-xs flex items-center space-x-1 hover:brightness-110 active:scale-95 transition-all shadow-sm"
-                    >
-                      <MessageSquare className="w-3 h-3 fill-white" />
-                      <span>Book {dest.city}</span>
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
-        )}
-
-        {/* Tab 3: Hosur Local Coverage Zones */}
-        {activeTab === 'zones' && (
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-          >
-            {localZones.map((zone, idx) => (
-              <div
-                key={idx}
-                className="glass-card p-6 rounded-3xl border border-white/5 hover:border-brand-yellow/30 transition-all duration-300 flex flex-col justify-between group"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-[10px] uppercase font-extrabold tracking-wider text-brand-yellow px-2 py-0.5 rounded-full bg-brand-yellow/10">
-                      {zone.tag}
-                    </span>
-                    <span className="text-[10px] font-bold text-brand-gray flex items-center">
-                      <Clock className="w-3 h-3 mr-1 text-emerald-400" />
-                      Pickup: {zone.pickupTime}
-                    </span>
-                  </div>
-
-                  <h3 className="text-base font-bold text-white mb-2 group-hover:text-brand-yellow transition-colors">
-                    {zone.title}
-                  </h3>
-
-                  <p className="text-xs text-brand-gray/90 leading-relaxed font-medium mb-4">
-                    {zone.desc}
-                  </p>
-
-                  <div className="flex flex-wrap gap-1.5 mb-6">
-                    {zone.areas.map((area, aIdx) => (
-                      <span
-                        key={aIdx}
-                        className="text-[11px] font-semibold text-brand-silver bg-white/5 border border-white/5 px-2.5 py-1 rounded-lg flex items-center space-x-1"
-                      >
-                        <MapPin className="w-2.5 h-2.5 text-brand-yellow mr-1 flex-shrink-0" />
-                        <span>{area}</span>
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="pt-2 flex items-center gap-2 border-t border-white/5">
                   <a
                     href="tel:+919944271322"
-                    className="flex-1 py-2.5 rounded-xl bg-brand-yellow hover:brightness-110 text-brand-black font-extrabold text-xs text-center transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-md active:scale-95"
+                    className="w-full py-2.5 rounded-xl bg-white/5 hover:bg-brand-yellow hover:text-brand-black text-white text-xs font-bold flex items-center justify-center space-x-1 transition-all"
                   >
-                    <Phone className="w-3.5 h-3.5 fill-brand-black" />
-                    <span>Call Driver</span>
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>Call to Book</span>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Tab 2: Outstation Destinations */}
+        {activeTab === 'outstation' && (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {outstationDestinations.map((dest, idx) => (
+              <div
+                key={idx}
+                className="glass-card glass-card-hover p-6 rounded-3xl border border-white/5 flex flex-col justify-between space-y-4 group transition-all"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-black text-brand-yellow uppercase tracking-wider">
+                      {dest.tag}
+                    </span>
+                    <span className="text-xs text-emerald-400 font-extrabold">{dest.rate}</span>
+                  </div>
+                  <h3 className="text-lg font-black text-white group-hover:text-brand-yellow transition-colors">
+                    Hosur → {dest.city}
+                  </h3>
+                  <div className="flex items-center space-x-2 text-xs text-brand-gray mt-1">
+                    <span>{dest.distance}</span>
+                    <span>•</span>
+                    <span>{dest.time}</span>
+                    <span>•</span>
+                    <span className="text-brand-silver">{dest.highway}</span>
+                  </div>
+                  <p className="text-xs text-brand-silver/90 mt-3 leading-relaxed">
+                    {dest.desc}
+                  </p>
+                </div>
+
+                <div className="pt-3 border-t border-white/10 flex items-center justify-between">
+                  <a href="/outstation-taxi" className="text-xs font-bold text-brand-yellow hover:underline">
+                    View Details →
                   </a>
                   <a
-                    href={`https://wa.me/919944271322?text=Hello! I need a cab in Hosur: ${encodeURIComponent(zone.title)}.`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-3.5 py-2.5 rounded-xl bg-[#25D366] hover:brightness-110 text-white font-extrabold text-xs flex items-center space-x-1 active:scale-95 transition-all shadow-sm"
+                    href="tel:+919944271322"
+                    className="px-3.5 py-1.5 rounded-xl bg-brand-yellow text-brand-black text-xs font-extrabold flex items-center space-x-1"
                   >
-                    <MessageSquare className="w-3.5 h-3.5 fill-white" />
-                    <span>WhatsApp</span>
+                    <Phone className="w-3 h-3 fill-brand-black" />
+                    <span>Book</span>
                   </a>
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         )}
 
-        {/* Local Trust & Google Maps Business Profile Direct Hub */}
-        <div className="mt-12 glass-card p-6 sm:p-8 rounded-3xl border border-blue-500/20 bg-gradient-to-r from-blue-500/10 via-transparent to-brand-yellow/5 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center space-x-4 text-left">
-            <div className="p-4 rounded-2xl bg-blue-500/15 border border-blue-500/30 text-blue-400 flex-shrink-0">
-              <FaGoogle className="w-8 h-8" />
-            </div>
-            <div>
-              <div className="flex items-center space-x-2">
-                <span className="text-xs font-black text-blue-400 uppercase tracking-wider">Google Verified Business</span>
-                <span className="flex items-center text-xs font-extrabold text-amber-400">
-                  <Star className="w-3.5 h-3.5 fill-amber-400 mr-0.5" /> 4.9 Rating (450+ Reviews)
-                </span>
+        {/* Tab 3: Hosur Local Hubs */}
+        {activeTab === 'coverage' && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {coverageAreas.map((area, idx) => (
+              <div
+                key={idx}
+                className="p-5 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-brand-yellow/30 transition-all flex flex-col justify-between space-y-2 text-left"
+              >
+                <div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] font-black text-brand-yellow uppercase tracking-wider">{area.badge}</span>
+                    <span className="text-[10px] text-emerald-400 font-extrabold flex items-center space-x-1">
+                      <Clock className="w-3 h-3 mr-0.5" />
+                      <span>{area.time}</span>
+                    </span>
+                  </div>
+                  <h4 className="text-sm font-black text-white mt-1">{area.zone}</h4>
+                  <p className="text-xs text-brand-silver/80 mt-1 leading-relaxed font-medium">{area.note}</p>
+                </div>
+                <a
+                  href="tel:+919944271322"
+                  className="pt-2 text-xs font-bold text-brand-yellow hover:underline flex items-center space-x-1"
+                >
+                  <Phone className="w-3 h-3" />
+                  <span>Call for Instant Pickup</span>
+                </a>
               </div>
-              <h4 className="text-lg sm:text-xl font-bold text-white tracking-tight">
-                YUVA CABS — Verified Local & Outstation Taxi Service in Hosur
-              </h4>
-              <p className="text-xs text-brand-gray/90 font-medium">
-                Headquarters: Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109. Available 24/7 for Outstation Trips.
-              </p>
-            </div>
+            ))}
           </div>
-
-          <div className="flex items-center space-x-3 w-full md:w-auto">
-            <a
-              href="https://maps.app.goo.gl/gHwiq68N6k8QekBt8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 md:flex-initial inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-all active:scale-95"
-            >
-              <span>View Google Map Profile</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-
-            <a
-              href="tel:+919944271322"
-              className="flex-1 md:flex-initial inline-flex items-center justify-center space-x-2 px-5 py-3 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs shadow-md hover:brightness-110 transition-all active:scale-95"
-            >
-              <Phone className="w-3.5 h-3.5 fill-brand-black" />
-              <span>+91 99442 71322</span>
-            </a>
-          </div>
-        </div>
+        )}
 
       </div>
     </section>

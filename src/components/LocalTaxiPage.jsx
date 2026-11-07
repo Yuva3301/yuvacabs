@@ -15,47 +15,46 @@ const fleets = [
   {
     name: 'Hatchback', sub: 'Tiago / Indica / Figo', seats: '4+1',
     minFare: '₹150', perKm: '₹10/km', ac: '₹180 min | ₹11/km',
-    best: 'Budget local runs & quick city hops',
+    best: 'Budget local runs & quick city hops in Hosur',
     tag: 'Economy', color: 'from-slate-500 to-slate-700'
   },
   {
     name: 'Premium Sedan', sub: 'Swift Dzire / Toyota Etios', seats: '4+1',
     minFare: '₹180', perKm: '₹11/km', ac: '₹220 min | ₹12/km',
-    best: 'Airport, business & comfortable local trips',
+    best: 'Airport transfers, corporate & family city rides',
     tag: 'Most Popular', color: 'from-brand-yellow to-brand-gold', highlight: true
   },
   {
     name: 'Executive SUV', sub: 'Ertiga / XUV / Triber', seats: '6+1',
     minFare: '₹220', perKm: '₹15/km', ac: '₹280 min | ₹16/km',
-    best: 'Family outings & group local trips',
+    best: 'Family outings & medium-group local rides',
     tag: 'Spacious', color: 'from-blue-500 to-blue-700'
   },
   {
     name: 'Innova Crysta', sub: 'Luxury 7-Seater MPV', seats: '7+1',
-    minFare: '₹300', perKm: '₹20/km', ac: '₹350 min | ₹24/km',
-    best: 'VIP local commute & corporate meets',
+    minFare: '₹350', perKm: '₹18/km', ac: '₹400 min | ₹20/km',
+    best: 'VIP city commute, weddings & business meets',
     tag: 'Premium', color: 'from-purple-600 to-purple-800'
   },
 ];
 
 const localZones = [
-  { zone: 'Station & Bus Stand Hub', icon: Navigation, areas: ['Hosur Railway Station', 'Hosur Central Bus Stand', 'New Bus Stand Terminal', 'Station Road', 'Hamman Nagar'], time: '3-5 min' },
+  { zone: 'Railway Station & Hub Areas', icon: Navigation, areas: ['Hosur Railway Station', 'Hosur Central Bus Stand', 'Dinnur Main Road', 'Jeeva Nagar', 'Station Road'], time: '3-5 min' },
   { zone: 'SIPCOT Industrial Belt', icon: Building2, areas: ['SIPCOT Phase 1', 'SIPCOT Phase 2', 'TVS Motor Corridor', 'Titan Township', 'Ashok Leyland', 'TANSIDCO'], time: '5-8 min' },
   { zone: 'Bagalur & Attibele Corridor', icon: MapPin, areas: ['Bagalur Road', 'Bagalur Town', 'Bagalur Junction', 'Attibele Border', 'Denkanikottai Road'], time: '5-10 min' },
   { zone: 'Industrial & Market Hubs', icon: Car, areas: ['Bathalapalli Market', 'Mookandapalli', 'Zuzuvadi Checkpost', 'Moranapalli', 'Berigai'], time: '5-10 min' },
-  { zone: 'City Residential Areas', icon: Users, areas: ['Mathigiri Town', 'Dinnur Circle', 'Jeeva Nagar', 'Sanasandiram', 'Avalapalli', 'Kamaraj Colony'], time: '5-10 min' },
+  { zone: 'Residential Neighborhoods', icon: Users, areas: ['Mathigiri Town', 'Dinnur Circle', 'Jeeva Nagar', 'Sanasandiram', 'Avalapalli', 'Kamaraj Colony'], time: '5-10 min' },
   { zone: 'Highway & Outskirts', icon: Zap, areas: ['Shoolagiri', 'Kelamangalam Road', 'Rayakottai Road', 'Old Bengaluru Road', 'Hosur IT Park'], time: '10-15 min' },
 ];
 
 const faqs = [
-  { q: 'What is the minimum fare for local taxi in Hosur?', a: 'Local taxi fare starts at ₹150 (Non-A/C Hatchback) and ₹180 (Non-A/C Sedan) for the first 4 km. A/C variants start at ₹180 (Hatchback) and ₹220 (Sedan Dzire). Extra km rates from ₹10/km.' },
-  { q: 'How fast is your local cab pickup in Hosur?', a: 'Our nearest GPS-tracked driver arrives in 3 to 10 minutes across all Hosur areas. Railway Station and Bus Stand pickups average 3-5 minutes. SIPCOT and Bagalur areas average 5-10 minutes.' },
-  { q: 'Is call taxi available 24 hours in Hosur?', a: 'Yes! Yuva Call Taxi operates 24 hours a day, 7 days a week including public holidays. Just call +91 99442 71322 for instant dispatch any time — including midnight emergencies.' },
-  { q: 'Do you have call taxi near Hosur bus stand and railway station?', a: 'Yes. We have cabs stationed 24/7 right outside Hosur Railway Station (Platforms 1 & 2) and Hosur New Bus Stand. Average pickup is just 3-5 minutes.' },
-  { q: 'Is call taxi available in SIPCOT Hosur for shift drops?', a: 'Absolutely. We specialize in SIPCOT Phase 1 & Phase 2 corporate shift pickups and drops for employees at TVS Motor, Ashok Leyland, Titan, and surrounding industries.' },
-  { q: 'Do you service Mookandapalli, Zuzuvadi and Bathalapalli?', a: 'Yes! We cover Mookandapalli, Zuzuvadi, Bathalapalli, Moranapalli, and all surrounding areas within 10 minutes. Call +91 99442 71322 for instant booking.' },
-  { q: 'What payment methods are accepted?', a: 'We accept Cash, UPI (Google Pay, PhonePe, Paytm), NEFT/IMPS, and Net Banking. No extra charges for any payment mode.' },
-  { q: 'Can I book a cab for hospital emergencies in Hosur?', a: 'Yes — our 24/7 hotline +91 99442 71322 handles hospital pickups, emergency drops, and urgent rides across all Hosur localities with 0% cancellation policy.' },
+  { q: 'What is the minimum fare for local taxi service in Hosur?', a: 'Local taxi service in Hosur starts at ₹150 for the first 4 kilometers for Non-A/C Hatchback (₹180 for A/C). Sedan cabs (Swift Dzire/Etios) start from ₹180 Non-A/C and ₹220 A/C with clear per-km billing thereafter.' },
+  { q: 'How fast is your local cab pickup in Hosur?', a: 'Our nearest GPS-tracked driver arrives in 3 to 10 minutes across all Hosur areas. Railway Station and Bus Stand pickups average 3 to 5 minutes, while SIPCOT and Bagalur Road average 5 to 10 minutes.' },
+  { q: 'Is call taxi available 24 hours in Hosur?', a: 'Yes! Yuva Call Taxi operates 24 hours a day, 7 days a week including night emergencies and early morning train/bus connections. Just call +91 99442 71322 for instant dispatch.' },
+  { q: 'Do you have call taxi near Hosur bus stand and railway station?', a: 'Yes. We have dedicated cabs stationed right outside Hosur Railway Station (Platforms 1 & 2) and Hosur New Bus Stand for immediate pickup.' },
+  { q: 'Is taxi service available in SIPCOT Hosur for shift drops?', a: 'Yes, we specialize in SIPCOT Phase 1 & Phase 2 corporate shift pickups and drops for TVS Motor, Ashok Leyland, Titan, and industrial units.' },
+  { q: 'Do you cover Bagalur, Dinnur, and Jeeva Nagar?', a: 'Yes! We provide complete 24/7 coverage across Bagalur Road, Dinnur, Jeeva Nagar, Mathigiri, and Bathalapalli with rapid 5-10 min response time.' },
+  { q: 'What payment methods are accepted?', a: 'We accept Cash, UPI (Google Pay, PhonePe, Paytm), and Net Banking with zero extra convenience charges.' },
 ];
 
 export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
@@ -69,7 +68,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
     <div className="bg-brand-black text-brand-white min-h-screen relative">
       <LocalTaxiSEO />
 
-      {/* ── TOP NAV ── */}
+      {/* TOP NAV */}
       <header className="fixed top-0 left-0 w-full z-50 bg-brand-black/95 backdrop-blur-md border-b border-white/5 shadow-md">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
           <button
@@ -83,7 +82,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           <a href="/" className="flex items-center space-x-2.5">
             <img
               src="/logo.jpg"
-              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur"
+              alt="Yuva Call Taxi Hosur Logo - 24/7 Taxi Service in Hosur"
               className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_10px_rgba(255,212,59,0.3)]"
             />
             <span className="text-xl font-black tracking-tight">
@@ -103,7 +102,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
               className="hidden sm:flex items-center space-x-1.5 px-4 py-2 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs"
             >
               <Phone className="w-3.5 h-3.5 fill-brand-black" />
-              <span>99442 71322</span>
+              <span>Call +91 99442 71322</span>
             </a>
           </div>
         </div>
@@ -111,7 +110,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
 
       <main className="pt-14">
 
-        {/* ── HERO ── */}
+        {/* HERO SECTION */}
         <section className="relative py-16 md:py-24 bg-gradient-to-b from-[#070a11] to-brand-black overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-brand-yellow/5 rounded-full blur-[140px]" />
@@ -122,26 +121,26 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-black uppercase tracking-widest mb-6">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>Best Taxi Hosur · Red Taxi Alternative · Cab Service Hosur · Cabs Near Me</span>
+                <span>24/7 Local Taxi Service • Hosur Cabs Near Me</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
-                Best Taxi Hosur · Local Call Taxi<br />
-                <span className="text-brand-yellow text-glow-yellow">Cab Service Hosur · Cabs Near Me</span>
+                Local Taxi Service in Hosur<br />
+                <span className="text-brand-yellow text-glow-yellow">24/7 Local Cab Booking</span>
               </h1>
 
               <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl mx-auto mb-8">
-                Rated Hosur's top Red Taxi alternative &amp; premier Cab Service Hosur. Instant <strong className="text-white">5–10 minute pickup</strong> across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur &amp; all residential areas.
-                Local cab from <strong className="text-brand-yellow">₹150</strong> · 24/7 on-demand · Zero surge pricing.
+                Prompt <strong className="text-white">5–10 minute pickup</strong> across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur Road, Dinnur &amp; Jeeva Nagar.
+                Local cab fares from <strong className="text-brand-yellow">₹150</strong> • 24/7 on-demand • Zero surge pricing.
               </p>
 
               {/* Stats Row */}
               <div className="flex flex-wrap justify-center gap-4 mb-10">
                 {[
                   { val: '5-10 min', lbl: 'Avg Pickup Time' },
-                  { val: '₹150', lbl: 'Starting Fare' },
-                  { val: '36+', lbl: 'Hosur Areas' },
-                  { val: '4.9★', lbl: '450+ Reviews' },
+                  { val: '₹150', lbl: 'Starting Fare (4 km)' },
+                  { val: '36+', lbl: 'Hosur Localities' },
+                  { val: '24/7', lbl: 'On-Call Service' },
                 ].map((s) => (
                   <div key={s.lbl} className="text-center px-5 py-3 rounded-2xl bg-white/5 border border-white/10">
                     <div className="text-xl font-black text-brand-yellow">{s.val}</div>
@@ -157,7 +156,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
                   className="flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-sm shadow-[0_0_24px_rgba(255,212,59,0.3)] hover:brightness-105 active:scale-95 transition-all"
                 >
                   <Phone className="w-5 h-5 fill-brand-black" />
-                  <span>Call Now — 99442 71322</span>
+                  <span>Call Now: +91 99442 71322</span>
                 </button>
                 <button
                   onClick={() => bookWhatsApp()}
@@ -171,14 +170,14 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── TRUST BADGES ── */}
+        {/* TRUST BADGES */}
         <section className="py-8 border-y border-white/5 bg-[#070a11]">
           <div className="max-w-5xl mx-auto px-4">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               {[
                 { icon: ShieldCheck, label: '0% Cancellation', color: 'text-emerald-400' },
                 { icon: Clock, label: '24/7 On-Call', color: 'text-blue-400' },
-                { icon: Star, label: '4.9★ Google Rating', color: 'text-brand-yellow' },
+                { icon: Star, label: 'Top Rated in Hosur', color: 'text-brand-yellow' },
                 { icon: Zap, label: '5-10 Min Pickup', color: 'text-purple-400' },
               ].map(({ icon: Icon, label, color }) => (
                 <div key={label} className="flex flex-col items-center space-y-1.5">
@@ -190,15 +189,15 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── FLEET PRICING ── */}
+        {/* FLEET PRICING */}
         <section className="py-16 md:py-20 border-b border-white/5">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">Transparent Pricing</span>
               <h2 className="text-2xl sm:text-3xl font-black text-white mt-1">
-                Local Taxi Fares in <span className="text-brand-yellow">Hosur</span>
+                Transparent Local Taxi Fares in <span className="text-brand-yellow">Hosur</span>
               </h2>
-              <p className="text-sm text-brand-silver mt-2">4 km minimum fare · No hidden charges · No surge pricing</p>
+              <p className="text-sm text-brand-silver mt-2">4 km minimum fare • No hidden charges • No surge pricing</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -214,7 +213,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
                   {f.highlight && (
                     <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                       <span className="px-3 py-0.5 rounded-full bg-brand-yellow text-brand-black text-[10px] font-black uppercase tracking-widest whitespace-nowrap">
-                        ⭐ Most Popular
+                        ★ Most Popular
                       </span>
                     </div>
                   )}
@@ -227,12 +226,12 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
                     </div>
 
                     <h3 className="text-base font-black text-white">{f.name}</h3>
-                    <p className="text-[11px] text-brand-silver mb-4">{f.sub} · {f.seats}</p>
+                    <p className="text-[11px] text-brand-silver mb-4">{f.sub} • {f.seats}</p>
 
                     <div className="space-y-2 text-xs mb-4">
                       <div className="flex justify-between">
                         <span className="text-brand-gray">Non-A/C:</span>
-                        <span className="font-black text-white">{f.minFare} min · {f.perKm}</span>
+                        <span className="font-black text-white">{f.minFare} min • {f.perKm}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-brand-gray">A/C:</span>
@@ -256,13 +255,13 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── COVERAGE ZONES ── */}
+        {/* COVERAGE ZONES */}
         <section className="py-16 md:py-20 bg-[#070a11] border-b border-white/5">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">Hyper-Local Coverage</span>
               <h2 className="text-2xl sm:text-3xl font-black text-white mt-1">
-                Call Taxi Across <span className="text-brand-yellow">36+ Hosur Localities</span>
+                Local Cab Coverage Across <span className="text-brand-yellow">36+ Hosur Localities</span>
               </h2>
               <p className="text-sm text-brand-silver mt-2">Click any area to book a local cab instantly</p>
             </div>
@@ -319,23 +318,23 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── WHY CHOOSE US ── */}
+        {/* WHY CHOOSE US */}
         <section className="py-16 border-b border-white/5">
           <div className="max-w-5xl mx-auto px-4">
             <div className="text-center mb-10">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">Why Yuva Call Taxi</span>
               <h2 className="text-2xl sm:text-3xl font-black text-white mt-1">
-                Hosur's <span className="text-brand-yellow">Most Trusted</span> Local Cab
+                Why Yuva Call Taxi is Hosur's <span className="text-brand-yellow">Most Trusted</span> Local Cab
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {[
-                { icon: Zap, title: '5-10 Min Pickup Guarantee', desc: 'GPS-tracked cabs positioned across all Hosur zones. No waiting, no excuses.' },
-                { icon: ShieldCheck, title: '0% Cancellation Policy', desc: 'Once confirmed, your cab never cancels. We send a replacement if any issue occurs.' },
-                { icon: Star, title: '4.9★ Google Verified', desc: '450+ genuine customer reviews. Rated #1 most reliable taxi service in Hosur.' },
-                { icon: Clock, title: 'True 24/7 Service', desc: 'Midnight hospital trips, early morning airport runs — we\'re always on call.' },
-                { icon: Car, title: 'Clean AC & Non-AC Fleet', desc: 'Sanitized, well-maintained Hatchbacks, Sedans, SUVs & Innova Crysta ready to go.' },
-                { icon: Search, title: 'Transparent Metered Fares', desc: 'Zero hidden charges. The meter starts at ₹150 — no surge, no surprise bills.' },
+                { icon: Zap, title: '5-10 Min Pickup Guarantee', desc: 'GPS-dispatched cabs positioned across all Hosur zones. Prompt arrival and zero delays.' },
+                { icon: ShieldCheck, title: '0% Cancellation Policy', desc: 'Once confirmed, your ride never gets canceled by the driver.' },
+                { icon: Star, title: 'Top Rated in Hosur', desc: 'Verified local chauffeurs committed to safety, comfort, and professional service.' },
+                { icon: Clock, title: 'True 24/7 Availability', desc: 'Midnight hospital trips, early morning bus & train transfers — we are always on call.' },
+                { icon: Car, title: 'Clean AC & Non-AC Fleet', desc: 'Clean, well-maintained Hatchbacks, Sedans, SUVs & Innova Crysta ready to go.' },
+                { icon: Search, title: 'Transparent Fares', desc: 'Zero hidden fees. Local trips start at ₹150 with no surge pricing.' },
               ].map(({ icon: Icon, title, desc }) => (
                 <div key={title} className="p-5 rounded-2xl bg-brand-charcoal/30 border border-white/10 hover:border-brand-yellow/30 transition-all">
                   <Icon className="w-6 h-6 text-brand-yellow mb-3" />
@@ -347,13 +346,13 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── FAQ ── */}
+        {/* FAQ */}
         <section className="py-16 bg-[#070a11] border-b border-white/5">
           <div className="max-w-3xl mx-auto px-4">
             <div className="text-center mb-10">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">FAQ</span>
               <h2 className="text-2xl sm:text-3xl font-black text-white mt-1">
-                Local Taxi Questions — <span className="text-brand-yellow">Answered</span>
+                Frequently Asked Questions About <span className="text-brand-yellow">Local Taxi in Hosur</span>
               </h2>
             </div>
             <div className="space-y-3">
@@ -378,13 +377,13 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* ── BOTTOM CTA ── */}
+        {/* BOTTOM CTA */}
         <section className="py-16">
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">
               Need a <span className="text-brand-yellow">Local Taxi in Hosur</span> Now?
             </h2>
-            <p className="text-sm text-brand-silver mb-8">Call or WhatsApp for instant 5-10 min pickup across all Hosur areas. 24/7 · Zero surge · 0% cancellation.</p>
+            <p className="text-sm text-brand-silver mb-8">Call or WhatsApp for instant 5-10 min pickup across all Hosur areas. 24/7 • Zero surge • 0% cancellation.</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href={`tel:${PHONE}`}
@@ -394,7 +393,7 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
                 <span>Call +91 99442 71322</span>
               </a>
               <a
-                href={`${WHATSAPP}?text=Hello! I need a local taxi in Hosur. Please confirm availability.`}
+                href={`${WHATSAPP}?text=Hello!%20I%20need%20a%20local%20taxi%20in%20Hosur.%20Please%20confirm%20availability.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center space-x-2 px-8 py-4 rounded-2xl bg-[#25D366] text-white font-black text-sm hover:brightness-110 active:scale-95 transition-all"
@@ -403,14 +402,26 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
                 <span>Book on WhatsApp</span>
               </a>
             </div>
+
+            {/* Internal links to other services */}
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-xs font-bold text-brand-silver">
+              <a href="/airport-taxi" className="text-brand-yellow hover:underline">
+                ✈️ Bangalore Airport Taxi from Hosur (₹2,200) →
+              </a>
+              <span>•</span>
+              <a href="/outstation-taxi" className="text-brand-yellow hover:underline">
+                🛣️ Outstation Taxi in Hosur (₹9/km) →
+              </a>
+            </div>
+
             <a
               href={GOOGLE_MAP}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1 mt-5 text-xs text-blue-400 hover:text-blue-300 transition-colors"
+              className="inline-flex items-center space-x-1 mt-6 text-xs text-blue-400 hover:text-blue-300 transition-colors"
             >
               <MapPin className="w-3.5 h-3.5" />
-              <span>View on Google Maps — Railway Station Road, Hamman Nagar, Hosur</span>
+              <span>View on Google Maps — Dinnur Main Road, Jeeva Nagar, Hosur</span>
             </a>
           </div>
         </section>
@@ -421,10 +432,10 @@ export default function LocalTaxiPage({ theme, setTheme, onNavigateHome }) {
       <a
         href={`tel:${PHONE}`}
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-brand-yellow shadow-[0_0_20px_rgba(255,212,59,0.4)] hover:brightness-105 active:scale-95 transition-all sm:hidden"
+        title="Call Yuva Call Taxi Now"
       >
         <Phone className="w-6 h-6 fill-brand-black text-brand-black" />
       </a>
     </div>
   );
 }
-

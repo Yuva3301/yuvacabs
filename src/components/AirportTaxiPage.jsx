@@ -15,7 +15,7 @@ import tempoTravellerImg from '../assets/tempo_traveller.png';
 
 export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
   // Booking Calculator State
-  const [tripType, setTripType] = useState('hosur_to_blr'); // 'hosur_to_blr' or 'blr_to_hosur' or 'round_trip'
+  const [tripType, setTripType] = useState('hosur_to_blr');
   const [pickupLoc, setPickupLoc] = useState('Hosur City (Bus Stand / Railway Station)');
   const [terminal, setTerminal] = useState('Terminal 1 (T1)');
   const [selectedCar, setSelectedCar] = useState('sedan');
@@ -56,7 +56,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
       rateHosur: 2200,
       passengers: '4 Passengers',
       luggage: '2 Large Bags + 2 Hand Bags',
-      features: ['Climate Control AC', 'Spacious Trunk Boot', 'Smooth Highway Ride', 'Phone Charging Port'],
+      features: ['Climate Control AC', 'Spacious Boot Space', 'Smooth Highway Ride', 'Phone Charging Port'],
       bestFor: 'Solo travelers, couples, business executives'
     },
     suv: {
@@ -154,7 +154,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
       base += 1200;
     }
     if (tripType === 'round_trip') {
-      return base * 1.8; // Discounted round trip package
+      return base * 1.8;
     }
     return base;
   };
@@ -166,16 +166,14 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
         ? 'BLR Airport to Hosur Pickup' 
         : 'Hosur ⇄ BLR Airport Round Trip';
     
-    const message = `Hello Yuva Cabs! ✈️ I would like to book a Bangalore Airport Taxi:%0A%0A` +
+    const message = `Hello Yuva Call Taxi! I would like to book a Bangalore Airport Taxi:%0A%0A` +
       `• *Trip:* ${tripName}%0A` +
       `• *Pickup Location:* ${pickupLoc}%0A` +
-      `• *Airport Terminal:* ${terminal}%0A` +
-      `• *Vehicle:* ${airportFleet[selectedCar].name} (${selectedCar.toUpperCase()})%0A` +
-      `• *Estimated Fare:* ₹${getCalculatedPrice()}%0A` +
-      `• *Date:* ${pickupDate || 'Today'}%0A` +
-      `• *Time:* ${pickupTime || 'Immediate / As per schedule'}%0A` +
+      `• *Terminal:* ${terminal}%0A` +
+      `• *Vehicle:* ${airportFleet[selectedCar].name}%0A` +
+      `• *Estimated Fare:* ₹${getCalculatedPrice().toLocaleString()}%0A` +
       (flightNumber ? `• *Flight No:* ${flightNumber}%0A` : '') +
-      `%0APlease confirm cab availability and driver details. Thank you!`;
+      `Please confirm driver assignment. Thank you!`;
 
     window.open(`https://wa.me/919944271322?text=${message}`, '_blank');
   };
@@ -183,9 +181,9 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const errors = {};
-    if (!formData.name.trim()) errors.name = 'Please enter your name';
-    if (!formData.phone.trim() || formData.phone.length < 10) errors.phone = 'Please enter a valid 10-digit phone number';
-    if (!formData.date) errors.date = 'Date is required';
+    if (!formData.name.trim()) errors.name = 'Please provide your full name';
+    if (!formData.phone.trim() || formData.phone.length < 10) errors.phone = 'Valid 10-digit phone number is required';
+    if (!formData.date) errors.date = 'Date of pickup is required';
 
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
@@ -194,7 +192,6 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
 
     setFormErrors({});
 
-    // Save airport booking to localStorage matching the existing AdminDashboard schema
     try {
       const existingBookings = JSON.parse(localStorage.getItem('yuva_bookings') || '[]');
       const newBooking = {
@@ -218,9 +215,8 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
 
     setFormSubmitted(true);
 
-    // Also trigger WhatsApp confirmation
     setTimeout(() => {
-      const msg = `Hi Yuva Cabs! I submitted an Airport Taxi Booking via your website:%0A%0A` +
+      const msg = `Hi Yuva Call Taxi! I submitted an Airport Taxi Booking via your website:%0A%0A` +
         `• *Name:* ${formData.name}%0A` +
         `• *Phone:* ${formData.phone}%0A` +
         `• *Pickup:* ${formData.pickup}%0A` +
@@ -229,7 +225,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
         `• *Flight No:* ${formData.flightNo || 'N/A'}%0A` +
         `• *Vehicle:* ${formData.vehicle.toUpperCase()}%0A` +
         (formData.specialNotes ? `• *Notes:* ${formData.specialNotes}%0A` : '') +
-        `%0APlease confirm my booking.`;
+        `%0APlease confirm my airport ride.`;
       window.open(`https://wa.me/919944271322?text=${msg}`, '_blank');
     }, 600);
   };
@@ -237,40 +233,39 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
   const airportFaqs = [
     {
       q: 'How much is the taxi fare from Hosur to Bangalore Airport (BLR)?',
-      a: 'The taxi fare from Hosur to Kempegowda International Airport (BLR) starts from ₹2,100 - ₹2,200 for an AC Sedan (Swift Dzire / Toyota Etios) and ₹2,800 for a 6-seater SUV (Maruti Ertiga). We provide fixed, transparent fares with zero surge pricing, even during peak rush hours or rain.'
+      a: 'The taxi fare from Hosur to Kempegowda International Airport (BLR) starts from ₹2,200 for Non-A/C and ₹2,300 for an AC Sedan (Swift Dzire / Toyota Etios) and ₹2,800 for a 6-seater SUV (Maruti Ertiga). We provide fixed, transparent fares with zero surge pricing, even during peak rush hours or rain.'
     },
     {
       q: 'What is the distance and travel time from Hosur to Kempegowda Airport?',
-      a: 'The distance between Hosur and Kempegowda International Airport (BLR) is approximately 75 to 82 km. Via the Satellite Town Ring Road (STRR) and NH44, travel time is generally 75 to 90 minutes. During morning and evening peak traffic, we recommend allowing 2 hours.'
+      a: 'The distance between Hosur and Kempegowda International Airport (BLR) is approximately 78 to 82 km. Via the Satellite Town Ring Road (STRR) and NH44, travel time is generally 75 to 90 minutes. During peak traffic hours, we recommend allowing 2 hours.'
     },
     {
-      q: 'Do you provide early morning (3 AM - 5 AM) and midnight airport pickups?',
+      q: 'Do you provide early morning (2 AM - 5 AM) and midnight airport pickups?',
       a: 'Yes, absolutely. We operate 24 hours a day, 7 days a week, 365 days a year. Early morning 2 AM, 3 AM, and 4 AM flight drops are our core specialty with a 100% on-time guarantee and 0% cancellation rate.'
     },
     {
       q: 'Will the driver wait if my incoming flight to Bangalore is delayed?',
-      a: 'Yes! When you share your flight number (e.g., 6E-204, AI-506), our dispatch team tracks the flight live on aviation radar. Even if your flight is delayed by 1 or 2 hours, your chauffeur will be waiting at Terminal 1 or Terminal 2 arrival pickup zone without extra waiting fees.'
+      a: 'Yes! When you share your flight number (e.g., 6E-204, AI-506), our dispatch team tracks the flight live on aviation radar. Even if your flight is delayed, your assigned chauffeur will be waiting at Terminal 1 or Terminal 2 arrival pickup zone without extra waiting penalties.'
     },
     {
       q: 'Can I get a pickup from both Terminal 1 (T1) and Terminal 2 (T2)?',
-      a: 'Yes, our drivers service both Kempegowda Airport Terminal 1 (Domestic & select International) and the new Garden Terminal 2 (International & select Domestic). Chauffeur details and pickup pillar number will be messaged to you upon landing.'
+      a: 'Yes, our drivers service both Kempegowda Airport Terminal 1 (Domestic) and the new Garden Terminal 2 (International & domestic flights). Chauffeur details and pickup pillar number are messaged to you upon landing.'
     },
     {
       q: 'Are highway tolls and parking charges included in the fare?',
-      a: 'Our base fare covers the complete cab ride and fuel. State border permits/tolls (Fastag) and airport parking tickets can be paid directly or bundled into a single all-inclusive corporate invoice upon request.'
+      a: 'Our base fare covers the complete cab ride and fuel. State border toll (Fastag) and airport parking tickets can be paid directly or bundled into a single all-inclusive corporate invoice upon request.'
     },
     {
       q: 'Do you provide GST invoices for corporate travel reimbursement?',
-      a: 'Yes, we provide official digital GST invoices and trip receipts that you can submit to your company for seamless reimbursement.'
+      a: 'Yes, we provide official digital GST invoices and trip receipts for corporate expense reimbursement.'
     }
   ];
 
   return (
     <div className="bg-brand-black text-brand-white min-h-screen relative selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
-      {/* Helmet SEO Tags for Google Search Ranking */}
       <AirportSEO />
 
-      {/* Top Navbar specifically tailored for Airport Landing Page */}
+      {/* Top Navbar */}
       <header className="sticky top-0 left-0 w-full z-50 bg-brand-black/95 backdrop-blur-md border-b border-brand-yellow/20 shadow-lg">
         {/* Urgent flight helpline ticker */}
         <div className="w-full bg-[#070a11] border-b border-white/5 py-1 px-4 text-xs">
@@ -283,11 +278,11 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
               </a>
             </div>
             <div className="hidden md:flex items-center space-x-4 text-brand-silver">
-              <span>✈️ Terminal 1 & 2 Pickups</span>
+              <span>✈️ Terminal 1 &amp; 2 Pickups</span>
               <span>•</span>
-              <span>⚡ Zero Surge Pricing</span>
+              <span>🛡️ Zero Surge Pricing</span>
               <span>•</span>
-              <span>🛡️ 100% On-Time Guarantee</span>
+              <span>⏱️ 100% On-Time Guarantee</span>
             </div>
           </div>
         </div>
@@ -298,109 +293,84 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
             {onNavigateHome ? (
               <button
                 onClick={onNavigateHome}
-                className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white transition-all flex items-center space-x-1 text-xs"
-                title="Back to Home Page"
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white transition-all text-xs font-bold border border-white/10"
               >
-                <ArrowLeft className="w-4 h-4 text-brand-yellow" />
-                <span className="hidden sm:inline font-bold">Main Site</span>
+                <ArrowLeft className="w-4 h-4" />
+                <span>Home</span>
               </button>
             ) : (
               <a
                 href="/"
-                className="p-2 rounded-lg bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white transition-all flex items-center space-x-1 text-xs"
-                title="Back to Home Page"
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-brand-silver hover:text-white transition-all text-xs font-bold border border-white/10"
               >
-                <ArrowLeft className="w-4 h-4 text-brand-yellow" />
-                <span className="hidden sm:inline font-bold">Main Site</span>
+                <ArrowLeft className="w-4 h-4" />
+                <span>Home</span>
               </a>
             )}
 
-            {/* Brand Logo */}
-            <a href="#airport-top" className="flex items-center space-x-2.5">
+            <div className="flex items-center space-x-2">
               <img
                 src="/logo.jpg"
-                alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Airport Taxi"
-                className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.3)]"
+                alt="Yuva Call Taxi Hosur Logo - Airport Taxi Hosur"
+                className="w-8 h-8 rounded-full object-cover border border-brand-yellow shadow-md"
               />
-              <div className="flex flex-col text-left">
-                <span className="text-sm sm:text-base font-black tracking-tight logo-text-yuva leading-none">
-                  YUVA CALL TAXI <span className="text-brand-yellow text-glow-yellow">AIRPORT</span>
-                </span>
-                <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-0.5">
-                  Best Taxi Hosur · BLR Airport Flat ₹2,200
-                </span>
-              </div>
-            </a>
+              <span className="text-lg font-black tracking-tight text-white">
+                YUVA<span className="text-brand-yellow">CABS</span> <span className="text-xs uppercase text-brand-silver font-semibold hidden sm:inline">Airport</span>
+              </span>
+            </div>
           </div>
 
-          {/* Header Nav Links */}
-          <nav className="hidden lg:flex items-center space-x-6 text-xs font-bold text-brand-silver">
-            <a href="#fare-calculator" className="hover:text-brand-yellow transition-colors">Fare Estimator</a>
-            <a href="#route-pricing" className="hover:text-brand-yellow transition-colors">Route Rates</a>
-            <a href="#fleet" className="hover:text-brand-yellow transition-colors">Our Fleet</a>
-            <a href="#why-choose-us" className="hover:text-brand-yellow transition-colors">Why Yuva Cabs</a>
-            <a href="#airport-faqs" className="hover:text-brand-yellow transition-colors">FAQs</a>
-            <a href="#airport-booking" className="hover:text-brand-yellow transition-colors">Book Online</a>
-          </nav>
-
-          {/* Action Call Button */}
           <div className="flex items-center space-x-3">
-            {setTheme && (
-              <button
-                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-                className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-brand-yellow border border-white/5"
-                title="Toggle Theme"
-              >
-                {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-              </button>
-            )}
-
-            <motion.a
-              href="tel:+919944271322"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-xs sm:text-sm shadow-[0_0_15px_rgba(255,212,59,0.3)]"
+            <button
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
+              className="p-2 text-brand-silver/60 hover:text-brand-yellow hover:bg-brand-charcoal/50 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-white/5"
             >
-              <Phone className="w-4 h-4 fill-brand-black" />
-              <span>Call 99442 71322</span>
-            </motion.a>
+              {theme === 'dark' ? <Sun className="w-4 h-4 text-brand-yellow" /> : <Moon className="w-4 h-4 text-brand-yellow" />}
+            </button>
+
+            <a
+              href="tel:+919944271322"
+              className="flex items-center space-x-2 px-4 py-2 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-xs shadow-md hover:brightness-110 active:scale-95 transition-all"
+            >
+              <Phone className="w-3.5 h-3.5 fill-brand-black" />
+              <span>Call: +91 99442 71322</span>
+            </a>
           </div>
         </div>
       </header>
 
-      {/* Main Airport Landing Page Content */}
-      <main id="airport-top">
-        {/* HERO SECTION */}
-        <section className="relative pt-10 pb-16 md:pt-16 md:pb-24 overflow-hidden border-b border-white/5">
-          {/* Ambient Lighting Orbs */}
-          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-yellow/10 rounded-full blur-[140px] pointer-events-none" />
-          <div className="absolute top-1/3 -right-20 w-80 h-80 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none" />
+      {/* MAIN HERO & CALCULATOR */}
+      <main>
+        <section className="relative pt-8 pb-16 md:pt-12 md:pb-24 border-b border-white/5 overflow-hidden bg-gradient-to-b from-[#0e121d] via-brand-black to-[#090b10]">
+          {/* Ambient Glow Orbs */}
+          <div className="absolute top-1/4 -left-20 w-80 h-80 bg-brand-yellow/10 rounded-full blur-[120px] pointer-events-none" />
+          <div className="absolute top-1/3 -right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-[140px] pointer-events-none" />
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-            {/* Breadcrumb for Google Search Robots & Travelers */}
+            {/* Breadcrumb Trail */}
             <div className="flex items-center space-x-2 text-xs text-brand-silver/70 mb-4 font-semibold">
               <a href="/" className="hover:text-brand-yellow">Home</a>
               <span>/</span>
-              <span className="text-brand-yellow">Airport Taxi Hosur to Bangalore Airport (BLR)</span>
+              <span className="text-brand-yellow">Airport Taxi in Hosur (Hosur to Bangalore Airport BLR)</span>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Left Column: Value Proposition & Headlines */}
               <div className="lg:col-span-7 text-left space-y-6">
-                {/* Verified Airport Pill */}
                 <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold tracking-wide">
                   <Plane className="w-4 h-4 text-brand-yellow animate-pulse" />
                   <span>Hosur's #1 Rated Kempegowda Airport Cab Partner</span>
                 </div>
 
-                {/* Primary Targeted H1 for Google Search Results */}
+                {/* Primary Targeted Single H1 */}
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-white leading-[1.15]">
-                  Bangalore Airport Taxi <br className="hidden sm:inline" />
-                  from <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow">Hosur</span>
+                  Airport Taxi in Hosur<br className="hidden sm:inline" />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow via-amber-300 to-brand-gold text-glow-yellow">Hosur to Bangalore Airport Taxi</span>
                 </h1>
 
                 <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl">
-                  Catch every flight on time with zero stress. 24/7 dedicated airport drop & pickup between <strong className="text-white">Hosur & Kempegowda International Airport (BLR)</strong>. Flat upfront pricing starting at ₹2,100, live flight delay tracking, and 0% driver cancellation.
+                  Catch every flight on time with zero stress. 24/7 dedicated airport pickup and drop between <strong className="text-white">Hosur &amp; Kempegowda International Airport (BLR)</strong>. Flat upfront pricing starting at ₹2,200, live flight delay tracking, and 0% driver cancellation.
                 </p>
 
                 {/* Trust Badges Bar */}
@@ -424,54 +394,52 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                   <div className="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col space-y-1">
                     <div className="flex items-center space-x-1.5 text-brand-yellow">
                       <Plane className="w-4 h-4" />
-                      <span className="text-xs font-black">T1 & T2 Gates</span>
+                      <span className="text-xs font-black">T1 &amp; T2 Gates</span>
                     </div>
-                    <span className="text-[10px] text-brand-silver font-medium">Meet & greet arrival pickup</span>
+                    <span className="text-[10px] text-brand-silver font-medium">Meet &amp; greet arrival pickup</span>
                   </div>
 
                   <div className="p-3 rounded-xl bg-white/5 border border-white/5 flex flex-col space-y-1">
                     <div className="flex items-center space-x-1.5 text-brand-yellow">
                       <Sparkles className="w-4 h-4" />
-                      <span className="text-xs font-black">₹0 Surge Fees</span>
+                      <span className="text-xs font-black">Zero Surge Fees</span>
                     </div>
-                    <span className="text-[10px] text-brand-silver font-medium">Fixed rates day & midnight</span>
+                    <span className="text-[10px] text-brand-silver font-medium">Fixed rates day &amp; midnight</span>
                   </div>
                 </div>
 
-                {/* Direct Action Buttons */}
-                <div className="flex flex-wrap items-center gap-3 pt-2">
+                {/* Quick Call Action Bar */}
+                <div className="pt-2 flex flex-wrap items-center gap-3">
                   <a
                     href="tel:+919944271322"
-                    className="flex-1 sm:flex-none flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-sm shadow-[0_0_20px_rgba(255,212,59,0.3)] hover:scale-105 active:scale-95 transition-all"
+                    className="flex items-center space-x-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-sm tracking-tight shadow-[0_0_25px_rgba(255,212,59,0.35)] hover:scale-105 active:scale-95 transition-all"
                   >
                     <Phone className="w-4 h-4 fill-brand-black" />
-                    <span>Call Airport Desk: 99442 71322</span>
+                    <span>Call Airport Desk: +91 99442 71322</span>
                   </a>
 
                   <a
-                    href="#fare-calculator"
-                    className="flex-1 sm:flex-none flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/10 transition-all"
+                    href="#airport-booking"
+                    className="flex items-center space-x-2 px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs tracking-tight border border-white/10 transition-all"
                   >
-                    <Navigation className="w-4 h-4 text-brand-yellow" />
-                    <span>Estimate Fare & Book</span>
+                    <Calendar className="w-4 h-4 text-brand-yellow" />
+                    <span>Book Online</span>
                   </a>
                 </div>
               </div>
 
-              {/* Right Column: Live Airport Fare Calculator Widget */}
-              <div id="fare-calculator" className="lg:col-span-5 text-left">
-                <div className="p-6 rounded-2xl bg-brand-charcoal/80 backdrop-blur-xl border border-brand-yellow/30 shadow-[0_10px_40px_rgba(0,0,0,0.5)] relative overflow-hidden">
-                  <div className="absolute top-0 right-0 px-3 py-1 bg-gradient-to-l from-brand-yellow to-brand-gold text-brand-black font-black text-[10px] uppercase tracking-wider rounded-bl-xl shadow-md">
-                    Instant Fare Estimator
-                  </div>
+              {/* Right Column: Interactive Airport Fare Estimator */}
+              <div className="lg:col-span-5">
+                <div className="p-6 rounded-3xl bg-brand-charcoal/80 border border-brand-yellow/30 shadow-[0_15px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl text-left relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-28 h-28 bg-brand-yellow/10 rounded-full blur-2xl pointer-events-none" />
 
                   <h3 className="text-lg font-black text-white flex items-center space-x-2 mb-4">
                     <Plane className="w-5 h-5 text-brand-yellow" />
-                    <span>Airport Cab Fare Calculator</span>
+                    <span>Instant Airport Fare Estimator</span>
                   </h3>
 
-                  {/* Trip Type Selector */}
-                  <div className="grid grid-cols-2 gap-2 mb-4 p-1 bg-black/40 rounded-xl border border-white/5">
+                  {/* Direction Switch */}
+                  <div className="grid grid-cols-2 gap-1.5 p-1 rounded-xl bg-black/40 border border-white/5 mb-4">
                     <button
                       type="button"
                       onClick={() => setTripType('hosur_to_blr')}
@@ -508,7 +476,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                         className="w-full bg-black/50 border border-white/10 rounded-xl px-3 py-2.5 text-xs text-white focus:outline-none focus:border-brand-yellow"
                       >
                         <option value="Hosur City (Bus Stand / Railway Station)">Hosur City (Bus Stand / Railway Station)</option>
-                        <option value="SIPCOT Phase 1 & 2 Hosur">SIPCOT Phase 1 & 2 Hosur</option>
+                        <option value="SIPCOT Phase 1 & 2 Hosur">SIPCOT Phase 1 &amp; 2 Hosur</option>
                         <option value="Bagalur Road / Bagalur Junction">Bagalur Road / Bagalur Junction</option>
                         <option value="Attibele Border / Circle">Attibele Border / Circle</option>
                         <option value="Mathigiri / Kelamangalam Road">Mathigiri / Kelamangalam Road</option>
@@ -618,7 +586,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-3xl mx-auto mb-10 space-y-2">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">
-                Transparent & Fixed Rates
+                Transparent &amp; Fixed Rates
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white">
                 Hosur to Kempegowda Airport (BLR) Route Rates
@@ -721,7 +689,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                     <div className="w-full h-36 flex items-center justify-center mb-4 relative overflow-hidden rounded-xl bg-black/30 p-2">
                       <img
                         src={car.image}
-                        alt={car.name}
+                        alt={`${car.name} - Bangalore airport taxi cab from Hosur - Yuva Call Taxi`}
                         className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                       />
@@ -768,13 +736,13 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12 space-y-2">
               <span className="text-xs font-black uppercase tracking-widest text-brand-yellow">
-                The Yuva Cabs Advantage
+                The Yuva Advantage
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white">
-                Why Hosur Flyers Trust Us Over Ride-Hailing Apps
+                Why Hosur Flyers Trust Yuva Call Taxi
               </h2>
               <p className="text-xs sm:text-sm text-brand-silver font-medium">
-                Relying on aggregator apps at 3 AM can lead to sudden cancellations and missed flights. Here is why Yuva Cabs is Hosur's dependable choice.
+                Relying on aggregator apps at 3 AM can lead to cancellations and missed flights. Here is why Yuva Call Taxi is Hosur's dependable choice.
               </p>
             </div>
 
@@ -805,7 +773,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 </div>
                 <h3 className="text-base font-black text-white">Clean Cabs &amp; Luggage Care</h3>
                 <p className="text-xs text-brand-silver leading-relaxed font-medium">
-                  Sanitized, fragrance-free AC cabs with polite drivers who happily assist with loading and unloading heavy international bags.
+                  Sanitized, comfortable AC cabs with polite drivers who assist with loading and unloading heavy bags.
                 </p>
               </div>
             </div>
@@ -820,7 +788,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 Seamless Experience
               </span>
               <h2 className="text-2xl font-black text-white">
-                How to Book Your Airport Cab in 3 Steps
+                How to Book Your Airport Cab in 3 Simple Steps
               </h2>
             </div>
 
@@ -839,7 +807,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 <span className="text-xs font-black text-brand-yellow uppercase tracking-wider block mb-1">Step 2</span>
                 <h3 className="text-sm font-bold text-white mb-2">Driver Confirmed in Advance</h3>
                 <p className="text-xs text-brand-silver font-medium">
-                  Receive chauffeur name, phone number, and car registration on your WhatsApp. No last-minute panic.
+                  Receive chauffeur name, phone number, and car registration on your WhatsApp. No last-minute stress.
                 </p>
               </div>
 
@@ -848,7 +816,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 <span className="text-xs font-black text-brand-yellow uppercase tracking-wider block mb-1">Step 3</span>
                 <h3 className="text-sm font-bold text-white mb-2">Smooth &amp; On-Time Flight Ride</h3>
                 <p className="text-xs text-brand-silver font-medium">
-                  Driver arrives 10 minutes early at your doorstep. Relax and arrive at Kempegowda T1/T2 refreshed.
+                  Driver arrives 10 minutes early at your doorstep. Arrive at Kempegowda T1/T2 refreshed and on time.
                 </p>
               </div>
             </div>
@@ -1031,7 +999,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                     </label>
                     <textarea
                       rows={2}
-                      placeholder="e.g. 3 large international trolley bags, child seat, require GST bill"
+                      placeholder="e.g. 3 large international bags, require GST bill"
                       value={formData.specialNotes}
                       onChange={(e) => setFormData({ ...formData, specialNotes: e.target.value })}
                       className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-brand-yellow"
@@ -1050,7 +1018,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* AIRPORT FAQS WITH ACCORDION & GOOGLE SNIPPETS */}
+        {/* AIRPORT FAQS */}
         <section id="airport-faqs" className="py-16 border-b border-white/5 bg-[#0b0e17]">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
@@ -1058,7 +1026,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 Got Questions?
               </span>
               <h2 className="text-2xl sm:text-3xl font-black text-white">
-                Frequently Asked Airport Cab Questions
+                Frequently Asked Bangalore Airport Taxi Questions
               </h2>
               <p className="text-xs sm:text-sm text-brand-silver font-medium">
                 Everything you need to know about booking, flight delays, fares, and terminal meet &amp; greet.
@@ -1109,7 +1077,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
         </section>
 
-        {/* SEO RICH CONTENT & LOCAL KEYWORD MATRIX */}
+        {/* SEO CONTENT & CROSS LINKS */}
         <section className="py-12 border-b border-white/5 bg-[#080a10] text-left">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-6 text-xs text-brand-silver/80 leading-relaxed">
             <h3 className="text-sm font-black text-white uppercase tracking-wider">
@@ -1119,18 +1087,17 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
               Looking for a dependable <strong className="text-white">Bangalore airport taxi from Hosur</strong>? Yuva Call Taxi provides 24 hours professional airport transfer services connecting all parts of Hosur — including Hosur Railway Station, New Bus Stand, SIPCOT Phase 1 &amp; Phase 2, Bagalur Road, Mathigiri, Attibele, Moranapalli, and Krishnagiri — directly to Kempegowda International Airport Bengaluru (BLR).
             </p>
             <p>
-              Whether you are catching an early morning domestic flight from Terminal 1 (T1) or an international flight from the world-class Garden Terminal 2 (T2), our fleet of air-conditioned Sedans (Swift Dzire, Toyota Etios), 6-seater SUVs (Maruti Ertiga), and luxury executive MPVs (Toyota Innova Crysta) ensure punctual arrivals and pleasant highway journeys via NH44 and the Satellite Town Ring Road (STRR).
+              Whether you are catching an early morning domestic flight from Terminal 1 (T1) or an international flight from Terminal 2 (T2), our fleet of air-conditioned Sedans (Swift Dzire, Toyota Etios), 6-seater SUVs (Maruti Ertiga), and luxury MPVs (Toyota Innova Crysta) ensure punctual arrivals and pleasant highway journeys via NH44 and the Satellite Town Ring Road (STRR).
             </p>
-            <div className="flex flex-wrap gap-2 pt-2 text-[10px] text-brand-gray font-medium">
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Hosur to BLR Airport Taxi</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Bangalore Airport Taxi from Hosur</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Kempegowda Airport Cab Hosur</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Airport Drop Taxi Hosur</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">SIPCOT Hosur Airport Taxi</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Bagalur to Airport Cab</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Attibele to Bangalore Airport</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Innova Crysta Airport Hosur</span>
-              <span className="px-2.5 py-1 rounded bg-white/5 border border-white/5">Yuva Call Taxi 9944271322</span>
+
+            <div className="pt-2 flex flex-wrap gap-4 text-xs font-bold text-brand-silver">
+              <a href="/local-taxi" className="text-brand-yellow hover:underline">
+                🚕 Local Taxi Service in Hosur (from ₹150) →
+              </a>
+              <span>•</span>
+              <a href="/outstation-taxi" className="text-brand-yellow hover:underline">
+                🛣️ Outstation Taxi in Hosur (from ₹9/km) →
+              </a>
             </div>
           </div>
         </section>
@@ -1149,11 +1116,11 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
           </div>
 
           <div className="flex flex-wrap items-center gap-4 text-xs font-bold">
-            <a href="/" className="hover:text-brand-yellow">Main Website</a>
+            <a href="/" className="hover:text-brand-yellow">Home</a>
             <span>•</span>
-            <a href="/#services" className="hover:text-brand-yellow">Local Cabs</a>
+            <a href="/local-taxi" className="hover:text-brand-yellow">Local Taxi</a>
             <span>•</span>
-            <a href="/#pricing" className="hover:text-brand-yellow">Outstation Fares</a>
+            <a href="/outstation-taxi" className="hover:text-brand-yellow">Outstation Taxi</a>
             <span>•</span>
             <a href="tel:+919944271322" className="text-brand-yellow hover:underline">
               +91 99442 71322

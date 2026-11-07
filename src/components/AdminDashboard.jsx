@@ -28,7 +28,7 @@ export default function AdminDashboard({ onClose }) {
             id: 'BK-789421',
             name: 'Ramesh Kumar',
             phone: '9876543210',
-            pickup: 'Hamman Nagar, Hosur',
+            pickup: 'Jeeva Nagar, Hosur',
             drop: 'Bengaluru Airport Terminal 2',
             date: new Date(Date.now() + 86400000).toISOString().split('T')[0], // Tomorrow
             time: '04:30',

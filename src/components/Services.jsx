@@ -1,4 +1,4 @@
-﻿import { Plane, Navigation, Milestone, Briefcase, ChevronRight, CornerUpRight, RefreshCcw } from 'lucide-react';
+import { Plane, Navigation, Milestone, Briefcase, ChevronRight, CornerUpRight, RefreshCcw } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Services() {
@@ -8,42 +8,48 @@ export default function Services() {
       title: 'Airport Taxi Hosur',
       description: 'Dedicated pickup and drop service between Hosur and Kempegowda International Airport Bengaluru (BLR) with fixed ₹2,200 rates and flight tracking.',
       accent: 'border-brand-yellow/30',
-      badge: 'Airport Taxi Hosur'
+      badge: 'Airport Taxi Hosur',
+      href: '/airport-taxi'
     },
     {
       icon: Navigation,
-      title: 'Call Taxi Near Me (Local Cabs)',
-      description: 'Fast 5–10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur Road & all local residential areas starting from ₹150.',
+      title: 'Call Taxi in Hosur (Local Cabs)',
+      description: 'Fast 5-10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur Road, Dinnur & Jeeva Nagar starting from ₹150.',
       accent: 'border-brand-yellow/30',
-      badge: 'Call Taxi Near Me'
+      badge: 'Local Taxi Service',
+      href: '/local-taxi'
     },
     {
       icon: Milestone,
-      title: 'Outstation Cab Service',
+      title: 'Outstation Taxi in Hosur',
       description: 'Travel beyond Hosur with top-rated outstation cabs starting at ₹9/km. Clean sedans and Innova Crysta for Bangalore, Chennai, Salem, and Coimbatore.',
       accent: 'border-brand-purple/30',
-      badge: 'Cab Service'
+      badge: 'Outstation Cabs',
+      href: '/outstation-taxi'
     },
     {
       icon: Briefcase,
       title: 'Corporate Travel Solutions',
-      description: 'Reliable monthly employee transport, executive hospitality cabs, and event fleets with corporate invoice billing models.',
+      description: 'Reliable employee transit, executive airport hospitality cabs, and industrial plant commute packages for SIPCOT corporate clients.',
       accent: 'border-brand-emerald/30',
-      badge: 'Business Class'
+      badge: 'Business Class',
+      href: '#contact'
     },
     {
       icon: CornerUpRight,
-      title: 'One-Way Cab Bookings',
-      description: 'Pay only for the distance you travel! Book one-way trips from Hosur to major cities like Bangalore, Salem, and Chennai.',
+      title: 'One-Way Drop Taxi',
+      description: 'Pay only for the distance you travel! Book one-way drop taxis from Hosur to major cities like Chennai, Bangalore, Salem, and Tirupati.',
       accent: 'border-brand-yellow/30',
-      badge: 'Half Fare Saved'
+      badge: 'Zero Return Fare',
+      href: '/outstation-taxi'
     },
     {
       icon: RefreshCcw,
       title: 'Round Trip Taxi Packages',
-      description: 'Book a driver and car for multiple days. Enjoy maximum flexibility, multiple stops, and low waiting costs for returns.',
+      description: 'Book chauffeur-driven cabs for multi-day family vacations, temple tours, and business visits with transparent billing and low waiting charges.',
       accent: 'border-brand-yellow/30',
-      badge: 'Multi-Day Touring'
+      badge: 'Multi-Day Touring',
+      href: '/outstation-taxi'
     }
   ];
 
@@ -76,12 +82,12 @@ export default function Services() {
         
         {/* Section Title */}
         <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col space-y-4">
-          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Premium Offerings</span>
+          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">24/7 Cab Booking</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-            Taxi & Cab <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Services in Hosur</span>
+            Taxi &amp; Cab <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Services in Hosur</span>
           </h2>
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
-            From short local commutes to long-distance outstation adventures, choose the transit package that fits your lifestyle perfectly. YUVA CABS (Yuva Call Taxi) is your premier choice for taxi in Hosur and reliable cab service.
+            From short city commutes to long-distance outstation travel and BLR airport transfers, choose the cab service that fits your schedule. Yuva Call Taxi is your trusted 24/7 taxi partner in Hosur.
           </p>
         </div>
 
@@ -126,27 +132,16 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* Footer anchor */}
+                {/* Footer link */}
                 <div className="pt-6 mt-6 border-t border-white/5 flex items-center justify-between text-brand-yellow font-bold text-xs">
                   <a
-                    href="#contact"
-                    onClick={() => {
-                      const formEl = document.getElementById('contact');
-                      if (formEl) {
-                        const messageInput = document.getElementById('booking-message');
-                        if (messageInput) {
-                          messageInput.value = `Hi, I am interested in booking your ${svc.title} service. Please contact me.`;
-                        }
-                        formEl.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    className="hover:underline flex items-center space-x-1"
+                    href={svc.href}
+                    className="flex items-center space-x-1 hover:text-white transition-colors"
                   >
-                    <span>Book Service</span>
-                    <ChevronRight className="w-4 h-4" />
+                    <span>Learn More &amp; Book</span>
+                    <ChevronRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>
-
               </motion.div>
             );
           })}

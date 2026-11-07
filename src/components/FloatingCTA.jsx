@@ -10,7 +10,7 @@ export default function FloatingCTA() {
         <div className="flex items-center justify-between text-[10px] text-brand-silver font-bold px-1 pb-1.5 border-b border-white/5 mb-1.5">
           <span className="flex items-center text-brand-yellow">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping mr-1.5" />
-            5–10 Min Dispatch: Station • Bus Stand • SIPCOT
+            5–10 Min Pickup: Station • Bus Stand • SIPCOT • Bagalur
           </span>
           <span className="text-emerald-400 font-extrabold">24/7 Available</span>
         </div>
@@ -22,12 +22,12 @@ export default function FloatingCTA() {
             className="col-span-6 flex items-center justify-center space-x-1.5 py-3 rounded-2xl bg-gradient-to-r from-brand-yellow via-amber-400 to-brand-gold text-brand-black font-black text-xs tracking-tight shadow-md active:scale-95 transition-all cursor-pointer"
           >
             <Phone className="w-4 h-4 fill-brand-black text-brand-black animate-pulse" />
-            <span>Call Taxi Near Me</span>
+            <span>Call: 99442 71322</span>
           </a>
 
           {/* WhatsApp Button - 3 cols */}
           <a
-            href="https://wa.me/919944271322?text=Hello%20YUVA%20CABS,%20I%20need%20a%20taxi%20pickup%20in%20Hosur."
+            href="https://wa.me/919944271322?text=Hello%20Yuva%20Call%20Taxi,%20I%20need%20a%20taxi%20pickup%20in%20Hosur."
             target="_blank"
             rel="noopener noreferrer"
             className="col-span-3 flex items-center justify-center space-x-1 py-3 rounded-2xl bg-[#25D366] text-white font-extrabold text-xs tracking-tight shadow-sm active:scale-95 transition-all cursor-pointer"

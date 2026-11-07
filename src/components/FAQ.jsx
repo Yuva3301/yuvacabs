@@ -1,5 +1,5 @@
-﻿import { useState } from 'react';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { useState } from 'react';
+import { ChevronDown, HelpCircle, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FAQ() {
@@ -7,44 +7,36 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: 'Which is the most reliable Hosur Call Taxi and Cab Service?',
-      answer: 'Yuva Call Taxi-Hosur is recognized as the top-rated Hosur Call Taxi and premier Cab Service with a Google 4.9★ rating. We provide 24 hours Call Taxi service in Hosur, local rides from ₹150, fixed Airport Taxi Hosur drops from ₹2,200, and outstation taxi from ₹9/km. Call +91 99442 71322 for instant dispatch.'
+      question: 'How do I book a 24 Hours Call Taxi in Hosur?',
+      answer: 'You can book a 24 hours call taxi in Hosur with Yuva Call Taxi by calling our 24/7 hotline at +91 99442 71322 or messaging us on WhatsApp. Our drivers provide prompt 5 to 10 minute pickup anywhere in Hosur with zero midnight surge charges.'
     },
     {
-      question: 'How can I book a Call Taxi Near Me or Taxi Service Near Me in Hosur?',
-      answer: 'When searching for "Call Taxi Near Me" or "Taxi Service Near Me" in Hosur, simply call Yuva Call Taxi at +91 99442 71322 or chat on WhatsApp. Our GPS-dispatched drivers arrive in 5 to 10 minutes anywhere in Hosur with flat transparent fares and zero surge fees.'
+      question: 'What is the Hosur Taxi Number for instant cab booking?',
+      answer: 'The official Hosur Call Taxi Number for Yuva Call Taxi is +91 99442 71322. Call or WhatsApp anytime for instant local cabs, airport drop and pickup, and outstation taxi bookings.'
     },
     {
-      question: 'Is call taxi available near Hosur bus stand and railway station?',
-      answer: 'Yes! We provide 24/7 dedicated call taxi near Hosur bus stand, taxi near Hosur railway station, and taxi service near Hosur new bus stand. Cabs are parked directly outside station platforms and bus stands for immediate departure.'
+      question: 'What are the fares for Local Taxi Service in Hosur?',
+      answer: 'Local taxi service in Hosur starts at just ₹150 for the first 4 kilometers in Non-A/C Hatchback (₹180 for A/C). Sedan cabs (Swift Dzire / Toyota Etios) start from ₹180 Non-A/C and ₹220 A/C with clear per-km billing thereafter.'
     },
     {
-      question: 'Do you provide call taxi in SIPCOT Hosur, Mookandapalli, and Zuzuvadi?',
-      answer: 'Yes! Yuva Call Taxi offers rapid 5-10 minute dispatch for call taxi in SIPCOT Hosur (Phase 1 & Phase 2), taxi service mookandapalli hosur, and call taxi zuzuvadi hosur for shift pickups, corporate visits, and airport transfers.'
+      question: 'What is the fare for Hosur to Bangalore Airport Taxi (BLR)?',
+      answer: 'Yuva Call Taxi offers an exclusive fixed package for Hosur to Bangalore Kempegowda Airport (BLR): ₹2,200 for Non-A/C Sedan and ₹2,300 for A/C Sedan (Swift Dzire/Etios). 6-seater Ertiga SUV is ₹2,800. We track flight schedules 24/7 with zero waiting charges for delayed landings.'
     },
     {
-      question: 'Which local areas and roads in Hosur are covered for 24/7 taxi pickup?',
-      answer: 'We cover all local routes: taxi service bagalur road Hosur, call taxi denkanikottai road Hosur, call taxi in dinnur hosur, taxi service jeeva nagar hosur, call taxi sanasandiram hosur, taxi service mathigiri hosur, call taxi kelamangalam road hosur, taxi service attibele, and call taxi berigai.'
+      question: 'Do you provide Outstation Taxi in Hosur with One Way Drop Taxi rates?',
+      answer: 'Yes! We offer affordable outstation taxi service starting at ₹9/km for Hatchback and ₹10/km for Sedan. For one-way drop trips to Bangalore, Chennai, Salem, Coimbatore, or Tirupati, you only pay for one-way distance with zero return charges.'
     },
     {
-      question: 'Can I book a seven seater taxi, Innova Crysta rental, or Tempo Traveller rental in Hosur?',
-      answer: 'Yes! We offer seven seater taxi in Hosur, seven seater car rental hosur, Innova Crysta rental in Hosur, and Tempo Traveller rental in Hosur. Perfect for family trip taxi hosur, business trip taxi hosur, and complete tour and travel service in Hosur.'
+      question: 'Is taxi service available at Hosur Railway Station and Bus Stand?',
+      answer: 'Yes, we provide dedicated 24/7 Railway Station Taxi in Hosur right outside Platforms 1 & 2 on Station Road, as well as immediate pickup at Hosur Central and New Bus Stands with 3 to 5 minute response time.'
     },
     {
-      question: 'Do you offer sedan car rental and Swift Dzire taxi in Hosur?',
-      answer: 'Yes, YUVA CABS provides spotless AC sedan car rental hosur and swift dzire taxi hosur with verified professional chauffeurs for city rides, corporate transit, and outstation trips.'
+      question: 'Do you provide taxi service in SIPCOT, Bagalur, Dinnur, and Jeeva Nagar?',
+      answer: 'Yes! Yuva Call Taxi offers rapid 5 to 10 minute pickup for SIPCOT Taxi Service (Phase 1 & Phase 2 industrial belts), Bagalur Taxi Service, Dinnur Call Taxi, and Jeeva Nagar Taxi Service, along with Mookandapalli, Mathigiri, and Bathalapalli.'
     },
     {
-      question: 'What is the fare for Bangalore airport taxi and Chennai airport taxi from Hosur?',
-      answer: 'Bangalore airport taxi from Hosur (Kempegowda BLR Airport) has an exclusive fixed package rate in Swift Dzire: Non-A/C ₹2,200 and A/C ₹2,300 with 24/7 flight delay tracking. Chennai airport taxi from Hosur is available for one way taxi or round trip taxi from ₹9/km.'
-    },
-    {
-      question: 'What are the rates for outstation taxi, one way taxi, and round trip taxi in Hosur?',
-      answer: 'Outstation taxi in Hosur starts from ₹9/km for Hatchback, ₹10/km for Sedan (Dzire/Etios), and ₹18/km for Innova Crysta. We also offer one way taxi in Hosur where you pay only one-way for Bangalore, Chennai, Salem, Coimbatore, and Tirupati.'
-    },
-    {
-      question: 'What is the Yuva Call Taxi Hosur phone number for 24 hours taxi service and online taxi booking?',
-      answer: 'You can reach Yuva Call Taxi Hosur 24 hours a day at +91 99442 71322 for instant dispatch, outstation trips, airport transfers, and online taxi booking in Hosur. Confirmation is delivered in minutes.'
+      question: 'Can I book 7-seater Innova Crysta or Tempo Traveller in Hosur?',
+      answer: 'Yes, we maintain a fleet of 6 & 7-seater Maruti Ertiga and Toyota Innova Crysta MPVs (from ₹18/km) and 12-to-16 seater Force Tempo Travellers (from ₹38/km) for family holidays, wedding transport, and temple tours.'
     }
   ];
 
@@ -62,58 +54,56 @@ export default function FAQ() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col space-y-4">
-          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Support Center</span>
+          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Customer Help Center</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
             Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Questions</span>
           </h2>
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
-            Find immediate answers regarding pricing estimates, airport pick-ups, outstation travel policies, and passenger safety.
+            Find immediate answers regarding local fares, Bangalore airport drop rates, outstation travel, and Hosur pickup areas.
           </p>
         </div>
 
-        {/* Accordions */}
-        <div className="flex flex-col space-y-4">
+        {/* FAQ Accordion List */}
+        <div className="space-y-4">
           {faqs.map((faq, idx) => {
             const isOpen = activeIndex === idx;
             return (
               <div
                 key={idx}
-                className="glass-card rounded-3xl border border-white/5 overflow-hidden transition-all duration-300 hover:border-brand-yellow/10"
+                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                  isOpen
+                    ? 'bg-brand-charcoal/50 border-brand-yellow/40 shadow-[0_4px_20px_rgba(255,212,59,0.08)]'
+                    : 'bg-brand-charcoal/20 border-white/5 hover:border-white/10'
+                }`}
               >
-                {/* Accordion Trigger Header */}
                 <button
                   onClick={() => toggleFAQ(idx)}
-                  className="w-full flex items-center justify-between p-6 sm:p-8 text-left transition-colors duration-300 focus:outline-none cursor-pointer"
+                  className="w-full py-5 px-6 text-left flex items-center justify-between space-x-4 cursor-pointer focus:outline-none"
                 >
-                  <div className="flex items-center space-x-4">
-                    <HelpCircle className={`w-5 h-5 flex-shrink-0 transition-colors duration-300 ${isOpen ? 'text-brand-yellow' : 'text-brand-gray'}`} />
-                    <span className="text-sm sm:text-base font-bold text-white tracking-tight hover:text-brand-yellow transition-colors">
-                      {faq.question}
-                    </span>
-                  </div>
-                  <motion.div
-                    animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="p-1 rounded-full bg-white/5 border border-white/5 text-brand-silver hover:text-brand-yellow"
+                  <span className="text-sm sm:text-base font-bold text-white leading-snug">
+                    {faq.question}
+                  </span>
+                  <div
+                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 flex-shrink-0 ${
+                      isOpen
+                        ? 'bg-brand-yellow text-brand-black rotate-180'
+                        : 'bg-white/5 text-brand-silver'
+                    }`}
                   >
                     <ChevronDown className="w-4 h-4" />
-                  </motion.div>
+                  </div>
                 </button>
 
-                {/* Accordion Content Panel */}
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
-                      key="content"
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: 'easeInOut' }}
                     >
-                      <div className="px-6 sm:px-8 pb-8 pt-0 text-left border-t border-white/5">
-                        <p className="text-xs sm:text-sm text-brand-silver/90 leading-relaxed font-semibold mt-4">
-                          {faq.answer}
-                        </p>
+                      <div className="px-6 pb-6 pt-1 text-xs sm:text-sm text-brand-silver leading-relaxed font-normal border-t border-white/5 mt-1">
+                        <p>{faq.answer}</p>
                       </div>
                     </motion.div>
                   )}
@@ -121,6 +111,20 @@ export default function FAQ() {
               </div>
             );
           })}
+        </div>
+
+        {/* Quick Hotline Callout */}
+        <div className="mt-12 text-center p-6 rounded-2xl bg-white/[0.02] border border-white/10">
+          <p className="text-sm text-brand-silver mb-3">
+            Have a question about a specific route or immediate cab booking in Hosur?
+          </p>
+          <a
+            href="tel:+919944271322"
+            className="inline-flex items-center space-x-2 px-6 py-3 rounded-full bg-brand-yellow text-brand-black font-extrabold text-sm shadow-md hover:brightness-110 active:scale-95 transition-all"
+          >
+            <Phone className="w-4 h-4 fill-brand-black" />
+            <span>Call +91 99442 71322</span>
+          </a>
         </div>
 
       </div>

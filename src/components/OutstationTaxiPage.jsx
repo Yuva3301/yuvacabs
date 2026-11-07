@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   Phone, MessageSquare, MapPin, Clock, ShieldCheck, CheckCircle2,
-  Navigation, Star, Car, ArrowLeft, Sun, Moon, Zap, Users
+  Navigation, Star, Car, ArrowLeft, Sun, Moon, Zap, Users, Compass, ExternalLink
 } from 'lucide-react';
 import OutstationTaxiSEO from './OutstationTaxiSEO';
 
@@ -33,7 +33,7 @@ const routes = [
     rate: '₹10/km',
     fleet: 'Sedan (Dzire) & SUV (Ertiga)',
     tag: 'Daily IT Corridor',
-    desc: 'Daily corporate commute for software professionals. Frequent departures, no waiting.',
+    desc: 'Daily corporate commute for software professionals. Frequent departures, zero waiting time.',
     highlight: false,
     whatsappMsg: 'I want to book a cab from Hosur to Bangalore.'
   },
@@ -59,7 +59,7 @@ const routes = [
     rate: '₹9/km',
     fleet: 'Etios, Dzire, Innova Crysta',
     tag: 'Business & Family',
-    desc: 'Top-rated outstation cab to the textile capital. Experienced long-drive chauffeurs, clean AC cars.',
+    desc: 'Top-rated outstation cab to the textile capital. Experienced highway chauffeurs, clean AC cars.',
     highlight: false,
     whatsappMsg: 'I want to book an outstation cab from Hosur to Coimbatore.'
   },
@@ -126,10 +126,10 @@ const fleetTable = [
 ];
 
 const faqs = [
-  { q: 'What is the outstation taxi rate from Hosur?', a: 'Outstation taxi from Hosur starts at ₹9/km for Hatchback, ₹10/km for Sedan (Swift Dzire/Etios), ₹15/km for SUV (Ertiga), and ₹18/km for Innova Crysta. Driver allowance of ₹300–₹500/day is added for outstation trips.' },
+  { q: 'What is the outstation taxi rate from Hosur?', a: 'Outstation taxi from Hosur starts at ₹9/km for Hatchback, ₹10/km for Sedan (Swift Dzire/Etios), ₹15/km for SUV (Ertiga), and ₹18/km for Innova Crysta. Driver allowance of ₹300–₹500/day applies for outstation trips.' },
   { q: 'Do you offer one-way drop taxi from Hosur?', a: 'Yes! We specialize in one-way drop taxis where you pay only for the one-way distance — zero return charges. Available to Chennai, Bangalore, Salem, Coimbatore, Tirupati, Pondicherry, Ooty, Trichy, and Madurai.' },
-  { q: 'What is the taxi fare from Hosur to Chennai?', a: 'Hosur to Chennai taxi fare starts at ₹9/km. For a 310 km one-way drop via NH48, a Swift Dzire costs approximately ₹2,790 + driver allowance. Innova Crysta starts at ₹5,580. Call +91 99442 71322 for exact quote.' },
-  { q: 'What is the taxi fare from Hosur to Bangalore?', a: 'Hosur to Bangalore taxi starts at ₹10/km. The distance ranges from 35 km (Electronic City) to 55 km (Whitefield/Majestic). Swift Dzire from ₹350 to ₹550. Daily commute packages available.' },
+  { q: 'What is the taxi fare from Hosur to Chennai?', a: 'Hosur to Chennai taxi fare starts at ₹9/km. For a 310 km one-way drop via NH48, a Swift Dzire costs approximately ₹2,790 + driver allowance. Innova Crysta starts at ₹5,580. Call +91 99442 71322 for exact quotes.' },
+  { q: 'What is the taxi fare from Hosur to Bangalore?', a: 'Hosur to Bangalore taxi starts at ₹10/km. The distance ranges from 35 km (Electronic City) to 55 km (Whitefield/Majestic). Swift Dzire from ₹350 to ₹550. Daily corporate commute packages available.' },
   { q: 'What is the Hosur to Salem drop taxi rate?', a: 'Hosur to Salem one-way drop taxi starts at ₹9/km for 160 km. Swift Dzire approximately ₹1,440 + driver allowance. Direct route via NH44 6-lane expressway through Dharmapuri.' },
   { q: 'What is Hosur to Coimbatore cab fare?', a: 'Hosur to Coimbatore cab starts at ₹9/km for 320 km. Swift Dzire approximately ₹2,880 + allowance. Innova Crysta for families from ₹5,760. Experienced highway drivers via NH544.' },
   { q: 'Do you have Tirupati darshan package taxi from Hosur?', a: 'Yes! Complete Tirupati Balaji pilgrimage cab with temple darshan wait-time included. 245 km via Chittoor. Rates from ₹9/km with Innova Crysta and Ertiga available for groups.' },
@@ -152,18 +152,24 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
       {/* ── TOP NAV ── */}
       <header className="fixed top-0 left-0 w-full z-50 bg-brand-black/95 backdrop-blur-md border-b border-white/5 shadow-md">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-          <button
-            onClick={onNavigateHome}
+          <a
+            href="/"
+            onClick={(e) => {
+              if (onNavigateHome) {
+                e.preventDefault();
+                onNavigateHome();
+              }
+            }}
             className="flex items-center space-x-2 text-brand-silver hover:text-brand-yellow transition-colors text-sm font-bold"
           >
             <ArrowLeft className="w-4 h-4" />
-            <span>Back to Home</span>
-          </button>
+            <span>Home</span>
+          </a>
 
           <a href="/" className="flex items-center space-x-2.5">
             <img
               src="/logo.jpg"
-              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur"
+              alt="Yuva Call Taxi Hosur Logo - Outstation Taxi in Hosur"
               className="w-9 h-9 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_10px_rgba(255,212,59,0.3)]"
             />
             <span className="text-xl font-black tracking-tight">
@@ -172,15 +178,18 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
           </a>
 
           <div className="flex items-center space-x-2">
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-brand-silver transition-colors"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-            </button>
+            {setTheme && (
+              <button
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+                className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-brand-silver transition-colors"
+                aria-label="Toggle theme"
+              >
+                {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+              </button>
+            )}
             <a
               href={`tel:${PHONE}`}
-              className="hidden sm:flex items-center space-x-1.5 px-4 py-2 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs"
+              className="flex items-center space-x-1.5 px-4 py-2 rounded-full bg-brand-yellow text-brand-black font-extrabold text-xs"
             >
               <Phone className="w-3.5 h-3.5 fill-brand-black" />
               <span>99442 71322</span>
@@ -202,17 +211,17 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
               <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-black uppercase tracking-widest mb-6">
                 <Navigation className="w-3.5 h-3.5" />
-                <span>Best Taxi Hosur · Red Taxi Alternative · Cab Service Hosur · Outstation Drop ₹9/km</span>
+                <span>Outstation Taxi in Hosur · One-Way Drop @ ₹9/km · Zero Return Fare</span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight mb-4">
-                Best Outstation Taxi Hosur<br />
-                <span className="text-brand-yellow text-glow-yellow">One-Way Drop Taxi ₹9/km</span>
+                Outstation Taxi in Hosur<br />
+                <span className="text-brand-yellow text-glow-yellow">One Way &amp; Round Trip Cab Service</span>
               </h1>
 
               <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl mx-auto mb-8">
-                Hosur's top-rated <strong>Cab Service Hosur</strong> &amp; <strong>Red Taxi alternative</strong> for outstation travel. <strong className="text-white">Pay only one-way</strong> to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Ooty, Pondicherry &amp; more.
-                Zero return charges · Zero surge · Sanitized AC cars · 24/7 booking.
+                Hosur's trusted 24/7 taxi service for outstation journeys. <strong className="text-white">Pay only one-way</strong> to Chennai (310km), Bangalore (35km), Salem (160km), Coimbatore, Tirupati, Ooty, Pondicherry &amp; more.
+                Zero return charges · Zero hidden fees · Sanitized AC fleet · Instant confirmation.
               </p>
 
               {/* Stats */}
@@ -221,7 +230,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
                   { val: '₹9/km', lbl: 'Starting Rate' },
                   { val: 'One-Way', lbl: 'Pay Only One Direction' },
                   { val: '8+', lbl: 'Major Destinations' },
-                  { val: '4.9★', lbl: '450+ Reviews' },
+                  { val: '24/7', lbl: 'Round-the-Clock Service' },
                 ].map((s) => (
                   <div key={s.lbl} className="text-center px-5 py-3 rounded-2xl bg-white/5 border border-white/10">
                     <div className="text-xl font-black text-brand-yellow">{s.val}</div>
@@ -246,6 +255,20 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
                   <span>Book on WhatsApp</span>
                 </button>
               </div>
+
+              {/* Quick links to other services */}
+              <div className="flex flex-wrap justify-center gap-4 mt-8 pt-6 border-t border-white/10 text-xs">
+                <span className="text-brand-gray font-bold">Explore Other Services:</span>
+                <a href="/local-taxi" className="text-brand-yellow hover:underline flex items-center gap-1 font-bold">
+                  Local Taxi Service in Hosur &rarr;
+                </a>
+                <a href="/airport-taxi" className="text-brand-yellow hover:underline flex items-center gap-1 font-bold">
+                  Hosur to Bangalore Airport Taxi &rarr;
+                </a>
+                <a href="/" className="text-brand-silver hover:underline flex items-center gap-1">
+                  Home Page &rarr;
+                </a>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -258,7 +281,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
                 { val: '₹9/km', lbl: 'Starting Outstation Rate' },
                 { val: 'One-Way Drop', lbl: 'Pay Only One Direction' },
                 { val: 'Zero Surge', lbl: 'Flat Rate Any Time' },
-                { val: '24/7', lbl: 'Available for Booking' },
+                { val: '24/7', lbl: 'Instant Cab Dispatch' },
               ].map((s) => (
                 <div key={s.lbl} className="py-3">
                   <div className="text-lg font-black text-brand-yellow">{s.val}</div>
@@ -277,7 +300,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
               <h2 className="text-2xl sm:text-3xl font-black text-white mt-1">
                 Outstation Destinations from <span className="text-brand-yellow">Hosur</span>
               </h2>
-              <p className="text-sm text-brand-silver mt-2">One-way drop taxi · Pay only for the direction you travel</p>
+              <p className="text-sm text-brand-silver mt-2">One-way drop taxi · Pay only for the distance you travel</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
@@ -382,7 +405,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
             </div>
 
             <p className="text-[11px] text-brand-silver mt-3 text-center">
-              * Toll charges extra · A/C/Non-A/C same outstation rate · GST bills available for corporate trips
+              * Toll charges extra · A/C / Non-A/C same outstation rate · GST bills available for corporate trips
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
@@ -461,7 +484,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
               className="inline-flex items-center space-x-1 mt-5 text-xs text-blue-400 hover:text-blue-300 transition-colors"
             >
               <MapPin className="w-3.5 h-3.5" />
-              <span>Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109</span>
+              <span>Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109</span>
             </a>
           </div>
         </section>
@@ -471,6 +494,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
       {/* Floating call button (mobile) */}
       <a
         href={`tel:${PHONE}`}
+        aria-label="Call Yuva Call Taxi Hosur"
         className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-brand-yellow shadow-[0_0_20px_rgba(255,212,59,0.4)] hover:brightness-105 active:scale-95 transition-all sm:hidden"
       >
         <Phone className="w-6 h-6 fill-brand-black text-brand-black" />
@@ -478,4 +502,3 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
     </div>
   );
 }
-

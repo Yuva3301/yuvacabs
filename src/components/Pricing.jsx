@@ -48,60 +48,47 @@ export default function Pricing() {
     {
       vehicle: 'Toyota Innova',
       subTitle: 'Classic Toyota Innova MPV',
-      type: 'Toyota Innova 7+1 Seater',
-      nonAcMin: 250, acMin: 280,
-      nonAcExtra: 16, acExtra: 17,
+      type: 'Innova / Innova Crysta Luxury',
+      nonAcMin: 350, acMin: 400,
+      nonAcExtra: 18, acExtra: 20,
       seating: '7 + 1 Passengers',
       suitcases: '4 - 5 Bags',
       notes: 'Local minimum 4 km limit',
-      bestFor: 'Family highway trips, pilgrim tours & corporate runs.',
-      tag: 'Highway Specialist',
-      isPopular: false
-    },
-    {
-      vehicle: 'Innova Crysta',
-      subTitle: 'Toyota Innova Crysta Luxury',
-      type: 'Gold-Standard Luxury MPV',
-      nonAcMin: 300, acMin: 350,
-      nonAcExtra: 20, acExtra: 24,
-      seating: '7 + 1 Passengers',
-      suitcases: '4 - 5 Bags',
-      notes: 'Local minimum 4 km limit',
-      bestFor: 'VIP corporate transits, luxury family tours & long distance.',
-      tag: 'Premium Luxury',
+      bestFor: 'Executive long-distance luxury, weddings & temple tours.',
+      tag: 'Maximum Comfort',
       isPopular: false
     },
     {
       vehicle: 'Tempo Traveller',
-      subTitle: '12+1 Seater Coach',
-      type: 'Large Multi-Passenger Tourer Coach',
-      nonAcMin: 400, acMin: 500,
-      nonAcExtra: 38, acExtra: 38,
-      seating: '12 + 1 Passengers',
-      suitcases: '8 - 10 Bags',
-      notes: 'Minimum 10 kms',
-      bestFor: 'Mega family excursions, weddings, pilgrim groups & team outings.',
-      tag: 'Mega Group Fleet',
+      subTitle: 'Force 12 - 16 Seater Van',
+      type: 'Force Motors Executive Tempo',
+      nonAcMin: 650, acMin: 800,
+      nonAcExtra: 35, acExtra: 38,
+      seating: '12 - 16 Passengers',
+      suitcases: '6 - 8 Bags',
+      notes: 'Local minimum 4 km limit',
+      bestFor: 'Group holiday packages, corporate outings & pilgrim tours.',
+      tag: 'Group Travel',
       isPopular: false
     }
   ];
 
   return (
-    <section id="pricing" className="py-24 bg-brand-charcoal/20 dark-blue-section relative overflow-hidden">
-      {/* Background gradients */}
-      <div className="absolute top-[10%] left-[-5%] w-96 h-96 rounded-full bg-brand-gold/5 glow-orb blur-[120px]" />
-      <div className="absolute bottom-[10%] right-[-5%] w-96 h-96 rounded-full bg-brand-blue/5 glow-orb blur-[120px]" />
+    <section id="pricing" className="py-24 bg-brand-black relative overflow-hidden">
+      {/* Background radial glow */}
+      <div className="absolute top-[30%] left-[-10%] w-[400px] h-[400px] rounded-full bg-brand-yellow/5 glow-orb blur-[120px]" />
+      <div className="absolute bottom-[20%] right-[-10%] w-[400px] h-[400px] rounded-full bg-brand-blue/5 glow-orb blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         
-        {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 flex flex-col space-y-4">
-          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Transparent Regional Pricing</span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-white tracking-tight leading-tight">
-            Premium Fleet & <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Fares Table</span>
+        {/* Section Title */}
+        <div className="text-center max-w-2xl mx-auto mb-14 flex flex-col space-y-4">
+          <span className="text-xs text-brand-yellow font-extrabold tracking-widest uppercase">Transparent Pricing</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            Local &amp; Outstation <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-yellow to-brand-gold text-glow-yellow">Fares Table</span>
           </h2>
           <p className="text-sm sm:text-base text-brand-gray/90 leading-relaxed">
-            No hidden costs. No surprises. Our flat regional rates are calculated systematically to provide total clarity for your budget.
+            No hidden costs. No surge fees. Clear regional rates calculated systematically to provide total clarity for your travel budget.
           </p>
         </div>
 
@@ -113,26 +100,25 @@ export default function Pricing() {
               <span className="px-3 py-1 rounded-full bg-brand-yellow text-brand-black font-black text-[10px] uppercase tracking-wider">
                 Outstation Special
               </span>
-              <span className="text-[10px] text-brand-silver font-semibold">Tamil Nadu & Karnataka</span>
+              <span className="text-[10px] text-brand-silver font-semibold">Tamil Nadu &amp; Karnataka</span>
             </div>
             <div>
               <div className="text-xl font-black text-white">
-                Outstation Trips @ <span className="text-brand-yellow text-glow-yellow text-2xl font-black">₹9 – ₹12</span> / KM
+                Outstation Trips from <span className="text-brand-yellow text-glow-yellow text-2xl font-black">₹9 – ₹12</span> / KM
               </div>
               <p className="text-xs text-brand-silver/90 mt-1">
-                Flat per KM rates for round trips, family excursions & intercity journeys. No surge fees!
+                One-way drop taxi and round trip cabs to Chennai, Bangalore, Salem, Coimbatore, and Tirupati. Zero return fare for one way drops!
               </p>
             </div>
             <div className="pt-2 border-t border-white/10 flex items-center justify-between">
-              <span className="text-[11px] text-brand-gray font-medium">Hatchback, Sedan, SUV & Innova available</span>
-              <a href="#contact" className="text-xs font-bold text-brand-yellow hover:underline flex items-center space-x-1">
-                <span>Book Outstation</span>
-                <span aria-hidden="true">&rarr;</span>
+              <span className="text-[11px] text-brand-gray font-medium">Hatchback, Sedan, SUV &amp; Innova available</span>
+              <a href="/outstation-taxi" className="text-xs font-bold text-brand-yellow hover:underline flex items-center space-x-1">
+                <span>View Outstation Rates →</span>
               </a>
             </div>
           </div>
 
-          {/* Box 2: Swift Dzire Airport Drop & Pickup Package (Non-AC ₹2200 / AC ₹2300) */}
+          {/* Box 2: Swift Dzire Airport Drop & Pickup Package */}
           <div className="p-5 rounded-2xl bg-gradient-to-br from-blue-600/15 via-brand-charcoal to-brand-yellow/10 border-2 border-brand-yellow/50 relative overflow-hidden flex flex-col justify-between space-y-3 shadow-[0_0_30px_rgba(255,212,59,0.18)] text-left group">
             {/* Top Badge */}
             <div className="flex items-center justify-between">
@@ -141,7 +127,7 @@ export default function Pricing() {
                 <span>Airport Fixed Package</span>
               </span>
               <span className="text-[10px] text-emerald-400 font-extrabold flex items-center">
-                <Sparkles className="w-3 h-3 mr-1 text-emerald-400" /> 24/7 Guaranteed Pickup
+                <Sparkles className="w-3 h-3 mr-1 text-emerald-400" /> 24/7 Guaranteed Flight Pickup
               </span>
             </div>
 
@@ -150,7 +136,7 @@ export default function Pricing() {
               <div className="flex items-center space-x-2">
                 <Car className="w-4 h-4 text-brand-yellow" />
                 <h3 className="text-lg font-black text-white tracking-tight">
-                  Swift Dzire <span className="text-brand-yellow font-extrabold">— Airport Drop & Pickup</span>
+                  Swift Dzire <span className="text-brand-yellow font-extrabold">— Airport Drop &amp; Pickup</span>
                 </h3>
               </div>
               <p className="text-xs text-brand-silver font-semibold mt-0.5">
@@ -158,7 +144,7 @@ export default function Pricing() {
               </p>
             </div>
 
-            {/* Rates Pills - Non A/C ₹2200 and A/C ₹2300 */}
+            {/* Rates Pills - Non A/C ₹2,200 and A/C ₹2,300 */}
             <div className="grid grid-cols-2 gap-3 py-1">
               {/* Non-A/C Rate Box */}
               <div className="p-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-yellow/40 transition-all text-center">
@@ -168,34 +154,31 @@ export default function Pricing() {
               </div>
 
               {/* A/C Rate Box */}
-              <div className="p-2.5 rounded-xl bg-brand-yellow/10 border border-brand-yellow/40 hover:border-brand-yellow transition-all text-center shadow-[0_0_15px_rgba(255,212,59,0.1)]">
-                <span className="text-[10px] text-brand-yellow uppercase font-extrabold tracking-wider block">A/C Service Rate</span>
+              <div className="p-2.5 rounded-xl bg-brand-yellow/10 border border-brand-yellow/40 text-center relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-brand-yellow text-brand-black text-[8px] font-black px-1.5 py-0.2 rounded-bl-md uppercase">Popular</div>
+                <span className="text-[10px] text-brand-yellow uppercase font-extrabold tracking-wider block">A/C Sedan</span>
                 <span className="text-2xl font-black text-white text-glow-yellow">₹2,300</span>
-                <span className="text-[10px] text-brand-silver block mt-0.5">Flat One-Way Fare</span>
+                <span className="text-[10px] text-emerald-400 font-bold block mt-0.5">Zero Surge Tolls Extra</span>
               </div>
             </div>
 
-            {/* Actions */}
-            <div className="pt-2 border-t border-white/10 flex items-center justify-between gap-2">
-              <span className="text-[10px] text-brand-gray font-medium">Flight delay tracking included</span>
-              <div className="flex items-center space-x-2">
-                <a
-                  href="tel:+919944271322"
-                  className="px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-bold text-xs flex items-center space-x-1 transition-all"
-                >
-                  <Phone className="w-3 h-3 text-brand-yellow" />
-                  <span>Call</span>
-                </a>
-                <a
-                  href="https://wa.me/919944271322?text=Hello! I want to book Swift Dzire for Bangalore Airport Drop/Pickup. (Non-AC ₹2200 / AC ₹2300)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1.5 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs flex items-center space-x-1 shadow-sm transition-all"
-                >
-                  <MessageSquare className="w-3 h-3 fill-white" />
-                  <span>Book Swift Dzire</span>
-                </a>
-              </div>
+            {/* Bottom Actions */}
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between">
+              <a
+                href="/airport-taxi"
+                className="text-xs font-bold text-brand-yellow hover:underline flex items-center space-x-1"
+              >
+                <span>Full Airport Details →</span>
+              </a>
+              <a
+                href="https://wa.me/919944271322?text=Hello!%20I%20want%20to%20book%20Swift%20Dzire%20for%20Bangalore%20Airport%20Drop/Pickup."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3.5 py-1.5 rounded-xl bg-[#25D366] text-white text-xs font-bold flex items-center space-x-1 hover:brightness-110 active:scale-95 transition-all shadow-sm"
+              >
+                <MessageSquare className="w-3.5 h-3.5" />
+                <span>WhatsApp Now</span>
+              </a>
             </div>
           </div>
         </div>
@@ -341,9 +324,9 @@ export default function Pricing() {
               <Coins className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Toll Gates & Parking</h4>
+              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Toll Gates &amp; Parking</h4>
               <p className="text-xs text-brand-gray/95 mt-1 leading-relaxed font-semibold">
-                Toll fees, parking fees, and interstate permit entry taxes are charged extra at actuals and are settled directly by the customer.
+                Toll fees, parking charges, and interstate permit entry taxes are charged at actuals and settled directly.
               </p>
             </div>
           </div>
@@ -356,7 +339,7 @@ export default function Pricing() {
             <div>
               <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Driver Night Allowance</h4>
               <p className="text-xs text-brand-gray/95 mt-1 leading-relaxed font-semibold">
-                An additional driver night allowance applies for journeys scheduled between 10:00 PM and 6:00 AM.
+                Driver night allowance applies for outstation journeys scheduled between 10:00 PM and 6:00 AM.
               </p>
             </div>
           </div>
@@ -367,9 +350,9 @@ export default function Pricing() {
               <Milestone className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Outstation Trips (₹9 – ₹12 / KM)</h4>
+              <h4 className="text-sm font-bold text-brand-white uppercase tracking-wider">Outstation Trips (₹9 – ₹18 / KM)</h4>
               <p className="text-xs text-brand-gray/95 mt-1 leading-relaxed font-semibold">
-                Outstation journeys start at just ₹9 – ₹12 / KM. Round-trip outstation journeys carry a minimum billing average of 250 Kilometers per calendar day.
+                Outstation journeys start at ₹9/km. Round-trip journeys carry a standard daily minimum average of 250 km.
               </p>
             </div>
           </div>

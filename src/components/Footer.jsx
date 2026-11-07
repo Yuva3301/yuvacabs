@@ -4,9 +4,9 @@ import { FaInstagram, FaGoogle, FaFacebook } from 'react-icons/fa6';
 export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLocal, onNavigateOutstation }) {
   const quickLinks = [
     { name: 'Home', href: '#home' },
-    { name: '📍 Local Taxi Hosur', href: '/local-taxi', isLocal: true },
-    { name: '🚗 Outstation Drop Taxi', href: '/outstation-taxi', isOutstation: true },
-    { name: '✈️ Bangalore Airport Taxi', href: '/airport-taxi', isAirport: true },
+    { name: 'Local Taxi Hosur', href: '/local-taxi', isLocal: true },
+    { name: 'Outstation Drop Taxi', href: '/outstation-taxi', isOutstation: true },
+    { name: 'Bangalore Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'Why Us', href: '#why-us' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
@@ -14,7 +14,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
   ];
 
   const secondaryLinks = [
-    { name: 'About YUVA CABS', href: '#about' },
+    { name: 'About Yuva Call Taxi', href: '#about' },
     { name: 'Client Reviews', href: '#testimonials' },
     { name: 'Travel FAQs', href: '#faq' },
     { name: 'Book Now', href: '#contact' },
@@ -52,7 +52,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
           <a href="#home" className="flex items-center space-x-3 group">
             <img
               src="/logo.jpg"
-              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Red Taxi Hosur | Cab Service Hosur | Cabs Near Me"
+              alt="Yuva Call Taxi Hosur Logo - 24/7 Taxi Service in Hosur"
               className="w-10 h-10 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.35)] group-hover:scale-105 transition-transform"
             />
             <div className="flex flex-col text-left">
@@ -60,13 +60,13 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 YUVA CALL TAXI<span className="text-brand-yellow text-glow-yellow">-HOSUR</span>
               </span>
               <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-1 opacity-80">
-                Best Taxi Hosur · Cabs Near Me
+                24/7 Taxi Service in Hosur • Cabs Near Me
               </span>
             </div>
           </a>
 
           <p className="text-xs text-brand-gray/95 font-medium leading-relaxed max-w-sm">
-            Yuva Call Taxi is Hosur's top-rated 24/7 taxi &amp; cab service (Best Taxi Hosur, Red Taxi Hosur alternative, Cab Service Hosur, Cabs Near Me). Starting at ₹9/km for outstation drop taxi, ₹150 local cab, and flat-rate Bangalore Airport (BLR) transfers at ₹2,200.
+            Yuva Call Taxi is Hosur's trusted 24/7 taxi and cab service. Starting at ₹150 for local city cabs, ₹9/km for outstation one-way drop taxis, and fixed ₹2,200 for Bangalore Kempegowda Airport (BLR) transfers.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 rel="noopener noreferrer"
                 className="hover:text-brand-yellow transition-colors"
               >
-                Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109
+                Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109
               </a>
             </li>
 
@@ -140,7 +140,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 transition-colors font-bold text-blue-400 flex items-center space-x-1"
               >
-                <span>Google Business Profile (4.9 ⭐)</span>
+                <span>Google Business Profile (Yuva Call Taxi)</span>
               </a>
             </li>
 
@@ -171,7 +171,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 transition-colors font-bold text-blue-400"
               >
-                YUVA Call Taxi Hosur on Facebook
+                Yuva Call Taxi Hosur on Facebook
               </a>
             </li>
 
@@ -188,14 +188,14 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
       <div className="border-t border-white/5 pt-10 mt-8">
         <div className="max-w-4xl mx-auto text-center px-4">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-[11px] font-bold uppercase tracking-wider mb-4">
-            <span>Hosur 24/7 Local, Outstation &amp; Kempegowda Airport Taxi</span>
+            <span>Hosur 24/7 Local, Outstation &amp; Bangalore Airport Taxi</span>
           </div>
 
           <h3 className="text-xl sm:text-2xl font-black text-white mb-3">
-            Yuva Call Taxi-Hosur — Premier 24/7 Cab Service
+            Yuva Call Taxi Hosur — 24/7 Taxi Service &amp; Cab Booking
           </h3>
           <p className="text-xs sm:text-sm text-brand-gray/80 leading-relaxed font-medium max-w-2xl mx-auto mb-6">
-            Instant 5–10 min pickup across Hosur Railway Station, Bus Stand, Bagalur, Bagalur Road, Bathalapalli, Mookandapalli, Shoolagiri, Rayakottai, Krishnagiri &amp; 24/7 BLR Kempegowda Airport drops. Local rides from ₹150, outstation @ ₹9/km, Airport drops from ₹2,100.
+            Instant 5–10 min pickup across Hosur Railway Station, Bus Stand, SIPCOT, Bagalur Road, Bathalapalli, Mookandapalli, Dinnur, Jeeva Nagar &amp; 24/7 BLR Kempegowda Airport drops. Local rides from ₹150, outstation @ ₹9/km, Airport drops from ₹2,200.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
@@ -217,7 +217,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
           </div>
 
           <address className="text-xs text-brand-gray/70 not-italic">
-            YUVA CABS (Yuva Call Taxi) | Railway Station Road, Hamman Nagar, Hosur, Tamil Nadu 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a> | yuvacalltaxi.com
+            Yuva Call Taxi | Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a> | https://www.yuvacalltaxi.com
           </address>
         </div>
       </div>
@@ -225,7 +225,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
       {/* Copyright Bar & Admin trigger */}
       <div className="max-w-7xl mx-auto px-6 pt-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] text-brand-gray font-semibold gap-4">
         <div>
-          <span>© {new Date().getFullYear()} YUVA CABS Hosur. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Yuva Call Taxi Hosur. All rights reserved.</span>
         </div>
 
         {/* Admin portal trigger */}

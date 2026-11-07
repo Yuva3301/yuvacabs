@@ -17,9 +17,9 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: '📍 Local Taxi', href: '/local-taxi', isLocal: true },
-    { name: '🚗 Outstation', href: '/outstation-taxi', isOutstation: true },
-    { name: '✈️ Airport Taxi', href: '/airport-taxi', isAirport: true },
+    { name: 'Local Taxi', href: '/local-taxi', isLocal: true },
+    { name: 'Outstation Taxi', href: '/outstation-taxi', isOutstation: true },
+    { name: 'Airport Taxi', href: '/airport-taxi', isAirport: true },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
@@ -63,11 +63,11 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-xs font-black">
             <div className="flex items-center space-x-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="text-brand-yellow uppercase tracking-wider">Best Taxi Hosur · Cabs Near Me:</span>
+              <span className="text-brand-yellow uppercase tracking-wider">24 Hours Call Taxi in Hosur • Cabs Near Me:</span>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-5 font-extrabold text-white">
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
-                <span className="text-brand-silver">Call Taxi Hosur:</span>
+                <span className="text-brand-silver">Hotline:</span>
                 <span className="text-brand-yellow font-black">+91 99442 71322</span>
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
@@ -82,12 +82,12 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 className="hover:text-brand-yellow transition-colors flex items-center space-x-1"
               >
                 <span className="text-brand-silver">Airport Taxi Hosur:</span>
-                <span className="text-brand-yellow font-black">Book BLR Cabs</span>
+                <span className="text-brand-yellow font-black">Fixed ₹2,200</span>
               </a>
               <span className="text-white/20 hidden md:inline">•</span>
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
-                <span className="text-brand-silver">Cab Service Hosur:</span>
-                <span className="text-brand-yellow font-black">₹9/km Outstation</span>
+                <span className="text-brand-silver">Outstation Taxi:</span>
+                <span className="text-brand-yellow font-black">₹9/km One-Way</span>
               </a>
             </div>
           </div>
@@ -95,11 +95,11 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
 
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center space-x-3 group" aria-label="Yuva Call Taxi Hosur - Best Cab Service Hosur">
+          <a href="#home" className="flex items-center space-x-3 group" aria-label="Yuva Call Taxi Hosur - 24/7 Taxi Service">
             <img
               src="/logo.jpg"
-              alt="Yuva Call Taxi Hosur Logo - Best Taxi Hosur | Cabs Near Me | Call Taxi Hosur"
-              title="Yuva Call Taxi - Red Taxi Hosur | Best Taxi Hosur | Cab Service Hosur"
+              alt="Yuva Call Taxi Hosur Logo - 24/7 Call Taxi in Hosur"
+              title="Yuva Call Taxi Hosur"
               width="44"
               height="44"
               className="w-11 h-11 rounded-full object-cover border-2 border-brand-yellow shadow-[0_0_15px_rgba(255,212,59,0.35)] group-hover:scale-105 transition-transform duration-300"
@@ -113,7 +113,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 YUVA CALL TAXI<span className="text-brand-yellow text-glow-yellow">-HOSUR</span>
               </span>
               <span className="text-[9px] text-brand-silver font-extrabold uppercase tracking-widest mt-0.5 opacity-80">
-                Best Taxi Hosur · Cabs Near Me · 24/7
+                Taxi Service in Hosur • 24/7 Cabs Near Me
               </span>
             </div>
           </a>
@@ -143,7 +143,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               href="https://www.instagram.com/yuva_call_taxi_70?stkn=djVpOHU4aGhjcG1j"
               target="_blank"
               rel="noopener noreferrer"
-              title="Follow us on Instagram"
+              title="Follow Yuva Call Taxi on Instagram"
               className="p-2 text-pink-400 hover:text-pink-300 hover:bg-pink-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-pink-500/20"
             >
               <FaInstagram className="w-5 h-5" />
@@ -154,7 +154,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               href="https://www.facebook.com/share/1BwH4m16r9/"
               target="_blank"
               rel="noopener noreferrer"
-              title="Follow us on Facebook"
+              title="Follow Yuva Call Taxi on Facebook"
               className="p-2 text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-blue-500/20"
             >
               <FaFacebook className="w-5 h-5" />

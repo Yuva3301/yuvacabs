@@ -25,7 +25,7 @@ export default function Testimonials() {
     },
     {
       name: 'Anand Subramanian',
-      role: 'Family Traveler, Hamman Nagar',
+      role: 'Family Traveler, Jeeva Nagar',
       review: 'Booked an Innova SUV for a 3-day round trip from Hosur to Ooty. The driver was very courteous, knew the hill station hairpin curves perfectly, and the rates were exactly as calculated. Excellent experience!',
       rating: 5,
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face'

@@ -1,17 +1,14 @@
-# YUVA CABS - yuvacalltaxi.com
-# Best Taxi & Cab Service in Hosur
+# YUVA CALL TAXI - www.yuvacalltaxi.com
+# 24/7 Taxi Service in Hosur | Hotline: +91 99442 71322
 
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /#admin
 
-# Sitemaps
+# XML Sitemap
 Sitemap: https://www.yuvacalltaxi.com/sitemap.xml
 
-# Crawl optimization
-Crawl-delay: 1
-
-# Allow major search engines full access
 User-agent: Googlebot
 Allow: /
 
