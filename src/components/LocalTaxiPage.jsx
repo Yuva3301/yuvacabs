@@ -39,21 +39,24 @@ const fleets = [
 ];
 
 const localZones = [
-  { zone: 'Railway Station & Hub Areas', icon: Navigation, areas: ['Hosur Railway Station', 'Hosur Central Bus Stand', 'Dinnur Main Road', 'Jeeva Nagar', 'Station Road'], time: '3-5 min' },
-  { zone: 'SIPCOT Industrial Belt', icon: Building2, areas: ['SIPCOT Phase 1', 'SIPCOT Phase 2', 'TVS Motor Corridor', 'Titan Township', 'Ashok Leyland', 'TANSIDCO'], time: '5-8 min' },
-  { zone: 'Bagalur & Attibele Corridor', icon: MapPin, areas: ['Bagalur Road', 'Bagalur Town', 'Bagalur Junction', 'Attibele Border', 'Denkanikottai Road'], time: '5-10 min' },
-  { zone: 'Industrial & Market Hubs', icon: Car, areas: ['Bathalapalli Market', 'Mookandapalli', 'Zuzuvadi Checkpost', 'Moranapalli', 'Berigai'], time: '5-10 min' },
-  { zone: 'Residential Neighborhoods', icon: Users, areas: ['Mathigiri Town', 'Dinnur Circle', 'Jeeva Nagar', 'Sanasandiram', 'Avalapalli', 'Kamaraj Colony'], time: '5-10 min' },
-  { zone: 'Highway & Outskirts', icon: Zap, areas: ['Shoolagiri', 'Kelamangalam Road', 'Rayakottai Road', 'Old Bengaluru Road', 'Hosur IT Park'], time: '10-15 min' },
+  { zone: 'Railway Station & Central Hubs', icon: Navigation, areas: ['Hosur Railway Station', 'Hosur Central Bus Stand', 'Dinnur Main Road', 'Jeeva Nagar', 'Station Road'], time: '3-5 min' },
+  { zone: 'SIPCOT & Industrial Corridors', icon: Building2, areas: ['SIPCOT Phase 1', 'SIPCOT Phase 2', 'Perandapalli', 'Kothur', 'TVS Motor Corridor', 'Titan Township', 'Ashok Leyland'], time: '5-8 min' },
+  { zone: 'Core Residential Colonies', icon: Users, areas: ['Alasanatham Road', 'SBM Colony', 'Anthivadi Stadium', 'Muneeswar Nagar', 'Navadhi Lake', 'Mathigiri Town', 'Avalapalli'], time: '5-8 min' },
+  { zone: 'Market & Manufacturing Belts', icon: Car, areas: ['Bathalapalli Wholesale Market', 'Belagondapalli', 'Mathakondapalli', 'Poonapalli', 'Mookandapalli', 'Moranapalli'], time: '5-10 min' },
+  { zone: 'Rayakottai & Taluk Corridors', icon: MapPin, areas: ['Rayakottai Town', 'Rayakottai Housing Board', 'Denkanikottai Taluk', 'Kelamangalam Town'], time: '10-15 min' },
+  { zone: 'Border Corridors & Satellite Towns', icon: Zap, areas: ['Anekal Town', 'Krishnagiri Highway (NH44)', 'Thally Little England', 'Berigai', 'Attibele Border'], time: '10-15 min' },
 ];
 
 const faqs = [
   { q: 'What is the minimum fare for local taxi service in Hosur?', a: 'Local taxi service in Hosur starts at ₹150 for the first 4 kilometers for Non-A/C Hatchback (₹180 for A/C). Sedan cabs (Swift Dzire/Etios) start from ₹180 Non-A/C and ₹220 A/C with clear per-km billing thereafter.' },
-  { q: 'How fast is your local cab pickup in Hosur?', a: 'Our nearest GPS-tracked driver arrives in 3 to 10 minutes across all Hosur areas. Railway Station and Bus Stand pickups average 3 to 5 minutes, while SIPCOT and Bagalur Road average 5 to 10 minutes.' },
+  { q: 'How fast is your local cab pickup in Hosur?', a: 'Our nearest GPS-tracked driver arrives in 3 to 10 minutes across all Hosur areas. Railway Station and Bus Stand pickups average 3 to 5 minutes, while SIPCOT, Bathalapalli, and residential colonies average 5 to 8 minutes.' },
+  { q: 'Do you provide taxi service in Rayakottai and Rayakottai Housing Board?', a: 'Yes! Yuva Call Taxi provides 24/7 call taxi service in Rayakottai and Rayakottai Housing Board. We offer swift local pickups, direct trips to Hosur city, Krishnagiri, and Kempegowda International Airport drops starting at ₹9/km.' },
+  { q: 'Is cab service available in Denkanikottai, Kelamangalam, and Thally?', a: 'Yes! We cover Denkanikottai, Kelamangalam, and Thally with dedicated 24-hour cabs. Whether you need a local trip, hospital visit, or outstation journey, call +91 99442 71322 for instant dispatch.' },
+  { q: 'How fast can I get a taxi in Bathalapalli, Alasanatham, Anthivadi, and SBM Colony?', a: 'Our drivers are stationed across all Hosur residential and commercial hubs. Average arrival time in Bathalapalli, Alasanatham, Anthivadi, SBM Colony, Navadhi, and Muneeswar Nagar is just 5 to 8 minutes.' },
+  { q: 'Do you offer cabs to Anekal, Krishnagiri, Belagondapalli, and Berigai?', a: 'Yes! We operate frequent cabs connecting Hosur to Anekal, Krishnagiri (NH44), Belagondapalli, Mathakondapalli, Perandapalli, Poonapalli, and Berigai with transparent rates and zero hidden charges.' },
   { q: 'Is call taxi available 24 hours in Hosur?', a: 'Yes! Yuva Call Taxi operates 24 hours a day, 7 days a week including night emergencies and early morning train/bus connections. Just call +91 99442 71322 for instant dispatch.' },
   { q: 'Do you have call taxi near Hosur bus stand and railway station?', a: 'Yes. We have dedicated cabs stationed right outside Hosur Railway Station (Platforms 1 & 2) and Hosur New Bus Stand for immediate pickup.' },
-  { q: 'Is taxi service available in SIPCOT Hosur for shift drops?', a: 'Yes, we specialize in SIPCOT Phase 1 & Phase 2 corporate shift pickups and drops for TVS Motor, Ashok Leyland, Titan, and industrial units.' },
-  { q: 'Do you cover Bagalur, Dinnur, and Jeeva Nagar?', a: 'Yes! We provide complete 24/7 coverage across Bagalur Road, Dinnur, Jeeva Nagar, Mathigiri, and Bathalapalli with rapid 5-10 min response time.' },
+  { q: 'Is taxi service available in SIPCOT Hosur for shift drops?', a: 'Yes, we specialize in corporate and employee shift pickups/drops for TVS Motor, Ashok Leyland, Titan, Perandapalli, and SIPCOT industrial units.' },
   { q: 'What payment methods are accepted?', a: 'We accept Cash, UPI (Google Pay, PhonePe, Paytm), and Net Banking with zero extra convenience charges.' },
 ];
 

@@ -18,11 +18,31 @@ const keywords = [
   "Bagalur Taxi Service",
   "Dinnur Call Taxi",
   "Jeeva Nagar Taxi Service",
-  "Yuva Call Taxi Hosur",
-  "Yuva Cabs Hosur",
-  "Mookandapalli Taxi",
   "Bathalapalli Taxi Service",
-  "Mathigiri Taxi Service"
+  "Rayakottai Taxi Service",
+  "Rayakottai Housing Board Taxi",
+  "Denkanikottai Taxi Service",
+  "Kelamangalam Call Taxi",
+  "Krishnagiri to Hosur Taxi",
+  "Hosur to Krishnagiri Cab",
+  "Alasanatham Taxi Service Hosur",
+  "Anthivadi Taxi Service Hosur",
+  "SBM Colony Taxi Hosur",
+  "Navadhi Call Taxi Hosur",
+  "Anekal to Hosur Taxi",
+  "Anekal Call Taxi",
+  "Poonapalli Taxi Service",
+  "Belagondapalli Taxi Service",
+  "Mathakondapalli Call Taxi",
+  "Thally Taxi Service Hosur",
+  "Perandapalli Call Taxi",
+  "Kothur Taxi Hosur",
+  "Muneeswar Nagar Call Taxi Hosur",
+  "Berigai Call Taxi Service",
+  "Mookandapalli Taxi",
+  "Mathigiri Taxi Service",
+  "Yuva Call Taxi Hosur",
+  "Yuva Cabs Hosur"
 ];
 
 const jsonLd = {
@@ -70,7 +90,28 @@ const jsonLd = {
         { "@type": "AdministrativeArea", "name": "Dinnur" },
         { "@type": "AdministrativeArea", "name": "Jeeva Nagar" },
         { "@type": "AdministrativeArea", "name": "Hosur Railway Station" },
-        { "@type": "AdministrativeArea", "name": "Hosur Bus Stand" }
+        { "@type": "AdministrativeArea", "name": "Hosur Bus Stand" },
+        { "@type": "AdministrativeArea", "name": "Bathalapalli" },
+        { "@type": "AdministrativeArea", "name": "Rayakottai" },
+        { "@type": "AdministrativeArea", "name": "Rayakottai Housing Board" },
+        { "@type": "AdministrativeArea", "name": "Denkanikottai" },
+        { "@type": "AdministrativeArea", "name": "Kelamangalam" },
+        { "@type": "AdministrativeArea", "name": "Krishnagiri" },
+        { "@type": "AdministrativeArea", "name": "Perandapalli" },
+        { "@type": "AdministrativeArea", "name": "Alasanatham" },
+        { "@type": "AdministrativeArea", "name": "Berigai" },
+        { "@type": "AdministrativeArea", "name": "Anthivadi" },
+        { "@type": "AdministrativeArea", "name": "SBM Colony" },
+        { "@type": "AdministrativeArea", "name": "Navadhi" },
+        { "@type": "AdministrativeArea", "name": "Anekal" },
+        { "@type": "AdministrativeArea", "name": "Poonapalli" },
+        { "@type": "AdministrativeArea", "name": "Belagondapalli" },
+        { "@type": "AdministrativeArea", "name": "Mathakondapalli" },
+        { "@type": "AdministrativeArea", "name": "Thally" },
+        { "@type": "AdministrativeArea", "name": "Kothur" },
+        { "@type": "AdministrativeArea", "name": "Muneeswar Nagar" },
+        { "@type": "AdministrativeArea", "name": "Mookandapalli" },
+        { "@type": "AdministrativeArea", "name": "Mathigiri" }
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
@@ -82,17 +123,17 @@ const jsonLd = {
     {
       "@type": "TaxiService",
       "@id": "https://www.yuvacalltaxi.com/local-taxi#service",
-      "name": "Local Taxi Service in Hosur",
+      "name": "Local Taxi Service in Hosur & Surrounding Areas",
       "telephone": "+919944271322",
       "url": "https://www.yuvacalltaxi.com/local-taxi",
-      "description": "24/7 local taxi and cab service in Hosur starting from ₹150. Quick 5-10 minute pickup across Hosur Railway Station, Bus Stand, SIPCOT & all local areas.",
+      "description": "24/7 local taxi and cab booking across Hosur, Rayakottai, Denkanikottai, Kelamangalam, Krishnagiri, Bathalapalli, SBM Colony, Anekal & SIPCOT from ₹150. Fast 5-10 minute pickup.",
       "provider": {
         "@id": "https://www.yuvacalltaxi.com/#localbusiness"
       },
       "priceRange": "₹150 - ₹1,500",
       "areaServed": {
-        "@type": "City",
-        "name": "Hosur"
+        "@type": "AdministrativeArea",
+        "name": "Hosur and Krishnagiri District"
       }
     },
     {
@@ -101,26 +142,42 @@ const jsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the fare for local taxi service in Hosur?",
+          "name": "What is the minimum fare for local taxi service in Hosur?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Local taxi service in Hosur starts from ₹150 for the first 4 kilometers for Non-A/C Hatchback (₹180 for A/C), and ₹180 for Sedan (₹220 for A/C), followed by transparent per-kilometer rates."
+            "text": "Local taxi service in Hosur starts at ₹150 for the first 4 kilometers for Non-A/C Hatchback (₹180 for A/C). Sedan cabs (Swift Dzire/Etios) start from ₹180 Non-A/C and ₹220 A/C with clear per-km billing thereafter."
           }
         },
         {
           "@type": "Question",
-          "name": "How quickly can a local cab arrive in Hosur?",
+          "name": "How fast is your local cab pickup in Hosur, Bathalapalli, and residential colonies?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our GPS-dispatched drivers typically arrive within 5 to 10 minutes across all Hosur areas including Railway Station, Bus Stand, SIPCOT, Bagalur Road, Dinnur, and Jeeva Nagar."
+            "text": "Our nearest GPS-tracked driver arrives in 3 to 10 minutes across all Hosur areas. Railway Station and Bus Stand pickups average 3 to 5 minutes, while SIPCOT, Bathalapalli, Alasanatham, Anthivadi, SBM Colony, and Muneeswar Nagar average 5 to 8 minutes."
           }
         },
         {
           "@type": "Question",
-          "name": "How do I book a local taxi in Hosur?",
+          "name": "Do you provide taxi service in Rayakottai and Rayakottai Housing Board?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can instantly book a local taxi in Hosur by calling +91 99442 71322 or messaging us on WhatsApp. We are available 24 hours a day with zero surge charges."
+            "text": "Yes! Yuva Call Taxi provides 24/7 call taxi service in Rayakottai and Rayakottai Housing Board with fast doorstep pickups, direct drops to Hosur city, Krishnagiri, and Kempegowda Bengaluru Airport."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is taxi service available in Denkanikottai, Kelamangalam, Thally, and Anekal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We operate 24-hour cabs connecting Denkanikottai, Kelamangalam, Thally, Anekal, Belagondapalli, Mathakondapalli, and Berigai to Hosur and Bengaluru with transparent rates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is call taxi available 24 hours in Hosur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Yuva Call Taxi operates 24 hours a day, 7 days a week including night emergencies and early morning train/bus connections. Call +91 99442 71322 for instant booking."
           }
         }
       ]
@@ -149,14 +206,15 @@ const jsonLd = {
 export default function LocalTaxiSEO() {
   return (
     <Helmet>
-      <title>Local Taxi Service in Hosur | 24/7 Local Cab Booking - Yuva Call Taxi</title>
-      <meta name="title" content="Local Taxi Service in Hosur | 24/7 Local Cab Booking - Yuva Call Taxi" />
+      <title>Local Taxi Service in Hosur | Cabs in Rayakottai, Denkanikottai, Bathalapalli - Yuva Cabs</title>
+      <meta name="title" content="Local Taxi Service in Hosur | Cabs in Rayakottai, Denkanikottai, Bathalapalli - Yuva Cabs" />
       <meta
         name="description"
-        content="Need a local taxi near you in Hosur? Yuva Call Taxi (+91 99442 71322) provides 24/7 local cab booking across SIPCOT, Bagalur, Dinnur & Jeeva Nagar from ₹150. Fast 5-10 min pickup."
+        content="24/7 Call taxi in Hosur, Rayakottai, Denkanikottai, Kelamangalam, Krishnagiri, Bathalapalli, SBM Colony & Anekal (+91 99442 71322). Fast 5-10 min pickup from ₹150."
       />
       <meta name="keywords" content={keywords.join(', ')} />
       <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <link rel="canonical" href="https://www.yuvacalltaxi.com/local-taxi" />
       <link rel="alternate" hreflang="en-IN" href="https://www.yuvacalltaxi.com/local-taxi" />
       <link rel="alternate" hreflang="ta" href="https://www.yuvacalltaxi.com/local-taxi" />
@@ -173,10 +231,10 @@ export default function LocalTaxiSEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://www.yuvacalltaxi.com/local-taxi" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Local Taxi Service in Hosur | 24/7 Local Cab Booking - Yuva Call Taxi" />
+      <meta property="og:title" content="Local Taxi Service in Hosur | Cabs in Rayakottai, Denkanikottai, Bathalapalli" />
       <meta
         property="og:description"
-        content="Need a local taxi near you in Hosur? Yuva Call Taxi (+91 99442 71322) provides 24/7 local cab booking across SIPCOT, Bagalur, Dinnur & Jeeva Nagar from ₹150. Fast 5-10 min pickup."
+        content="24/7 Call taxi in Hosur, Rayakottai, Denkanikottai, Kelamangalam, Krishnagiri, Bathalapalli, SBM Colony & Anekal (+91 99442 71322). Fast 5-10 min pickup from ₹150."
       />
       <meta property="og:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
       <meta property="og:locale" content="en_IN" />
@@ -184,10 +242,10 @@ export default function LocalTaxiSEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://www.yuvacalltaxi.com/local-taxi" />
-      <meta property="twitter:title" content="Local Taxi Service in Hosur | 24/7 Local Cab Booking - Yuva Call Taxi" />
+      <meta property="twitter:title" content="Local Taxi Service in Hosur | Cabs in Rayakottai, Denkanikottai, Bathalapalli" />
       <meta
         property="twitter:description"
-        content="Need a local taxi near you in Hosur? Yuva Call Taxi (+91 99442 71322) provides 24/7 local cab booking across SIPCOT, Bagalur, Dinnur & Jeeva Nagar from ₹150. Fast 5-10 min pickup."
+        content="24/7 Call taxi in Hosur, Rayakottai, Denkanikottai, Kelamangalam, Krishnagiri, Bathalapalli, SBM Colony & Anekal (+91 99442 71322). Fast 5-10 min pickup from ₹150."
       />
       <meta property="twitter:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
 

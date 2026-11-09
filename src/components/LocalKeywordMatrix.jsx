@@ -12,7 +12,7 @@ export default function LocalKeywordMatrix() {
 
   // Top Customer Search Route Keywords on Google
   const searchKeywordsData = [
-    // --- 1. LOCAL HOSUR TAXI KEYWORDS ---
+    // --- 1. LOCAL HOSUR TAXI HUBS ---
     {
       id: 'local-railway-station',
       category: 'local',
@@ -74,14 +74,14 @@ export default function LocalKeywordMatrix() {
       category: 'local',
       keyword: 'Dinnur Call Taxi',
       title: 'Dinnur & Sanasandiram Call Taxi Service',
-      route: 'Dinnur → Hosur Railway Station, Bus Stand & Markets',
+      route: 'Dinnur Main Road → Hosur Railway Station, Bus Stand & Markets',
       pickupTime: '5 - 8 Mins Pickup',
       distance: 'Residential Hub',
       fare: 'Starts @ ₹150 (4 KM Min)',
       fleet: 'Hatchback & Sedan',
-      badge: 'Residential Pickup',
+      badge: 'Office & Residential',
       highlight: 'Neighborhood Favorite',
-      desc: 'Prompt doorstep pickup in Dinnur, Sanasandiram, and Avalapalli with 24/7 availability and zero surge pricing.'
+      desc: 'Prompt doorstep pickup in Dinnur Main Road, Sanasandiram, and Avalapalli with 24/7 availability and zero surge pricing.'
     },
     {
       id: 'local-jeeva-nagar',
@@ -98,7 +98,233 @@ export default function LocalKeywordMatrix() {
       desc: '24/7 local taxi booking for residents of Jeeva Nagar, Mathigiri, and Kelamangalam Road. Reliable drivers and clean cars.'
     },
 
-    // --- 2. OUTSTATION & DROP TAXI KEYWORDS ---
+    // --- 2. HOSUR COLONIES, NEIGHBORHOODS & NEARBY TOWNS (USER REQUESTED LOCATIONS) ---
+    {
+      id: 'town-rayakottai',
+      category: 'neighborhoods',
+      keyword: 'Rayakottai Taxi Service',
+      title: 'Rayakottai & Rayakottai Housing Board Call Taxi',
+      route: 'Rayakottai / Housing Board ⇄ Hosur / Krishnagiri / Bangalore Airport',
+      pickupTime: '10 - 15 Mins Pickup',
+      distance: 'Township Corridor (SH17 / NH844)',
+      fare: 'Starts @ ₹9/km (One-Way & Round Trip)',
+      fleet: 'Dzire, Etios, Ertiga & Innova',
+      badge: 'Fort Town Hub',
+      highlight: 'Top Rayakottai Cab',
+      desc: '24/7 call taxi service in Rayakottai town and Rayakottai Housing Board. Fast pickup for local hospital visits, Hosur city commute, Krishnagiri trips, and direct Kempegowda Airport drops.'
+    },
+    {
+      id: 'town-denkanikottai',
+      category: 'neighborhoods',
+      keyword: 'Denkanikottai Taxi Service',
+      title: 'Denkanikottai Call Taxi & Cab Booking',
+      route: 'Denkanikottai ⇄ Hosur / Thally / Bangalore Airport (BLR)',
+      pickupTime: '12 - 15 Mins Pickup',
+      distance: 'Taluk Headquarters (25 KM)',
+      fare: 'Starts @ ₹9/km | Local & Outstation',
+      fleet: 'Sedan (Dzire), Ertiga & Innova Crysta',
+      badge: 'Taluk Hub',
+      highlight: '24/7 Denkanikottai',
+      desc: 'Top-rated taxi service in Denkanikottai. Immediate cabs to Hosur Railway Station, government offices, private hospitals, and Bengaluru International Airport with transparent per-km billing.'
+    },
+    {
+      id: 'town-kelamangalam',
+      category: 'neighborhoods',
+      keyword: 'Kelamangalam Call Taxi',
+      title: 'Kelamangalam Taxi Service & Cabs',
+      route: 'Kelamangalam ⇄ Hosur Town / Mathigiri / SIPCOT Industrial Belts',
+      pickupTime: '10 - 15 Mins Pickup',
+      distance: 'Town Panchayat (18 KM)',
+      fare: 'Starts @ ₹9/km | 24/7 Available',
+      fleet: 'Hatchback, Sedan & SUV',
+      badge: 'Satellite Town Hub',
+      highlight: 'Fast Cab Dispatch',
+      desc: 'Doorstep call taxi pickup in Kelamangalam town, railway gate, and industrial corridors. Seamless connections to Hosur town, Electronic City, and airport drops.'
+    },
+    {
+      id: 'town-krishnagiri',
+      category: 'neighborhoods',
+      keyword: 'Krishnagiri to Hosur Taxi',
+      title: 'Krishnagiri ⇄ Hosur Express Highway Cab',
+      route: 'Krishnagiri (Old / New Bus Stand / Tollgate) ⇄ Hosur (NH44)',
+      pickupTime: 'Immediate / 10 Mins',
+      distance: '48 KM (45 Mins via 6-Lane NH44)',
+      fare: 'Starts @ ₹9/km (One-Way Drop Available)',
+      fleet: 'Swift Dzire, Etios, Ertiga & Innova Crysta',
+      badge: 'District Highway Route',
+      highlight: 'Zero Return Fare Drop',
+      desc: 'Express highway taxi between Krishnagiri and Hosur along NH44. Pay only for one-way distance with zero return charges. Perfect for Collectorate visits, court, bus stand, and hospital transit.'
+    },
+    {
+      id: 'local-bathalapalli',
+      category: 'neighborhoods',
+      keyword: 'Bathalapalli Taxi Service Hosur',
+      title: 'Bathalapalli Wholesale Market & Industrial Cabs',
+      route: 'Bathalapalli ⇄ Hosur Railway Station / Bus Stand / SIPCOT',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'Local Market & Industry Hub',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Hatchback & Sedan (Dzire/Etios)',
+      badge: 'Commercial Hub',
+      highlight: '5-Min Fast Pickup',
+      desc: 'Looking for a call taxi near Bathalapalli? Dedicated cabs stationed 24/7 near Bathalapalli vegetable market, industrial units, and Ring Road for instant city drops.'
+    },
+    {
+      id: 'local-alasanatham',
+      category: 'neighborhoods',
+      keyword: 'Alasanatham Taxi Service Hosur',
+      title: 'Alasanatham Road & Alasanatham Lake Area Cabs',
+      route: 'Alasanatham ⇄ Hosur Town / Railway Station / Bus Stand',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'Core Residential Zone',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Sedan & Hatchback',
+      badge: 'Residential Favorite',
+      highlight: 'Doorstep Pickup',
+      desc: 'Fast 24/7 call taxi in Alasanatham, Alasanatham Road, and nearby residential wards. Clean AC cars for school, shopping, clinic, and railway station transfers.'
+    },
+    {
+      id: 'town-berigai',
+      category: 'neighborhoods',
+      keyword: 'Berigai Call Taxi Service',
+      title: 'Berigai Town & East Hosur Border Corridor Cabs',
+      route: 'Berigai ⇄ Bagalur / Hosur Town / Malur',
+      pickupTime: '12 - 15 Mins Pickup',
+      distance: 'Border Town Hub (22 KM)',
+      fare: 'Starts @ ₹9/km | Local & Drop Taxi',
+      fleet: 'Hatchback, Sedan & Ertiga SUV',
+      badge: 'Border Corridor',
+      highlight: 'Safe Family Travel',
+      desc: 'Safe and dependable taxi service connecting Berigai to Hosur town, Bagalur, and Karnataka border areas. Available 24 hours with polite, verified local drivers.'
+    },
+    {
+      id: 'local-anthivadi',
+      category: 'neighborhoods',
+      keyword: 'Anthivadi Taxi Service Hosur',
+      title: 'Anthivadi Stadium & Anthivadi Circle Cabs',
+      route: 'Anthivadi ⇄ Hosur Railway Station / Bus Stand / SIPCOT',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'Sports & Residential Hub',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'AC Dzire & Hatchback',
+      badge: 'Stadium Zone',
+      highlight: 'Instant City Drop',
+      desc: '24/7 cab booking in Anthivadi, Anthivadi Stadium, and surrounding colonies. Transparent fares with zero surge charges and instant GPS-tracked dispatch.'
+    },
+    {
+      id: 'local-sbm-colony',
+      category: 'neighborhoods',
+      keyword: 'SBM Colony Taxi Hosur',
+      title: 'SBM Colony & Avalapalli Road Call Taxi',
+      route: 'SBM Colony ⇄ Hosur Central / Railway Station / Airport',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'Premier Residential Colony',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Swift Dzire & Ertiga',
+      badge: 'Colony Specialist',
+      highlight: 'Safe Senior & Family Cab',
+      desc: 'Premier neighborhood cab service for SBM Colony residents. Safe family chauffeurs, clean sanitized cars for local medical visits and outstation getaways.'
+    },
+    {
+      id: 'local-navadhi',
+      category: 'neighborhoods',
+      keyword: 'Navadhi Call Taxi Hosur',
+      title: 'Navadhi & Mathigiri Road Cabs',
+      route: 'Navadhi ⇄ Hosur Railway Station / SIPCOT / Town Center',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'Residential Belt',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Hatchback & Sedan',
+      badge: 'Lake & Town Belt',
+      highlight: '5-Min Fast Dispatch',
+      desc: 'Fast doorstep pickup in Navadhi and Navadhi Lake area. Available 24 hours for midnight medical emergencies and daily morning work commutes.'
+    },
+    {
+      id: 'town-anekal',
+      category: 'neighborhoods',
+      keyword: 'Anekal to Hosur Taxi',
+      title: 'Hosur ⇄ Anekal Town & Railway Station Cabs',
+      route: 'Hosur ⇄ Anekal / Jigani / Chandapura / Attibele',
+      pickupTime: '10 - 15 Mins Pickup',
+      distance: 'Inter-State Border (14 KM)',
+      fare: 'Starts @ ₹10/km or Flat Package',
+      fleet: 'Swift Dzire, Etios & Ertiga',
+      badge: 'TN-KA Border Hub',
+      highlight: 'Daily Border Commute',
+      desc: 'Direct inter-state cab service between Hosur and Anekal. Quick commute for factory engineers, college students, and hospital visits with zero border hassle.'
+    },
+    {
+      id: 'local-poonapalli',
+      category: 'neighborhoods',
+      keyword: 'Poonapalli Taxi Service Hosur',
+      title: 'Poonapalli Village & Ring Road Cabs',
+      route: 'Poonapalli ⇄ Hosur Bus Stand / SIPCOT / Railway Station',
+      pickupTime: '5 - 10 Mins Pickup',
+      distance: 'Ring Road Belt',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Hatchback & Sedan',
+      badge: 'Outer Ring Belt',
+      highlight: '24/7 Availability',
+      desc: 'Doorstep taxi pickup in Poonapalli village and surrounding layouts with clear per-km billing and courteous professional drivers.'
+    },
+    {
+      id: 'town-belagondapalli',
+      category: 'neighborhoods',
+      keyword: 'Belagondapalli Taxi Service',
+      title: 'Belagondapalli & Mathakondapalli Industrial Cabs',
+      route: 'Belagondapalli / Mathakondapalli ⇄ Hosur / Thally / BLR Airport',
+      pickupTime: '8 - 12 Mins Pickup',
+      distance: 'Thally Road Industrial Hub',
+      fare: 'Starts @ ₹9/km | Local & Shift Drops',
+      fleet: 'Dzire, Etios, Ertiga & Tempo Traveller',
+      badge: 'Manufacturing Hub',
+      highlight: 'Industrial Fleet',
+      desc: 'Dedicated cabs for manufacturing units, industrial workers, and residents across Belagondapalli and Mathakondapalli corridors on Thally Road.'
+    },
+    {
+      id: 'town-thally',
+      category: 'neighborhoods',
+      keyword: 'Thally Taxi Service Hosur',
+      title: 'Thally Town & Little England Cabs',
+      route: 'Thally ⇄ Hosur / Denkanikottai / Bangalore',
+      pickupTime: '15 Mins Pickup',
+      distance: 'Scenic Hill Belt (28 KM)',
+      fare: 'Starts @ ₹9/km | One-Way & Round Trip',
+      fleet: 'AC Sedan & Innova Crysta',
+      badge: 'Border Hill Town',
+      highlight: 'Scenic & Darshan Tours',
+      desc: 'Reliable call taxi service in Thally border town. Comfortable AC cars for trips to Hosur town, hospitals, and Kempegowda Bengaluru Airport.'
+    },
+    {
+      id: 'local-perandapalli',
+      category: 'neighborhoods',
+      keyword: 'Perandapalli Call Taxi',
+      title: 'Perandapalli & Kothur Industrial Belt Cabs',
+      route: 'Perandapalli / Kothur ⇄ SIPCOT Phase 2 / Hosur Town',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'SIPCOT Expansion Zone',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Hatchback, Sedan & SUV',
+      badge: 'SIPCOT Phase 2 Hub',
+      highlight: 'Industrial Priority',
+      desc: 'Quick cab arrivals in Perandapalli, Kothur, and NH44 bypass corridor for shift commutes, family outings, and outstation drops.'
+    },
+    {
+      id: 'local-muneeswar-nagar',
+      category: 'neighborhoods',
+      keyword: 'Muneeswar Nagar Call Taxi Hosur',
+      title: 'Muneeswar Nagar & Kamaraj Colony Cabs',
+      route: 'Muneeswar Nagar ⇄ Hosur Railway Station / Bus Stand / Market',
+      pickupTime: '5 - 8 Mins Pickup',
+      distance: 'High-Density Residential',
+      fare: 'Starts @ ₹150 (4 KM Min)',
+      fleet: 'Hatchback & Sedan',
+      badge: 'Residential Hub',
+      highlight: 'Fast Local Pickup',
+      desc: 'Fast 24/7 residential call taxi in Muneeswar Nagar. Affordable rates starting from ₹150 with verified, courteous local drivers.'
+    },
+
+    // --- 3. OUTSTATION & DROP TAXI KEYWORDS ---
     {
       id: 'outstation-chennai',
       category: 'outstation',
@@ -170,7 +396,7 @@ export default function LocalKeywordMatrix() {
       desc: 'Complete Tirupati Balaji pilgrimage cab packages with temple wait-time included and safe highway driving.'
     },
 
-    // --- 3. AIRPORT TAXI KEYWORDS ---
+    // --- 4. AIRPORT TAXI KEYWORDS ---
     {
       id: 'airport-blr-hosur',
       category: 'airport',
@@ -229,15 +455,15 @@ export default function LocalKeywordMatrix() {
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 text-brand-yellow text-xs font-black uppercase tracking-wider">
             <Search className="w-3.5 h-3.5 text-brand-yellow" />
-            <span>Hosur 24/7 Taxi Search &amp; Route Matrix</span>
+            <span>Hosur &amp; Nearby Towns 24/7 Taxi Network</span>
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight">
-            Top Cab Bookings &amp; Search Routes in <span className="text-brand-yellow text-glow-yellow">Hosur</span>
+            Top Cab Bookings &amp; Search Routes in <span className="text-brand-yellow text-glow-yellow">Hosur &amp; Surrounding Areas</span>
           </h2>
 
           <p className="text-xs sm:text-sm text-brand-silver font-medium leading-relaxed max-w-2xl mx-auto">
-            Looking for a <strong className="text-white">Call Taxi Near Me</strong>, <strong className="text-white">Outstation Taxi in Hosur</strong>, or <strong className="text-white">Hosur to Bangalore Airport Taxi</strong>? Browse popular routes below for instant transparent fares and one-click booking.
+            Looking for a <strong className="text-white">Call Taxi Near Me</strong> in Hosur, Rayakottai, Denkanikottai, Kelamangalam, Krishnagiri, Bathalapalli, Anekal, or SBM Colony? Browse below for instant transparent fares and one-click booking.
           </p>
         </div>
 
@@ -248,7 +474,7 @@ export default function LocalKeywordMatrix() {
             <Search className="w-5 h-5 text-brand-yellow absolute left-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search by area or route (e.g. Railway Station, SIPCOT, Bagalur, Airport, Chennai)..."
+              placeholder="Search area (e.g. Rayakottai, Denkanikottai, Bathalapalli, Krishnagiri, Anekal, SBM Colony, Kelamangalam)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full bg-brand-charcoal/90 border border-white/10 hover:border-brand-yellow/40 focus:border-brand-yellow rounded-2xl pl-12 pr-4 py-3.5 text-xs sm:text-sm text-white placeholder-brand-gray shadow-xl focus:outline-none transition-all"
@@ -265,12 +491,13 @@ export default function LocalKeywordMatrix() {
           </div>
 
           {/* Category Tabs */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             {[
-              { id: 'all', label: 'All Services', icon: Sparkles },
-              { id: 'local', label: 'Local Hosur Cabs', icon: MapPin },
-              { id: 'outstation', label: 'Outstation Drop Taxi', icon: Navigation },
-              { id: 'airport', label: 'Bangalore Airport Cabs', icon: Plane }
+              { id: 'all', label: 'All Locations', icon: Sparkles },
+              { id: 'local', label: 'Hosur Hubs', icon: MapPin },
+              { id: 'neighborhoods', label: 'Colonies & Towns', icon: Building2 },
+              { id: 'outstation', label: 'Outstation Drop', icon: Navigation },
+              { id: 'airport', label: 'BLR Airport Cabs', icon: Plane }
             ].map((tab) => {
               const Icon = tab.icon;
               const isActive = activeCategory === tab.id;
@@ -320,31 +547,51 @@ export default function LocalKeywordMatrix() {
                   {item.desc}
                 </p>
 
-                <div className="text-xs font-bold text-brand-yellow">
-                  {item.fare}
+                {/* Route & Pricing Spec */}
+                <div className="space-y-1.5 pt-2 border-t border-white/5 text-xs">
+                  <div className="flex items-start space-x-1.5 text-brand-silver">
+                    <Navigation className="w-3.5 h-3.5 text-brand-yellow flex-shrink-0 mt-0.5" />
+                    <span className="text-[11px] font-semibold text-white/90">{item.route}</span>
+                  </div>
+                  <div className="flex items-center justify-between pt-1">
+                    <span className="text-[11px] font-bold text-brand-gray">{item.fleet}</span>
+                    <span className="text-xs font-black text-brand-yellow">{item.fare}</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between gap-2">
+              {/* CTAs */}
+              <div className="flex gap-2 pt-4 mt-3 border-t border-white/5">
                 <a
                   href="tel:+919944271322"
-                  className="flex-1 py-2 px-3 rounded-xl bg-brand-yellow text-brand-black font-extrabold text-xs flex items-center justify-center space-x-1.5 hover:brightness-110 active:scale-95 transition-all"
+                  className="flex-1 py-2.5 rounded-xl bg-brand-yellow text-brand-black font-black text-xs text-center flex items-center justify-center space-x-1 shadow-md hover:brightness-105 active:scale-95 transition-all"
                 >
                   <Phone className="w-3.5 h-3.5 fill-brand-black" />
                   <span>Call Now</span>
                 </a>
                 <a
-                  href={`https://wa.me/919944271322?text=Hello%20Yuva%20Call%20Taxi,%20I%20would%20like%20to%20book%20${encodeURIComponent(item.keyword)}.`}
+                  href={`https://wa.me/919944271322?text=Hello%20Yuva%20Call%20Taxi!%20I%20want%20to%20book%20a%20cab%20in%20${encodeURIComponent(item.keyword)}.%20Please%20share%20fare%20and%20availability.`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="py-2 px-3 rounded-xl bg-[#25D366] text-white font-bold text-xs flex items-center justify-center hover:brightness-110 active:scale-95 transition-all"
+                  className="flex-1 py-2.5 rounded-xl bg-[#25D366] text-white font-black text-xs text-center flex items-center justify-center space-x-1 shadow-md hover:brightness-110 active:scale-95 transition-all"
                 >
                   <MessageSquare className="w-3.5 h-3.5 fill-white" />
+                  <span>WhatsApp</span>
                 </a>
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom Helper Notice */}
+        <div className="text-center mt-10 pt-6 border-t border-white/5">
+          <p className="text-xs text-brand-gray">
+            Need a pickup from any other locality in or around Hosur? Call our 24/7 dispatch desk directly at{' '}
+            <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">
+              +91 99442 71322
+            </a>{' '}
+            for instant cab arrival in 5–10 minutes.
+          </p>
         </div>
 
       </div>
