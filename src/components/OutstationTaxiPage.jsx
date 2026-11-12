@@ -484,7 +484,7 @@ export default function OutstationTaxiPage({ theme, setTheme, onNavigateHome }) 
               className="inline-flex items-center space-x-1 mt-5 text-xs text-blue-400 hover:text-blue-300 transition-colors"
             >
               <MapPin className="w-3.5 h-3.5" />
-              <span>Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109</span>
+              <span>Dinnur Main Road, Jeeva Nagar - Hosur 635109</span>
             </a>
           </div>
         </section>

@@ -221,36 +221,23 @@ export default function Hero() {
         {/* Left Side: Cinematic Copy and Badge buttons */}
         <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
           
-          {/* Diwali Festive Greeting & 3 Core Services Badge */}
-          <div className="flex flex-wrap items-center gap-2">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-600/30 via-yellow-500/20 to-amber-600/30 border border-amber-400/40 text-amber-300 text-xs font-black shadow-[0_0_12px_rgba(251,191,36,0.25)]"
-            >
-              <span>🪔</span>
-              <span className="uppercase tracking-wider text-[10px] sm:text-[11px]">Happy Diwali! Festival Cabs 24/7</span>
-              <span>🎆</span>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold"
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
-                Hosur Call Taxi • 24/7 Taxi Service &amp; Cab Booking
-              </span>
-              <span className="text-brand-silver/40 hidden sm:inline">•</span>
-              <a href="tel:+919944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
-                <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
-                <span>+91 99442 71322</span>
-              </a>
-            </motion.div>
-          </div>
+          {/* 3 Core Services Badge Pill with Contact Number */}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="self-start inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/30 text-brand-yellow text-xs font-bold"
+          >
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+            <span className="text-white font-extrabold uppercase tracking-wider text-[11px]">
+              Hosur Call Taxi • 24/7 Taxi Service &amp; Cab Booking
+            </span>
+            <span className="text-brand-silver/40 hidden sm:inline">•</span>
+            <a href="tel:+919944271322" className="flex items-center space-x-1 text-brand-yellow hover:underline font-black">
+              <Phone className="w-3.5 h-3.5 fill-brand-yellow text-brand-yellow" />
+              <span>+91 99442 71322</span>
+            </a>
+          </motion.div>
 
           {/* Search Optimized High-Conversion Single H1 */}
           <motion.h1

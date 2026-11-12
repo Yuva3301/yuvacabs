@@ -19,7 +19,6 @@ import AdminDashboard from './components/AdminDashboard';
 import AirportTaxiPage from './components/AirportTaxiPage';
 import LocalTaxiPage from './components/LocalTaxiPage';
 import OutstationTaxiPage from './components/OutstationTaxiPage';
-import DiwaliEffects from './components/DiwaliEffects';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -198,7 +197,6 @@ export default function App() {
       {/* Main Page Layout Wrapper */}
       {!loading && (
         <>
-          <DiwaliEffects />
           {currentRoute === 'airport' ? (
             /* Dedicated Airport Taxi Landing Page */
             <AirportTaxiPage 

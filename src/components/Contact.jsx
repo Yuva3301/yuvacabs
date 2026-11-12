@@ -494,7 +494,7 @@ export default function Contact() {
           <div className="glass-card p-2 rounded-3xl border border-white/5 relative overflow-hidden h-72 shadow-2xl group">
             <iframe
               title="YUVA CABS Hosur Hub Map"
-              src="https://maps.google.com/maps?q=Dinnur%20Main%20Road,%20Jeeva%20Nagar,%20Hosur,%20Tamil%20Nadu%20635109&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Dinnur%20Main%20road%20jeeva%20nagar%20-%20Hosur%20635109&t=&z=15&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full rounded-2xl filter invert-[90%] hue-rotate-[180deg] contrast-[100%] border-0 opacity-80"
               allowFullScreen=""
               loading="lazy"

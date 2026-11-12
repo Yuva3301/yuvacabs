@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import './index.css';
 import AirportTaxiPage from './components/AirportTaxiPage';
-import DiwaliEffects from './components/DiwaliEffects';
 
 function AirportApp() {
   const [theme, setTheme] = useState(() => {
@@ -24,14 +23,11 @@ function AirportApp() {
   };
 
   return (
-    <>
-      <DiwaliEffects />
-      <AirportTaxiPage 
-        theme={theme} 
-        setTheme={setTheme} 
-        onNavigateHome={handleNavigateHome} 
-      />
-    </>
+    <AirportTaxiPage 
+      theme={theme} 
+      setTheme={setTheme} 
+      onNavigateHome={handleNavigateHome} 
+    />
   );
 }
 

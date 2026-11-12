@@ -121,7 +121,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
                 rel="noopener noreferrer"
                 className="hover:text-brand-yellow transition-colors"
               >
-                Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109
+                Dinnur Main Road, Jeeva Nagar - Hosur 635109
               </a>
             </li>
 
@@ -217,7 +217,7 @@ export default function Footer({ onAdminToggle, onNavigateAirport, onNavigateLoc
           </div>
 
           <address className="text-xs text-brand-gray/70 not-italic">
-            Yuva Call Taxi | Dinnur Main Road, Jeeva Nagar, Hosur, Tamil Nadu 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a> | https://www.yuvacalltaxi.com
+            Yuva Call Taxi | Dinnur Main Road, Jeeva Nagar - Hosur 635109 | Phone: <a href="tel:+919944271322" className="text-brand-yellow font-bold hover:underline">+91 99442 71322</a> | https://www.yuvacalltaxi.com
           </address>
         </div>
       </div>

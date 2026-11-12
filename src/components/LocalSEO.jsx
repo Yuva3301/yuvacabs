@@ -140,7 +140,7 @@ export default function LocalSEO() {
     { zone: 'Perandapalli & Kothur', time: '5-8 mins', badge: 'SIPCOT Belt', note: 'Fast pickup near NH44 bypass and manufacturing units' },
     { zone: 'Muneeswar Nagar & Navadhi', time: '5-8 mins', badge: 'Town Residential', note: 'Rapid 24/7 dispatch for Muneeswar Nagar and Navadhi Lake' },
     { zone: 'Berigai & Poonapalli', time: '10-15 mins', badge: 'East Hosur Belt', note: 'Dependable rural and town border cab services' },
-    { zone: 'Dinnur & Jeeva Nagar', time: '5-8 mins', badge: 'Head Office Hub', note: 'Main office area with 5-minute instant car arrival' },
+    { zone: 'Dinnur & Jeeva Nagar', time: '5-8 mins', badge: 'Head Office Hub', note: 'Dinnur Main road jeeva nagar - Hosur 635109 with 5-minute instant car arrival' },
   ];
 
   return (

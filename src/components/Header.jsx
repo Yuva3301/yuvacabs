@@ -63,7 +63,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
           <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-[10px] sm:text-xs font-black">
             <div className="flex items-center space-x-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-              <span className="text-brand-yellow uppercase tracking-wider">🪔 24 Hours Call Taxi in Hosur • Cabs Near Me:</span>
+              <span className="text-brand-yellow uppercase tracking-wider">24 Hours Call Taxi in Hosur • Cabs Near Me:</span>
             </div>
             <div className="flex flex-wrap items-center gap-2.5 sm:gap-5 font-extrabold text-white">
               <a href="tel:+919944271322" className="hover:text-brand-yellow transition-colors flex items-center space-x-1">
