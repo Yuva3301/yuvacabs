@@ -13,7 +13,6 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import FloatingCTA from './components/FloatingCTA';
-import WhatsAppGreeting from './components/WhatsAppGreeting';
 import Footer from './components/Footer';
 import AdminDashboard from './components/AdminDashboard';
 import AirportTaxiPage from './components/AirportTaxiPage';
@@ -258,7 +257,6 @@ export default function App() {
 
               {/* Floating Mobile and WhatsApp triggers */}
               <FloatingCTA />
-              <WhatsAppGreeting />
             </div>
           )}
 
