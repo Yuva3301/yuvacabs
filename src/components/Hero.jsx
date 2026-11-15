@@ -167,16 +167,16 @@ export default function Hero() {
                   x: 0,
                   opacity: 1,
                   scale: 1,
-                  transition: { duration: 0.4, ease: 'easeOut' }
+                  transition: { duration: 0.3, ease: 'easeOut' }
                 },
                 exit: (dir) => ({
                   x: dir < 0 ? 150 : -150,
                   opacity: 0,
                   scale: 0.95,
-                  transition: { duration: 0.3, ease: 'easeIn' }
+                  transition: { duration: 0.2, ease: 'easeIn' }
                 })
               }}
-              initial="enter"
+              initial={false}
               animate="center"
               exit="exit"
               src={vehicles[selectedVehicle].image}
@@ -184,6 +184,7 @@ export default function Hero() {
               width="340"
               height="190"
               loading="eager"
+              fetchPriority="high"
               className="w-full h-full object-contain select-none p-2 mt-6"
             />
           </AnimatePresence>

@@ -7,15 +7,15 @@ import WhyChooseUs from './components/WhyChooseUs';
 import Services from './components/Services';
 import Pricing from './components/Pricing';
 import LocalSEO from './components/LocalSEO';
-import LocalKeywordMatrix from './components/LocalKeywordMatrix';
 import About from './components/About';
-import Testimonials from './components/Testimonials';
-import FAQ from './components/FAQ';
-import Contact from './components/Contact';
 import FloatingCTA from './components/FloatingCTA';
 import Footer from './components/Footer';
 
-// Code-split heavy secondary pages for fast initial mobile bundle load
+// Code-split heavy secondary pages and below-the-fold modules for sub-second mobile load
+const LocalKeywordMatrix = lazy(() => import('./components/LocalKeywordMatrix'));
+const Testimonials = lazy(() => import('./components/Testimonials'));
+const FAQ = lazy(() => import('./components/FAQ'));
+const Contact = lazy(() => import('./components/Contact'));
 const AdminDashboard = lazy(() => import('./components/AdminDashboard'));
 const AirportTaxiPage = lazy(() => import('./components/AirportTaxiPage'));
 const LocalTaxiPage = lazy(() => import('./components/LocalTaxiPage'));
@@ -176,11 +176,13 @@ export default function App() {
             <Services />
             <Pricing />
             <LocalSEO />
-            <LocalKeywordMatrix />
             <WhyChooseUs />
-            <Testimonials />
-            <FAQ />
-            <Contact />
+            <Suspense fallback={<div className="py-12 flex justify-center"><div className="w-6 h-6 border-2 border-brand-yellow border-t-transparent rounded-full animate-spin" /></div>}>
+              <LocalKeywordMatrix />
+              <Testimonials />
+              <FAQ />
+              <Contact />
+            </Suspense>
           </main>
 
           {/* Footer bar */}
