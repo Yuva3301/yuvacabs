@@ -5,7 +5,7 @@ import {
   Calendar, CheckCircle2, ChevronRight, Star, AlertCircle, 
   Users, Briefcase, Sparkles, Navigation, ArrowRightLeft, 
   Car, Info, Compass, ArrowRight, Sun, Moon, ArrowLeft,
-  ChevronDown
+  ChevronDown, Zap
 } from 'lucide-react';
 import AirportSEO from './AirportSEO';
 import premiumTaxiImg from '../assets/premium_taxi.png';
@@ -262,7 +262,7 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
   ];
 
   return (
-    <div className="bg-brand-black text-brand-white min-h-screen relative selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
+    <div className="bg-brand-black text-brand-white min-h-screen relative selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300 pb-24 md:pb-20">
       <AirportSEO />
 
       {/* Top Navbar */}
@@ -372,6 +372,14 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
                 <p className="text-sm sm:text-base text-brand-silver font-medium leading-relaxed max-w-2xl">
                   Catch every flight on time with zero stress. 24/7 dedicated airport pickup and drop between <strong className="text-white">Hosur &amp; Kempegowda International Airport (BLR)</strong>. Flat upfront pricing starting at ₹2,200, live flight delay tracking, and 0% driver cancellation.
                 </p>
+
+                {/* STRR Expressway Route Highlight */}
+                <div className="p-3.5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-brand-yellow/10 to-transparent border border-emerald-500/30 flex items-center space-x-3 text-xs">
+                  <Zap className="w-5 h-5 text-emerald-400 flex-shrink-0 animate-pulse" />
+                  <span className="text-brand-silver">
+                    <strong className="text-white">Express Highway Route (NH-648 STRR):</strong> Reach Kempegowda Airport in just <strong className="text-brand-yellow">70–80 minutes</strong> from Hosur, avoiding Bangalore city traffic jams completely!
+                  </span>
+                </div>
 
                 {/* Trust Badges Bar */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
@@ -1133,24 +1141,33 @@ export default function AirportTaxiPage({ theme, setTheme, onNavigateHome }) {
         </div>
       </footer>
 
-      {/* MOBILE STICKY FLOATING CTA BAR */}
-      <div className="fixed bottom-0 left-0 w-full z-50 md:hidden bg-brand-charcoal/95 backdrop-blur-md border-t border-brand-yellow/30 px-4 py-2.5 flex items-center justify-between gap-2 shadow-2xl">
-        <button
-          type="button"
-          onClick={handleWhatsAppBooking}
-          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl bg-emerald-500 text-white font-extrabold text-xs shadow-md"
-        >
-          <MessageSquare className="w-4 h-4 fill-white" />
-          <span>WhatsApp</span>
-        </button>
+      {/* HIGH-CONVERTING STICKY BOTTOM CALL BAR (MOBILE & DESKTOP) */}
+      <div className="fixed bottom-0 left-0 w-full z-50 bg-[#070a11]/95 backdrop-blur-md border-t border-brand-yellow/30 px-3 py-2.5 sm:px-6 shadow-2xl">
+        <div className="max-w-5xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
+          <div className="hidden sm:flex items-center space-x-2 text-xs font-bold text-white">
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span>Airport Cabs Available 24/7: <span className="text-brand-yellow">Fixed ₹2,200 • 70 Min via STRR</span></span>
+          </div>
 
-        <a
-          href="tel:+919944271322"
-          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 px-3 rounded-xl bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-xs shadow-md"
-        >
-          <Phone className="w-4 h-4 fill-brand-black" />
-          <span>Call 99442 71322</span>
-        </a>
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <button
+              type="button"
+              onClick={handleWhatsAppBooking}
+              className="flex-1 sm:flex-none flex items-center justify-center space-x-1.5 py-2.5 px-4 rounded-xl bg-[#25D366] text-white font-black text-xs hover:brightness-110 active:scale-95 transition-all shadow-md"
+            >
+              <MessageSquare className="w-4 h-4 fill-white" />
+              <span>WhatsApp</span>
+            </button>
+
+            <a
+              href="tel:+919944271322"
+              className="flex-[2] sm:flex-none flex items-center justify-center space-x-2 py-2.5 px-5 sm:px-6 rounded-xl bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-black text-xs sm:text-sm shadow-[0_0_20px_rgba(255,212,59,0.35)] hover:brightness-105 active:scale-95 transition-all animate-pulse"
+            >
+              <Phone className="w-4 h-4 fill-brand-black" />
+              <span>CALL NOW: +91 99442 71322</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
