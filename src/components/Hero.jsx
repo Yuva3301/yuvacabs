@@ -132,6 +132,7 @@ export default function Hero() {
           onClick={handlePrev}
           className="absolute left-3 z-30 p-2 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white transition-all cursor-pointer border border-black/5"
           title="Previous Vehicle"
+          aria-label="Previous Vehicle"
         >
           <ChevronRight className="w-5 h-5 rotate-180" />
         </button>
@@ -140,6 +141,7 @@ export default function Hero() {
           onClick={handleNext}
           className="absolute right-3 z-30 p-2 rounded-full bg-slate-900/80 hover:bg-slate-900 text-white transition-all cursor-pointer border border-black/5"
           title="Next Vehicle"
+          aria-label="Next Vehicle"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
@@ -179,6 +181,9 @@ export default function Hero() {
               exit="exit"
               src={vehicles[selectedVehicle].image}
               alt={`${vehicles[selectedVehicle].name} - Yuva Call Taxi cab in Hosur`}
+              width="340"
+              height="190"
+              loading="eager"
               className="w-full h-full object-contain select-none p-2 mt-6"
             />
           </AnimatePresence>
@@ -187,15 +192,18 @@ export default function Hero() {
         {/* Overlay Phone Badge */}
         <div className="absolute bottom-3 right-3 z-30 flex items-center space-x-1.5 px-3 py-1.5 bg-[#00bfa5] text-white rounded-full font-black text-[10px] shadow-[0_4px_12px_rgba(0,191,165,0.35)] pointer-events-auto">
           <Phone className="w-3 h-3 fill-white text-white flex-shrink-0" />
-          <a href="tel:+919944271322" className="hover:underline">+91 99442 71322</a>
+          <a href="tel:+919944271322" className="hover:underline" aria-label="Call +91 99442 71322">+91 99442 71322</a>
         </div>
 
         {/* Indicator dots */}
-        <div className="absolute bottom-3 flex space-x-1.5 z-20">
+        <div className="absolute bottom-3 flex space-x-1.5 z-20" role="tablist" aria-label="Vehicle Fleet Selector">
           {vehicleKeys.map((key) => (
             <button
               key={key}
               onClick={() => selectVehicleWithDirection(key)}
+              aria-label={`Select ${vehicles[key].name} taxi`}
+              aria-selected={selectedVehicle === key}
+              role="tab"
               className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                 selectedVehicle === key ? 'w-5 bg-slate-800' : 'w-1.5 bg-slate-300 hover:bg-slate-400'
               }`}

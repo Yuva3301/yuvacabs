@@ -6,8 +6,10 @@ Allow: /
 Disallow: /admin
 Disallow: /#admin
 
-# XML Sitemap
+# XML Sitemap & LLM context
 Sitemap: https://www.yuvacalltaxi.com/sitemap.xml
+# Agentic Browsing & AI Crawler Documentation
+# https://www.yuvacalltaxi.com/llms.txt
 
 User-agent: Googlebot
 Allow: /

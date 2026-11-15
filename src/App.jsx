@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from './components/SEO';
 import Header from './components/Header';
@@ -14,14 +14,14 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import FloatingCTA from './components/FloatingCTA';
 import Footer from './components/Footer';
-import AdminDashboard from './components/AdminDashboard';
-import AirportTaxiPage from './components/AirportTaxiPage';
-import LocalTaxiPage from './components/LocalTaxiPage';
-import OutstationTaxiPage from './components/OutstationTaxiPage';
+
+// Code-split heavy secondary pages for fast initial mobile bundle load
+const AdminDashboard = lazy(() => import('./components/AdminDashboard'));
+const AirportTaxiPage = lazy(() => import('./components/AirportTaxiPage'));
+const LocalTaxiPage = lazy(() => import('./components/LocalTaxiPage'));
+const OutstationTaxiPage = lazy(() => import('./components/OutstationTaxiPage'));
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
-  const [loadingProgress, setLoadingProgress] = useState(0);
   const [showAdmin, setShowAdmin] = useState(false);
   const [currentRoute, setCurrentRoute] = useState(() => {
     const path = window.location.pathname.toLowerCase();
@@ -80,25 +80,6 @@ export default function App() {
     };
   }, []);
 
-  // Mock preloader loading meter for luxury brand experience
-  useEffect(() => {
-    if (!loading) return;
-
-    const interval = setInterval(() => {
-      setLoadingProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setTimeout(() => setLoading(false), 500); // Dissolve delay
-          return 100;
-        }
-        const increment = Math.floor(Math.random() * 15) + 5;
-        return Math.min(prev + increment, 100);
-      });
-    }, 100);
-
-    return () => clearInterval(interval);
-  }, [loading]);
-
   const handleAdminToggle = () => {
     if (showAdmin) {
       window.location.hash = '';
@@ -150,131 +131,84 @@ export default function App() {
   };
 
   return (
-    <>
-      <AnimatePresence mode="wait">
-        {/* Startup Preloader Screen */}
-        {loading && (
-          <motion.div
-            key="preloader"
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
-            className="fixed inset-0 w-full h-full bg-brand-black z-[99999] flex flex-col items-center justify-center space-y-6"
-          >
-            <div className="absolute top-1/3 w-80 h-80 rounded-full bg-brand-yellow/5 glow-orb blur-[120px]" />
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-              className="flex flex-col items-center space-y-2"
-            >
-              <h1 
-                className="text-3xl sm:text-4xl font-black logo-text-yuva"
-                style={{ color: theme === 'light' ? '#0B0F19' : '#FFFFFF' }}
-              >
-                YUVA<span className="text-brand-yellow text-glow-yellow">CABS</span>
-              </h1>
-              <span className="text-[10px] text-brand-gray font-extrabold uppercase tracking-widest">
-                Premium Transit Partner
-              </span>
-            </motion.div>
+    <Suspense fallback={<div className="min-h-screen bg-brand-black flex items-center justify-center"><div className="w-8 h-8 border-2 border-brand-yellow border-t-transparent rounded-full animate-spin" /></div>}>
+      {currentRoute === 'airport' ? (
+        /* Dedicated Airport Taxi Landing Page */
+        <AirportTaxiPage 
+          theme={theme} 
+          setTheme={setTheme} 
+          onNavigateHome={handleNavigateHome} 
+        />
+      ) : currentRoute === 'local' ? (
+        /* Dedicated Local Taxi Landing Page */
+        <LocalTaxiPage
+          theme={theme}
+          setTheme={setTheme}
+          onNavigateHome={handleNavigateHome}
+        />
+      ) : currentRoute === 'outstation' ? (
+        /* Dedicated Outstation Taxi Landing Page */
+        <OutstationTaxiPage
+          theme={theme}
+          setTheme={setTheme}
+          onNavigateHome={handleNavigateHome}
+        />
+      ) : (
+        /* Main Home Landing Page */
+        <div className="bg-brand-black text-brand-white min-h-screen relative bg-gradient-mesh selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
+          {/* Search Engine Optimization Head */}
+          <SEO />
+          
+          {/* Header Navigation */}
+          <Header 
+            onAdminToggle={handleAdminToggle} 
+            onNavigateAirport={handleNavigateAirport}
+            onNavigateLocal={handleNavigateLocal}
+            onNavigateOutstation={handleNavigateOutstation}
+            theme={theme} 
+            setTheme={setTheme} 
+          />
 
-            {/* Glowing progress bar */}
-            <div className="w-48 h-1 bg-brand-charcoal rounded-full overflow-hidden relative border border-white/5">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${loadingProgress}%` }}
-                className="h-full bg-gradient-to-r from-brand-yellow to-brand-gold shadow-[0_0_12px_#FFD43B]"
-              />
-            </div>
-            
-            <span className="text-[10px] text-brand-yellow font-extrabold tracking-widest">{loadingProgress}%</span>
+          {/* Page Sections */}
+          <main id="main-content">
+            <Hero />
+            <About />
+            <Services />
+            <Pricing />
+            <LocalSEO />
+            <LocalKeywordMatrix />
+            <WhyChooseUs />
+            <Testimonials />
+            <FAQ />
+            <Contact />
+          </main>
+
+          {/* Footer bar */}
+          <Footer 
+            onAdminToggle={handleAdminToggle} 
+            onNavigateAirport={handleNavigateAirport}
+            onNavigateLocal={handleNavigateLocal}
+            onNavigateOutstation={handleNavigateOutstation}
+          />
+
+          {/* Floating Mobile and WhatsApp triggers */}
+          <FloatingCTA />
+        </div>
+      )}
+
+      {/* Protected Administrative Dashboard overlay */}
+      <AnimatePresence>
+        {showAdmin && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <AdminDashboard onClose={handleAdminToggle} />
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Main Page Layout Wrapper */}
-      {!loading && (
-        <>
-          {currentRoute === 'airport' ? (
-            /* Dedicated Airport Taxi Landing Page */
-            <AirportTaxiPage 
-              theme={theme} 
-              setTheme={setTheme} 
-              onNavigateHome={handleNavigateHome} 
-            />
-          ) : currentRoute === 'local' ? (
-            /* Dedicated Local Taxi Landing Page */
-            <LocalTaxiPage
-              theme={theme}
-              setTheme={setTheme}
-              onNavigateHome={handleNavigateHome}
-            />
-          ) : currentRoute === 'outstation' ? (
-            /* Dedicated Outstation Taxi Landing Page */
-            <OutstationTaxiPage
-              theme={theme}
-              setTheme={setTheme}
-              onNavigateHome={handleNavigateHome}
-            />
-          ) : (
-            /* Main Home Landing Page */
-            <div className="bg-brand-black text-brand-white min-h-screen relative bg-gradient-mesh selection:bg-brand-yellow selection:text-brand-black transition-colors duration-300">
-              {/* Search Engine Optimization Head */}
-              <SEO />
-              
-              {/* Header Navigation */}
-              <Header 
-                onAdminToggle={handleAdminToggle} 
-                onNavigateAirport={handleNavigateAirport}
-                onNavigateLocal={handleNavigateLocal}
-                onNavigateOutstation={handleNavigateOutstation}
-                theme={theme} 
-                setTheme={setTheme} 
-              />
-
-              {/* Page Sections */}
-              <main>
-                <Hero />
-                <About />
-                <Services />
-                <Pricing />
-                <LocalSEO />
-                <LocalKeywordMatrix />
-                <WhyChooseUs />
-                <Testimonials />
-                <FAQ />
-                <Contact />
-              </main>
-
-              {/* Footer bar */}
-              <Footer 
-                onAdminToggle={handleAdminToggle} 
-                onNavigateAirport={handleNavigateAirport}
-                onNavigateLocal={handleNavigateLocal}
-                onNavigateOutstation={handleNavigateOutstation}
-              />
-
-              {/* Floating Mobile and WhatsApp triggers */}
-              <FloatingCTA />
-            </div>
-          )}
-
-          {/* Protected Administrative Dashboard overlay */}
-          <AnimatePresence>
-            {showAdmin && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <AdminDashboard onClose={handleAdminToggle} />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </>
-      )}
-    </>
+    </Suspense>
   );
 }

@@ -159,8 +159,10 @@ export default function Contact() {
                   
                   {/* Name field */}
                   <div className="flex flex-col space-y-1.5 text-left">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Your Name</label>
+                    <label htmlFor="contact-name" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Your Name</label>
                     <input
+                      id="contact-name"
+                      name="name"
                       type="text"
                       placeholder="e.g. Ramesh Kumar"
                       value={formData.name}
@@ -176,8 +178,10 @@ export default function Contact() {
 
                   {/* Phone field */}
                   <div className="flex flex-col space-y-1.5 text-left">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Phone Number</label>
+                    <label htmlFor="contact-phone" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Phone Number</label>
                     <input
+                      id="contact-phone"
+                      name="phone"
                       type="tel"
                       placeholder="e.g. 9944271322"
                       value={formData.phone}
@@ -193,10 +197,12 @@ export default function Contact() {
 
                   {/* Pickup location */}
                   <div className="flex flex-col space-y-1.5 text-left sm:col-span-2 relative">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Address</label>
+                    <label htmlFor="contact-pickup" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Address</label>
                     <div className="relative">
                       <MapPin className="absolute left-4 top-3.5 w-4 h-4 text-brand-yellow pointer-events-none" />
                       <input
+                        id="contact-pickup"
+                        name="pickup"
                         type="text"
                         placeholder="Pickup spot (e.g. Dinnur Main Road, Hosur)"
                         value={formData.pickup}
@@ -213,10 +219,12 @@ export default function Contact() {
 
                   {/* Drop Location */}
                   <div className="flex flex-col space-y-1.5 text-left sm:col-span-2 relative">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Dropoff Address</label>
+                    <label htmlFor="contact-drop" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Dropoff Address</label>
                     <div className="relative">
                       <MapPin className="absolute left-4 top-3.5 w-4 h-4 text-brand-yellow pointer-events-none" />
                       <input
+                        id="contact-drop"
+                        name="drop"
                         type="text"
                         placeholder="Dropoff spot (e.g. Bengaluru Airport Terminal 2)"
                         value={formData.drop}
@@ -233,10 +241,12 @@ export default function Contact() {
 
                   {/* Date selection */}
                   <div className="flex flex-col space-y-1.5 text-left relative">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Date</label>
+                    <label htmlFor="contact-date" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Date</label>
                     <div className="relative">
                       <Calendar className="absolute left-4 top-3.5 w-4 h-4 text-brand-yellow pointer-events-none" />
                       <input
+                        id="contact-date"
+                        name="date"
                         type="date"
                         value={formData.date}
                         min={new Date().toISOString().split('T')[0]}
@@ -253,10 +263,12 @@ export default function Contact() {
 
                   {/* Time selection */}
                   <div className="flex flex-col space-y-1.5 text-left relative">
-                    <label className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Time</label>
+                    <label htmlFor="contact-time" className="text-xs text-brand-silver font-bold uppercase tracking-wider">Pickup Time</label>
                     <div className="relative">
                       <Clock className="absolute left-4 top-3.5 w-4 h-4 text-brand-yellow pointer-events-none" />
                       <input
+                        id="contact-time"
+                        name="time"
                         type="time"
                         value={formData.time}
                         onChange={(e) => setFormData({ ...formData, time: e.target.value })}

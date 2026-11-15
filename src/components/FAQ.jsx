@@ -78,6 +78,8 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => toggleFAQ(idx)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${idx}`}
                   className="w-full py-5 px-6 text-left flex items-center justify-between space-x-4 cursor-pointer focus:outline-none"
                 >
                   <span className="text-sm sm:text-base font-bold text-white leading-snug">
@@ -97,6 +99,9 @@ export default function FAQ() {
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
+                      id={`faq-answer-${idx}`}
+                      role="region"
+                      aria-labelledby={`faq-question-${idx}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

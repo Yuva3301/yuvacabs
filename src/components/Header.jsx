@@ -144,6 +144,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               target="_blank"
               rel="noopener noreferrer"
               title="Follow Yuva Call Taxi on Instagram"
+              aria-label="Follow Yuva Call Taxi on Instagram"
               className="p-2 text-pink-400 hover:text-pink-300 hover:bg-pink-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-pink-500/20"
             >
               <FaInstagram className="w-5 h-5" />
@@ -155,6 +156,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               target="_blank"
               rel="noopener noreferrer"
               title="Follow Yuva Call Taxi on Facebook"
+              aria-label="Follow Yuva Call Taxi on Facebook"
               className="p-2 text-blue-400 hover:text-blue-300 hover:bg-blue-500/10 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-blue-500/20"
             >
               <FaFacebook className="w-5 h-5" />
@@ -164,6 +166,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
+              aria-label={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
               className="p-2 text-brand-silver/60 hover:text-brand-yellow hover:bg-brand-charcoal/50 rounded-full transition-all duration-300 cursor-pointer flex items-center justify-center border border-white/5"
             >
               {theme === 'dark' ? <Sun className="w-5 h-5 text-brand-yellow" /> : <Moon className="w-5 h-5 text-brand-yellow" />}
@@ -173,6 +176,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
             <button
               onClick={onAdminToggle}
               title="Admin Control Panel"
+              aria-label="Open Admin Control Panel"
               className="p-2 text-brand-silver/50 hover:text-brand-yellow hover:bg-brand-charcoal/50 rounded-full transition-all duration-300 cursor-pointer border border-white/5"
             >
               <ShieldAlert className="w-5 h-5" />
@@ -181,6 +185,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
             {/* Glowing Call Button */}
             <motion.a
               href="tel:+919944271322"
+              aria-label="Call Yuva Call Taxi at +91 99442 71322"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center space-x-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-sm tracking-tight shadow-[0_0_20px_rgba(255,212,59,0.3)] hover:shadow-[0_0_30px_rgba(255,212,59,0.5)] transition-all duration-300"
@@ -197,6 +202,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               href="tel:+919944271322"
               className="flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-brand-yellow to-brand-gold text-brand-black font-extrabold text-xs shadow-md active:scale-95 transition-all"
               title="Call Taxi Now"
+              aria-label="Call Yuva Call Taxi Now"
             >
               <Phone className="w-3.5 h-3.5 fill-brand-black text-brand-black" />
               <span>Call</span>
@@ -207,6 +213,7 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="p-2 text-brand-silver/60 hover:text-brand-yellow hover:bg-brand-charcoal/30 rounded-full cursor-pointer flex items-center justify-center border border-white/5"
               title="Toggle Theme"
+              aria-label={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} Mode`}
             >
               {theme === 'dark' ? <Sun className="w-5 h-5 text-brand-yellow" /> : <Moon className="w-5 h-5 text-brand-yellow" />}
             </button>
@@ -215,12 +222,15 @@ export default function Header({ onAdminToggle, onNavigateAirport, onNavigateLoc
               onClick={onAdminToggle}
               className="p-2 text-brand-silver/60 hover:text-brand-yellow hover:bg-brand-charcoal/30 rounded-full cursor-pointer flex items-center justify-center border border-white/5"
               title="Admin Panel"
+              aria-label="Open Admin Control Panel"
             >
               <ShieldAlert className="w-5 h-5" />
             </button>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={mobileMenuOpen}
               className="p-3 w-11 h-11 bg-white text-slate-800 dark:bg-brand-charcoal/80 dark:text-brand-white rounded-full flex items-center justify-center shadow-sm cursor-pointer border border-slate-200 dark:border-white/5 hover:border-brand-yellow/30 transition-all duration-300"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
