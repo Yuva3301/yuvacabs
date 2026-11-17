@@ -317,8 +317,8 @@ export default function SEO() {
   return (
     <Helmet>
       {/* Primary HTML Meta Tags */}
-      <title>Yuva Call Taxi | Taxi Service-Hosur +919944271322</title>
-      <meta name="title" content="Yuva Call Taxi | Taxi Service-Hosur +919944271322" />
+      <title>Yuva Call Taxi-Hosur|24/7 Hosur Taxi Service +919944271322</title>
+      <meta name="title" content="Yuva Call Taxi-Hosur|24/7 Hosur Taxi Service +919944271322" />
       <meta name="description" content="Yuva Call Taxi (+91 99442 71322) - 24/7 Call Taxi &amp; Cab Service in Hosur. Best Taxi Service in Hosur for local cabs from ₹150, airport taxi ₹2,200 &amp; outstation drop cabs. Fast 5-10 min pickup." />
       <meta name="keywords" content={targetKeywords.join(", ")} />
       <meta name="application-name" content="Yuva Call Taxi Hosur" />
@@ -339,7 +339,7 @@ export default function SEO() {
       <meta property="og:type" content="business.business" />
       <meta property="og:url" content="https://www.yuvacalltaxi.com/" />
       <meta property="og:site_name" content="Yuva Call Taxi Hosur" />
-      <meta property="og:title" content="Yuva Call Taxi | Taxi Service-Hosur +919944271322" />
+      <meta property="og:title" content="Yuva Call Taxi-Hosur|24/7 Hosur Taxi Service +919944271322" />
       <meta property="og:description" content="Yuva Call Taxi (+91 99442 71322) - 24/7 Call Taxi &amp; Cab Service in Hosur. Best Taxi Service in Hosur for local cabs from ₹150, airport taxi ₹2,200 &amp; outstation drop cabs. Fast 5-10 min pickup." />
       <meta property="og:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
       <meta property="og:locale" content="en_IN" />
@@ -354,7 +354,7 @@ export default function SEO() {
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://www.yuvacalltaxi.com/" />
-      <meta property="twitter:title" content="Yuva Call Taxi | Taxi Service-Hosur +919944271322" />
+      <meta property="twitter:title" content="Yuva Call Taxi-Hosur|24/7 Hosur Taxi Service +919944271322" />
       <meta property="twitter:description" content="Yuva Call Taxi (+91 99442 71322) - 24/7 Call Taxi &amp; Cab Service in Hosur. Best Taxi Service in Hosur for local cabs from ₹150, airport taxi ₹2,200 &amp; outstation drop cabs. Fast 5-10 min pickup." />
       <meta property="twitter:image" content="https://www.yuvacalltaxi.com/logo.jpg" />
 
